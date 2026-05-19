@@ -90,6 +90,13 @@ Published work on this approach: Urteaga (MLHC 2021), Bortot/Masarotto/Scarpa (B
 
 ---
 
+## Corrections (2026-05-19, post web-enabled verification)
+
+The following corrections supersede claims earlier in this note. Authoritative source: `research/2026-05-19-mixture-predictor-verified.md`.
+
+- ❌ Population cycle SD "~3-5 days" flat → ✅ **Age-stratified per AWHS 2023 (Mahalingaiah, PMC10226714)**: within-person SD varies from 3.79 (age 35-39) to 11.19 (age 50+).
+- ❌ Apple Women's Health Study citation details → ✅ **Mahalingaiah S et al. (2023). *npj Digital Medicine*. PMC10226714**. n=12,608 participants, n=165,668 cycles. Population mean 28.7 days SD 6.1 days (population-level); 86% of cycles within FIGO 24-38 day reference range.
+
 ## Verification status
 
 Fact-checked on 2026-05-19. Key issues:

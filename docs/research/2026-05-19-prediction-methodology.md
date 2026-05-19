@@ -85,6 +85,15 @@ This is why apps that predict ovulation as "cycle length − 14" are systematica
 
 ---
 
+## Corrections (2026-05-19, post web-enabled verification)
+
+The following corrections supersede claims earlier in this note. Authoritative source: `research/2026-05-19-mixture-predictor-verified.md`.
+
+- ❌ "Guo 2006 uses log-normal anovulatory component" → ✅ **Guo 2006 uses Normal + shifted Weibull** (verified from abstract + downstream citing literature). The log-normal alternative is from **Bortot 2010**, a different paper with a hierarchical state-space framework.
+- ❌ Bull 2019 attributed to Clue → ✅ **Bull 2019 is Natural Cycles data** (~600K cycles, npj Digital Medicine). The Clue-equivalent analysis is **Li et al. 2022 JAMIA** (adherence-aware model).
+- ❌ "Within-person SD ~3-5 days" as a flat number → ✅ **Age-stratified per AWHS 2023 (Mahalingaiah, PMC10226714)**: <20: 5.33; 35-39: 3.79 (lowest); 45-49: 5.42; 50+: 11.19.
+- ❌ Apple Women's Health Study attributed to "Bull 2019" → ✅ **AWHS 2023 is Mahalingaiah et al., PMC10226714**. Bull 2019 is the Natural Cycles paper (npj Digit Med 2:83).
+
 ## Verification status
 
 Algorithm descriptions verified from peer-reviewed sources where available (Natural Cycles FDA filing, Apple Watch Human Reproduction 2025 paper, Oura JMIR 2025 validation, Clue Li et al. 2022 JAMIA, Symul 2021 HSMM paper). Flo's 442-input NN is from InData Labs case study, **not peer-reviewed** — treat as vendor marketing, not validated science. Day-14 myth quantification is from Bull 2019, verified.

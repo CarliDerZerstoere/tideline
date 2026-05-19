@@ -356,21 +356,32 @@ The predictor file itself (`CyclePredictor.swift`) grows by ~30 lines. The `Pred
 Peer-reviewed and primary sources cited:
 
 - Andalibi, N. (2021). "Symbolic Annihilation Through Design: Pregnancy Loss in Pregnancy-Related Mobile Apps." *New Media & Society*. DOI: 10.1177/1461444820984473
-- Schreiber, C. A., et al. (2011). "Ovulation resumption after medical abortion with mifepristone and misoprostol." *Contraception*. (n=14; mean ovulation 20.6 ± 5.1 days post-mifepristone)
-- Jackson, E. & Glasier, A. (2011). "Return of ovulation and menses in postpartum nonlactating women: a systematic review." *Obstetrics & Gynecology*.
+- Schreiber, C. A., et al. (2011). "Ovulation resumption after medical abortion with mifepristone and misoprostol." *Contraception* 84(3):230–233. PMID 21843685. (n=14 completers; mean ovulation 20.6 ± 5.1 days post-mifepristone, range 8–36)
+- Jackson, E. & Glasier, A. (2011). "Return of ovulation and menses in postpartum nonlactating women: a systematic review." *Obstetrics & Gynecology* 117(3):657–662. PMID 21343770.
 - Sondergaard, M. L. J., et al. (2023). "Reimagining the cycle: interaction in self-tracking period apps." *Frontiers in Computer Science*. DOI: 10.3389/fcomp.2023.1166210
 - Li, K., et al. (2022). "A predictive model for next cycle start date that accounts for adherence in menstrual self-tracking." *JAMIA* 29(1):3–11. DOI: 10.1093/jamia/ocab182
-- Apple Women's Health Study (2023). "Real-world menstrual cycle characteristics of more than 600,000 menstrual cycles." (Within-person SD ~3–5 days for healthy-BMI cohort.)
+- Mahalingaiah, S., et al. (2023). Apple Women's Health Study cycle characteristics paper. *npj Digital Medicine*. PMC10226714. (n=12,608 participants, 165,668 cycles; mean 28.7 days, population SD 6.1, within-person SD age-stratified 3.79–11.19 days.)
+- Bull, J. R., et al. (2019). "Real-world menstrual cycle characteristics of more than 600,000 menstrual cycles." *npj Digital Medicine* 2:83. (Natural Cycles data — separate from AWHS.)
+- Nassaralla, C. L., et al. (2011). "Characteristics of the menstrual cycle after discontinuation of oral contraceptives." *J Womens Health* 20(2):169–177. PMID 21219248. PMC7643763. (n=70 post-OCP; cycle 1 length 31.5 ± 11.1 days.)
+- Gnoth, C., et al. (2002). "Cycle characteristics after discontinuation of oral contraceptives." *Gynecol Endocrinol* 16(4):307–317. PMID 12396560. (Disturbance persistent through cycle 9; 10.24% strict anovulatory cycle 1 vs. 3.44% controls.)
+- DMPA-IM prescribing information (DailyMed). Median ovulation 183 days; median conception 10 months; 55% amenorrhea at 12 months.
+- HRU 2024 IUA systematic review. First-trimester D&C 17% IUA (95% CI 11–25%).
 - Girum, T. & Wasie, A. (2018). "Return of fertility after discontinuation of contraception: a systematic review and meta-analysis." PMC6055351.
 - EU MDR 2017/745, Rule 11 and Rule 15
 - MDCG 2019-11, "Qualification and classification of software"
 - Swiss Federal Administrative Court, Decision C-1256/2020 (2022), re: Sympto app
 
-Fact-checked corrections applied:
-- Within-person cycle SD ~3–5 days (not population SD ~7–9; conflation corrected)
-- Asherman syndrome 1.6% symptomatic, up to ~13% on systematic screening
-- Stopping COC: ~30–40% anovulatory first cycles (not 25%)
-- Depo-Provera: 55% amenorrhea at 12 months (not "up to 50%")
+**Authoritative correction log (supersedes earlier text where it conflicts):**
+
+The earlier "fact-checked corrections applied" list in this doc carried over imprecise numbers. The web-enabled verification pass on 2026-05-19 produced the following authoritative values, recorded in `research/2026-05-19-mixture-predictor-verified.md`:
+
+- Within-person SD is **age-stratified**, not a flat 3–5 days. AWHS 2023: 5.33 (under 20), 3.79 (35–39, lowest), 5.42 (45–49), 11.19 (50+).
+- Asherman syndrome rate after first-trimester D&C: **17% (95% CI 11–25%) per HRU 2024 systematic review** — supersedes the earlier "1.6% to 13%" range.
+- Anovulatory rate post-OCP cycle 1: **10.24% strict anovulatory** (Gnoth 2002 verified). Earlier "30–40%" combined strict anovulatory + insufficient luteal phase, which is a different metric.
+- Depo-Provera: **median time to ovulation 183 days; median time to conception 10 months. These are distinct quantities.**
+- Post-OCP cycle 1: **31.5 ± 11.1 days (Nassaralla 2011, n=70 verified, full text accessed)** — the source for the SD figure is Nassaralla, not the previously misattributed "Mansour 2011."
+
+For implementation, treat `mixture-predictor.md`'s table values as the operative parameters; treat `mixture-predictor-verified.md` as the authoritative numerical evidence base.
 
 ---
 

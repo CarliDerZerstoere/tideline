@@ -37,12 +37,13 @@ What's actually normal for a "late" cycle, from peer-reviewed sources (see `rese
 
 | Statistic | Value | Source |
 |---|---|---|
-| Mean cycle length (population) | 29.3 days ± 5.2 SD | Bull et al. 2019 (612K cycles) |
-| Cycles 25–30 days | 65% | Bull et al. 2019 |
-| Cycles 31–35 days | 19% | Bull et al. 2019 |
-| Cycles 36–50 days | 7% | Bull et al. 2019 |
-| Cycles >50 days | <1% | Bull et al. 2019 |
-| Users whose median cycle is >38 days | 10% | Apple Women's Health Study 2023 |
+| Mean cycle length (population) | **28.7 days, population SD 6.1** (verified) | **Mahalingaiah et al. 2023 (Apple WHS, PMC10226714, n=165,668 cycles)** |
+| Median 28 days, IQR 26–30 | — | Same (verified, full text accessed) |
+| Cycles within FIGO range (24–38 days) | ~86% | Same |
+| Cycles <24 days (short) | 9% | Same |
+| Cycles >38 days (long) | 5% | Same |
+| Within-person SD by age (verified — supersedes earlier "~3-5 days" flat figure) | Under 20: 5.33; 35–39: 3.79 (lowest); 45–49: 5.42; 50+: 11.19 | Mahalingaiah 2023, direct quotes |
+| Earlier Bull et al. 2019 percentages (65/19/7/<1) | Treat as directional — exact breakdown not verified in primary source | Bull et al. 2019 (Natural Cycles, n=600K cycles) |
 | Users reporting their period arrived later than app predicted | High % (specific figure pending verification) | App-user research literature; specific "72.1%" figure attributed to Broad et al. 2022 could not be independently confirmed by fact-check; treat directionally |
 | Pregnancy test sensitivity at day of missed period | ~90% | PubMed 14749643 |
 | Pregnancy test sensitivity 7 days after missed period | ~97% | PubMed 11594902 |

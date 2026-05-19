@@ -103,6 +103,18 @@ Fact-checked 2026-05-19:
 - Natural Cycles 60-day FDA labeling: NOT a "recalibration period," but a warning about elevated pregnancy risk during the 60-day post-HC transition window
 - "Symbolic annihilation through design" not "algorithmic symbolic annihilation" (Andalibi's actual term)
 
+## Corrections (2026-05-19, post web-enabled verification)
+
+The following corrections supersede claims earlier in this note. Authoritative source: `research/2026-05-19-mixture-predictor-verified.md`.
+
+- ❌ "30-40% anovulatory first cycle post-OCP" → ✅ **10.24% strictly anovulatory** (Gnoth 2002); 42.1% had inadequate luteal phase OR anovulatory combined (different metric).
+- ❌ "Mansour D 2011 *J Fam Plann Reprod Health Care*" → ✅ **Nassaralla CL et al. 2011 *J Womens Health* 20(2):169-177** (PMID 21219248, PMC7643763). The cycle 1: 31.5 ± 11.1 days figure is from Nassaralla, not Mansour.
+- ❌ "Depo median time to ovulation 10 months" → ✅ **Median time to ovulation 183 days (~6 months); median time to conception 10 months — distinct quantities**. Don't conflate.
+- ❌ "Asherman 1.6% to 13% to 30%" attributed to Sevinç 2021 → ✅ Only 1.6% is from Sevinç. Per HRU 2024 systematic review: **first-trimester D&C 17% (95% CI 11-25%) pooled IUA rate**; postpartum retained products 24% (95% CI 15-34%).
+- ❌ Cycle disturbance post-OCP through "cycle 7" → ✅ **Cycle length disturbance through cycle 9; major-disturbance frequency through cycle 7** (Gnoth 2002 distinguishes these).
+
+## Original verification status (kept for archival reference)
+
 ⚠ Wrong / needs correction:
 - MDCG 2025-4 was attributed to the "manually entered data ≠ medical device" qualification; that's actually MDCG 2019-11
 - EU AI Act high-risk trigger for medical AI is Article 6(1) + Annex I, NOT Annex III

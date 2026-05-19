@@ -29,6 +29,7 @@ Source of truth for product behavior. Reviewed before implementation. Updated wh
 |---|---|---|
 | `design/disrupted-cycles.md` | How user-declared disruption events (abortion, miscarriage, birth, contraception, illness) affect the predictor and UX | Draft for review |
 | `design/late-and-missed-periods.md` | Behavior when a period is late or absent without a user-declared cause | Draft for review |
+| `design/mixture-predictor.md` | **Option D**: 2-component Bayesian mixture (Normal ovulatory + log-normal anovulatory), Gibbs sampling, per-event recovery profiles. Supersedes the single-component model. | Draft for review |
 
 ## Research notes
 
@@ -42,6 +43,7 @@ Dated, immutable archives of sub-agent research output. These are the evidence b
 | `research/2026-05-19-accuracy-improvements.md` | Techniques to improve cycle prediction accuracy beyond a basic Bayesian model | 2026-05-19 |
 | `research/2026-05-19-hormone-tracking.md` | Consumer methods for hormone tracking; accuracy vs. clinical lab; regulatory implications | 2026-05-19 |
 | `research/2026-05-19-late-period-clinical.md` | Clinical handling of late/absent periods; differential diagnosis; conditional prediction | 2026-05-19 |
+| `research/2026-05-19-mixture-predictor-verified.md` | **Web-enabled verification pass**. Primary-source extraction of numerical priors for the mixture-model predictor. Supersedes earlier notes where they conflict. | 2026-05-19 |
 
 ## Memory
 

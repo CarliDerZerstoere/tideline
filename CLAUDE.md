@@ -125,9 +125,11 @@ Requires Xcode 26.4+ with **iOS 26.4 platform installed** (Settings → Platform
 The doctrine that shapes everything:
 
 ### Predictor
-- **Bayesian Normal-Inverse-Gamma conjugate model** over cycle length (`CyclePredictor.swift`). Math is textbook (Murphy 2007); see file header for derivation.
-- **Population prior:** μ=29, κ=2, α=3, β=41.07 (calibrated to within-person SD ~3.7 days; from Apple WHS 2023, not the often-misquoted between-person SD of ~7 days).
+- **v1 (current):** Bayesian Normal-Inverse-Gamma conjugate model over cycle length (`CyclePredictor.swift`). Single Gaussian likelihood. Math is textbook (Murphy 2007); see file header for derivation.
+- **v2 (planned, design approved):** **2-component Bayesian mixture** per `docs/design/mixture-predictor.md` — Normal ovulatory + shifted log-normal anovulatory, fit by Gibbs sampling. Per-event recovery profiles replace uniform soft reset. Estimated 7-12 dev-days.
+- **Population prior:** μ=28.7 (verified from AWHS 2023, Mahalingaiah PMC10226714, n=165,668 cycles); within-person SD age-stratified from same source (5.33 under 20; 3.79 at 35-39; 11.19 at 50+).
 - **Cycle predictions are always probabilistic** — point estimate + credible interval, never a single date.
+- **Inference algorithm choice (Gibbs, not CAVI):** Gibbs gives calibrated posteriors (CAVI underestimates variance). Doctrine alignment with Principle 6 of `disrupted-cycles.md` ("honest uncertainty over false precision") was the decisive factor. Latency budget easily met either way.
 
 ### Disruption handling (`design/disrupted-cycles.md`)
 Five event categories with explicit algorithm reactions:
@@ -210,3 +212,5 @@ Before shipping any feature that touches medical-adjacent territory, sanity-chec
 ## Last updated
 
 2026-05-19 — initial creation. Predictor stub written, design docs in draft, six research notes archived. No UI, no HealthKit integration, no AI integration yet.
+
+2026-05-19 (later, same day) — Option D mixture predictor design approved. New verified research note added (`research/2026-05-19-mixture-predictor-verified.md`) consolidating primary-source values after fact-checking exposed citation hallucinations in earlier research-analyst outputs. New design doc `design/mixture-predictor.md` written. Existing research notes have correction sections appended. Earlier predictor priors superseded by verified AWHS 2023 values.
