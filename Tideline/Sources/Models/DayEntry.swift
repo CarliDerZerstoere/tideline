@@ -24,7 +24,7 @@ final class DayEntry {
     }
 }
 
-enum FlowLevel: Int, Codable, CaseIterable {
+public enum FlowLevel: Int, Codable, CaseIterable, Sendable {
     case none = 0
     case spotting = 1
     case light = 2

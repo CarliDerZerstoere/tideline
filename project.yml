@@ -42,7 +42,6 @@ targets:
       path: Tideline/Resources/Tideline.entitlements
       properties:
         com.apple.developer.healthkit: true
-        com.apple.developer.healthkit.access: []
 
   TidelineTests:
     type: bundle.unit-test

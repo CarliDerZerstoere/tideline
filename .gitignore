@@ -54,3 +54,8 @@ fastlane/test_output
 
 # Logs
 *.log
+
+# Local cycle datasets (license-restricted; never commit)
+data/
+Tideline/Tests/Resources/fehring_cycles.csv
+Tideline/Tests/Resources/mcphases_cycles.csv

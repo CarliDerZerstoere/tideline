@@ -193,6 +193,11 @@ public struct CyclePredictor: Sendable, Equatable {
 
     // MARK: - State resets
 
+    /// True while the predictor is still in the high-uncertainty window after
+    /// a soft reset (κ=2 prior means data only starts to dominate after ~3 obs).
+    /// Callers can use this to show "predictions are still settling" UI.
+    public var isInRecoveryWindow: Bool { observedCount < 3 }
+
     /// Soft reset after a recoverable disruption event (Category C in
     /// docs/design/disrupted-cycles.md).
     ///
@@ -233,20 +238,19 @@ enum StudentT {
             return Normal.quantile(twoSided: p)
         }
 
-        // Table for common confidences and small df, linearly interpolated.
-        let key: [Double: (df: [Double], t: [Double])] = [
-            0.80: (df: [1, 2, 3, 5, 10, 20, 30], t: [3.078, 1.886, 1.638, 1.476, 1.372, 1.325, 1.310]),
-            0.90: (df: [1, 2, 3, 5, 10, 20, 30], t: [6.314, 2.920, 2.353, 2.015, 1.812, 1.725, 1.697]),
-            0.95: (df: [1, 2, 3, 5, 10, 20, 30], t: [12.706, 4.303, 3.182, 2.571, 2.228, 2.086, 2.042]),
-            0.99: (df: [1, 2, 3, 5, 10, 20, 30], t: [63.657, 9.925, 5.841, 4.032, 3.169, 2.845, 2.750]),
-        ]
-
         // Snap to nearest tabulated confidence.
-        let confs = Array(key.keys).sorted()
-        let nearest = confs.min(by: { abs($0 - p) < abs($1 - p) }) ?? 0.90
-        let row = key[nearest]!
+        let nearest = tableConfidences.min(by: { abs($0 - p) < abs($1 - p) }) ?? 0.90
+        let row = quantileTable[nearest]!
         return interpolate(x: df, xs: row.df, ys: row.t)
     }
+
+    private static let quantileTable: [Double: (df: [Double], t: [Double])] = [
+        0.80: (df: [1, 2, 3, 5, 10, 20, 30], t: [3.078, 1.886, 1.638, 1.476, 1.372, 1.325, 1.310]),
+        0.90: (df: [1, 2, 3, 5, 10, 20, 30], t: [6.314, 2.920, 2.353, 2.015, 1.812, 1.725, 1.697]),
+        0.95: (df: [1, 2, 3, 5, 10, 20, 30], t: [12.706, 4.303, 3.182, 2.571, 2.228, 2.086, 2.042]),
+        0.99: (df: [1, 2, 3, 5, 10, 20, 30], t: [63.657, 9.925, 5.841, 4.032, 3.169, 2.845, 2.750]),
+    ]
+    private static let tableConfidences: [Double] = [0.80, 0.90, 0.95, 0.99]
 
     private static func interpolate(x: Double, xs: [Double], ys: [Double]) -> Double {
         if x <= xs.first! { return ys.first! }
@@ -283,10 +287,8 @@ enum StudentT {
     private static func regularizedIncompleteBeta(a: Double, b: Double, x: Double) -> Double {
         if x <= 0 { return 0 }
         if x >= 1 { return 1 }
-        let bt = exp(
-            lgamma(a + b) - lgamma(a) - lgamma(b)
-            + a * log(x) + b * log(1.0 - x)
-        )
+        let logBt = lgamma(a + b) - lgamma(a) - lgamma(b) + a * log(x) + b * log(1.0 - x)
+        let bt = exp(logBt)
         if x < (a + 1) / (a + b + 2) {
             return bt * betacf(a: a, b: b, x: x) / a
         } else {
