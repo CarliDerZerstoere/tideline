@@ -8,17 +8,19 @@ struct CyclePredictorTests {
     @Test("populationPrior point estimate equals μ₀")
     func priorEstimate() {
         let p = CyclePredictor.populationPrior
-        #expect(p.nextCycleLengthEstimate == 29.0)
+        #expect(p.nextCycleLengthEstimate == 28.7)
     }
 
     @Test("worked example: observe [28, 30, 27] from prior")
     func workedExample() {
-        var p = CyclePredictor.populationPrior
+        var p = CyclePredictor.populationPrior  // μ₀=28.7, κ₀=2 (AWHS, task #94)
         p.observe(cycleLengths: [28, 30, 27])
         // κ: 2 → 3 → 4 → 5
         #expect(p.kappa == 5.0)
-        // μ' = (2·29 + 28)/3 = 28.6667 → (3·28.6667 + 30)/4 = 28.9999 → (4·29 + 27)/5 = 28.6
-        #expect(abs(p.mu - 28.6) < 1e-9)
+        // μ': (2·28.7 + 28)/3 = 28.467
+        //   → (3·28.467 + 30)/4 = 28.85
+        //   → (4·28.85 + 27)/5 = 28.48
+        #expect(abs(p.mu - 28.48) < 0.01)
         #expect(p.observedCount == 3)
         // α: 3 → 4.5
         #expect(p.alpha == 4.5)

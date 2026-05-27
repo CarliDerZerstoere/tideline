@@ -5,7 +5,10 @@ options:
     iOS: "18.0"
   createIntermediateGroups: true
   generateEmptyDirectories: true
-  developmentLanguage: en
+  # German is the primary DACH market language. EN is the secondary
+  # translation. iOS falls back to the development language for any
+  # missing key in non-DE locales. (Task #129)
+  developmentLanguage: de
 
 settings:
   base:
@@ -27,14 +30,20 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.carliderzerstoere.tideline
         PRODUCT_NAME: Tideline
-        MARKETING_VERSION: "0.1.0"
-        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "0.9.0"
+        CURRENT_PROJECT_VERSION: "2"
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait"
         INFOPLIST_KEY_NSHealthShareUsageDescription: "Tideline reads your cycle and wrist-temperature data from Apple Health to give you private, on-device summaries. Your data never leaves your phone."
         INFOPLIST_KEY_NSHealthUpdateUsageDescription: "Tideline writes the period days you log back to Apple Health so your data stays in your own ecosystem."
+        INFOPLIST_KEY_NSFaceIDUsageDescription: "Tideline kann mit Face ID gesperrt werden, damit deine Zyklusdaten privat bleiben."
+        # Task #129 — declare supported localizations explicitly so the
+        # generated Info.plist carries CFBundleLocalizations. Without
+        # this, iOS only sees the .lproj directories at bundle-read
+        # time; explicit list is friendlier to App Store metadata.
+        INFOPLIST_KEY_CFBundleLocalizations: "de en"
         TARGETED_DEVICE_FAMILY: "1"
         SUPPORTS_MACCATALYST: NO
         SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO

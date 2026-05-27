@@ -1,0 +1,11 @@
+/*
+ * Tideline — English permission-prompt strings (audit fix).
+ *
+ * See `de.lproj/InfoPlist.strings` for rationale. iOS picks per-locale
+ * overrides automatically when these files exist alongside the .lproj
+ * with the matching language code.
+ */
+
+"NSHealthShareUsageDescription" = "Tideline reads your cycle and wrist-temperature data from Apple Health to give you private, on-device summaries. Your data never leaves your phone.";
+"NSHealthUpdateUsageDescription" = "Tideline writes the period days you log back to Apple Health so your data stays in your own ecosystem.";
+"NSFaceIDUsageDescription" = "Tideline can be locked with Face ID so your cycle data stays private.";

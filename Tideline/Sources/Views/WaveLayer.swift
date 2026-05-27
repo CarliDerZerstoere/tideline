@@ -25,29 +25,41 @@ struct WaveLayer: View {
     }
 
     var body: some View {
-        TimelineView(.animation(minimumInterval: 0.05, paused: shouldPause)) { context in
+        // Audit Wave-A fix (4.1): cap the wave animation at 30 fps so it
+        // honours the "breath-paced" motion contract in the visual-
+        // language doc and stays off the ProMotion 120 Hz path. The
+        // previous `minimumInterval: 0.05` was a floor (≥ 20 fps);
+        // ProMotion treats `.animation(_)` as "as fast as possible" and
+        // would tick this 120×/sec. 1/30 (~33 ms) is sub-perceptible
+        // for breathing motion and saves ~75% of the GPU pass cost.
+        TimelineView(.animation(minimumInterval: 1.0 / 30.0, paused: shouldPause)) { context in
             let elapsed = context.date.timeIntervalSinceReferenceDate
             ZStack {
+                // Background — slow, long-period wave. Different spatial frequency
+                // from the front layer creates an interference beat pattern that
+                // reads as real water rather than three concentric sines.
+                SineWave(
+                    phase: elapsed * 0.4,
+                    amplitude: 9 * amplitudeScale,
+                    frequency: 0.75
+                )
+                .fill(tint.opacity(0.18))
+
+                // Mid — opacity-breathing layer adds subtle depth.
+                SineWave(
+                    phase: elapsed * 0.7,
+                    amplitude: 10 * amplitudeScale,
+                    frequency: 1.3
+                )
+                .fill(tint.opacity(0.44))
+
+                // Front — dominant, fastest, full amplitude.
                 SineWave(
                     phase: elapsed * 1.0,
                     amplitude: 14 * amplitudeScale,
                     frequency: 1.0
                 )
-                .fill(tint.opacity(0.85))
-
-                SineWave(
-                    phase: elapsed * 0.7,
-                    amplitude: 8 * amplitudeScale,
-                    frequency: 1.3
-                )
-                .fill(tint.opacity(0.55))
-
-                SineWave(
-                    phase: elapsed * 1.4,
-                    amplitude: 5 * amplitudeScale,
-                    frequency: 1.7
-                )
-                .fill(tint.opacity(0.30))
+                .fill(tint.opacity(0.86))
             }
         }
         .task {

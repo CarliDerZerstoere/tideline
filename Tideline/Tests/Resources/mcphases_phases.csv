@@ -1,0 +1,5008 @@
+subject_id,cycle_index,day_in_cycle,ground_truth_phase,flow_volume
+mcphases:1:2022,1,1,Menstrual,Not at all
+mcphases:1:2022,1,2,Menstrual,Very Heavy
+mcphases:1:2022,1,3,Menstrual,Somewhat Heavy
+mcphases:1:2022,1,4,Menstrual,Moderate
+mcphases:1:2022,1,5,Menstrual,Light
+mcphases:1:2022,1,6,Follicular,Spotting / Very Light
+mcphases:1:2022,1,7,Follicular,Not at all
+mcphases:1:2022,1,8,Follicular,Not at all
+mcphases:1:2022,1,9,Follicular,Not at all
+mcphases:1:2022,1,10,Follicular,Not at all
+mcphases:1:2022,1,11,Fertility,Not at all
+mcphases:1:2022,1,12,Fertility,Not at all
+mcphases:1:2022,1,13,Fertility,Not at all
+mcphases:1:2022,1,14,Fertility,
+mcphases:1:2022,1,15,Fertility,Not at all
+mcphases:1:2022,1,16,Fertility,Not at all
+mcphases:1:2022,1,17,Luteal,Not at all
+mcphases:1:2022,1,18,Luteal,Not at all
+mcphases:1:2022,1,19,Luteal,Not at all
+mcphases:1:2022,1,20,Luteal,
+mcphases:1:2022,1,21,Luteal,Not at all
+mcphases:1:2022,1,22,Luteal,Not at all
+mcphases:1:2022,1,23,Luteal,Not at all
+mcphases:1:2022,1,24,Luteal,Not at all
+mcphases:1:2022,1,25,Luteal,Not at all
+mcphases:1:2022,1,26,Luteal,Not at all
+mcphases:1:2022,1,27,Luteal,Not at all
+mcphases:1:2022,1,28,Luteal,Not at all
+mcphases:1:2022,1,29,Luteal,Not at all
+mcphases:1:2022,1,30,Luteal,Not at all
+mcphases:1:2022,2,1,Menstrual,Not at all
+mcphases:1:2022,2,2,Menstrual,Very Heavy
+mcphases:1:2022,2,3,Menstrual,Heavy
+mcphases:1:2022,2,4,Menstrual,Moderate
+mcphases:1:2022,2,5,Menstrual,Moderate
+mcphases:1:2022,2,6,Menstrual,Light
+mcphases:1:2022,2,7,Follicular,Not at all
+mcphases:1:2022,2,8,Follicular,Not at all
+mcphases:1:2022,2,9,Fertility,Not at all
+mcphases:1:2022,2,10,Fertility,Not at all
+mcphases:1:2022,2,11,Fertility,Not at all
+mcphases:1:2022,2,12,Fertility,Not at all
+mcphases:1:2022,2,13,Fertility,Not at all
+mcphases:1:2022,2,14,Fertility,Not at all
+mcphases:1:2022,2,15,Luteal,Not at all
+mcphases:1:2022,2,16,Luteal,Not at all
+mcphases:1:2022,2,17,Luteal,Not at all
+mcphases:1:2022,2,18,Luteal,Not at all
+mcphases:1:2022,2,19,Luteal,Not at all
+mcphases:1:2022,2,20,Luteal,Not at all
+mcphases:1:2022,2,21,Luteal,Not at all
+mcphases:1:2022,2,22,Luteal,Not at all
+mcphases:1:2022,2,23,Luteal,Not at all
+mcphases:1:2022,2,24,Luteal,Not at all
+mcphases:1:2022,2,25,Luteal,
+mcphases:1:2022,2,26,Luteal,
+mcphases:1:2022,3,1,Menstrual,Not at all
+mcphases:1:2022,3,2,Menstrual,Heavy
+mcphases:1:2022,3,3,Menstrual,Somewhat Heavy
+mcphases:1:2022,3,4,Menstrual,Moderate
+mcphases:1:2022,3,5,Menstrual,
+mcphases:1:2022,3,6,Menstrual,
+mcphases:1:2022,3,7,Follicular,
+mcphases:1:2022,3,8,Follicular,Not at all
+mcphases:1:2022,3,9,Follicular,
+mcphases:1:2022,3,10,Follicular,
+mcphases:1:2022,3,11,Follicular,Not at all
+mcphases:1:2022,3,12,Fertility,Not at all
+mcphases:1:2022,3,13,Fertility,Not at all
+mcphases:2:2022,1,1,Menstrual,Not at all
+mcphases:2:2022,1,2,Menstrual,Moderate
+mcphases:2:2022,1,3,Menstrual,Somewhat Light
+mcphases:2:2022,1,4,Menstrual,Light
+mcphases:2:2022,1,5,Follicular,Spotting / Very Light
+mcphases:2:2022,1,6,Follicular,Not at all
+mcphases:2:2022,1,7,Follicular,Not at all
+mcphases:2:2022,1,8,Follicular,Not at all
+mcphases:2:2022,1,9,Follicular,Not at all
+mcphases:2:2022,1,10,Follicular,Not at all
+mcphases:2:2022,1,11,Follicular,Not at all
+mcphases:2:2022,1,12,Fertility,Not at all
+mcphases:2:2022,1,13,Fertility,Not at all
+mcphases:2:2022,1,14,Fertility,Not at all
+mcphases:2:2022,1,15,Fertility,Not at all
+mcphases:2:2022,1,16,Fertility,Not at all
+mcphases:2:2022,1,17,Fertility,Not at all
+mcphases:2:2022,1,18,Fertility,Not at all
+mcphases:2:2022,1,19,Luteal,Not at all
+mcphases:2:2022,1,20,Luteal,Not at all
+mcphases:2:2022,1,21,Luteal,Not at all
+mcphases:2:2022,1,22,Luteal,Not at all
+mcphases:2:2022,1,23,Luteal,Not at all
+mcphases:2:2022,1,24,Luteal,Not at all
+mcphases:2:2022,1,25,Luteal,Not at all
+mcphases:2:2022,1,26,Luteal,Not at all
+mcphases:2:2022,1,27,Luteal,Not at all
+mcphases:2:2022,1,28,Luteal,Not at all
+mcphases:2:2022,1,29,Luteal,Not at all
+mcphases:2:2022,1,30,Luteal,Not at all
+mcphases:2:2022,1,31,Luteal,Not at all
+mcphases:2:2022,2,1,Menstrual,Not at all
+mcphases:2:2022,2,2,Menstrual,Moderate
+mcphases:2:2022,2,3,Follicular,Somewhat Light
+mcphases:2:2022,2,4,Follicular,Spotting / Very Light
+mcphases:2:2022,2,5,Follicular,Spotting / Very Light
+mcphases:2:2022,2,6,Follicular,Spotting / Very Light
+mcphases:2:2022,2,7,Follicular,Not at all
+mcphases:2:2022,2,8,Follicular,Not at all
+mcphases:2:2022,2,9,Follicular,Not at all
+mcphases:2:2022,2,10,Follicular,Not at all
+mcphases:2:2022,2,11,Follicular,Not at all
+mcphases:2:2022,2,12,Follicular,Not at all
+mcphases:2:2022,2,13,Fertility,Not at all
+mcphases:2:2022,2,14,Fertility,Not at all
+mcphases:2:2022,2,15,Fertility,Not at all
+mcphases:2:2022,2,16,Fertility,Not at all
+mcphases:2:2022,2,17,Fertility,Not at all
+mcphases:2:2022,2,18,Fertility,Not at all
+mcphases:2:2022,2,19,Fertility,Not at all
+mcphases:2:2022,2,20,Luteal,Not at all
+mcphases:2:2022,2,21,Luteal,Not at all
+mcphases:2:2022,2,22,Luteal,Not at all
+mcphases:2:2022,2,23,Luteal,Not at all
+mcphases:2:2022,2,24,Luteal,Not at all
+mcphases:2:2022,2,25,Luteal,Not at all
+mcphases:2:2022,2,26,Luteal,Not at all
+mcphases:2:2022,2,27,Luteal,Not at all
+mcphases:2:2022,2,28,Luteal,Not at all
+mcphases:2:2022,2,29,Luteal,Not at all
+mcphases:2:2022,2,30,Luteal,Not at all
+mcphases:2:2022,2,31,Luteal,Not at all
+mcphases:2:2022,2,32,Luteal,Not at all
+mcphases:2:2022,3,1,Menstrual,Not at all
+mcphases:2:2022,3,2,Menstrual,Somewhat Heavy
+mcphases:2:2022,3,3,Follicular,Moderate
+mcphases:2:2022,3,4,Follicular,Light
+mcphases:2:2022,3,5,Follicular,Spotting / Very Light
+mcphases:2:2022,3,6,Follicular,Spotting / Very Light
+mcphases:2:2022,3,7,Follicular,Not at all
+mcphases:2:2022,3,8,Follicular,Not at all
+mcphases:3:2022,1,1,Menstrual,
+mcphases:3:2022,1,2,Menstrual,Light
+mcphases:3:2022,1,3,Menstrual,Moderate
+mcphases:3:2022,1,4,Menstrual,
+mcphases:3:2022,1,5,Menstrual,Moderate
+mcphases:3:2022,1,6,Menstrual,
+mcphases:3:2022,1,7,Follicular,Light
+mcphases:3:2022,1,8,Follicular,Not at all
+mcphases:3:2022,1,9,Follicular,Not at all
+mcphases:3:2022,1,10,Follicular,Not at all
+mcphases:3:2022,1,11,Follicular,Not at all
+mcphases:3:2022,1,12,Follicular,Not at all
+mcphases:3:2022,1,13,Follicular,Not at all
+mcphases:3:2022,1,14,Follicular,
+mcphases:3:2022,1,15,Follicular,Not at all
+mcphases:3:2022,1,16,Follicular,Not at all
+mcphases:3:2022,1,17,Fertility,Not at all
+mcphases:3:2022,1,18,Fertility,Not at all
+mcphases:3:2022,1,19,Fertility,
+mcphases:3:2022,1,20,Fertility,Not at all
+mcphases:3:2022,1,21,Fertility,Not at all
+mcphases:3:2022,1,22,Fertility,Not at all
+mcphases:3:2022,1,23,Luteal,Not at all
+mcphases:3:2022,1,24,Luteal,Not at all
+mcphases:3:2022,1,25,Luteal,Not at all
+mcphases:3:2022,1,26,Luteal,Not at all
+mcphases:3:2022,1,27,Luteal,Not at all
+mcphases:3:2022,1,28,Luteal,Not at all
+mcphases:3:2022,1,29,Luteal,Not at all
+mcphases:3:2022,1,30,Luteal,Not at all
+mcphases:3:2022,1,31,Luteal,Not at all
+mcphases:3:2022,1,32,Luteal,Not at all
+mcphases:3:2022,1,33,Luteal,Not at all
+mcphases:3:2022,2,1,Menstrual,
+mcphases:3:2022,2,2,Menstrual,Somewhat Heavy
+mcphases:3:2022,2,3,Menstrual,
+mcphases:3:2022,2,4,Menstrual,Moderate
+mcphases:3:2022,2,5,Menstrual,Somewhat Light
+mcphases:3:2022,2,6,Menstrual,Somewhat Light
+mcphases:3:2022,2,7,Menstrual,Somewhat Light
+mcphases:3:2022,2,8,Follicular,Light
+mcphases:3:2022,2,9,Follicular,Not at all
+mcphases:3:2022,2,10,Follicular,Not at all
+mcphases:3:2022,2,11,Follicular,Not at all
+mcphases:3:2022,2,12,Fertility,Not at all
+mcphases:3:2022,2,13,Fertility,Not at all
+mcphases:3:2022,2,14,Fertility,Not at all
+mcphases:3:2022,2,15,Fertility,Not at all
+mcphases:3:2022,2,16,Fertility,Not at all
+mcphases:3:2022,2,17,Fertility,Not at all
+mcphases:3:2022,2,18,Fertility,Not at all
+mcphases:3:2022,2,19,Luteal,
+mcphases:3:2022,2,20,Luteal,Not at all
+mcphases:3:2022,2,21,Luteal,Not at all
+mcphases:3:2022,2,22,Luteal,Not at all
+mcphases:3:2022,2,23,Luteal,Not at all
+mcphases:3:2022,2,24,Luteal,Not at all
+mcphases:3:2022,2,25,Luteal,Not at all
+mcphases:3:2022,2,26,Luteal,
+mcphases:3:2022,2,27,Luteal,
+mcphases:3:2022,3,1,Menstrual,Not at all
+mcphases:3:2022,3,2,Menstrual,Moderate
+mcphases:3:2022,3,3,Menstrual,Somewhat Heavy
+mcphases:3:2022,3,4,Menstrual,Somewhat Heavy
+mcphases:3:2022,3,5,Menstrual,Moderate
+mcphases:3:2022,3,6,Menstrual,Somewhat Light
+mcphases:3:2022,3,7,Follicular,Somewhat Light
+mcphases:3:2022,3,8,Follicular,
+mcphases:3:2022,3,9,Fertility,Not at all
+mcphases:3:2022,3,10,Fertility,Not at all
+mcphases:3:2022,3,11,Fertility,Not at all
+mcphases:3:2022,3,12,Fertility,Not at all
+mcphases:3:2022,3,13,Fertility,
+mcphases:3:2022,3,14,Fertility,Not at all
+mcphases:3:2022,3,15,Luteal,Not at all
+mcphases:3:2022,3,16,Luteal,Not at all
+mcphases:3:2022,3,17,Luteal,
+mcphases:3:2022,3,18,Luteal,Not at all
+mcphases:3:2022,3,19,Luteal,
+mcphases:3:2022,3,20,Luteal,Not at all
+mcphases:3:2022,3,21,Luteal,Not at all
+mcphases:4:2022,1,1,Menstrual,Light
+mcphases:4:2022,1,2,Follicular,Not at all
+mcphases:4:2022,1,3,Follicular,Not at all
+mcphases:4:2022,1,4,Follicular,Not at all
+mcphases:4:2022,1,5,Fertility,Not at all
+mcphases:4:2022,1,7,Fertility,Not at all
+mcphases:4:2022,1,8,Fertility,
+mcphases:4:2022,1,9,Fertility,
+mcphases:4:2022,1,10,Fertility,
+mcphases:4:2022,1,11,Fertility,Not at all
+mcphases:4:2022,1,12,Luteal,Not at all
+mcphases:4:2022,1,13,Luteal,
+mcphases:4:2022,1,14,Luteal,Not at all
+mcphases:4:2022,1,15,Luteal,Not at all
+mcphases:4:2022,1,16,Luteal,Not at all
+mcphases:4:2022,1,17,Luteal,Not at all
+mcphases:4:2022,1,18,Luteal,Not at all
+mcphases:4:2022,1,19,Luteal,Not at all
+mcphases:4:2022,1,20,Luteal,Not at all
+mcphases:4:2022,1,21,Luteal,
+mcphases:4:2022,1,22,Luteal,Not at all
+mcphases:4:2022,2,1,Menstrual,Not at all
+mcphases:4:2022,2,2,Menstrual,Moderate
+mcphases:4:2022,2,3,Menstrual,Heavy
+mcphases:4:2022,2,4,Menstrual,Heavy
+mcphases:4:2022,2,5,Menstrual,Light
+mcphases:4:2022,2,6,Follicular,Spotting / Very Light
+mcphases:4:2022,2,7,Follicular,Not at all
+mcphases:4:2022,2,8,Follicular,Not at all
+mcphases:4:2022,2,9,Follicular,
+mcphases:4:2022,2,10,Follicular,Not at all
+mcphases:4:2022,2,11,Follicular,Not at all
+mcphases:4:2022,2,12,Follicular,Not at all
+mcphases:4:2022,2,13,Follicular,
+mcphases:4:2022,2,14,Follicular,Not at all
+mcphases:4:2022,2,15,Fertility,
+mcphases:4:2022,2,16,Fertility,Not at all
+mcphases:4:2022,2,17,Fertility,Not at all
+mcphases:4:2022,2,18,Fertility,Not at all
+mcphases:4:2022,2,19,Fertility,Not at all
+mcphases:4:2022,2,20,Fertility,
+mcphases:4:2022,2,21,Fertility,Not at all
+mcphases:4:2022,2,22,Luteal,Not at all
+mcphases:4:2022,2,23,Luteal,Not at all
+mcphases:4:2022,2,24,Luteal,
+mcphases:4:2022,2,25,Luteal,Not at all
+mcphases:4:2022,2,26,Luteal,Not at all
+mcphases:4:2022,2,27,Luteal,Not at all
+mcphases:4:2022,2,28,Luteal,Not at all
+mcphases:4:2022,2,29,Luteal,
+mcphases:4:2022,2,30,Luteal,Not at all
+mcphases:4:2022,2,31,Luteal,Not at all
+mcphases:4:2022,2,32,Luteal,
+mcphases:4:2022,2,33,Luteal,
+mcphases:4:2022,2,34,Luteal,Not at all
+mcphases:4:2022,3,1,Menstrual,Not at all
+mcphases:4:2022,3,2,Menstrual,Light
+mcphases:4:2022,3,3,Menstrual,
+mcphases:4:2022,3,4,Menstrual,Very Heavy
+mcphases:4:2022,3,5,Menstrual,
+mcphases:4:2022,3,6,Menstrual,Somewhat Heavy
+mcphases:4:2022,3,7,Follicular,Light
+mcphases:4:2022,3,8,Follicular,
+mcphases:4:2022,3,9,Follicular,Not at all
+mcphases:4:2022,3,10,Follicular,
+mcphases:4:2022,3,11,Fertility,Not at all
+mcphases:4:2022,3,12,Fertility,
+mcphases:4:2022,3,13,Fertility,
+mcphases:4:2022,3,14,Fertility,
+mcphases:4:2022,3,15,Fertility,
+mcphases:4:2022,3,16,Fertility,Not at all
+mcphases:4:2022,3,17,Fertility,Not at all
+mcphases:4:2022,3,18,Luteal,
+mcphases:4:2022,3,19,Luteal,
+mcphases:4:2022,3,20,Luteal,Not at all
+mcphases:4:2022,3,21,Luteal,
+mcphases:4:2022,3,22,Luteal,Not at all
+mcphases:4:2022,3,23,Luteal,
+mcphases:4:2022,3,24,Luteal,Not at all
+mcphases:4:2022,3,25,Luteal,Not at all
+mcphases:4:2022,3,26,Luteal,Not at all
+mcphases:4:2022,3,27,Luteal,Not at all
+mcphases:4:2022,3,28,Luteal,
+mcphases:4:2022,4,1,Menstrual,
+mcphases:4:2022,4,2,Menstrual,
+mcphases:4:2022,4,3,Menstrual,Somewhat Heavy
+mcphases:4:2022,4,4,Menstrual,
+mcphases:4:2022,4,5,Menstrual,
+mcphases:4:2022,4,6,Follicular,
+mcphases:6:2022,1,1,Menstrual,Not at all
+mcphases:6:2022,1,2,Menstrual,Spotting / Very Light
+mcphases:6:2022,1,3,Menstrual,Light
+mcphases:6:2022,1,4,Menstrual,Somewhat Light
+mcphases:6:2022,1,5,Menstrual,Moderate
+mcphases:6:2022,1,6,Menstrual,Somewhat Light
+mcphases:6:2022,1,7,Menstrual,Light
+mcphases:6:2022,1,8,Menstrual,Light
+mcphases:6:2022,1,9,Menstrual,
+mcphases:6:2022,1,10,Follicular,Spotting / Very Light
+mcphases:6:2022,1,11,Follicular,
+mcphases:6:2022,1,12,Follicular,Not at all
+mcphases:6:2022,1,13,Follicular,Not at all
+mcphases:6:2022,1,14,Follicular,Not at all
+mcphases:6:2022,1,15,Follicular,Not at all
+mcphases:6:2022,1,16,Follicular,Not at all
+mcphases:6:2022,1,17,Follicular,Not at all
+mcphases:6:2022,1,18,Follicular,Not at all
+mcphases:6:2022,1,19,Follicular,Not at all
+mcphases:6:2022,1,20,Follicular,Not at all
+mcphases:6:2022,1,21,Follicular,Not at all
+mcphases:6:2022,1,22,Follicular,Not at all
+mcphases:6:2022,1,23,Fertility,Not at all
+mcphases:6:2022,1,24,Fertility,Not at all
+mcphases:6:2022,1,25,Fertility,Not at all
+mcphases:6:2022,1,26,Fertility,Not at all
+mcphases:6:2022,1,27,Fertility,Not at all
+mcphases:6:2022,1,28,Fertility,Not at all
+mcphases:6:2022,1,29,Luteal,
+mcphases:6:2022,2,1,Menstrual,Not at all
+mcphases:6:2022,2,2,Menstrual,Not at all
+mcphases:6:2022,2,3,Menstrual,
+mcphases:6:2022,2,4,Menstrual,Not at all
+mcphases:6:2022,2,5,Menstrual,Not at all
+mcphases:6:2022,2,6,Menstrual,Not at all
+mcphases:6:2022,2,7,Menstrual,Not at all
+mcphases:6:2022,2,8,Menstrual,
+mcphases:6:2022,2,9,Menstrual,Not at all
+mcphases:6:2022,2,10,Follicular,Not at all
+mcphases:6:2022,2,11,Follicular,Not at all
+mcphases:6:2022,2,12,Follicular,Not at all
+mcphases:6:2022,2,13,Follicular,Not at all
+mcphases:6:2022,2,14,Follicular,Not at all
+mcphases:6:2022,2,15,Follicular,Not at all
+mcphases:6:2022,2,16,Fertility,
+mcphases:6:2022,2,17,Fertility,Not at all
+mcphases:6:2022,2,18,Fertility,Not at all
+mcphases:6:2022,2,19,Fertility,Not at all
+mcphases:6:2022,2,20,Fertility,Not at all
+mcphases:6:2022,2,21,Fertility,Not at all
+mcphases:6:2022,2,22,Luteal,Not at all
+mcphases:6:2022,2,23,Luteal,
+mcphases:6:2022,2,24,Luteal,Not at all
+mcphases:6:2022,2,25,Luteal,Not at all
+mcphases:6:2022,2,26,Luteal,Not at all
+mcphases:6:2022,2,27,Luteal,Not at all
+mcphases:6:2022,2,28,Luteal,Not at all
+mcphases:6:2022,2,29,Luteal,Not at all
+mcphases:6:2022,2,30,Luteal,
+mcphases:6:2022,2,31,Luteal,Not at all
+mcphases:6:2022,2,32,Luteal,Not at all
+mcphases:6:2022,3,1,Menstrual,Not at all
+mcphases:6:2022,3,2,Menstrual,Spotting / Very Light
+mcphases:6:2022,3,3,Menstrual,Spotting / Very Light
+mcphases:6:2022,3,4,Menstrual,Somewhat Light
+mcphases:6:2022,3,5,Menstrual,
+mcphases:6:2022,3,6,Menstrual,Somewhat Light
+mcphases:6:2022,3,7,Menstrual,
+mcphases:6:2022,3,8,Menstrual,Light
+mcphases:6:2022,3,9,Follicular,Light
+mcphases:6:2022,3,10,Follicular,
+mcphases:6:2022,3,11,Follicular,Not at all
+mcphases:7:2022,1,1,Menstrual,Not at all
+mcphases:7:2022,1,2,Menstrual,Moderate
+mcphases:7:2022,1,3,Menstrual,Heavy
+mcphases:7:2022,1,4,Menstrual,Somewhat Heavy
+mcphases:7:2022,1,5,Menstrual,Moderate
+mcphases:7:2022,1,6,Menstrual,Spotting / Very Light
+mcphases:7:2022,1,7,Menstrual,Spotting / Very Light
+mcphases:7:2022,1,8,Follicular,Spotting / Very Light
+mcphases:7:2022,1,9,Follicular,Not at all
+mcphases:7:2022,1,10,Fertility,Not at all
+mcphases:7:2022,1,11,Fertility,Not at all
+mcphases:7:2022,1,12,Fertility,Not at all
+mcphases:7:2022,1,13,Fertility,Not at all
+mcphases:7:2022,1,14,Fertility,Not at all
+mcphases:7:2022,1,15,Fertility,Not at all
+mcphases:7:2022,1,16,Fertility,Not at all
+mcphases:7:2022,1,17,Luteal,Not at all
+mcphases:7:2022,1,18,Luteal,Not at all
+mcphases:7:2022,1,19,Luteal,Not at all
+mcphases:7:2022,1,20,Luteal,Not at all
+mcphases:7:2022,1,21,Luteal,Not at all
+mcphases:7:2022,1,22,Luteal,Not at all
+mcphases:7:2022,1,23,Luteal,Not at all
+mcphases:7:2022,1,24,Luteal,Not at all
+mcphases:7:2022,1,25,Luteal,Not at all
+mcphases:7:2022,1,26,Luteal,Not at all
+mcphases:7:2022,1,27,Luteal,Not at all
+mcphases:7:2022,2,1,Menstrual,Not at all
+mcphases:7:2022,2,2,Menstrual,Spotting / Very Light
+mcphases:7:2022,2,3,Menstrual,Heavy
+mcphases:7:2022,2,4,Menstrual,Moderate
+mcphases:7:2022,2,5,Menstrual,Light
+mcphases:7:2022,2,6,Menstrual,Spotting / Very Light
+mcphases:7:2022,2,7,Follicular,Spotting / Very Light
+mcphases:7:2022,2,8,Follicular,Not at all
+mcphases:7:2022,2,9,Follicular,Not at all
+mcphases:7:2022,2,10,Follicular,Not at all
+mcphases:7:2022,2,11,Follicular,Not at all
+mcphases:7:2022,2,12,Fertility,Not at all
+mcphases:7:2022,2,13,Fertility,Not at all
+mcphases:7:2022,2,14,Fertility,Not at all
+mcphases:7:2022,2,15,Fertility,Not at all
+mcphases:7:2022,2,16,Fertility,Not at all
+mcphases:7:2022,2,17,Fertility,Not at all
+mcphases:7:2022,2,18,Fertility,Not at all
+mcphases:7:2022,2,19,Luteal,Not at all
+mcphases:7:2022,2,20,Luteal,Not at all
+mcphases:7:2022,2,21,Luteal,Not at all
+mcphases:7:2022,2,22,Luteal,Not at all
+mcphases:7:2022,2,23,Luteal,Not at all
+mcphases:7:2022,2,24,Luteal,Not at all
+mcphases:7:2022,2,25,Luteal,Not at all
+mcphases:7:2022,2,26,Luteal,Not at all
+mcphases:7:2022,2,27,Luteal,Not at all
+mcphases:7:2022,2,28,Luteal,Not at all
+mcphases:7:2022,2,29,Luteal,Not at all
+mcphases:7:2022,2,30,Luteal,Not at all
+mcphases:7:2022,2,31,Luteal,Not at all
+mcphases:7:2022,3,1,Menstrual,Not at all
+mcphases:7:2022,3,2,Menstrual,Very Heavy
+mcphases:7:2022,3,3,Menstrual,Very Heavy
+mcphases:7:2022,3,4,Menstrual,Moderate
+mcphases:7:2022,3,5,Menstrual,Light
+mcphases:7:2022,3,6,Follicular,Light
+mcphases:7:2022,3,7,Follicular,Spotting / Very Light
+mcphases:7:2022,3,8,Follicular,Spotting / Very Light
+mcphases:7:2022,3,9,Fertility,Not at all
+mcphases:7:2022,3,10,Fertility,Not at all
+mcphases:7:2022,3,11,Fertility,Not at all
+mcphases:7:2022,3,12,Fertility,Not at all
+mcphases:7:2022,3,13,Fertility,Not at all
+mcphases:7:2022,3,14,Fertility,Not at all
+mcphases:7:2022,3,15,Fertility,Not at all
+mcphases:7:2022,3,16,Luteal,Not at all
+mcphases:7:2022,3,17,Luteal,Not at all
+mcphases:7:2022,3,18,Luteal,Not at all
+mcphases:7:2022,3,19,Luteal,Not at all
+mcphases:7:2022,3,20,Luteal,Not at all
+mcphases:7:2022,3,21,Luteal,Not at all
+mcphases:7:2022,3,22,Luteal,Not at all
+mcphases:7:2022,3,23,Luteal,
+mcphases:7:2022,3,24,Luteal,Not at all
+mcphases:7:2022,3,25,Luteal,Not at all
+mcphases:7:2022,3,26,Luteal,Not at all
+mcphases:7:2022,3,27,Luteal,Not at all
+mcphases:7:2022,4,1,Menstrual,Not at all
+mcphases:7:2022,4,2,Menstrual,Spotting / Very Light
+mcphases:7:2022,4,3,Menstrual,Very Heavy
+mcphases:7:2022,4,4,Menstrual,Moderate
+mcphases:7:2022,4,5,Menstrual,Moderate
+mcphases:8:2022,1,1,Menstrual,Not at all
+mcphases:8:2022,1,2,Menstrual,Spotting / Very Light
+mcphases:8:2022,1,3,Menstrual,Somewhat Light
+mcphases:8:2022,1,4,Menstrual,Heavy
+mcphases:8:2022,1,5,Menstrual,Moderate
+mcphases:8:2022,1,6,Menstrual,Light
+mcphases:8:2022,1,7,Menstrual,Moderate
+mcphases:8:2022,1,8,Menstrual,Spotting / Very Light
+mcphases:8:2022,1,9,Follicular,Spotting / Very Light
+mcphases:8:2022,1,10,Follicular,Not at all
+mcphases:8:2022,1,11,Fertility,
+mcphases:8:2022,1,12,Fertility,Not at all
+mcphases:8:2022,1,13,Fertility,Not at all
+mcphases:8:2022,1,14,Fertility,Not at all
+mcphases:8:2022,1,15,Fertility,Not at all
+mcphases:8:2022,1,16,Fertility,Not at all
+mcphases:8:2022,1,17,Fertility,Not at all
+mcphases:8:2022,1,18,Luteal,Not at all
+mcphases:8:2022,1,19,Luteal,Not at all
+mcphases:8:2022,1,20,Luteal,Not at all
+mcphases:8:2022,1,21,Luteal,Not at all
+mcphases:8:2022,1,22,Luteal,Not at all
+mcphases:8:2022,1,23,Luteal,
+mcphases:8:2022,1,24,Luteal,Not at all
+mcphases:8:2022,1,25,Luteal,Not at all
+mcphases:8:2022,1,26,Luteal,Not at all
+mcphases:8:2022,1,27,Luteal,Not at all
+mcphases:8:2022,1,28,Luteal,
+mcphases:8:2022,2,1,Menstrual,Not at all
+mcphases:8:2022,2,2,Menstrual,Spotting / Very Light
+mcphases:8:2022,2,3,Menstrual,Moderate
+mcphases:8:2022,2,4,Menstrual,Heavy
+mcphases:8:2022,2,5,Menstrual,
+mcphases:8:2022,2,6,Menstrual,Moderate
+mcphases:8:2022,2,7,Follicular,Spotting / Very Light
+mcphases:8:2022,2,8,Follicular,Not at all
+mcphases:8:2022,2,9,Follicular,Not at all
+mcphases:8:2022,2,10,Follicular,
+mcphases:8:2022,2,11,Follicular,
+mcphases:8:2022,2,12,Follicular,
+mcphases:8:2022,2,13,Fertility,
+mcphases:8:2022,2,14,Fertility,
+mcphases:8:2022,2,15,Fertility,Not at all
+mcphases:8:2022,2,16,Fertility,Not at all
+mcphases:8:2022,2,17,Fertility,
+mcphases:8:2022,2,18,Fertility,Not at all
+mcphases:8:2022,2,19,Fertility,
+mcphases:8:2022,2,20,Luteal,
+mcphases:8:2022,2,21,Luteal,
+mcphases:8:2022,2,22,Luteal,
+mcphases:8:2022,2,23,Luteal,
+mcphases:8:2022,2,24,Luteal,
+mcphases:8:2022,2,25,Luteal,
+mcphases:8:2022,2,26,Luteal,
+mcphases:8:2022,2,27,Luteal,
+mcphases:8:2022,2,28,Luteal,
+mcphases:8:2022,2,29,Luteal,
+mcphases:8:2022,3,1,Menstrual,
+mcphases:8:2022,3,2,Menstrual,
+mcphases:8:2022,3,3,Menstrual,
+mcphases:8:2022,3,4,Menstrual,
+mcphases:8:2022,3,5,Menstrual,
+mcphases:8:2022,3,6,Follicular,
+mcphases:8:2022,3,7,Follicular,
+mcphases:8:2022,3,8,Follicular,
+mcphases:8:2022,3,9,Follicular,
+mcphases:9:2022,1,1,Menstrual,Not at all
+mcphases:9:2022,1,2,Menstrual,Light
+mcphases:9:2022,1,3,Menstrual,Moderate
+mcphases:9:2022,1,4,Menstrual,Somewhat Light
+mcphases:9:2022,1,5,Menstrual,Light
+mcphases:9:2022,1,6,Follicular,Spotting / Very Light
+mcphases:9:2022,1,7,Follicular,Not at all
+mcphases:9:2022,1,8,Follicular,Not at all
+mcphases:9:2022,1,9,Follicular,Not at all
+mcphases:9:2022,1,10,Follicular,Not at all
+mcphases:9:2022,1,11,Follicular,Not at all
+mcphases:9:2022,1,12,Follicular,Not at all
+mcphases:9:2022,1,13,Follicular,Not at all
+mcphases:9:2022,1,14,Follicular,Not at all
+mcphases:9:2022,1,15,Fertility,Not at all
+mcphases:9:2022,1,16,Fertility,Not at all
+mcphases:9:2022,1,17,Fertility,Not at all
+mcphases:9:2022,1,18,Fertility,Not at all
+mcphases:9:2022,1,19,Fertility,Spotting / Very Light
+mcphases:9:2022,1,20,Fertility,Not at all
+mcphases:9:2022,1,21,Fertility,Not at all
+mcphases:9:2022,1,22,Luteal,Not at all
+mcphases:9:2022,1,23,Luteal,Not at all
+mcphases:9:2022,1,24,Luteal,Not at all
+mcphases:9:2022,1,25,Luteal,Not at all
+mcphases:9:2022,1,26,Luteal,Not at all
+mcphases:9:2022,1,27,Luteal,Not at all
+mcphases:9:2022,1,28,Luteal,Not at all
+mcphases:9:2022,2,1,Menstrual,Not at all
+mcphases:9:2022,2,2,Menstrual,Light
+mcphases:9:2022,2,3,Menstrual,Moderate
+mcphases:9:2022,2,4,Menstrual,
+mcphases:9:2022,2,5,Follicular,Somewhat Light
+mcphases:9:2022,2,6,Follicular,Not at all
+mcphases:9:2022,2,7,Follicular,Not at all
+mcphases:9:2022,2,8,Follicular,Not at all
+mcphases:9:2022,2,9,Follicular,Not at all
+mcphases:9:2022,2,10,Follicular,Not at all
+mcphases:9:2022,2,11,Follicular,Not at all
+mcphases:9:2022,2,12,Follicular,Not at all
+mcphases:9:2022,2,13,Follicular,Not at all
+mcphases:9:2022,2,14,Fertility,Not at all
+mcphases:9:2022,2,15,Fertility,Not at all
+mcphases:9:2022,2,16,Fertility,Not at all
+mcphases:9:2022,2,17,Fertility,Not at all
+mcphases:9:2022,2,18,Fertility,Not at all
+mcphases:9:2022,2,19,Fertility,Not at all
+mcphases:9:2022,2,20,Fertility,Not at all
+mcphases:9:2022,2,21,Luteal,Not at all
+mcphases:9:2022,2,22,Luteal,Not at all
+mcphases:9:2022,2,23,Luteal,Not at all
+mcphases:9:2022,2,24,Luteal,Not at all
+mcphases:9:2022,3,1,Menstrual,Not at all
+mcphases:9:2022,3,2,Menstrual,Spotting / Very Light
+mcphases:9:2022,3,3,Menstrual,Moderate
+mcphases:9:2022,3,4,Menstrual,Somewhat Light
+mcphases:9:2022,3,5,Follicular,Light
+mcphases:9:2022,3,6,Follicular,Spotting / Very Light
+mcphases:9:2022,3,7,Follicular,Not at all
+mcphases:9:2022,3,8,Follicular,Not at all
+mcphases:9:2022,3,9,Fertility,Not at all
+mcphases:9:2022,3,10,Fertility,Not at all
+mcphases:9:2022,3,11,Fertility,Not at all
+mcphases:9:2022,3,12,Fertility,Not at all
+mcphases:9:2022,3,13,Fertility,Not at all
+mcphases:9:2022,3,14,Fertility,Not at all
+mcphases:9:2022,3,15,Luteal,Not at all
+mcphases:9:2022,3,16,Luteal,Not at all
+mcphases:9:2022,3,17,Luteal,Not at all
+mcphases:9:2022,3,18,Luteal,Not at all
+mcphases:9:2022,3,19,Luteal,Not at all
+mcphases:9:2024,1,1,Menstrual,
+mcphases:9:2024,1,2,Menstrual,
+mcphases:9:2024,1,3,Menstrual,
+mcphases:9:2024,1,4,Menstrual,
+mcphases:9:2024,1,5,Menstrual,
+mcphases:9:2024,1,6,Follicular,
+mcphases:9:2024,1,7,Follicular,
+mcphases:9:2024,1,8,Follicular,
+mcphases:9:2024,1,9,Follicular,
+mcphases:9:2024,1,10,Follicular,
+mcphases:9:2024,1,11,Follicular,
+mcphases:9:2024,1,12,Follicular,
+mcphases:9:2024,1,13,Follicular,
+mcphases:9:2024,1,14,Follicular,
+mcphases:9:2024,1,15,Fertility,
+mcphases:9:2024,1,16,Fertility,
+mcphases:9:2024,1,17,Fertility,
+mcphases:9:2024,1,18,Fertility,
+mcphases:9:2024,1,19,Fertility,
+mcphases:9:2024,1,20,Fertility,
+mcphases:9:2024,1,21,Fertility,
+mcphases:9:2024,1,22,Fertility,
+mcphases:9:2024,1,23,Luteal,
+mcphases:9:2024,1,24,Luteal,
+mcphases:9:2024,1,25,Luteal,
+mcphases:9:2024,1,26,Luteal,
+mcphases:9:2024,1,27,Luteal,
+mcphases:9:2024,1,28,Luteal,
+mcphases:9:2024,1,29,Luteal,
+mcphases:9:2024,1,30,Luteal,
+mcphases:9:2024,2,1,Menstrual,
+mcphases:9:2024,2,2,Menstrual,
+mcphases:9:2024,2,3,Menstrual,
+mcphases:9:2024,2,4,Menstrual,
+mcphases:9:2024,2,5,Menstrual,
+mcphases:9:2024,2,6,Follicular,
+mcphases:9:2024,2,7,Fertility,
+mcphases:9:2024,2,8,Fertility,
+mcphases:9:2024,2,9,Fertility,
+mcphases:9:2024,2,10,Fertility,
+mcphases:9:2024,2,11,Luteal,
+mcphases:9:2024,2,12,Luteal,
+mcphases:9:2024,2,13,Luteal,
+mcphases:9:2024,2,14,Luteal,
+mcphases:9:2024,2,15,Luteal,
+mcphases:9:2024,2,16,Luteal,
+mcphases:9:2024,2,17,Luteal,
+mcphases:9:2024,2,18,Luteal,
+mcphases:9:2024,2,19,Luteal,
+mcphases:9:2024,2,20,Luteal,
+mcphases:9:2024,2,21,Luteal,
+mcphases:9:2024,2,22,Luteal,
+mcphases:9:2024,2,23,Luteal,
+mcphases:9:2024,2,24,Luteal,
+mcphases:9:2024,2,25,Luteal,
+mcphases:9:2024,2,26,Luteal,
+mcphases:9:2024,2,27,Luteal,
+mcphases:9:2024,2,28,Luteal,
+mcphases:9:2024,2,29,Luteal,
+mcphases:9:2024,2,30,Luteal,
+mcphases:9:2024,3,1,Menstrual,
+mcphases:9:2024,3,2,Menstrual,
+mcphases:9:2024,3,3,Menstrual,
+mcphases:9:2024,3,4,Menstrual,
+mcphases:9:2024,3,5,Menstrual,
+mcphases:9:2024,3,6,Follicular,
+mcphases:9:2024,3,7,Follicular,
+mcphases:9:2024,3,8,Follicular,
+mcphases:9:2024,3,9,Follicular,
+mcphases:9:2024,3,10,Follicular,
+mcphases:9:2024,3,11,Follicular,
+mcphases:9:2024,3,12,Follicular,
+mcphases:9:2024,3,13,Follicular,
+mcphases:9:2024,3,14,Follicular,
+mcphases:9:2024,3,15,Follicular,
+mcphases:9:2024,3,16,Follicular,
+mcphases:9:2024,3,17,Follicular,
+mcphases:9:2024,3,18,Follicular,
+mcphases:9:2024,3,19,Follicular,
+mcphases:9:2024,3,20,Follicular,
+mcphases:9:2024,3,21,Follicular,
+mcphases:9:2024,3,22,Follicular,
+mcphases:9:2024,3,23,Follicular,
+mcphases:9:2024,3,24,Follicular,
+mcphases:9:2024,3,25,Follicular,
+mcphases:9:2024,3,26,Follicular,
+mcphases:9:2024,3,27,Follicular,
+mcphases:9:2024,3,28,Follicular,
+mcphases:9:2024,3,29,Follicular,
+mcphases:9:2024,3,30,Follicular,
+mcphases:9:2024,3,31,Follicular,
+mcphases:9:2024,3,32,Follicular,
+mcphases:9:2024,3,33,Fertility,
+mcphases:9:2024,3,34,Fertility,
+mcphases:9:2024,3,35,Fertility,
+mcphases:9:2024,3,36,Fertility,
+mcphases:9:2024,3,37,Fertility,
+mcphases:9:2024,3,38,Fertility,
+mcphases:10:2022,1,1,Menstrual,Not at all
+mcphases:10:2022,1,2,Menstrual,Spotting / Very Light
+mcphases:10:2022,1,3,Menstrual,Light
+mcphases:10:2022,1,4,Menstrual,Light
+mcphases:10:2022,1,5,Follicular,Light
+mcphases:10:2022,1,6,Follicular,
+mcphases:10:2022,1,7,Follicular,Spotting / Very Light
+mcphases:10:2022,1,8,Follicular,
+mcphases:10:2022,1,9,Follicular,Not at all
+mcphases:10:2022,1,10,Follicular,Not at all
+mcphases:10:2022,1,11,Follicular,Not at all
+mcphases:10:2022,1,12,Follicular,Not at all
+mcphases:10:2022,1,13,Follicular,Not at all
+mcphases:10:2022,1,14,Follicular,Not at all
+mcphases:10:2022,1,15,Follicular,
+mcphases:10:2022,1,16,Fertility,Not at all
+mcphases:10:2022,1,17,Fertility,Not at all
+mcphases:10:2022,1,18,Fertility,Not at all
+mcphases:10:2022,1,19,Fertility,Not at all
+mcphases:10:2022,1,20,Fertility,Not at all
+mcphases:10:2022,1,21,Fertility,Not at all
+mcphases:10:2022,1,22,Fertility,Not at all
+mcphases:10:2022,1,23,Luteal,Not at all
+mcphases:10:2022,1,24,Luteal,Not at all
+mcphases:10:2022,1,25,Luteal,Not at all
+mcphases:10:2022,1,26,Luteal,Not at all
+mcphases:10:2022,1,27,Luteal,Not at all
+mcphases:10:2022,1,28,Luteal,Not at all
+mcphases:10:2022,1,29,Luteal,Not at all
+mcphases:10:2022,1,30,Luteal,Not at all
+mcphases:10:2022,1,31,Luteal,Not at all
+mcphases:10:2022,1,32,Luteal,Not at all
+mcphases:10:2022,1,33,Luteal,Not at all
+mcphases:10:2022,1,34,Luteal,Not at all
+mcphases:10:2022,1,35,Luteal,
+mcphases:10:2022,2,1,Menstrual,Not at all
+mcphases:10:2022,2,2,Menstrual,Somewhat Light
+mcphases:10:2022,2,3,Menstrual,Somewhat Light
+mcphases:10:2022,2,4,Menstrual,
+mcphases:10:2022,2,5,Menstrual,Somewhat Light
+mcphases:10:2022,2,6,Follicular,
+mcphases:10:2022,2,7,Follicular,Not at all
+mcphases:10:2022,2,8,Follicular,Not at all
+mcphases:10:2022,2,9,Follicular,Not at all
+mcphases:10:2022,2,10,Follicular,Not at all
+mcphases:10:2022,2,11,Fertility,Not at all
+mcphases:10:2022,2,12,Fertility,Not at all
+mcphases:10:2022,2,13,Fertility,Not at all
+mcphases:10:2022,2,14,Fertility,Not at all
+mcphases:10:2022,2,15,Fertility,Not at all
+mcphases:10:2022,2,16,Fertility,Not at all
+mcphases:10:2022,2,17,Fertility,Not at all
+mcphases:10:2022,2,18,Luteal,
+mcphases:10:2022,2,19,Luteal,Not at all
+mcphases:10:2022,2,20,Luteal,Not at all
+mcphases:10:2022,2,21,Luteal,
+mcphases:10:2022,2,22,Luteal,Not at all
+mcphases:10:2022,2,23,Luteal,Not at all
+mcphases:10:2022,2,24,Luteal,Not at all
+mcphases:10:2022,2,25,Luteal,Not at all
+mcphases:10:2022,2,26,Luteal,Not at all
+mcphases:10:2022,2,27,Luteal,Not at all
+mcphases:10:2022,2,28,Luteal,
+mcphases:10:2022,2,29,Luteal,Not at all
+mcphases:10:2022,3,1,Menstrual,Not at all
+mcphases:10:2022,3,2,Menstrual,Moderate
+mcphases:10:2022,3,3,Menstrual,Somewhat Light
+mcphases:10:2022,3,4,Menstrual,Light
+mcphases:10:2022,3,5,Follicular,Light
+mcphases:10:2022,3,6,Follicular,Not at all
+mcphases:10:2022,3,7,Follicular,Not at all
+mcphases:10:2022,3,8,Follicular,Not at all
+mcphases:10:2022,3,9,Follicular,Not at all
+mcphases:10:2022,3,10,Follicular,
+mcphases:10:2022,3,11,Follicular,Not at all
+mcphases:10:2022,3,12,Follicular,Not at all
+mcphases:10:2022,3,13,Fertility,Not at all
+mcphases:10:2022,3,14,Fertility,Not at all
+mcphases:10:2022,3,15,Fertility,Not at all
+mcphases:10:2022,3,16,Fertility,Not at all
+mcphases:10:2022,3,17,Fertility,Not at all
+mcphases:10:2022,3,18,Fertility,Not at all
+mcphases:10:2022,3,19,Fertility,Not at all
+mcphases:10:2022,3,20,Luteal,Not at all
+mcphases:10:2022,3,21,Luteal,Not at all
+mcphases:10:2022,3,22,Luteal,Not at all
+mcphases:10:2022,3,23,Luteal,Not at all
+mcphases:10:2022,3,24,Luteal,Not at all
+mcphases:10:2022,3,25,Luteal,Not at all
+mcphases:10:2024,1,1,Menstrual,
+mcphases:10:2024,1,2,Menstrual,
+mcphases:10:2024,1,3,Menstrual,
+mcphases:10:2024,1,4,Menstrual,
+mcphases:10:2024,1,5,Follicular,
+mcphases:10:2024,1,6,Follicular,
+mcphases:10:2024,1,7,Follicular,
+mcphases:10:2024,1,8,Follicular,
+mcphases:10:2024,1,9,Follicular,
+mcphases:10:2024,1,10,Follicular,
+mcphases:10:2024,1,11,Follicular,
+mcphases:10:2024,1,12,Fertility,
+mcphases:10:2024,1,13,Fertility,
+mcphases:10:2024,1,14,Fertility,
+mcphases:10:2024,1,15,Fertility,
+mcphases:10:2024,1,16,Fertility,
+mcphases:10:2024,1,17,Fertility,
+mcphases:10:2024,1,18,Fertility,
+mcphases:10:2024,1,19,Fertility,
+mcphases:10:2024,1,20,Luteal,
+mcphases:10:2024,1,21,Luteal,
+mcphases:10:2024,1,22,Luteal,
+mcphases:10:2024,1,23,Luteal,
+mcphases:10:2024,1,24,Luteal,
+mcphases:10:2024,1,25,Luteal,
+mcphases:10:2024,1,26,Luteal,
+mcphases:10:2024,1,27,Luteal,
+mcphases:10:2024,1,28,Luteal,
+mcphases:10:2024,1,29,Luteal,
+mcphases:10:2024,1,30,Luteal,
+mcphases:10:2024,2,1,Menstrual,
+mcphases:10:2024,2,2,Menstrual,
+mcphases:10:2024,2,3,Menstrual,
+mcphases:10:2024,2,4,Menstrual,
+mcphases:10:2024,2,5,Follicular,
+mcphases:10:2024,2,6,Follicular,
+mcphases:10:2024,2,7,Follicular,
+mcphases:10:2024,2,8,Follicular,
+mcphases:10:2024,2,9,Follicular,
+mcphases:10:2024,2,10,Follicular,
+mcphases:10:2024,2,11,Follicular,
+mcphases:10:2024,2,12,Follicular,
+mcphases:10:2024,2,13,Follicular,
+mcphases:10:2024,2,14,Fertility,
+mcphases:10:2024,2,15,Fertility,
+mcphases:10:2024,2,16,Fertility,
+mcphases:10:2024,2,17,Fertility,
+mcphases:10:2024,2,18,Fertility,
+mcphases:10:2024,2,19,Fertility,
+mcphases:10:2024,2,20,Fertility,
+mcphases:10:2024,2,21,Fertility,
+mcphases:10:2024,2,22,Luteal,
+mcphases:10:2024,2,23,Luteal,
+mcphases:10:2024,2,24,Luteal,
+mcphases:10:2024,2,25,Luteal,
+mcphases:10:2024,2,26,Luteal,
+mcphases:10:2024,2,27,Luteal,
+mcphases:10:2024,2,28,Luteal,
+mcphases:10:2024,2,29,Luteal,
+mcphases:10:2024,2,30,Luteal,
+mcphases:10:2024,2,31,Luteal,
+mcphases:10:2024,2,32,Luteal,
+mcphases:10:2024,3,1,Menstrual,
+mcphases:10:2024,3,2,Menstrual,
+mcphases:10:2024,3,3,Menstrual,
+mcphases:10:2024,3,4,Follicular,
+mcphases:10:2024,3,5,Follicular,
+mcphases:10:2024,3,6,Follicular,
+mcphases:10:2024,3,7,Follicular,
+mcphases:10:2024,3,8,Follicular,
+mcphases:10:2024,3,9,Luteal,
+mcphases:10:2024,3,10,Luteal,
+mcphases:10:2024,3,11,Luteal,
+mcphases:10:2024,3,12,Luteal,
+mcphases:10:2024,3,13,Luteal,
+mcphases:10:2024,3,14,Luteal,
+mcphases:10:2024,3,15,Luteal,
+mcphases:10:2024,3,16,Luteal,
+mcphases:11:2022,1,1,Menstrual,Not at all
+mcphases:11:2022,1,2,Menstrual,Light
+mcphases:11:2022,1,3,Menstrual,Heavy
+mcphases:11:2022,1,4,Menstrual,Very Heavy
+mcphases:11:2022,1,5,Follicular,Spotting / Very Light
+mcphases:11:2022,1,6,Follicular,Not at all
+mcphases:11:2022,1,7,Follicular,Not at all
+mcphases:11:2022,1,8,Follicular,Not at all
+mcphases:11:2022,1,9,Follicular,Not at all
+mcphases:11:2022,1,10,Follicular,Not at all
+mcphases:11:2022,1,11,Follicular,Not at all
+mcphases:11:2022,1,12,Follicular,Not at all
+mcphases:11:2022,1,13,Follicular,Not at all
+mcphases:11:2022,1,14,Follicular,Not at all
+mcphases:11:2022,1,15,Follicular,Not at all
+mcphases:11:2022,1,16,Follicular,Not at all
+mcphases:11:2022,1,17,Follicular,Not at all
+mcphases:11:2022,1,18,Follicular,Not at all
+mcphases:11:2022,1,19,Follicular,Not at all
+mcphases:11:2022,1,20,Follicular,Not at all
+mcphases:11:2022,1,21,Follicular,Not at all
+mcphases:11:2022,1,22,Follicular,Not at all
+mcphases:11:2022,1,23,Follicular,
+mcphases:11:2022,1,24,Follicular,Not at all
+mcphases:11:2022,1,25,Fertility,Not at all
+mcphases:11:2022,1,26,Fertility,Not at all
+mcphases:11:2022,1,27,Fertility,Not at all
+mcphases:11:2022,1,28,Fertility,Not at all
+mcphases:11:2022,1,29,Fertility,Not at all
+mcphases:11:2022,1,30,Fertility,Not at all
+mcphases:11:2022,1,31,Fertility,Not at all
+mcphases:11:2022,1,32,Luteal,
+mcphases:11:2022,1,33,Luteal,Not at all
+mcphases:11:2022,1,34,Luteal,
+mcphases:11:2022,1,35,Luteal,Not at all
+mcphases:11:2022,1,36,Luteal,
+mcphases:11:2022,1,37,Luteal,Not at all
+mcphases:11:2022,1,38,Luteal,
+mcphases:11:2022,1,39,Luteal,Not at all
+mcphases:11:2022,1,40,Luteal,
+mcphases:11:2022,1,41,Luteal,Not at all
+mcphases:11:2022,1,42,Luteal,Not at all
+mcphases:11:2022,2,1,Menstrual,Not at all
+mcphases:11:2022,2,2,Menstrual,Moderate
+mcphases:11:2022,2,3,Menstrual,Very Heavy
+mcphases:11:2022,2,4,Follicular,Spotting / Very Light
+mcphases:11:2022,2,5,Follicular,
+mcphases:11:2022,2,6,Follicular,Not at all
+mcphases:11:2022,2,7,Follicular,Not at all
+mcphases:11:2022,2,8,Follicular,Not at all
+mcphases:11:2022,2,9,Follicular,
+mcphases:11:2022,2,10,Follicular,Not at all
+mcphases:11:2022,2,11,Follicular,Not at all
+mcphases:11:2022,2,12,Follicular,
+mcphases:11:2022,2,13,Fertility,Not at all
+mcphases:11:2022,2,14,Fertility,Not at all
+mcphases:11:2022,2,15,Fertility,
+mcphases:11:2022,2,16,Fertility,Not at all
+mcphases:11:2022,2,17,Fertility,Not at all
+mcphases:11:2022,2,18,Fertility,Not at all
+mcphases:11:2022,2,19,Fertility,Not at all
+mcphases:11:2022,2,20,Luteal,Not at all
+mcphases:11:2022,2,21,Luteal,Not at all
+mcphases:11:2022,2,22,Luteal,Not at all
+mcphases:11:2022,2,23,Luteal,Not at all
+mcphases:11:2022,2,24,Luteal,Not at all
+mcphases:11:2022,2,25,Luteal,Not at all
+mcphases:11:2022,2,26,Luteal,Not at all
+mcphases:11:2022,2,27,Luteal,
+mcphases:11:2022,2,28,Luteal,
+mcphases:11:2022,2,29,Luteal,Not at all
+mcphases:11:2022,3,1,Menstrual,Not at all
+mcphases:11:2022,3,2,Menstrual,
+mcphases:11:2022,3,3,Menstrual,
+mcphases:11:2022,3,4,Follicular,
+mcphases:11:2022,3,5,Follicular,Not at all
+mcphases:11:2022,3,6,Follicular,
+mcphases:11:2022,3,7,Follicular,
+mcphases:11:2022,3,8,Follicular,Not at all
+mcphases:11:2022,3,9,Follicular,
+mcphases:11:2022,3,10,Follicular,
+mcphases:11:2022,3,11,Fertility,Not at all
+mcphases:11:2022,3,12,Fertility,Not at all
+mcphases:11:2022,3,13,Fertility,
+mcphases:11:2022,3,14,Fertility,Not at all
+mcphases:11:2022,3,15,Fertility,
+mcphases:12:2022,1,1,Menstrual,Not at all
+mcphases:12:2022,1,2,Menstrual,Somewhat Light
+mcphases:12:2022,1,3,Menstrual,Moderate
+mcphases:12:2022,1,4,Menstrual,Somewhat Light
+mcphases:12:2022,1,5,Menstrual,Light
+mcphases:12:2022,1,6,Menstrual,Light
+mcphases:12:2022,1,7,Menstrual,Light
+mcphases:12:2022,1,8,Follicular,Spotting / Very Light
+mcphases:12:2022,1,9,Follicular,Not at all
+mcphases:12:2022,1,10,Follicular,Not at all
+mcphases:12:2022,1,11,Follicular,Not at all
+mcphases:12:2022,1,12,Follicular,Not at all
+mcphases:12:2022,1,13,Follicular,Not at all
+mcphases:12:2022,1,14,Fertility,Not at all
+mcphases:12:2022,1,15,Fertility,Not at all
+mcphases:12:2022,1,16,Fertility,Not at all
+mcphases:12:2022,1,17,Fertility,
+mcphases:12:2022,1,18,Fertility,Not at all
+mcphases:12:2022,1,19,Fertility,
+mcphases:12:2022,1,20,Luteal,Not at all
+mcphases:12:2022,1,21,Luteal,Not at all
+mcphases:12:2022,1,22,Luteal,
+mcphases:12:2022,1,23,Luteal,Not at all
+mcphases:12:2022,1,24,Luteal,Not at all
+mcphases:12:2022,1,25,Luteal,Not at all
+mcphases:12:2022,1,26,Luteal,Not at all
+mcphases:12:2022,1,27,Luteal,Not at all
+mcphases:12:2022,1,28,Luteal,Not at all
+mcphases:12:2022,1,29,Luteal,Not at all
+mcphases:12:2022,1,30,Luteal,Not at all
+mcphases:12:2022,1,31,Luteal,Not at all
+mcphases:12:2022,1,32,Luteal,Not at all
+mcphases:12:2022,1,33,Luteal,Not at all
+mcphases:12:2022,2,1,Menstrual,Not at all
+mcphases:12:2022,2,2,Menstrual,Heavy
+mcphases:12:2022,2,3,Menstrual,Moderate
+mcphases:12:2022,2,4,Menstrual,Moderate
+mcphases:12:2022,2,5,Menstrual,Light
+mcphases:12:2022,2,6,Menstrual,Light
+mcphases:12:2022,2,7,Follicular,Spotting / Very Light
+mcphases:12:2022,2,8,Follicular,Not at all
+mcphases:12:2022,2,9,Follicular,Not at all
+mcphases:12:2022,2,10,Follicular,Not at all
+mcphases:12:2022,2,11,Fertility,Not at all
+mcphases:12:2022,2,12,Fertility,Not at all
+mcphases:12:2022,2,13,Fertility,
+mcphases:12:2022,2,14,Fertility,Not at all
+mcphases:12:2022,2,15,Fertility,Not at all
+mcphases:12:2022,2,16,Fertility,Not at all
+mcphases:12:2022,2,17,Luteal,Not at all
+mcphases:12:2022,2,18,Luteal,Not at all
+mcphases:12:2022,2,19,Luteal,Not at all
+mcphases:12:2022,2,20,Luteal,Not at all
+mcphases:12:2022,2,21,Luteal,Not at all
+mcphases:12:2022,2,22,Luteal,Not at all
+mcphases:12:2022,2,23,Luteal,Not at all
+mcphases:12:2022,2,24,Luteal,Not at all
+mcphases:12:2022,2,25,Luteal,Not at all
+mcphases:12:2022,2,26,Luteal,Not at all
+mcphases:12:2022,2,27,Luteal,Not at all
+mcphases:12:2022,2,28,Luteal,Not at all
+mcphases:12:2022,2,29,Luteal,Not at all
+mcphases:12:2022,3,1,Menstrual,Not at all
+mcphases:12:2022,3,2,Menstrual,Spotting / Very Light
+mcphases:12:2022,3,3,Menstrual,Somewhat Heavy
+mcphases:12:2022,3,4,Menstrual,Moderate
+mcphases:12:2022,3,5,Menstrual,Somewhat Light
+mcphases:12:2022,3,6,Menstrual,Light
+mcphases:12:2022,3,7,Follicular,Spotting / Very Light
+mcphases:12:2022,3,8,Follicular,Not at all
+mcphases:12:2022,3,9,Follicular,Not at all
+mcphases:12:2022,3,10,Follicular,Not at all
+mcphases:12:2022,3,11,Follicular,Not at all
+mcphases:12:2022,3,12,Follicular,Not at all
+mcphases:12:2022,3,13,Follicular,
+mcphases:12:2022,3,14,Fertility,
+mcphases:12:2022,3,15,Fertility,Not at all
+mcphases:12:2022,3,16,Fertility,
+mcphases:12:2022,3,17,Fertility,Not at all
+mcphases:12:2022,3,18,Fertility,Not at all
+mcphases:12:2022,3,19,Fertility,
+mcphases:12:2022,3,20,Luteal,Not at all
+mcphases:12:2022,3,21,Luteal,
+mcphases:12:2022,3,22,Luteal,Not at all
+mcphases:12:2022,3,23,Luteal,Not at all
+mcphases:12:2022,3,24,Luteal,Not at all
+mcphases:12:2022,3,25,Luteal,Not at all
+mcphases:12:2022,3,26,Luteal,Not at all
+mcphases:12:2022,3,27,Luteal,
+mcphases:12:2022,3,28,Luteal,
+mcphases:12:2024,1,1,Menstrual,
+mcphases:12:2024,1,2,Menstrual,
+mcphases:12:2024,1,3,Follicular,
+mcphases:12:2024,1,4,Follicular,
+mcphases:12:2024,1,5,Follicular,
+mcphases:12:2024,1,6,Follicular,
+mcphases:12:2024,1,7,Follicular,
+mcphases:12:2024,1,8,Follicular,
+mcphases:12:2024,1,9,Follicular,
+mcphases:12:2024,1,10,Follicular,
+mcphases:12:2024,1,11,Follicular,
+mcphases:12:2024,1,12,Follicular,
+mcphases:12:2024,1,13,Fertility,
+mcphases:12:2024,1,14,Fertility,
+mcphases:12:2024,1,15,Fertility,
+mcphases:12:2024,1,16,Fertility,
+mcphases:12:2024,1,17,Fertility,
+mcphases:12:2024,1,18,Fertility,
+mcphases:12:2024,1,19,Fertility,
+mcphases:12:2024,1,20,Fertility,
+mcphases:12:2024,1,21,Luteal,
+mcphases:12:2024,1,22,Luteal,
+mcphases:12:2024,1,23,Luteal,
+mcphases:12:2024,1,24,Luteal,
+mcphases:12:2024,1,25,Luteal,
+mcphases:12:2024,1,26,Luteal,
+mcphases:12:2024,1,27,Luteal,
+mcphases:12:2024,1,28,Luteal,
+mcphases:12:2024,1,29,Luteal,
+mcphases:12:2024,2,1,Menstrual,
+mcphases:12:2024,2,2,Menstrual,
+mcphases:12:2024,2,3,Menstrual,
+mcphases:12:2024,2,4,Menstrual,
+mcphases:12:2024,2,5,Menstrual,
+mcphases:12:2024,2,6,Menstrual,
+mcphases:12:2024,2,7,Menstrual,
+mcphases:12:2024,2,8,Menstrual,
+mcphases:12:2024,2,9,Follicular,
+mcphases:12:2024,2,10,Follicular,
+mcphases:12:2024,2,11,Follicular,
+mcphases:12:2024,2,12,Follicular,
+mcphases:12:2024,2,13,Follicular,
+mcphases:12:2024,2,14,Follicular,
+mcphases:12:2024,2,15,Follicular,
+mcphases:12:2024,2,16,Follicular,
+mcphases:12:2024,2,17,Follicular,
+mcphases:12:2024,2,18,Follicular,
+mcphases:12:2024,2,19,Fertility,
+mcphases:12:2024,2,20,Fertility,
+mcphases:12:2024,2,21,Fertility,
+mcphases:12:2024,2,22,Fertility,
+mcphases:12:2024,2,23,Fertility,
+mcphases:12:2024,2,24,Fertility,
+mcphases:12:2024,2,25,Fertility,
+mcphases:12:2024,2,26,Fertility,
+mcphases:12:2024,2,27,Luteal,
+mcphases:12:2024,2,28,Luteal,
+mcphases:12:2024,2,29,Luteal,
+mcphases:12:2024,2,30,Luteal,
+mcphases:12:2024,2,31,Luteal,
+mcphases:12:2024,2,32,Luteal,
+mcphases:12:2024,2,33,Luteal,
+mcphases:12:2024,2,34,Luteal,
+mcphases:12:2024,2,35,Luteal,
+mcphases:12:2024,2,36,Luteal,
+mcphases:12:2024,3,1,Menstrual,
+mcphases:12:2024,3,2,Menstrual,
+mcphases:12:2024,3,3,Menstrual,
+mcphases:12:2024,3,4,Menstrual,
+mcphases:12:2024,3,5,Menstrual,
+mcphases:12:2024,3,6,Menstrual,
+mcphases:12:2024,3,7,Menstrual,
+mcphases:12:2024,3,8,Menstrual,
+mcphases:12:2024,3,9,Follicular,
+mcphases:12:2024,3,10,Follicular,
+mcphases:12:2024,3,11,Follicular,
+mcphases:12:2024,3,12,Follicular,
+mcphases:12:2024,3,13,Follicular,
+mcphases:12:2024,3,14,Follicular,
+mcphases:12:2024,3,15,Fertility,
+mcphases:12:2024,3,16,Fertility,
+mcphases:12:2024,3,17,Fertility,
+mcphases:12:2024,3,18,Fertility,
+mcphases:12:2024,3,19,Fertility,
+mcphases:12:2024,3,20,Fertility,
+mcphases:12:2024,3,21,Fertility,
+mcphases:12:2024,3,22,Fertility,
+mcphases:12:2024,3,23,Luteal,
+mcphases:12:2024,3,24,Luteal,
+mcphases:12:2024,3,25,Luteal,
+mcphases:12:2024,3,26,Luteal,
+mcphases:12:2024,3,27,Luteal,
+mcphases:12:2024,3,28,Luteal,
+mcphases:12:2024,3,29,Luteal,
+mcphases:12:2024,3,30,Luteal,
+mcphases:12:2024,3,31,Luteal,
+mcphases:12:2024,3,32,Luteal,
+mcphases:12:2024,4,1,Menstrual,
+mcphases:12:2024,4,2,Menstrual,
+mcphases:12:2024,4,3,Menstrual,
+mcphases:12:2024,4,4,Menstrual,
+mcphases:12:2024,4,5,Menstrual,
+mcphases:13:2022,1,1,Menstrual,Not at all
+mcphases:13:2022,1,2,Menstrual,Spotting / Very Light
+mcphases:13:2022,1,3,Menstrual,Heavy
+mcphases:13:2022,1,4,Menstrual,Moderate
+mcphases:13:2022,1,5,Menstrual,Light
+mcphases:13:2022,1,6,Menstrual,Spotting / Very Light
+mcphases:13:2022,1,7,Follicular,Spotting / Very Light
+mcphases:13:2022,1,8,Follicular,Not at all
+mcphases:13:2022,1,9,Follicular,Not at all
+mcphases:13:2022,1,10,Follicular,Not at all
+mcphases:13:2022,1,11,Follicular,Not at all
+mcphases:13:2022,1,12,Follicular,Not at all
+mcphases:13:2022,1,13,Follicular,Not at all
+mcphases:13:2022,1,14,Follicular,Not at all
+mcphases:13:2022,1,15,Follicular,Not at all
+mcphases:13:2022,1,16,Follicular,Not at all
+mcphases:13:2022,1,17,Follicular,Not at all
+mcphases:13:2022,1,18,Follicular,Not at all
+mcphases:13:2022,1,19,Follicular,Not at all
+mcphases:13:2022,1,20,Follicular,Not at all
+mcphases:13:2022,1,21,Follicular,Not at all
+mcphases:13:2022,1,22,Follicular,Not at all
+mcphases:13:2022,1,23,Follicular,Not at all
+mcphases:13:2022,1,24,Follicular,Not at all
+mcphases:13:2022,1,25,Fertility,Not at all
+mcphases:13:2022,1,26,Fertility,Not at all
+mcphases:13:2022,1,27,Fertility,Not at all
+mcphases:13:2022,1,28,Fertility,Not at all
+mcphases:13:2022,1,29,Fertility,Not at all
+mcphases:13:2022,1,30,Fertility,Not at all
+mcphases:13:2022,1,31,Fertility,Not at all
+mcphases:13:2022,1,32,Luteal,Not at all
+mcphases:13:2022,1,33,Luteal,Not at all
+mcphases:13:2022,1,34,Luteal,Not at all
+mcphases:13:2022,1,35,Luteal,Not at all
+mcphases:13:2022,1,36,Luteal,Not at all
+mcphases:13:2022,1,37,Luteal,Not at all
+mcphases:13:2022,1,38,Luteal,Not at all
+mcphases:13:2022,1,39,Luteal,Not at all
+mcphases:13:2022,1,40,Luteal,Not at all
+mcphases:13:2022,1,41,Luteal,Not at all
+mcphases:13:2022,2,1,Menstrual,Not at all
+mcphases:13:2022,2,2,Menstrual,Light
+mcphases:13:2022,2,3,Menstrual,Heavy
+mcphases:13:2022,2,4,Menstrual,Spotting / Very Light
+mcphases:13:2022,2,5,Menstrual,Light
+mcphases:13:2022,2,6,Menstrual,Light
+mcphases:13:2022,2,7,Menstrual,Spotting / Very Light
+mcphases:13:2022,2,8,Menstrual,Spotting / Very Light
+mcphases:13:2022,2,9,Follicular,Light
+mcphases:13:2022,2,10,Follicular,Not at all
+mcphases:13:2022,2,11,Follicular,Not at all
+mcphases:13:2022,2,12,Follicular,Not at all
+mcphases:13:2022,2,13,Follicular,Not at all
+mcphases:13:2022,2,14,Follicular,Not at all
+mcphases:13:2022,2,15,Follicular,Not at all
+mcphases:13:2022,2,16,Follicular,Not at all
+mcphases:13:2022,2,17,Follicular,Not at all
+mcphases:13:2022,2,18,Follicular,Not at all
+mcphases:13:2022,2,19,Follicular,Not at all
+mcphases:13:2022,2,20,Follicular,Not at all
+mcphases:13:2022,2,21,Follicular,Not at all
+mcphases:13:2022,2,22,Fertility,Not at all
+mcphases:13:2022,2,23,Fertility,Not at all
+mcphases:13:2022,2,24,Fertility,Not at all
+mcphases:13:2022,2,25,Fertility,Not at all
+mcphases:13:2022,2,26,Fertility,Not at all
+mcphases:13:2022,2,27,Fertility,Not at all
+mcphases:13:2022,2,28,Fertility,Not at all
+mcphases:13:2022,2,29,Luteal,Not at all
+mcphases:13:2022,2,30,Luteal,Not at all
+mcphases:13:2022,2,31,Luteal,Not at all
+mcphases:13:2022,2,32,Luteal,Not at all
+mcphases:13:2022,2,33,Luteal,Not at all
+mcphases:13:2022,2,34,Luteal,Not at all
+mcphases:13:2022,2,35,Luteal,Not at all
+mcphases:13:2022,2,36,Luteal,Not at all
+mcphases:13:2022,2,37,Luteal,Not at all
+mcphases:13:2022,3,1,Menstrual,Not at all
+mcphases:13:2022,3,2,Menstrual,Spotting / Very Light
+mcphases:13:2024,1,1,Menstrual,
+mcphases:13:2024,1,2,Menstrual,
+mcphases:13:2024,1,3,Menstrual,
+mcphases:13:2024,1,4,Menstrual,
+mcphases:13:2024,1,5,Menstrual,
+mcphases:13:2024,1,6,Menstrual,
+mcphases:13:2024,1,7,Follicular,
+mcphases:13:2024,1,8,Follicular,
+mcphases:13:2024,1,9,Follicular,
+mcphases:13:2024,1,10,Follicular,
+mcphases:13:2024,1,11,Follicular,
+mcphases:13:2024,1,12,Follicular,
+mcphases:13:2024,1,13,Follicular,
+mcphases:13:2024,1,14,Follicular,
+mcphases:13:2024,1,15,Fertility,
+mcphases:13:2024,1,16,Fertility,
+mcphases:13:2024,1,17,Fertility,
+mcphases:13:2024,1,18,Fertility,
+mcphases:13:2024,1,19,Fertility,
+mcphases:13:2024,1,20,Fertility,
+mcphases:13:2024,1,21,Fertility,
+mcphases:13:2024,1,22,Fertility,
+mcphases:13:2024,1,23,Luteal,
+mcphases:13:2024,1,24,Luteal,
+mcphases:13:2024,1,25,Luteal,
+mcphases:13:2024,1,26,Luteal,
+mcphases:13:2024,1,27,Luteal,
+mcphases:13:2024,1,28,Luteal,
+mcphases:13:2024,1,29,Luteal,
+mcphases:13:2024,1,30,Luteal,
+mcphases:13:2024,1,31,Luteal,
+mcphases:13:2024,1,32,Luteal,
+mcphases:13:2024,1,33,Luteal,
+mcphases:13:2024,2,1,Menstrual,
+mcphases:13:2024,2,2,Menstrual,
+mcphases:13:2024,2,3,Menstrual,
+mcphases:13:2024,2,4,Menstrual,
+mcphases:13:2024,2,5,Menstrual,
+mcphases:13:2024,2,6,Menstrual,
+mcphases:13:2024,2,7,Follicular,
+mcphases:13:2024,2,8,Follicular,
+mcphases:13:2024,2,9,Follicular,
+mcphases:13:2024,2,10,Follicular,
+mcphases:13:2024,2,11,Follicular,
+mcphases:13:2024,2,12,Follicular,
+mcphases:13:2024,2,13,Follicular,
+mcphases:13:2024,2,14,Follicular,
+mcphases:13:2024,2,15,Follicular,
+mcphases:13:2024,2,16,Fertility,
+mcphases:13:2024,2,17,Fertility,
+mcphases:13:2024,2,18,Fertility,
+mcphases:13:2024,2,19,Fertility,
+mcphases:13:2024,2,20,Fertility,
+mcphases:13:2024,2,21,Fertility,
+mcphases:13:2024,2,22,Fertility,
+mcphases:13:2024,2,23,Fertility,
+mcphases:13:2024,2,24,Luteal,
+mcphases:13:2024,2,25,Luteal,
+mcphases:13:2024,2,26,Luteal,
+mcphases:13:2024,2,27,Luteal,
+mcphases:13:2024,2,28,Luteal,
+mcphases:13:2024,2,29,Luteal,
+mcphases:13:2024,2,30,Luteal,
+mcphases:13:2024,2,31,Luteal,
+mcphases:13:2024,2,32,Luteal,
+mcphases:13:2024,2,33,Luteal,
+mcphases:13:2024,2,34,Luteal,
+mcphases:13:2024,3,1,Menstrual,
+mcphases:13:2024,3,2,Menstrual,
+mcphases:13:2024,3,3,Menstrual,
+mcphases:13:2024,3,4,Menstrual,
+mcphases:13:2024,3,5,Menstrual,
+mcphases:13:2024,3,6,Menstrual,
+mcphases:13:2024,3,7,Follicular,
+mcphases:13:2024,3,8,Follicular,
+mcphases:13:2024,3,9,Follicular,
+mcphases:13:2024,3,10,Follicular,
+mcphases:13:2024,3,11,Follicular,
+mcphases:13:2024,3,12,Follicular,
+mcphases:13:2024,3,13,Follicular,
+mcphases:13:2024,3,14,Fertility,
+mcphases:13:2024,3,15,Fertility,
+mcphases:13:2024,3,16,Fertility,
+mcphases:13:2024,3,17,Fertility,
+mcphases:13:2024,3,18,Fertility,
+mcphases:13:2024,3,19,Fertility,
+mcphases:14:2022,1,1,Menstrual,Somewhat Light
+mcphases:14:2022,1,2,Menstrual,Spotting / Very Light
+mcphases:14:2022,1,3,Follicular,Spotting / Very Light
+mcphases:14:2022,1,4,Follicular,Spotting / Very Light
+mcphases:14:2022,1,5,Follicular,Not at all
+mcphases:14:2022,1,6,Follicular,Spotting / Very Light
+mcphases:14:2022,1,7,Follicular,Not at all
+mcphases:14:2022,1,8,Fertility,Not at all
+mcphases:14:2022,1,9,Fertility,Not at all
+mcphases:14:2022,1,10,Fertility,Not at all
+mcphases:14:2022,1,11,Fertility,Spotting / Very Light
+mcphases:14:2022,1,12,Fertility,Spotting / Very Light
+mcphases:14:2022,1,13,Fertility,Spotting / Very Light
+mcphases:14:2022,1,14,Fertility,Spotting / Very Light
+mcphases:14:2022,1,15,Luteal,
+mcphases:14:2022,1,16,Luteal,Spotting / Very Light
+mcphases:14:2022,1,17,Luteal,Not at all
+mcphases:14:2022,1,18,Luteal,Not at all
+mcphases:14:2022,1,19,Luteal,Not at all
+mcphases:14:2022,1,20,Luteal,Not at all
+mcphases:14:2022,1,21,Luteal,Not at all
+mcphases:14:2022,1,22,Luteal,Not at all
+mcphases:14:2022,1,23,Luteal,Not at all
+mcphases:14:2022,1,24,Luteal,Not at all
+mcphases:14:2022,1,25,Luteal,Not at all
+mcphases:14:2022,1,26,Luteal,Not at all
+mcphases:14:2022,1,27,Luteal,Not at all
+mcphases:14:2022,1,28,Luteal,Not at all
+mcphases:14:2022,1,29,Luteal,Not at all
+mcphases:14:2022,2,1,Menstrual,Not at all
+mcphases:14:2022,2,2,Menstrual,Moderate
+mcphases:14:2022,2,3,Menstrual,Heavy
+mcphases:14:2022,2,4,Menstrual,Moderate
+mcphases:14:2022,2,5,Menstrual,Somewhat Light
+mcphases:14:2022,2,6,Menstrual,Light
+mcphases:14:2022,2,7,Follicular,Spotting / Very Light
+mcphases:14:2022,2,8,Follicular,Spotting / Very Light
+mcphases:14:2022,2,9,Follicular,Spotting / Very Light
+mcphases:14:2022,2,10,Follicular,Spotting / Very Light
+mcphases:14:2022,2,11,Follicular,Spotting / Very Light
+mcphases:14:2022,2,12,Fertility,Spotting / Very Light
+mcphases:14:2022,2,13,Fertility,Spotting / Very Light
+mcphases:14:2022,2,14,Fertility,Spotting / Very Light
+mcphases:14:2022,2,15,Fertility,Spotting / Very Light
+mcphases:14:2022,2,16,Fertility,Spotting / Very Light
+mcphases:14:2022,2,17,Fertility,Not at all
+mcphases:14:2022,2,18,Fertility,
+mcphases:14:2022,2,19,Luteal,Not at all
+mcphases:14:2022,2,20,Luteal,Not at all
+mcphases:14:2022,2,21,Luteal,Not at all
+mcphases:14:2022,2,22,Luteal,Not at all
+mcphases:14:2022,2,23,Luteal,Not at all
+mcphases:14:2022,2,24,Luteal,Spotting / Very Light
+mcphases:14:2022,2,25,Luteal,Spotting / Very Light
+mcphases:14:2022,2,26,Luteal,Not at all
+mcphases:14:2022,2,27,Luteal,
+mcphases:14:2022,2,28,Luteal,Not at all
+mcphases:14:2022,2,29,Luteal,Not at all
+mcphases:14:2022,2,30,Luteal,Not at all
+mcphases:14:2022,2,31,Luteal,Not at all
+mcphases:14:2022,3,1,Menstrual,Not at all
+mcphases:14:2022,3,2,Menstrual,Heavy
+mcphases:14:2022,3,3,Menstrual,Moderate
+mcphases:14:2022,3,4,Menstrual,Somewhat Light
+mcphases:14:2022,3,5,Menstrual,Light
+mcphases:14:2022,3,6,Menstrual,Spotting / Very Light
+mcphases:14:2022,3,7,Follicular,Spotting / Very Light
+mcphases:14:2022,3,8,Follicular,Not at all
+mcphases:14:2022,3,9,Follicular,Not at all
+mcphases:14:2022,3,10,Follicular,Not at all
+mcphases:14:2022,3,11,Follicular,Not at all
+mcphases:14:2022,3,12,Follicular,Not at all
+mcphases:14:2022,3,13,Follicular,Not at all
+mcphases:14:2022,3,14,Follicular,Not at all
+mcphases:14:2022,3,15,Follicular,Not at all
+mcphases:14:2022,3,16,Follicular,Not at all
+mcphases:14:2022,3,17,Follicular,Not at all
+mcphases:14:2022,3,18,Follicular,Not at all
+mcphases:14:2022,3,19,Follicular,Not at all
+mcphases:14:2022,3,20,Fertility,Not at all
+mcphases:14:2022,3,21,Fertility,Not at all
+mcphases:14:2022,3,22,Fertility,Not at all
+mcphases:14:2022,3,23,Fertility,Not at all
+mcphases:14:2022,3,24,Fertility,Not at all
+mcphases:14:2022,3,25,Fertility,
+mcphases:14:2022,3,26,Fertility,Not at all
+mcphases:14:2022,3,27,Luteal,Not at all
+mcphases:14:2022,3,28,Luteal,Not at all
+mcphases:14:2022,3,29,Luteal,Not at all
+mcphases:14:2022,3,30,Luteal,Not at all
+mcphases:14:2024,1,1,Menstrual,
+mcphases:14:2024,1,2,Menstrual,
+mcphases:14:2024,1,3,Menstrual,
+mcphases:14:2024,1,4,Menstrual,
+mcphases:14:2024,1,5,Menstrual,
+mcphases:14:2024,1,6,Menstrual,
+mcphases:14:2024,1,7,Follicular,
+mcphases:14:2024,1,8,Follicular,
+mcphases:14:2024,1,9,Follicular,
+mcphases:14:2024,1,10,Follicular,
+mcphases:14:2024,1,11,Fertility,
+mcphases:14:2024,1,12,Fertility,
+mcphases:14:2024,1,13,Fertility,
+mcphases:14:2024,1,14,Fertility,
+mcphases:14:2024,1,15,Fertility,
+mcphases:14:2024,1,16,Fertility,
+mcphases:14:2024,1,17,Fertility,
+mcphases:14:2024,1,18,Fertility,
+mcphases:14:2024,1,19,Luteal,
+mcphases:14:2024,1,20,Luteal,
+mcphases:14:2024,1,21,Luteal,
+mcphases:14:2024,1,22,Luteal,
+mcphases:14:2024,1,23,Luteal,
+mcphases:14:2024,1,24,Luteal,
+mcphases:14:2024,1,25,Luteal,
+mcphases:14:2024,1,26,Luteal,
+mcphases:14:2024,1,27,Luteal,
+mcphases:14:2024,1,28,Luteal,
+mcphases:14:2024,1,29,Luteal,
+mcphases:14:2024,1,30,Luteal,
+mcphases:14:2024,2,1,Menstrual,
+mcphases:14:2024,2,2,Menstrual,
+mcphases:14:2024,2,3,Menstrual,
+mcphases:14:2024,2,4,Menstrual,
+mcphases:14:2024,2,5,Menstrual,
+mcphases:14:2024,2,6,Menstrual,
+mcphases:14:2024,2,7,Follicular,
+mcphases:14:2024,2,8,Follicular,
+mcphases:14:2024,2,9,Follicular,
+mcphases:14:2024,2,10,Follicular,
+mcphases:14:2024,2,11,Follicular,
+mcphases:14:2024,2,12,Follicular,
+mcphases:14:2024,2,13,Follicular,
+mcphases:14:2024,2,14,Follicular,
+mcphases:14:2024,2,15,Follicular,
+mcphases:14:2024,2,16,Follicular,
+mcphases:14:2024,2,17,Fertility,
+mcphases:14:2024,2,18,Fertility,
+mcphases:14:2024,2,19,Fertility,
+mcphases:14:2024,2,20,Fertility,
+mcphases:14:2024,2,21,Fertility,
+mcphases:14:2024,2,22,Fertility,
+mcphases:14:2024,2,23,Fertility,
+mcphases:14:2024,2,24,Fertility,
+mcphases:14:2024,2,25,Luteal,
+mcphases:14:2024,2,26,Luteal,
+mcphases:14:2024,2,27,Luteal,
+mcphases:14:2024,2,28,Luteal,
+mcphases:14:2024,2,29,Luteal,
+mcphases:14:2024,2,30,Luteal,
+mcphases:14:2024,2,31,Luteal,
+mcphases:14:2024,2,32,Luteal,
+mcphases:14:2024,2,33,Luteal,
+mcphases:14:2024,2,34,Luteal,
+mcphases:14:2024,2,35,Luteal,
+mcphases:14:2024,2,36,Luteal,
+mcphases:14:2024,3,1,Menstrual,
+mcphases:14:2024,3,2,Menstrual,
+mcphases:14:2024,3,3,Menstrual,
+mcphases:14:2024,3,4,Menstrual,
+mcphases:14:2024,3,5,Menstrual,
+mcphases:14:2024,3,6,Menstrual,
+mcphases:14:2024,3,7,Follicular,
+mcphases:14:2024,3,8,Follicular,
+mcphases:14:2024,3,9,Follicular,
+mcphases:14:2024,3,10,Fertility,
+mcphases:14:2024,3,11,Fertility,
+mcphases:14:2024,3,12,Fertility,
+mcphases:14:2024,3,13,Fertility,
+mcphases:14:2024,3,14,Fertility,
+mcphases:14:2024,3,15,Fertility,
+mcphases:14:2024,3,16,Fertility,
+mcphases:14:2024,3,17,Fertility,
+mcphases:14:2024,3,18,Luteal,
+mcphases:14:2024,3,19,Luteal,
+mcphases:14:2024,3,20,Luteal,
+mcphases:14:2024,3,21,Luteal,
+mcphases:14:2024,3,22,Luteal,
+mcphases:14:2024,3,23,Luteal,
+mcphases:15:2022,1,1,Menstrual,Heavy
+mcphases:15:2022,1,2,Menstrual,Heavy
+mcphases:15:2022,1,3,Menstrual,Somewhat Light
+mcphases:15:2022,1,4,Menstrual,Somewhat Light
+mcphases:15:2022,1,5,Menstrual,Spotting / Very Light
+mcphases:15:2022,1,6,Follicular,Spotting / Very Light
+mcphases:15:2022,1,7,Follicular,Not at all
+mcphases:15:2022,1,8,Fertility,Not at all
+mcphases:15:2022,1,9,Fertility,Not at all
+mcphases:15:2022,1,10,Fertility,Not at all
+mcphases:15:2022,1,11,Fertility,Not at all
+mcphases:15:2022,1,12,Fertility,Not at all
+mcphases:15:2022,1,13,Fertility,Not at all
+mcphases:15:2022,1,14,Luteal,Not at all
+mcphases:15:2022,1,15,Luteal,Not at all
+mcphases:15:2022,1,16,Luteal,Not at all
+mcphases:15:2022,1,17,Luteal,Not at all
+mcphases:15:2022,1,18,Luteal,Not at all
+mcphases:15:2022,1,19,Luteal,Not at all
+mcphases:15:2022,1,20,Luteal,Not at all
+mcphases:15:2022,1,21,Luteal,Not at all
+mcphases:15:2022,1,22,Luteal,Not at all
+mcphases:15:2022,1,23,Luteal,Not at all
+mcphases:15:2022,2,1,Menstrual,Not at all
+mcphases:15:2022,2,2,Menstrual,Somewhat Heavy
+mcphases:15:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:15:2022,2,4,Menstrual,Heavy
+mcphases:15:2022,2,5,Menstrual,Moderate
+mcphases:15:2022,2,6,Menstrual,Light
+mcphases:15:2022,2,7,Follicular,Spotting / Very Light
+mcphases:15:2022,2,8,Follicular,Not at all
+mcphases:15:2022,2,9,Fertility,Not at all
+mcphases:15:2022,2,10,Fertility,Not at all
+mcphases:15:2022,2,11,Fertility,Not at all
+mcphases:15:2022,2,12,Fertility,Spotting / Very Light
+mcphases:15:2022,2,13,Luteal,Spotting / Very Light
+mcphases:15:2022,2,14,Luteal,Not at all
+mcphases:15:2022,2,15,Luteal,Not at all
+mcphases:15:2022,2,16,Luteal,Not at all
+mcphases:15:2022,2,17,Luteal,Not at all
+mcphases:15:2022,2,18,Luteal,Not at all
+mcphases:15:2022,2,19,Luteal,Not at all
+mcphases:15:2022,2,20,Luteal,Not at all
+mcphases:15:2022,2,21,Luteal,Not at all
+mcphases:15:2022,2,22,Luteal,Not at all
+mcphases:15:2022,3,1,Menstrual,Not at all
+mcphases:15:2022,3,2,Menstrual,Somewhat Light
+mcphases:15:2022,3,3,Menstrual,Heavy
+mcphases:15:2022,3,4,Menstrual,Somewhat Heavy
+mcphases:15:2022,3,5,Menstrual,Somewhat Light
+mcphases:15:2022,3,6,Menstrual,Light
+mcphases:15:2022,3,7,Follicular,Light
+mcphases:15:2022,3,8,Follicular,Not at all
+mcphases:15:2022,3,9,Fertility,Not at all
+mcphases:15:2022,3,10,Fertility,Not at all
+mcphases:15:2022,3,11,Fertility,Not at all
+mcphases:15:2022,3,12,Fertility,Spotting / Very Light
+mcphases:15:2022,3,13,Fertility,Not at all
+mcphases:15:2022,3,14,Luteal,Not at all
+mcphases:15:2022,3,15,Luteal,Not at all
+mcphases:15:2022,3,16,Luteal,Not at all
+mcphases:15:2022,3,17,Luteal,Not at all
+mcphases:15:2022,3,18,Luteal,Not at all
+mcphases:15:2022,3,19,Luteal,Not at all
+mcphases:15:2022,3,20,Luteal,Not at all
+mcphases:15:2022,3,21,Luteal,Not at all
+mcphases:15:2022,3,22,Luteal,Not at all
+mcphases:15:2022,3,23,Luteal,Not at all
+mcphases:15:2022,4,1,Menstrual,Not at all
+mcphases:15:2022,4,2,Menstrual,Heavy
+mcphases:15:2022,4,3,Menstrual,Heavy
+mcphases:15:2022,4,4,Menstrual,Heavy
+mcphases:15:2022,4,5,Menstrual,Moderate
+mcphases:15:2022,4,6,Menstrual,Somewhat Light
+mcphases:15:2022,4,7,Follicular,Light
+mcphases:15:2022,4,8,Follicular,Not at all
+mcphases:15:2022,4,9,Fertility,Not at all
+mcphases:15:2022,4,10,Fertility,Not at all
+mcphases:15:2022,4,11,Fertility,Spotting / Very Light
+mcphases:15:2022,4,12,Fertility,Not at all
+mcphases:15:2022,4,13,Luteal,Not at all
+mcphases:15:2022,4,14,Luteal,Not at all
+mcphases:15:2022,4,15,Luteal,Not at all
+mcphases:15:2022,4,16,Luteal,Not at all
+mcphases:15:2022,4,17,Luteal,Not at all
+mcphases:15:2022,4,18,Luteal,Not at all
+mcphases:15:2022,4,19,Luteal,Not at all
+mcphases:15:2022,4,20,Luteal,Not at all
+mcphases:15:2022,4,21,Luteal,Not at all
+mcphases:15:2022,4,22,Luteal,Not at all
+mcphases:16:2022,1,1,Menstrual,Not at all
+mcphases:16:2022,1,2,Menstrual,Light
+mcphases:16:2022,1,3,Menstrual,Somewhat Heavy
+mcphases:16:2022,1,4,Menstrual,Somewhat Light
+mcphases:16:2022,1,5,Menstrual,Light
+mcphases:16:2022,1,6,Follicular,Spotting / Very Light
+mcphases:16:2022,1,7,Follicular,Not at all
+mcphases:16:2022,1,8,Follicular,Not at all
+mcphases:16:2022,1,9,Follicular,Not at all
+mcphases:16:2022,1,10,Follicular,
+mcphases:16:2022,1,11,Follicular,Not at all
+mcphases:16:2022,1,12,Follicular,Not at all
+mcphases:16:2022,1,13,Follicular,
+mcphases:16:2022,1,14,Follicular,
+mcphases:16:2022,1,15,Follicular,Not at all
+mcphases:16:2022,1,16,Follicular,Not at all
+mcphases:16:2022,1,17,Fertility,Not at all
+mcphases:16:2022,1,18,Fertility,Not at all
+mcphases:16:2022,1,19,Fertility,
+mcphases:16:2022,1,20,Fertility,Not at all
+mcphases:16:2022,1,21,Fertility,Not at all
+mcphases:16:2022,1,22,Fertility,Not at all
+mcphases:16:2022,1,23,Luteal,Not at all
+mcphases:16:2022,1,24,Luteal,Not at all
+mcphases:16:2022,1,25,Luteal,Not at all
+mcphases:16:2022,1,26,Luteal,Not at all
+mcphases:16:2022,1,27,Luteal,
+mcphases:16:2022,1,28,Luteal,Not at all
+mcphases:16:2022,1,29,Luteal,Not at all
+mcphases:16:2022,1,30,Luteal,
+mcphases:16:2022,1,31,Luteal,Not at all
+mcphases:16:2022,1,32,Luteal,Not at all
+mcphases:16:2022,1,33,Luteal,Not at all
+mcphases:16:2022,1,34,Luteal,Not at all
+mcphases:16:2022,1,35,Luteal,Not at all
+mcphases:16:2022,1,36,Luteal,Not at all
+mcphases:16:2022,1,37,Luteal,Light
+mcphases:16:2022,2,1,Menstrual,Moderate
+mcphases:16:2022,2,2,Menstrual,Somewhat Light
+mcphases:16:2022,2,3,Menstrual,
+mcphases:16:2022,2,4,Menstrual,Spotting / Very Light
+mcphases:16:2022,2,5,Menstrual,Not at all
+mcphases:16:2022,2,6,Follicular,Not at all
+mcphases:16:2022,2,7,Follicular,
+mcphases:16:2022,2,8,Follicular,Not at all
+mcphases:16:2022,2,9,Follicular,Not at all
+mcphases:16:2022,2,10,Follicular,
+mcphases:16:2022,2,11,Follicular,Not at all
+mcphases:16:2022,2,12,Follicular,Not at all
+mcphases:16:2022,2,13,Follicular,Not at all
+mcphases:16:2022,2,14,Fertility,Not at all
+mcphases:16:2022,2,15,Fertility,
+mcphases:16:2022,2,16,Fertility,Not at all
+mcphases:16:2022,2,17,Fertility,Not at all
+mcphases:16:2022,2,18,Fertility,
+mcphases:16:2022,2,19,Fertility,
+mcphases:16:2022,2,20,Luteal,Not at all
+mcphases:16:2022,2,21,Luteal,
+mcphases:16:2022,2,22,Luteal,Not at all
+mcphases:16:2022,2,23,Luteal,
+mcphases:16:2022,2,24,Luteal,
+mcphases:16:2022,2,25,Luteal,
+mcphases:16:2022,2,26,Luteal,Not at all
+mcphases:18:2022,1,1,Menstrual,Not at all
+mcphases:18:2022,1,2,Menstrual,Somewhat Heavy
+mcphases:18:2022,1,3,Menstrual,Heavy
+mcphases:18:2022,1,4,Menstrual,Heavy
+mcphases:18:2022,1,5,Menstrual,Somewhat Heavy
+mcphases:18:2022,1,6,Menstrual,Somewhat Light
+mcphases:18:2022,1,7,Follicular,Light
+mcphases:18:2022,1,8,Follicular,Not at all
+mcphases:18:2022,1,9,Follicular,Not at all
+mcphases:18:2022,1,10,Follicular,Not at all
+mcphases:18:2022,1,11,Follicular,Not at all
+mcphases:18:2022,1,12,Follicular,
+mcphases:18:2022,1,13,Follicular,Not at all
+mcphases:18:2022,1,14,Fertility,Not at all
+mcphases:18:2022,1,15,Fertility,Not at all
+mcphases:18:2022,1,16,Fertility,Not at all
+mcphases:18:2022,1,17,Fertility,Not at all
+mcphases:18:2022,1,18,Fertility,Not at all
+mcphases:18:2022,1,19,Fertility,Not at all
+mcphases:18:2022,1,20,Fertility,Not at all
+mcphases:18:2022,1,21,Luteal,Not at all
+mcphases:18:2022,1,22,Luteal,Not at all
+mcphases:18:2022,1,23,Luteal,Not at all
+mcphases:18:2022,1,24,Luteal,Not at all
+mcphases:18:2022,1,25,Luteal,Not at all
+mcphases:18:2022,1,26,Luteal,Not at all
+mcphases:18:2022,1,27,Luteal,Not at all
+mcphases:18:2022,2,1,Menstrual,Not at all
+mcphases:18:2022,2,2,Menstrual,Somewhat Heavy
+mcphases:18:2022,2,3,Menstrual,Very Heavy
+mcphases:18:2022,2,4,Menstrual,Heavy
+mcphases:18:2022,2,5,Menstrual,Moderate
+mcphases:18:2022,2,6,Menstrual,Somewhat Light
+mcphases:18:2022,2,7,Menstrual,Somewhat Light
+mcphases:18:2022,2,8,Follicular,Spotting / Very Light
+mcphases:18:2022,2,9,Follicular,Not at all
+mcphases:18:2022,2,10,Fertility,Not at all
+mcphases:18:2022,2,11,Fertility,Not at all
+mcphases:18:2022,2,12,Fertility,Not at all
+mcphases:18:2022,2,13,Fertility,Not at all
+mcphases:18:2022,2,14,Fertility,Not at all
+mcphases:18:2022,2,15,Fertility,Not at all
+mcphases:18:2022,2,16,Fertility,Not at all
+mcphases:18:2022,2,17,Luteal,Not at all
+mcphases:18:2022,2,18,Luteal,Not at all
+mcphases:18:2022,2,19,Luteal,Not at all
+mcphases:18:2022,2,20,Luteal,Not at all
+mcphases:18:2022,2,21,Luteal,Not at all
+mcphases:18:2022,2,22,Luteal,Not at all
+mcphases:18:2022,2,23,Luteal,Not at all
+mcphases:18:2022,2,24,Luteal,Not at all
+mcphases:18:2022,2,25,Luteal,Not at all
+mcphases:18:2022,2,26,Luteal,Not at all
+mcphases:18:2022,2,27,Luteal,Not at all
+mcphases:18:2022,3,1,Menstrual,Not at all
+mcphases:18:2022,3,2,Menstrual,Somewhat Heavy
+mcphases:18:2022,3,3,Menstrual,Very Heavy
+mcphases:18:2022,3,4,Menstrual,Moderate
+mcphases:18:2022,3,5,Menstrual,Moderate
+mcphases:18:2022,3,6,Menstrual,Somewhat Light
+mcphases:18:2022,3,7,Menstrual,Light
+mcphases:18:2022,3,8,Follicular,Spotting / Very Light
+mcphases:18:2022,3,9,Follicular,Not at all
+mcphases:18:2022,3,10,Fertility,Not at all
+mcphases:18:2022,3,11,Fertility,Not at all
+mcphases:18:2022,3,12,Fertility,Not at all
+mcphases:18:2022,3,13,Fertility,Not at all
+mcphases:18:2022,3,14,Fertility,Not at all
+mcphases:18:2022,3,15,Fertility,Not at all
+mcphases:18:2022,3,16,Luteal,Not at all
+mcphases:18:2024,1,1,Menstrual,
+mcphases:18:2024,1,2,Menstrual,
+mcphases:18:2024,1,3,Menstrual,
+mcphases:18:2024,1,4,Menstrual,
+mcphases:18:2024,1,5,Menstrual,
+mcphases:18:2024,1,6,Menstrual,
+mcphases:18:2024,1,7,Follicular,
+mcphases:18:2024,1,8,Follicular,
+mcphases:18:2024,1,9,Follicular,
+mcphases:18:2024,1,10,Fertility,
+mcphases:18:2024,1,11,Fertility,
+mcphases:18:2024,1,12,Fertility,
+mcphases:18:2024,1,13,Fertility,
+mcphases:18:2024,1,14,Fertility,
+mcphases:18:2024,1,15,Luteal,
+mcphases:18:2024,1,16,Luteal,
+mcphases:18:2024,1,17,Luteal,
+mcphases:18:2024,1,18,Luteal,
+mcphases:18:2024,1,19,Luteal,
+mcphases:18:2024,1,20,Luteal,
+mcphases:18:2024,1,21,Luteal,
+mcphases:18:2024,1,22,Luteal,
+mcphases:18:2024,1,23,Luteal,
+mcphases:18:2024,2,1,Menstrual,
+mcphases:18:2024,2,2,Menstrual,
+mcphases:18:2024,2,3,Menstrual,
+mcphases:18:2024,2,4,Menstrual,
+mcphases:18:2024,2,5,Menstrual,
+mcphases:18:2024,2,6,Follicular,
+mcphases:18:2024,2,7,Follicular,
+mcphases:18:2024,2,8,Follicular,
+mcphases:18:2024,2,9,Fertility,
+mcphases:18:2024,2,10,Fertility,
+mcphases:18:2024,2,11,Fertility,
+mcphases:18:2024,2,12,Fertility,
+mcphases:18:2024,2,13,Fertility,
+mcphases:18:2024,2,14,Fertility,
+mcphases:18:2024,2,15,Fertility,
+mcphases:18:2024,2,16,Fertility,
+mcphases:18:2024,2,17,Luteal,
+mcphases:18:2024,2,18,Luteal,
+mcphases:18:2024,2,19,Luteal,
+mcphases:18:2024,2,20,Luteal,
+mcphases:18:2024,2,21,Luteal,
+mcphases:18:2024,2,22,Luteal,
+mcphases:18:2024,2,23,Luteal,
+mcphases:18:2024,2,24,Luteal,
+mcphases:18:2024,3,1,Menstrual,
+mcphases:18:2024,3,2,Menstrual,
+mcphases:18:2024,3,3,Menstrual,
+mcphases:18:2024,3,4,Menstrual,
+mcphases:18:2024,3,5,Menstrual,
+mcphases:18:2024,3,6,Menstrual,
+mcphases:18:2024,3,7,Follicular,
+mcphases:18:2024,3,8,Follicular,
+mcphases:18:2024,3,9,Follicular,
+mcphases:18:2024,3,10,Follicular,
+mcphases:18:2024,3,11,Follicular,
+mcphases:18:2024,3,12,Follicular,
+mcphases:18:2024,3,13,Follicular,
+mcphases:18:2024,3,14,Follicular,
+mcphases:18:2024,3,15,Follicular,
+mcphases:18:2024,3,16,Follicular,
+mcphases:18:2024,3,17,Follicular,
+mcphases:18:2024,3,18,Follicular,
+mcphases:18:2024,3,19,Fertility,
+mcphases:18:2024,3,20,Fertility,
+mcphases:18:2024,3,21,Fertility,
+mcphases:18:2024,3,22,Fertility,
+mcphases:18:2024,3,23,Fertility,
+mcphases:18:2024,3,24,Fertility,
+mcphases:18:2024,3,25,Fertility,
+mcphases:18:2024,3,26,Fertility,
+mcphases:18:2024,4,1,Menstrual,
+mcphases:18:2024,4,2,Menstrual,
+mcphases:18:2024,4,3,Menstrual,
+mcphases:18:2024,4,4,Menstrual,
+mcphases:19:2022,1,1,Menstrual,Not at all
+mcphases:19:2022,1,2,Menstrual,Heavy
+mcphases:19:2022,1,3,Menstrual,Somewhat Heavy
+mcphases:19:2022,1,4,Menstrual,
+mcphases:19:2022,1,5,Menstrual,Somewhat Light
+mcphases:19:2022,1,6,Menstrual,Light
+mcphases:19:2022,1,7,Follicular,Spotting / Very Light
+mcphases:19:2022,1,8,Follicular,Not at all
+mcphases:19:2022,1,9,Follicular,Not at all
+mcphases:19:2022,1,10,Follicular,Not at all
+mcphases:19:2022,1,11,Follicular,Not at all
+mcphases:19:2022,1,12,Follicular,Not at all
+mcphases:19:2022,1,13,Follicular,Not at all
+mcphases:19:2022,1,14,Follicular,Not at all
+mcphases:19:2022,1,15,Follicular,Not at all
+mcphases:19:2022,1,16,Follicular,Not at all
+mcphases:19:2022,1,17,Follicular,Not at all
+mcphases:19:2022,1,18,Follicular,Not at all
+mcphases:19:2022,1,19,Follicular,Not at all
+mcphases:19:2022,1,20,Fertility,Not at all
+mcphases:19:2022,1,21,Fertility,Not at all
+mcphases:19:2022,1,22,Fertility,Not at all
+mcphases:19:2022,1,23,Fertility,Not at all
+mcphases:19:2022,1,24,Fertility,Not at all
+mcphases:19:2022,1,25,Fertility,
+mcphases:19:2022,1,26,Luteal,Not at all
+mcphases:19:2022,1,27,Luteal,Not at all
+mcphases:19:2022,1,28,Luteal,Not at all
+mcphases:19:2022,1,29,Luteal,Not at all
+mcphases:19:2022,1,30,Luteal,Not at all
+mcphases:19:2022,1,31,Luteal,
+mcphases:19:2022,1,32,Luteal,Not at all
+mcphases:19:2022,1,33,Luteal,Not at all
+mcphases:19:2022,1,34,Luteal,Not at all
+mcphases:19:2022,2,1,Menstrual,Not at all
+mcphases:19:2022,2,2,Menstrual,Spotting / Very Light
+mcphases:19:2022,2,3,Menstrual,Very Heavy
+mcphases:19:2022,2,4,Menstrual,Somewhat Light
+mcphases:19:2022,2,5,Menstrual,Somewhat Light
+mcphases:19:2022,2,6,Menstrual,Light
+mcphases:19:2022,2,7,Menstrual,Spotting / Very Light
+mcphases:19:2022,2,8,Follicular,Spotting / Very Light
+mcphases:19:2022,2,9,Follicular,Not at all
+mcphases:19:2022,2,10,Follicular,Not at all
+mcphases:19:2022,2,11,Follicular,Not at all
+mcphases:19:2022,2,12,Fertility,Not at all
+mcphases:19:2022,2,13,Fertility,Not at all
+mcphases:19:2022,2,14,Fertility,Not at all
+mcphases:19:2022,2,15,Fertility,Not at all
+mcphases:19:2022,2,16,Fertility,Not at all
+mcphases:19:2022,2,17,Fertility,Not at all
+mcphases:19:2022,2,18,Fertility,Not at all
+mcphases:19:2022,2,19,Luteal,Not at all
+mcphases:19:2022,2,20,Luteal,Not at all
+mcphases:19:2022,2,21,Luteal,Not at all
+mcphases:19:2022,2,22,Luteal,Not at all
+mcphases:19:2022,2,23,Luteal,Not at all
+mcphases:19:2022,2,24,Luteal,Not at all
+mcphases:19:2022,2,25,Luteal,Not at all
+mcphases:19:2022,2,26,Luteal,Not at all
+mcphases:19:2022,2,27,Luteal,Not at all
+mcphases:19:2022,2,28,Luteal,Not at all
+mcphases:19:2022,2,29,Luteal,Not at all
+mcphases:19:2022,2,30,Luteal,Not at all
+mcphases:19:2022,2,31,Luteal,Not at all
+mcphases:19:2022,3,1,Menstrual,Not at all
+mcphases:19:2022,3,2,Menstrual,Moderate
+mcphases:19:2022,3,3,Menstrual,Heavy
+mcphases:19:2022,3,4,Menstrual,Somewhat Light
+mcphases:19:2022,3,5,Menstrual,Light
+mcphases:19:2022,3,6,Menstrual,Spotting / Very Light
+mcphases:19:2022,3,7,Follicular,Spotting / Very Light
+mcphases:19:2022,3,8,Follicular,Not at all
+mcphases:19:2022,3,9,Follicular,Not at all
+mcphases:20:2022,1,1,Menstrual,Not at all
+mcphases:20:2022,1,2,Menstrual,Heavy
+mcphases:20:2022,1,3,Menstrual,Heavy
+mcphases:20:2022,1,4,Menstrual,Moderate
+mcphases:20:2022,1,5,Menstrual,Light
+mcphases:20:2022,1,6,Menstrual,Spotting / Very Light
+mcphases:20:2022,1,7,Follicular,Spotting / Very Light
+mcphases:20:2022,1,8,Follicular,Not at all
+mcphases:20:2022,1,9,Follicular,Not at all
+mcphases:20:2022,1,10,Follicular,Not at all
+mcphases:20:2022,1,11,Follicular,Not at all
+mcphases:20:2022,1,12,Fertility,Not at all
+mcphases:20:2022,1,13,Fertility,Not at all
+mcphases:20:2022,1,14,Fertility,Not at all
+mcphases:20:2022,1,15,Fertility,Not at all
+mcphases:20:2022,1,16,Fertility,Not at all
+mcphases:20:2022,1,17,Fertility,Not at all
+mcphases:20:2022,1,18,Fertility,Not at all
+mcphases:20:2022,1,19,Luteal,Not at all
+mcphases:20:2022,1,20,Luteal,Not at all
+mcphases:20:2022,1,21,Luteal,Not at all
+mcphases:20:2022,1,22,Luteal,Not at all
+mcphases:20:2022,1,23,Luteal,Not at all
+mcphases:20:2022,1,24,Luteal,Not at all
+mcphases:20:2022,1,25,Luteal,Not at all
+mcphases:20:2022,1,26,Luteal,
+mcphases:20:2022,1,27,Luteal,Not at all
+mcphases:20:2022,2,1,Menstrual,Not at all
+mcphases:20:2022,2,2,Menstrual,Not at all
+mcphases:20:2022,2,3,Menstrual,Moderate
+mcphases:20:2022,2,4,Menstrual,Very Heavy
+mcphases:20:2022,2,5,Menstrual,Very Heavy
+mcphases:20:2022,2,6,Menstrual,Somewhat Heavy
+mcphases:20:2022,2,7,Menstrual,Somewhat Light
+mcphases:20:2022,2,8,Menstrual,Light
+mcphases:20:2022,2,9,Follicular,Spotting / Very Light
+mcphases:20:2022,2,10,Follicular,Spotting / Very Light
+mcphases:20:2022,2,11,Follicular,Not at all
+mcphases:20:2022,2,12,Follicular,Not at all
+mcphases:20:2022,2,13,Follicular,Not at all
+mcphases:20:2022,2,14,Follicular,Not at all
+mcphases:20:2022,2,15,Follicular,Not at all
+mcphases:20:2022,2,16,Follicular,Not at all
+mcphases:20:2022,2,17,Follicular,Not at all
+mcphases:20:2022,2,18,Fertility,Not at all
+mcphases:20:2022,2,19,Fertility,Not at all
+mcphases:20:2022,2,20,Fertility,Not at all
+mcphases:20:2022,2,21,Fertility,Not at all
+mcphases:20:2022,2,22,Fertility,
+mcphases:20:2022,2,23,Fertility,Not at all
+mcphases:20:2022,2,24,Fertility,Not at all
+mcphases:20:2022,2,25,Luteal,
+mcphases:20:2022,2,26,Luteal,Not at all
+mcphases:20:2022,2,27,Luteal,Not at all
+mcphases:20:2022,2,28,Luteal,Not at all
+mcphases:20:2022,3,1,Menstrual,Not at all
+mcphases:20:2022,3,2,Menstrual,Moderate
+mcphases:20:2022,3,3,Menstrual,Heavy
+mcphases:20:2022,3,4,Menstrual,
+mcphases:20:2022,3,5,Menstrual,Somewhat Heavy
+mcphases:20:2022,3,6,Menstrual,Moderate
+mcphases:20:2022,3,7,Menstrual,
+mcphases:20:2022,3,8,Follicular,Not at all
+mcphases:20:2022,3,9,Follicular,Not at all
+mcphases:20:2022,3,10,Follicular,Not at all
+mcphases:20:2022,3,11,Fertility,Not at all
+mcphases:20:2022,3,12,Fertility,Not at all
+mcphases:20:2022,3,13,Fertility,Not at all
+mcphases:20:2022,3,14,Fertility,
+mcphases:20:2022,3,15,Fertility,Not at all
+mcphases:20:2022,3,16,Fertility,Not at all
+mcphases:20:2022,3,17,Fertility,Not at all
+mcphases:20:2022,3,18,Luteal,
+mcphases:20:2022,3,19,Luteal,Not at all
+mcphases:20:2022,3,20,Luteal,Not at all
+mcphases:20:2022,3,21,Luteal,Not at all
+mcphases:20:2022,3,22,Luteal,
+mcphases:20:2022,3,23,Luteal,Not at all
+mcphases:20:2022,3,24,Luteal,Not at all
+mcphases:20:2022,3,25,Luteal,Not at all
+mcphases:20:2022,3,26,Luteal,Not at all
+mcphases:20:2022,3,27,Luteal,Not at all
+mcphases:20:2022,3,28,Luteal,Not at all
+mcphases:20:2022,4,1,Menstrual,Not at all
+mcphases:20:2022,4,2,Menstrual,Somewhat Heavy
+mcphases:20:2022,4,3,Menstrual,Very Heavy
+mcphases:20:2022,4,4,Menstrual,Somewhat Heavy
+mcphases:20:2022,4,5,Menstrual,
+mcphases:20:2022,4,6,Menstrual,Moderate
+mcphases:20:2022,4,7,Follicular,Spotting / Very Light
+mcphases:20:2024,1,1,Menstrual,
+mcphases:20:2024,1,2,Menstrual,
+mcphases:20:2024,1,3,Menstrual,
+mcphases:20:2024,1,4,Menstrual,
+mcphases:20:2024,1,5,Menstrual,
+mcphases:20:2024,1,6,Menstrual,
+mcphases:20:2024,1,7,Menstrual,
+mcphases:20:2024,1,8,Follicular,
+mcphases:20:2024,1,9,Fertility,
+mcphases:20:2024,1,10,Fertility,
+mcphases:20:2024,1,11,Fertility,
+mcphases:20:2024,1,12,Fertility,
+mcphases:20:2024,1,13,Fertility,
+mcphases:20:2024,1,14,Fertility,
+mcphases:20:2024,1,15,Fertility,
+mcphases:20:2024,1,16,Luteal,
+mcphases:20:2024,1,17,Luteal,
+mcphases:20:2024,1,18,Luteal,
+mcphases:20:2024,1,19,Luteal,
+mcphases:20:2024,1,20,Luteal,
+mcphases:20:2024,1,21,Luteal,
+mcphases:20:2024,1,22,Luteal,
+mcphases:20:2024,1,23,Luteal,
+mcphases:20:2024,1,24,Luteal,
+mcphases:20:2024,1,25,Luteal,
+mcphases:20:2024,2,1,Menstrual,
+mcphases:20:2024,2,2,Menstrual,
+mcphases:20:2024,2,3,Menstrual,
+mcphases:20:2024,2,4,Menstrual,
+mcphases:20:2024,2,5,Menstrual,
+mcphases:20:2024,2,6,Menstrual,
+mcphases:20:2024,2,7,Menstrual,
+mcphases:20:2024,2,8,Follicular,
+mcphases:20:2024,2,9,Follicular,
+mcphases:20:2024,2,10,Follicular,
+mcphases:20:2024,2,11,Follicular,
+mcphases:20:2024,2,12,Fertility,
+mcphases:20:2024,2,13,Fertility,
+mcphases:20:2024,2,14,Fertility,
+mcphases:20:2024,2,15,Fertility,
+mcphases:20:2024,2,16,Fertility,
+mcphases:20:2024,2,17,Fertility,
+mcphases:20:2024,2,18,Fertility,
+mcphases:20:2024,2,19,Fertility,
+mcphases:20:2024,2,20,Luteal,
+mcphases:20:2024,2,21,Luteal,
+mcphases:20:2024,2,22,Luteal,
+mcphases:20:2024,2,23,Luteal,
+mcphases:20:2024,2,24,Luteal,
+mcphases:20:2024,2,25,Luteal,
+mcphases:20:2024,2,26,Luteal,
+mcphases:20:2024,2,27,Luteal,
+mcphases:20:2024,2,28,Luteal,
+mcphases:20:2024,3,1,Menstrual,
+mcphases:20:2024,3,2,Menstrual,
+mcphases:20:2024,3,3,Menstrual,
+mcphases:20:2024,3,4,Menstrual,
+mcphases:20:2024,3,5,Menstrual,
+mcphases:20:2024,3,6,Menstrual,
+mcphases:20:2024,3,7,Menstrual,
+mcphases:20:2024,3,8,Follicular,
+mcphases:20:2024,3,9,Follicular,
+mcphases:20:2024,3,10,Follicular,
+mcphases:20:2024,3,11,Follicular,
+mcphases:20:2024,3,12,Fertility,
+mcphases:20:2024,3,13,Fertility,
+mcphases:20:2024,3,14,Fertility,
+mcphases:20:2024,3,15,Fertility,
+mcphases:20:2024,3,16,Fertility,
+mcphases:20:2024,3,17,Fertility,
+mcphases:20:2024,3,18,Fertility,
+mcphases:20:2024,3,19,Fertility,
+mcphases:20:2024,3,20,Luteal,
+mcphases:20:2024,3,21,Luteal,
+mcphases:20:2024,3,22,Luteal,
+mcphases:20:2024,3,23,Luteal,
+mcphases:20:2024,3,24,Luteal,
+mcphases:20:2024,3,25,Luteal,
+mcphases:20:2024,3,26,Luteal,
+mcphases:20:2024,3,27,Luteal,
+mcphases:20:2024,3,28,Luteal,
+mcphases:20:2024,3,29,Luteal,
+mcphases:20:2024,4,1,Menstrual,
+mcphases:20:2024,4,2,Menstrual,
+mcphases:20:2024,4,3,Menstrual,
+mcphases:20:2024,4,4,Menstrual,
+mcphases:20:2024,4,5,Menstrual,
+mcphases:20:2024,4,6,Menstrual,
+mcphases:20:2024,4,7,Menstrual,
+mcphases:20:2024,4,8,Follicular,
+mcphases:20:2024,4,9,Fertility,
+mcphases:20:2024,4,10,Fertility,
+mcphases:20:2024,4,11,Fertility,
+mcphases:20:2024,4,12,Fertility,
+mcphases:20:2024,4,13,Fertility,
+mcphases:22:2022,1,1,Menstrual,Not at all
+mcphases:22:2022,1,2,Menstrual,
+mcphases:22:2022,1,3,Menstrual,Light
+mcphases:22:2022,1,4,Menstrual,Very Heavy
+mcphases:22:2022,1,5,Menstrual,Heavy
+mcphases:22:2022,1,6,Menstrual,Somewhat Heavy
+mcphases:22:2022,1,7,Menstrual,Light
+mcphases:22:2022,1,8,Follicular,Spotting / Very Light
+mcphases:22:2022,1,9,Follicular,Not at all
+mcphases:22:2022,1,10,Follicular,Not at all
+mcphases:22:2022,1,11,Follicular,
+mcphases:22:2022,1,12,Follicular,Not at all
+mcphases:22:2022,1,13,Follicular,Not at all
+mcphases:22:2022,1,14,Follicular,Not at all
+mcphases:22:2022,1,15,Follicular,Not at all
+mcphases:22:2022,1,16,Fertility,
+mcphases:22:2022,1,17,Fertility,
+mcphases:22:2022,1,18,Fertility,
+mcphases:22:2022,1,19,Fertility,
+mcphases:22:2022,1,20,Fertility,Not at all
+mcphases:22:2022,1,21,Fertility,Not at all
+mcphases:22:2022,1,22,Luteal,Not at all
+mcphases:22:2022,1,23,Luteal,Not at all
+mcphases:22:2022,1,24,Luteal,Not at all
+mcphases:22:2022,1,25,Luteal,Not at all
+mcphases:22:2022,1,26,Luteal,Not at all
+mcphases:22:2022,1,27,Luteal,Not at all
+mcphases:22:2022,1,28,Luteal,Not at all
+mcphases:22:2022,1,29,Luteal,Not at all
+mcphases:22:2022,1,30,Luteal,Not at all
+mcphases:22:2022,2,1,Menstrual,Not at all
+mcphases:22:2022,2,2,Menstrual,Moderate
+mcphases:22:2022,2,3,Menstrual,
+mcphases:22:2022,2,4,Menstrual,Very Heavy
+mcphases:22:2022,2,5,Menstrual,Somewhat Heavy
+mcphases:22:2022,2,6,Menstrual,
+mcphases:22:2022,2,7,Menstrual,Spotting / Very Light
+mcphases:22:2022,2,8,Follicular,Spotting / Very Light
+mcphases:22:2022,2,9,Follicular,Not at all
+mcphases:22:2022,2,10,Follicular,Not at all
+mcphases:22:2022,2,11,Follicular,Not at all
+mcphases:22:2022,2,12,Follicular,
+mcphases:22:2022,2,13,Follicular,Not at all
+mcphases:22:2022,2,14,Follicular,Not at all
+mcphases:22:2022,2,15,Follicular,
+mcphases:22:2022,2,16,Fertility,
+mcphases:22:2022,2,17,Fertility,Not at all
+mcphases:22:2022,2,18,Fertility,Not at all
+mcphases:22:2022,2,19,Fertility,Not at all
+mcphases:22:2022,2,20,Fertility,Not at all
+mcphases:22:2022,2,21,Fertility,Not at all
+mcphases:22:2022,2,22,Luteal,
+mcphases:22:2022,2,23,Luteal,Not at all
+mcphases:22:2022,2,24,Luteal,
+mcphases:22:2022,2,25,Luteal,
+mcphases:22:2022,2,26,Luteal,Not at all
+mcphases:22:2022,2,27,Luteal,Not at all
+mcphases:22:2022,2,28,Luteal,
+mcphases:22:2022,2,29,Luteal,
+mcphases:22:2022,3,1,Menstrual,Not at all
+mcphases:22:2022,3,2,Menstrual,Somewhat Light
+mcphases:22:2022,3,3,Menstrual,
+mcphases:22:2022,3,4,Menstrual,
+mcphases:22:2022,3,5,Menstrual,
+mcphases:22:2022,3,6,Menstrual,
+mcphases:22:2022,3,7,Menstrual,
+mcphases:22:2022,3,8,Follicular,
+mcphases:22:2022,3,9,Follicular,
+mcphases:22:2022,3,10,Follicular,
+mcphases:22:2022,3,11,Follicular,
+mcphases:22:2022,3,12,Follicular,
+mcphases:22:2024,1,1,Menstrual,
+mcphases:22:2024,1,2,Menstrual,
+mcphases:22:2024,1,3,Menstrual,
+mcphases:22:2024,1,4,Menstrual,
+mcphases:22:2024,1,5,Menstrual,
+mcphases:22:2024,1,6,Menstrual,
+mcphases:22:2024,1,7,Menstrual,
+mcphases:22:2024,1,8,Menstrual,
+mcphases:22:2024,1,9,Follicular,
+mcphases:22:2024,1,10,Follicular,
+mcphases:22:2024,1,11,Follicular,
+mcphases:22:2024,1,12,Follicular,
+mcphases:22:2024,1,13,Follicular,
+mcphases:22:2024,1,14,Follicular,
+mcphases:22:2024,1,15,Follicular,
+mcphases:22:2024,1,16,Follicular,
+mcphases:22:2024,1,17,Fertility,
+mcphases:22:2024,1,18,Fertility,
+mcphases:22:2024,1,19,Fertility,
+mcphases:22:2024,1,20,Fertility,
+mcphases:22:2024,1,21,Fertility,
+mcphases:22:2024,1,22,Fertility,
+mcphases:22:2024,1,23,Fertility,
+mcphases:22:2024,1,24,Fertility,
+mcphases:22:2024,1,25,Luteal,
+mcphases:22:2024,1,26,Luteal,
+mcphases:22:2024,1,27,Luteal,
+mcphases:22:2024,1,28,Luteal,
+mcphases:22:2024,1,29,Luteal,
+mcphases:22:2024,1,30,Luteal,
+mcphases:22:2024,1,31,Luteal,
+mcphases:22:2024,1,32,Luteal,
+mcphases:22:2024,1,33,Luteal,
+mcphases:22:2024,2,1,Menstrual,
+mcphases:22:2024,2,2,Menstrual,
+mcphases:22:2024,2,3,Menstrual,
+mcphases:22:2024,2,4,Menstrual,
+mcphases:22:2024,2,5,Menstrual,
+mcphases:22:2024,2,6,Menstrual,
+mcphases:22:2024,2,7,Menstrual,
+mcphases:22:2024,2,8,Menstrual,
+mcphases:22:2024,2,9,Follicular,
+mcphases:22:2024,2,10,Follicular,
+mcphases:22:2024,2,11,Follicular,
+mcphases:22:2024,2,12,Follicular,
+mcphases:22:2024,2,13,Follicular,
+mcphases:22:2024,2,14,Follicular,
+mcphases:22:2024,2,15,Fertility,
+mcphases:22:2024,2,16,Fertility,
+mcphases:22:2024,2,17,Fertility,
+mcphases:22:2024,2,18,Fertility,
+mcphases:22:2024,2,19,Fertility,
+mcphases:22:2024,2,20,Fertility,
+mcphases:22:2024,2,21,Fertility,
+mcphases:22:2024,2,22,Fertility,
+mcphases:22:2024,2,23,Luteal,
+mcphases:22:2024,2,24,Luteal,
+mcphases:22:2024,2,25,Luteal,
+mcphases:22:2024,2,26,Luteal,
+mcphases:22:2024,2,27,Luteal,
+mcphases:22:2024,2,28,Luteal,
+mcphases:22:2024,2,29,Luteal,
+mcphases:22:2024,2,30,Luteal,
+mcphases:22:2024,2,31,Luteal,
+mcphases:22:2024,3,1,Menstrual,
+mcphases:22:2024,3,2,Menstrual,
+mcphases:22:2024,3,3,Menstrual,
+mcphases:22:2024,3,4,Menstrual,
+mcphases:22:2024,3,5,Menstrual,
+mcphases:22:2024,3,6,Menstrual,
+mcphases:22:2024,3,7,Menstrual,
+mcphases:22:2024,3,8,Menstrual,
+mcphases:22:2024,3,9,Follicular,
+mcphases:22:2024,3,10,Follicular,
+mcphases:22:2024,3,11,Follicular,
+mcphases:22:2024,3,12,Follicular,
+mcphases:22:2024,3,13,Follicular,
+mcphases:22:2024,3,14,Follicular,
+mcphases:22:2024,3,15,Fertility,
+mcphases:22:2024,3,16,Fertility,
+mcphases:22:2024,3,17,Fertility,
+mcphases:22:2024,3,18,Fertility,
+mcphases:22:2024,3,19,Fertility,
+mcphases:23:2022,1,1,Menstrual,Spotting / Very Light
+mcphases:23:2022,1,2,Menstrual,Somewhat Heavy
+mcphases:23:2022,1,3,Menstrual,Somewhat Heavy
+mcphases:23:2022,1,4,Menstrual,
+mcphases:23:2022,1,5,Menstrual,Somewhat Heavy
+mcphases:23:2022,1,6,Menstrual,Light
+mcphases:23:2022,1,7,Follicular,Spotting / Very Light
+mcphases:23:2022,1,8,Follicular,Not at all
+mcphases:23:2022,1,9,Follicular,
+mcphases:23:2022,1,10,Follicular,Not at all
+mcphases:23:2022,1,11,Follicular,
+mcphases:23:2022,1,12,Follicular,Not at all
+mcphases:23:2022,1,13,Follicular,
+mcphases:23:2022,1,14,Follicular,
+mcphases:23:2022,1,15,Follicular,
+mcphases:23:2022,1,16,Follicular,Not at all
+mcphases:23:2022,1,17,Fertility,
+mcphases:23:2022,1,18,Fertility,Not at all
+mcphases:23:2022,1,19,Fertility,Not at all
+mcphases:23:2022,1,20,Fertility,
+mcphases:23:2022,1,21,Fertility,Not at all
+mcphases:23:2022,1,22,Fertility,Not at all
+mcphases:23:2022,1,23,Luteal,
+mcphases:23:2022,1,24,Luteal,Not at all
+mcphases:23:2022,1,25,Luteal,Not at all
+mcphases:23:2022,1,26,Luteal,
+mcphases:23:2022,1,27,Luteal,Not at all
+mcphases:23:2022,1,28,Luteal,Not at all
+mcphases:23:2022,1,29,Luteal,Not at all
+mcphases:23:2022,1,30,Luteal,Not at all
+mcphases:23:2022,1,31,Luteal,Not at all
+mcphases:23:2022,1,32,Luteal,Not at all
+mcphases:23:2022,1,33,Luteal,
+mcphases:23:2022,1,34,Luteal,Not at all
+mcphases:23:2022,2,1,Menstrual,Not at all
+mcphases:23:2022,2,2,Menstrual,Moderate
+mcphases:23:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:23:2022,2,4,Menstrual,
+mcphases:23:2022,2,5,Menstrual,Somewhat Heavy
+mcphases:23:2022,2,6,Menstrual,Moderate
+mcphases:23:2022,2,7,Follicular,
+mcphases:23:2022,2,8,Follicular,
+mcphases:23:2022,2,9,Follicular,Not at all
+mcphases:23:2022,2,10,Follicular,
+mcphases:23:2022,2,11,Follicular,
+mcphases:23:2022,2,12,Fertility,
+mcphases:23:2022,2,13,Fertility,Not at all
+mcphases:23:2022,2,14,Fertility,
+mcphases:23:2022,2,15,Fertility,
+mcphases:23:2022,2,16,Fertility,
+mcphases:23:2022,2,17,Fertility,
+mcphases:23:2022,2,18,Luteal,
+mcphases:23:2022,2,19,Luteal,
+mcphases:23:2022,2,20,Luteal,
+mcphases:23:2022,2,21,Luteal,
+mcphases:23:2022,2,22,Luteal,
+mcphases:23:2022,2,23,Luteal,Not at all
+mcphases:23:2022,2,24,Luteal,Not at all
+mcphases:23:2022,2,25,Luteal,Not at all
+mcphases:23:2022,2,26,Luteal,Not at all
+mcphases:23:2022,2,27,Luteal,Not at all
+mcphases:23:2022,2,28,Luteal,Not at all
+mcphases:23:2022,2,29,Luteal,Not at all
+mcphases:23:2022,3,1,Menstrual,Not at all
+mcphases:23:2022,3,2,Menstrual,Moderate
+mcphases:23:2022,3,3,Menstrual,Very Heavy
+mcphases:23:2022,3,4,Menstrual,Heavy
+mcphases:23:2022,3,5,Menstrual,Somewhat Heavy
+mcphases:23:2022,3,6,Menstrual,Moderate
+mcphases:23:2022,3,7,Menstrual,Light
+mcphases:23:2022,3,8,Follicular,Spotting / Very Light
+mcphases:23:2022,3,9,Follicular,Not at all
+mcphases:23:2022,3,10,Follicular,Not at all
+mcphases:23:2022,3,11,Follicular,
+mcphases:23:2022,3,12,Follicular,
+mcphases:24:2022,1,1,Menstrual,Not at all
+mcphases:24:2022,1,2,Menstrual,Moderate
+mcphases:24:2022,1,3,Menstrual,Somewhat Heavy
+mcphases:24:2022,1,4,Menstrual,Somewhat Heavy
+mcphases:24:2022,1,5,Menstrual,Moderate
+mcphases:24:2022,1,6,Menstrual,Spotting / Very Light
+mcphases:24:2022,1,7,Follicular,Spotting / Very Light
+mcphases:24:2022,1,8,Follicular,Not at all
+mcphases:24:2022,1,9,Follicular,Not at all
+mcphases:24:2022,1,10,Follicular,Not at all
+mcphases:24:2022,1,11,Follicular,Not at all
+mcphases:24:2022,1,12,Follicular,Not at all
+mcphases:24:2022,1,13,Follicular,Not at all
+mcphases:24:2022,1,14,Fertility,Not at all
+mcphases:24:2022,1,15,Fertility,Not at all
+mcphases:24:2022,1,16,Fertility,Not at all
+mcphases:24:2022,1,17,Fertility,Not at all
+mcphases:24:2022,1,18,Fertility,Not at all
+mcphases:24:2022,1,19,Fertility,Not at all
+mcphases:24:2022,1,20,Fertility,Not at all
+mcphases:24:2022,1,21,Luteal,Not at all
+mcphases:24:2022,1,22,Luteal,Not at all
+mcphases:24:2022,1,23,Luteal,Not at all
+mcphases:24:2022,1,24,Luteal,Not at all
+mcphases:24:2022,1,25,Luteal,Not at all
+mcphases:24:2022,1,26,Luteal,Not at all
+mcphases:24:2022,1,27,Luteal,Not at all
+mcphases:24:2022,1,28,Luteal,Not at all
+mcphases:24:2022,1,29,Luteal,Not at all
+mcphases:24:2022,1,30,Luteal,Not at all
+mcphases:24:2022,1,31,Luteal,Not at all
+mcphases:24:2022,1,32,Luteal,
+mcphases:24:2022,2,1,Menstrual,Not at all
+mcphases:24:2022,2,2,Menstrual,Moderate
+mcphases:24:2022,2,3,Menstrual,Heavy
+mcphases:24:2022,2,4,Menstrual,Somewhat Heavy
+mcphases:24:2022,2,5,Menstrual,Moderate
+mcphases:24:2022,2,6,Follicular,Spotting / Very Light
+mcphases:24:2022,2,7,Follicular,Not at all
+mcphases:24:2022,2,8,Follicular,Not at all
+mcphases:24:2022,2,9,Follicular,Not at all
+mcphases:24:2022,2,10,Follicular,Not at all
+mcphases:24:2022,2,11,Follicular,Not at all
+mcphases:24:2022,2,12,Follicular,Not at all
+mcphases:24:2022,2,13,Follicular,Not at all
+mcphases:24:2022,2,14,Follicular,
+mcphases:24:2022,2,15,Follicular,Not at all
+mcphases:24:2022,2,16,Follicular,Not at all
+mcphases:24:2022,2,17,Fertility,Not at all
+mcphases:24:2022,2,18,Fertility,Not at all
+mcphases:24:2022,2,19,Fertility,
+mcphases:24:2022,2,20,Fertility,Not at all
+mcphases:24:2022,2,21,Fertility,Not at all
+mcphases:24:2022,2,22,Fertility,Not at all
+mcphases:24:2022,2,23,Fertility,Not at all
+mcphases:24:2022,2,24,Luteal,Not at all
+mcphases:24:2022,2,25,Luteal,Not at all
+mcphases:24:2022,2,26,Luteal,Not at all
+mcphases:24:2022,2,27,Luteal,Not at all
+mcphases:26:2022,1,1,Menstrual,Not at all
+mcphases:26:2022,1,2,Menstrual,Somewhat Light
+mcphases:26:2022,1,3,Menstrual,Heavy
+mcphases:26:2022,1,4,Menstrual,Moderate
+mcphases:26:2022,1,5,Menstrual,Somewhat Light
+mcphases:26:2022,1,6,Menstrual,Somewhat Light
+mcphases:26:2022,1,7,Menstrual,Light
+mcphases:26:2022,1,8,Follicular,Light
+mcphases:26:2022,1,9,Follicular,Not at all
+mcphases:26:2022,1,10,Fertility,Not at all
+mcphases:26:2022,1,11,Fertility,Not at all
+mcphases:26:2022,1,12,Fertility,Not at all
+mcphases:26:2022,1,13,Fertility,Not at all
+mcphases:26:2022,1,14,Fertility,Not at all
+mcphases:26:2022,1,15,Fertility,Not at all
+mcphases:26:2022,1,16,Luteal,Not at all
+mcphases:26:2022,1,17,Luteal,Not at all
+mcphases:26:2022,1,18,Luteal,Not at all
+mcphases:26:2022,1,19,Luteal,Not at all
+mcphases:26:2022,1,20,Luteal,Not at all
+mcphases:26:2022,1,21,Luteal,Not at all
+mcphases:26:2022,1,22,Luteal,Not at all
+mcphases:26:2022,1,23,Luteal,Not at all
+mcphases:26:2022,1,24,Luteal,Not at all
+mcphases:26:2022,1,25,Luteal,Not at all
+mcphases:26:2022,1,26,Luteal,Not at all
+mcphases:26:2022,1,27,Luteal,Not at all
+mcphases:26:2022,1,28,Luteal,Not at all
+mcphases:26:2022,2,1,Menstrual,
+mcphases:26:2022,2,2,Menstrual,Not at all
+mcphases:26:2022,2,3,Menstrual,Heavy
+mcphases:26:2022,2,4,Menstrual,Very Heavy
+mcphases:26:2022,2,5,Menstrual,Moderate
+mcphases:26:2022,2,6,Menstrual,Moderate
+mcphases:26:2022,2,7,Follicular,Somewhat Light
+mcphases:26:2022,2,8,Follicular,Not at all
+mcphases:26:2022,2,9,Fertility,Not at all
+mcphases:26:2022,2,10,Fertility,
+mcphases:26:2022,2,11,Fertility,Not at all
+mcphases:26:2022,2,12,Fertility,Not at all
+mcphases:26:2022,2,13,Fertility,
+mcphases:26:2022,2,14,Fertility,Not at all
+mcphases:26:2022,2,15,Fertility,
+mcphases:26:2022,2,16,Luteal,Not at all
+mcphases:26:2022,2,17,Luteal,Not at all
+mcphases:26:2022,2,18,Luteal,Not at all
+mcphases:26:2022,2,19,Luteal,
+mcphases:26:2022,2,20,Luteal,
+mcphases:26:2022,2,21,Luteal,Not at all
+mcphases:26:2022,2,22,Luteal,
+mcphases:26:2022,2,23,Luteal,
+mcphases:26:2022,2,24,Luteal,Not at all
+mcphases:26:2022,2,25,Luteal,Not at all
+mcphases:26:2022,2,26,Luteal,Not at all
+mcphases:26:2022,2,27,Luteal,Not at all
+mcphases:26:2022,2,28,Luteal,Not at all
+mcphases:26:2022,3,1,Menstrual,
+mcphases:26:2022,3,2,Menstrual,Light
+mcphases:26:2022,3,3,Menstrual,Somewhat Heavy
+mcphases:26:2022,3,4,Menstrual,Moderate
+mcphases:26:2022,3,5,Menstrual,Somewhat Light
+mcphases:26:2022,3,6,Menstrual,Light
+mcphases:26:2022,3,7,Menstrual,Light
+mcphases:26:2022,3,8,Follicular,Spotting / Very Light
+mcphases:26:2022,3,9,Follicular,Light
+mcphases:26:2022,3,10,Fertility,
+mcphases:26:2022,3,11,Fertility,Not at all
+mcphases:26:2022,3,12,Fertility,Not at all
+mcphases:26:2022,3,13,Fertility,Not at all
+mcphases:26:2022,3,14,Fertility,Not at all
+mcphases:26:2022,3,15,Fertility,Not at all
+mcphases:26:2022,3,16,Fertility,Not at all
+mcphases:26:2022,3,17,Luteal,
+mcphases:26:2022,3,18,Luteal,
+mcphases:26:2022,3,19,Luteal,Not at all
+mcphases:26:2022,3,20,Luteal,
+mcphases:26:2022,3,21,Luteal,
+mcphases:26:2022,3,22,Luteal,Not at all
+mcphases:26:2022,3,23,Luteal,
+mcphases:26:2022,3,24,Luteal,
+mcphases:26:2022,3,25,Luteal,
+mcphases:26:2022,3,26,Luteal,
+mcphases:26:2022,3,27,Luteal,
+mcphases:26:2022,3,28,Luteal,
+mcphases:26:2022,3,29,Luteal,Not at all
+mcphases:26:2022,4,1,Menstrual,
+mcphases:26:2022,4,2,Menstrual,Somewhat Heavy
+mcphases:26:2022,4,3,Menstrual,Somewhat Heavy
+mcphases:26:2024,1,1,Menstrual,
+mcphases:26:2024,1,2,Menstrual,
+mcphases:26:2024,1,3,Menstrual,
+mcphases:26:2024,1,4,Menstrual,
+mcphases:26:2024,1,5,Menstrual,
+mcphases:26:2024,1,6,Menstrual,
+mcphases:26:2024,1,7,Menstrual,
+mcphases:26:2024,1,8,Follicular,
+mcphases:26:2024,1,9,Follicular,
+mcphases:26:2024,1,10,Follicular,
+mcphases:26:2024,1,11,Follicular,
+mcphases:26:2024,1,12,Fertility,
+mcphases:26:2024,1,13,Fertility,
+mcphases:26:2024,1,14,Fertility,
+mcphases:26:2024,1,15,Fertility,
+mcphases:26:2024,1,16,Fertility,
+mcphases:26:2024,1,17,Fertility,
+mcphases:26:2024,1,18,Fertility,
+mcphases:26:2024,1,19,Luteal,
+mcphases:26:2024,1,20,Luteal,
+mcphases:26:2024,1,21,Luteal,
+mcphases:26:2024,1,22,Luteal,
+mcphases:26:2024,1,23,Luteal,
+mcphases:26:2024,1,24,Luteal,
+mcphases:26:2024,1,25,Luteal,
+mcphases:26:2024,1,26,Luteal,
+mcphases:26:2024,1,27,Luteal,
+mcphases:26:2024,1,28,Luteal,
+mcphases:26:2024,1,29,Luteal,
+mcphases:26:2024,2,1,Menstrual,
+mcphases:26:2024,2,2,Menstrual,
+mcphases:26:2024,2,3,Menstrual,
+mcphases:26:2024,2,4,Menstrual,
+mcphases:26:2024,2,5,Menstrual,
+mcphases:26:2024,2,6,Menstrual,
+mcphases:26:2024,2,7,Menstrual,
+mcphases:26:2024,2,8,Follicular,
+mcphases:26:2024,2,9,Follicular,
+mcphases:26:2024,2,10,Fertility,
+mcphases:26:2024,2,11,Fertility,
+mcphases:26:2024,2,12,Fertility,
+mcphases:26:2024,2,13,Fertility,
+mcphases:26:2024,2,14,Fertility,
+mcphases:26:2024,2,15,Fertility,
+mcphases:26:2024,2,16,Fertility,
+mcphases:26:2024,2,17,Fertility,
+mcphases:26:2024,2,18,Luteal,
+mcphases:26:2024,2,19,Luteal,
+mcphases:26:2024,2,20,Luteal,
+mcphases:26:2024,2,21,Luteal,
+mcphases:26:2024,2,22,Luteal,
+mcphases:26:2024,2,23,Luteal,
+mcphases:26:2024,2,24,Luteal,
+mcphases:26:2024,2,25,Luteal,
+mcphases:26:2024,2,26,Luteal,
+mcphases:26:2024,2,27,Luteal,
+mcphases:26:2024,3,1,Menstrual,
+mcphases:26:2024,3,2,Menstrual,
+mcphases:26:2024,3,3,Menstrual,
+mcphases:26:2024,3,4,Menstrual,
+mcphases:26:2024,3,5,Menstrual,
+mcphases:26:2024,3,6,Menstrual,
+mcphases:26:2024,3,7,Menstrual,
+mcphases:26:2024,3,8,Follicular,
+mcphases:26:2024,3,9,Follicular,
+mcphases:26:2024,3,10,Follicular,
+mcphases:26:2024,3,11,Follicular,
+mcphases:26:2024,3,12,Follicular,
+mcphases:26:2024,3,13,Follicular,
+mcphases:26:2024,3,14,Fertility,
+mcphases:26:2024,3,15,Fertility,
+mcphases:26:2024,3,16,Fertility,
+mcphases:26:2024,3,17,Fertility,
+mcphases:26:2024,3,18,Fertility,
+mcphases:26:2024,3,19,Fertility,
+mcphases:26:2024,3,20,Fertility,
+mcphases:26:2024,3,21,Fertility,
+mcphases:26:2024,3,22,Luteal,
+mcphases:26:2024,3,23,Luteal,
+mcphases:26:2024,3,24,Luteal,
+mcphases:26:2024,3,25,Luteal,
+mcphases:26:2024,3,26,Luteal,
+mcphases:26:2024,3,27,Luteal,
+mcphases:26:2024,3,28,Luteal,
+mcphases:26:2024,3,29,Luteal,
+mcphases:26:2024,3,30,Luteal,
+mcphases:26:2024,3,31,Luteal,
+mcphases:26:2024,3,32,Luteal,
+mcphases:26:2024,4,1,Menstrual,
+mcphases:26:2024,4,2,Menstrual,
+mcphases:26:2024,4,3,Menstrual,
+mcphases:26:2024,4,4,Menstrual,
+mcphases:26:2024,4,5,Menstrual,
+mcphases:26:2024,4,6,Menstrual,
+mcphases:26:2024,4,7,Menstrual,
+mcphases:26:2024,4,8,Follicular,
+mcphases:26:2024,4,9,Fertility,
+mcphases:26:2024,4,10,Fertility,
+mcphases:26:2024,4,11,Fertility,
+mcphases:26:2024,4,12,Fertility,
+mcphases:26:2024,4,13,Fertility,
+mcphases:26:2024,4,14,Luteal,
+mcphases:26:2024,4,15,Luteal,
+mcphases:26:2024,4,16,Luteal,
+mcphases:26:2024,4,17,Luteal,
+mcphases:26:2024,4,18,Luteal,
+mcphases:26:2024,4,19,Luteal,
+mcphases:26:2024,4,20,Luteal,
+mcphases:26:2024,4,21,Luteal,
+mcphases:26:2024,4,22,Luteal,
+mcphases:26:2024,4,23,Luteal,
+mcphases:26:2024,4,24,Luteal,
+mcphases:26:2024,5,1,Menstrual,
+mcphases:26:2024,5,2,Menstrual,
+mcphases:26:2024,5,3,Menstrual,
+mcphases:26:2024,5,4,Menstrual,
+mcphases:26:2024,5,5,Menstrual,
+mcphases:27:2022,1,1,Menstrual,Not at all
+mcphases:27:2022,1,2,Menstrual,Light
+mcphases:27:2022,1,3,Menstrual,Heavy
+mcphases:27:2022,1,4,Menstrual,Somewhat Heavy
+mcphases:27:2022,1,5,Menstrual,Somewhat Light
+mcphases:27:2022,1,6,Menstrual,Moderate
+mcphases:27:2022,1,7,Follicular,Light
+mcphases:27:2022,1,8,Follicular,Not at all
+mcphases:27:2022,1,9,Follicular,Not at all
+mcphases:27:2022,1,10,Follicular,Not at all
+mcphases:27:2022,1,11,Follicular,Not at all
+mcphases:27:2022,1,12,Follicular,Not at all
+mcphases:27:2022,1,13,Fertility,Not at all
+mcphases:27:2022,1,14,Fertility,Not at all
+mcphases:27:2022,1,15,Fertility,Not at all
+mcphases:27:2022,1,16,Fertility,Not at all
+mcphases:27:2022,1,17,Fertility,Not at all
+mcphases:27:2022,1,18,Fertility,Not at all
+mcphases:27:2022,1,19,Luteal,Not at all
+mcphases:27:2022,1,20,Luteal,Not at all
+mcphases:27:2022,1,21,Luteal,Not at all
+mcphases:27:2022,1,22,Luteal,Not at all
+mcphases:27:2022,1,23,Luteal,
+mcphases:27:2022,1,24,Luteal,Not at all
+mcphases:27:2022,1,25,Luteal,Not at all
+mcphases:27:2022,1,26,Luteal,Not at all
+mcphases:27:2022,1,27,Luteal,Not at all
+mcphases:27:2022,1,28,Luteal,Not at all
+mcphases:27:2022,1,29,Luteal,Not at all
+mcphases:27:2022,1,30,Luteal,Not at all
+mcphases:27:2022,2,1,Menstrual,Not at all
+mcphases:27:2022,2,2,Menstrual,Not at all
+mcphases:27:2022,2,3,Menstrual,Not at all
+mcphases:27:2022,2,4,Menstrual,Not at all
+mcphases:27:2022,2,5,Menstrual,Not at all
+mcphases:27:2022,2,6,Menstrual,Not at all
+mcphases:27:2022,2,7,Follicular,Not at all
+mcphases:27:2022,2,8,Follicular,Not at all
+mcphases:27:2022,2,9,Fertility,Not at all
+mcphases:27:2022,2,10,Fertility,
+mcphases:27:2022,2,11,Fertility,Not at all
+mcphases:27:2022,2,12,Fertility,Not at all
+mcphases:27:2022,2,13,Fertility,Not at all
+mcphases:27:2022,2,14,Luteal,Not at all
+mcphases:27:2022,2,15,Luteal,Not at all
+mcphases:27:2022,2,16,Luteal,Not at all
+mcphases:27:2022,2,17,Luteal,Not at all
+mcphases:27:2022,2,18,Luteal,Not at all
+mcphases:27:2022,2,19,Luteal,
+mcphases:27:2022,2,20,Luteal,Not at all
+mcphases:27:2022,2,21,Luteal,Not at all
+mcphases:27:2022,2,22,Luteal,
+mcphases:27:2022,2,23,Luteal,Not at all
+mcphases:27:2022,2,24,Luteal,
+mcphases:27:2022,2,25,Luteal,Not at all
+mcphases:27:2022,2,26,Luteal,Not at all
+mcphases:27:2022,3,1,Menstrual,Not at all
+mcphases:27:2022,3,2,Menstrual,Somewhat Light
+mcphases:27:2022,3,3,Menstrual,Heavy
+mcphases:27:2022,3,4,Menstrual,Moderate
+mcphases:27:2022,3,5,Menstrual,Somewhat Light
+mcphases:27:2022,3,6,Menstrual,Light
+mcphases:27:2022,3,7,Menstrual,Spotting / Very Light
+mcphases:27:2022,3,8,Follicular,Spotting / Very Light
+mcphases:27:2022,3,9,Follicular,Not at all
+mcphases:27:2022,3,10,Fertility,Not at all
+mcphases:27:2022,3,11,Fertility,Not at all
+mcphases:27:2022,3,12,Fertility,Not at all
+mcphases:27:2022,3,13,Fertility,Not at all
+mcphases:27:2022,3,14,Fertility,Not at all
+mcphases:27:2024,1,1,Menstrual,
+mcphases:27:2024,1,2,Menstrual,
+mcphases:27:2024,1,3,Menstrual,
+mcphases:27:2024,1,4,Menstrual,
+mcphases:27:2024,1,5,Menstrual,
+mcphases:27:2024,1,6,Menstrual,
+mcphases:27:2024,1,7,Menstrual,
+mcphases:27:2024,1,8,Follicular,
+mcphases:27:2024,1,9,Fertility,
+mcphases:27:2024,1,10,Fertility,
+mcphases:27:2024,1,11,Fertility,
+mcphases:27:2024,1,12,Luteal,
+mcphases:27:2024,1,13,Luteal,
+mcphases:27:2024,1,14,Luteal,
+mcphases:27:2024,1,15,Luteal,
+mcphases:27:2024,1,16,Luteal,
+mcphases:27:2024,1,17,Luteal,
+mcphases:27:2024,1,18,Luteal,
+mcphases:27:2024,1,19,Luteal,
+mcphases:27:2024,2,1,Menstrual,
+mcphases:27:2024,2,2,Menstrual,
+mcphases:27:2024,2,3,Menstrual,
+mcphases:27:2024,2,4,Menstrual,
+mcphases:27:2024,2,5,Menstrual,
+mcphases:27:2024,2,6,Menstrual,
+mcphases:27:2024,2,7,Menstrual,
+mcphases:27:2024,2,8,Menstrual,
+mcphases:27:2024,2,9,Fertility,
+mcphases:27:2024,2,10,Fertility,
+mcphases:27:2024,2,11,Fertility,
+mcphases:27:2024,2,12,Fertility,
+mcphases:27:2024,2,13,Fertility,
+mcphases:27:2024,2,14,Fertility,
+mcphases:27:2024,2,15,Fertility,
+mcphases:27:2024,2,16,Luteal,
+mcphases:27:2024,2,17,Luteal,
+mcphases:27:2024,2,18,Luteal,
+mcphases:27:2024,2,19,Luteal,
+mcphases:27:2024,2,20,Luteal,
+mcphases:27:2024,2,21,Luteal,
+mcphases:27:2024,2,22,Luteal,
+mcphases:27:2024,2,23,Luteal,
+mcphases:27:2024,2,24,Luteal,
+mcphases:27:2024,2,25,Luteal,
+mcphases:27:2024,2,26,Luteal,
+mcphases:27:2024,2,27,Luteal,
+mcphases:27:2024,3,1,Menstrual,
+mcphases:27:2024,3,2,Menstrual,
+mcphases:27:2024,3,3,Menstrual,
+mcphases:27:2024,3,4,Menstrual,
+mcphases:27:2024,3,5,Menstrual,
+mcphases:27:2024,3,6,Menstrual,
+mcphases:27:2024,3,7,Menstrual,
+mcphases:27:2024,3,8,Menstrual,
+mcphases:27:2024,3,9,Fertility,
+mcphases:27:2024,3,10,Fertility,
+mcphases:27:2024,3,11,Fertility,
+mcphases:27:2024,3,12,Fertility,
+mcphases:27:2024,3,13,Fertility,
+mcphases:27:2024,3,14,Fertility,
+mcphases:27:2024,3,15,Fertility,
+mcphases:27:2024,3,16,Luteal,
+mcphases:27:2024,3,17,Luteal,
+mcphases:27:2024,3,18,Luteal,
+mcphases:27:2024,3,19,Luteal,
+mcphases:27:2024,3,20,Luteal,
+mcphases:27:2024,3,21,Luteal,
+mcphases:27:2024,3,22,Luteal,
+mcphases:27:2024,3,23,Luteal,
+mcphases:27:2024,3,24,Luteal,
+mcphases:27:2024,3,25,Luteal,
+mcphases:27:2024,3,26,Luteal,
+mcphases:27:2024,3,27,Luteal,
+mcphases:27:2024,3,28,Luteal,
+mcphases:27:2024,3,29,Luteal,
+mcphases:27:2024,3,30,Luteal,
+mcphases:27:2024,3,31,Luteal,
+mcphases:27:2024,3,32,Luteal,
+mcphases:27:2024,3,33,Luteal,
+mcphases:27:2024,3,34,Luteal,
+mcphases:27:2024,3,35,Luteal,
+mcphases:27:2024,3,36,Luteal,
+mcphases:27:2024,3,37,Luteal,
+mcphases:27:2024,3,38,Luteal,
+mcphases:27:2024,3,39,Luteal,
+mcphases:27:2024,3,40,Luteal,
+mcphases:27:2024,3,41,Luteal,
+mcphases:27:2024,3,42,Luteal,
+mcphases:27:2024,3,43,Luteal,
+mcphases:27:2024,3,44,Luteal,
+mcphases:27:2024,3,45,Luteal,
+mcphases:27:2024,3,46,Luteal,
+mcphases:27:2024,3,47,Luteal,
+mcphases:27:2024,3,48,Luteal,
+mcphases:27:2024,3,49,Luteal,
+mcphases:29:2022,1,1,Menstrual,Light
+mcphases:29:2022,1,2,Follicular,Spotting / Very Light
+mcphases:29:2022,1,3,Follicular,Not at all
+mcphases:29:2022,1,4,Follicular,Not at all
+mcphases:29:2022,1,5,Follicular,Not at all
+mcphases:29:2022,1,6,Fertility,Not at all
+mcphases:29:2022,1,7,Fertility,Not at all
+mcphases:29:2022,1,8,Fertility,Not at all
+mcphases:29:2022,1,9,Fertility,Not at all
+mcphases:29:2022,1,10,Fertility,Spotting / Very Light
+mcphases:29:2022,1,11,Fertility,Not at all
+mcphases:29:2022,1,12,Fertility,Not at all
+mcphases:29:2022,1,13,Luteal,
+mcphases:29:2022,1,14,Luteal,Not at all
+mcphases:29:2022,1,15,Luteal,Not at all
+mcphases:29:2022,1,16,Luteal,
+mcphases:29:2022,1,17,Luteal,Not at all
+mcphases:29:2022,1,18,Luteal,Not at all
+mcphases:29:2022,1,19,Luteal,Not at all
+mcphases:29:2022,1,20,Luteal,Not at all
+mcphases:29:2022,1,21,Luteal,
+mcphases:29:2022,1,22,Luteal,Not at all
+mcphases:29:2022,2,1,Menstrual,Not at all
+mcphases:29:2022,2,2,Menstrual,Somewhat Heavy
+mcphases:29:2022,2,3,Menstrual,
+mcphases:29:2022,2,4,Menstrual,Somewhat Light
+mcphases:29:2022,2,5,Menstrual,
+mcphases:29:2022,2,6,Menstrual,
+mcphases:29:2022,2,7,Menstrual,
+mcphases:29:2022,2,8,Follicular,Light
+mcphases:29:2022,2,9,Follicular,
+mcphases:29:2022,2,10,Follicular,
+mcphases:29:2022,2,11,Follicular,Not at all
+mcphases:29:2022,2,12,Fertility,Not at all
+mcphases:29:2022,2,13,Fertility,Not at all
+mcphases:29:2022,2,14,Fertility,Not at all
+mcphases:29:2022,2,15,Fertility,Not at all
+mcphases:29:2022,2,16,Fertility,Not at all
+mcphases:29:2022,2,17,Fertility,
+mcphases:29:2022,2,18,Fertility,
+mcphases:29:2022,2,19,Luteal,Not at all
+mcphases:29:2022,2,20,Luteal,
+mcphases:29:2022,2,21,Luteal,
+mcphases:29:2022,2,22,Luteal,Not at all
+mcphases:29:2022,2,23,Luteal,
+mcphases:29:2022,2,24,Luteal,
+mcphases:29:2022,2,25,Luteal,
+mcphases:29:2022,2,26,Luteal,Not at all
+mcphases:29:2022,2,27,Luteal,Not at all
+mcphases:29:2022,3,1,Menstrual,
+mcphases:29:2022,3,2,Menstrual,Somewhat Heavy
+mcphases:29:2022,3,3,Menstrual,Somewhat Light
+mcphases:29:2022,3,4,Menstrual,Spotting / Very Light
+mcphases:29:2022,3,5,Menstrual,
+mcphases:29:2022,3,6,Follicular,
+mcphases:29:2022,3,7,Follicular,Not at all
+mcphases:29:2022,3,8,Follicular,
+mcphases:29:2022,3,9,Fertility,
+mcphases:29:2022,3,10,Fertility,
+mcphases:29:2022,3,11,Fertility,
+mcphases:30:2022,1,1,Menstrual,Not at all
+mcphases:30:2022,1,2,Menstrual,Spotting / Very Light
+mcphases:30:2022,1,3,Menstrual,Spotting / Very Light
+mcphases:30:2022,1,4,Menstrual,Light
+mcphases:30:2022,1,5,Menstrual,
+mcphases:30:2022,1,6,Menstrual,Light
+mcphases:30:2022,1,7,Menstrual,
+mcphases:30:2022,1,8,Follicular,Spotting / Very Light
+mcphases:30:2022,1,9,Follicular,Spotting / Very Light
+mcphases:30:2022,1,10,Follicular,Not at all
+mcphases:30:2022,1,11,Fertility,Not at all
+mcphases:30:2022,1,12,Fertility,Not at all
+mcphases:30:2022,1,13,Fertility,Not at all
+mcphases:30:2022,1,14,Fertility,
+mcphases:30:2022,1,15,Fertility,Not at all
+mcphases:30:2022,1,16,Fertility,Not at all
+mcphases:30:2022,1,17,Fertility,Not at all
+mcphases:30:2022,1,18,Luteal,Not at all
+mcphases:30:2022,1,19,Luteal,Not at all
+mcphases:30:2022,1,20,Luteal,Not at all
+mcphases:30:2022,1,21,Luteal,Not at all
+mcphases:30:2022,1,22,Luteal,Not at all
+mcphases:30:2022,2,1,Menstrual,Not at all
+mcphases:30:2022,2,2,Menstrual,Light
+mcphases:30:2022,2,3,Menstrual,Light
+mcphases:30:2022,2,4,Follicular,Moderate
+mcphases:30:2022,2,5,Follicular,Light
+mcphases:30:2022,2,6,Follicular,Not at all
+mcphases:30:2022,2,7,Follicular,Not at all
+mcphases:30:2022,2,8,Follicular,Not at all
+mcphases:30:2022,2,9,Follicular,Not at all
+mcphases:30:2022,2,10,Follicular,Not at all
+mcphases:30:2022,2,11,Follicular,Not at all
+mcphases:30:2022,2,12,Follicular,Not at all
+mcphases:30:2022,2,13,Follicular,Not at all
+mcphases:30:2022,2,14,Follicular,Not at all
+mcphases:30:2022,2,15,Follicular,Not at all
+mcphases:30:2022,2,16,Follicular,
+mcphases:30:2022,2,17,Fertility,Not at all
+mcphases:30:2022,2,18,Fertility,Not at all
+mcphases:30:2022,2,19,Fertility,
+mcphases:30:2022,2,20,Fertility,Not at all
+mcphases:30:2022,2,21,Fertility,
+mcphases:30:2022,2,22,Fertility,Not at all
+mcphases:30:2022,2,23,Fertility,Not at all
+mcphases:30:2022,2,24,Luteal,
+mcphases:30:2022,2,25,Luteal,Not at all
+mcphases:30:2022,2,26,Luteal,Not at all
+mcphases:30:2022,2,27,Luteal,
+mcphases:30:2022,2,28,Luteal,Not at all
+mcphases:30:2022,2,29,Luteal,Not at all
+mcphases:30:2022,2,30,Luteal,
+mcphases:30:2022,2,31,Luteal,Not at all
+mcphases:30:2022,2,32,Luteal,Not at all
+mcphases:30:2022,2,33,Luteal,Spotting / Very Light
+mcphases:30:2022,2,34,Luteal,Not at all
+mcphases:30:2022,2,35,Luteal,Not at all
+mcphases:30:2022,2,36,Luteal,Not at all
+mcphases:30:2022,2,37,Luteal,Not at all
+mcphases:30:2022,2,38,Luteal,
+mcphases:30:2022,2,39,Luteal,Not at all
+mcphases:30:2022,2,40,Luteal,Not at all
+mcphases:30:2022,2,41,Luteal,Not at all
+mcphases:30:2022,2,42,Luteal,Not at all
+mcphases:30:2022,2,43,Luteal,Not at all
+mcphases:30:2022,2,44,Luteal,Not at all
+mcphases:30:2022,2,45,Luteal,Not at all
+mcphases:30:2022,2,46,Luteal,
+mcphases:30:2022,2,47,Luteal,Not at all
+mcphases:30:2022,2,48,Luteal,
+mcphases:30:2022,2,49,Luteal,Not at all
+mcphases:30:2022,2,50,Luteal,Not at all
+mcphases:30:2022,2,51,Luteal,
+mcphases:30:2022,2,52,Luteal,Not at all
+mcphases:30:2022,2,53,Luteal,Not at all
+mcphases:30:2022,2,54,Luteal,Not at all
+mcphases:30:2022,2,55,Luteal,Not at all
+mcphases:30:2022,2,56,Luteal,Not at all
+mcphases:30:2022,2,57,Luteal,Not at all
+mcphases:30:2022,2,58,Luteal,Not at all
+mcphases:30:2022,2,59,Luteal,
+mcphases:30:2022,2,60,Luteal,Not at all
+mcphases:30:2024,1,1,Menstrual,
+mcphases:30:2024,1,2,Menstrual,
+mcphases:30:2024,1,3,Menstrual,
+mcphases:30:2024,1,4,Menstrual,
+mcphases:30:2024,1,5,Menstrual,
+mcphases:30:2024,1,6,Follicular,
+mcphases:30:2024,1,7,Follicular,
+mcphases:30:2024,1,8,Follicular,
+mcphases:30:2024,1,9,Follicular,
+mcphases:30:2024,1,10,Follicular,
+mcphases:30:2024,1,11,Follicular,
+mcphases:30:2024,1,12,Follicular,
+mcphases:30:2024,1,13,Follicular,
+mcphases:30:2024,1,14,Follicular,
+mcphases:30:2024,1,15,Follicular,
+mcphases:30:2024,1,16,Follicular,
+mcphases:30:2024,1,17,Follicular,
+mcphases:30:2024,1,18,Follicular,
+mcphases:30:2024,1,19,Follicular,
+mcphases:30:2024,1,20,Follicular,
+mcphases:30:2024,1,21,Follicular,
+mcphases:30:2024,1,22,Follicular,
+mcphases:30:2024,1,23,Follicular,
+mcphases:30:2024,1,24,Follicular,
+mcphases:30:2024,1,25,Follicular,
+mcphases:30:2024,1,26,Follicular,
+mcphases:30:2024,1,27,Follicular,
+mcphases:30:2024,1,28,Fertility,
+mcphases:30:2024,1,29,Fertility,
+mcphases:30:2024,1,30,Fertility,
+mcphases:30:2024,1,31,Fertility,
+mcphases:30:2024,1,32,Fertility,
+mcphases:30:2024,1,33,Fertility,
+mcphases:30:2024,1,34,Fertility,
+mcphases:30:2024,1,35,Luteal,
+mcphases:30:2024,1,36,Luteal,
+mcphases:30:2024,1,37,Luteal,
+mcphases:30:2024,1,38,Luteal,
+mcphases:30:2024,1,39,Luteal,
+mcphases:30:2024,1,40,Luteal,
+mcphases:30:2024,1,41,Luteal,
+mcphases:30:2024,1,42,Luteal,
+mcphases:30:2024,1,43,Luteal,
+mcphases:30:2024,2,1,Menstrual,
+mcphases:30:2024,2,2,Menstrual,
+mcphases:30:2024,2,3,Menstrual,
+mcphases:30:2024,2,4,Follicular,
+mcphases:30:2024,2,5,Follicular,
+mcphases:30:2024,2,6,Follicular,
+mcphases:30:2024,2,7,Follicular,
+mcphases:30:2024,2,8,Follicular,
+mcphases:30:2024,2,9,Follicular,
+mcphases:30:2024,2,10,Follicular,
+mcphases:30:2024,2,11,Follicular,
+mcphases:30:2024,2,12,Follicular,
+mcphases:30:2024,2,13,Follicular,
+mcphases:30:2024,2,14,Follicular,
+mcphases:30:2024,2,15,Follicular,
+mcphases:30:2024,2,16,Follicular,
+mcphases:30:2024,2,17,Follicular,
+mcphases:30:2024,2,18,Follicular,
+mcphases:30:2024,2,19,Follicular,
+mcphases:30:2024,2,20,Follicular,
+mcphases:30:2024,2,21,Follicular,
+mcphases:30:2024,2,22,Follicular,
+mcphases:30:2024,2,23,Follicular,
+mcphases:30:2024,2,24,Follicular,
+mcphases:30:2024,2,25,Follicular,
+mcphases:30:2024,2,26,Follicular,
+mcphases:30:2024,2,27,Follicular,
+mcphases:30:2024,2,28,Follicular,
+mcphases:30:2024,2,29,Follicular,
+mcphases:30:2024,2,30,Follicular,
+mcphases:30:2024,2,31,Follicular,
+mcphases:30:2024,2,32,Follicular,
+mcphases:30:2024,2,33,Follicular,
+mcphases:30:2024,2,34,Follicular,
+mcphases:30:2024,2,35,Follicular,
+mcphases:30:2024,2,36,Follicular,
+mcphases:30:2024,2,37,Follicular,
+mcphases:30:2024,2,38,Follicular,
+mcphases:30:2024,2,39,Follicular,
+mcphases:30:2024,2,40,Fertility,
+mcphases:30:2024,2,41,Fertility,
+mcphases:30:2024,2,42,Fertility,
+mcphases:30:2024,2,43,Fertility,
+mcphases:30:2024,2,44,Fertility,
+mcphases:30:2024,2,45,Fertility,
+mcphases:30:2024,2,46,Fertility,
+mcphases:30:2024,2,47,Fertility,
+mcphases:30:2024,2,48,Luteal,
+mcphases:30:2024,2,49,Luteal,
+mcphases:30:2024,2,50,Luteal,
+mcphases:30:2024,2,51,Luteal,
+mcphases:30:2024,2,52,Luteal,
+mcphases:30:2024,2,53,Luteal,
+mcphases:30:2024,2,54,Luteal,
+mcphases:30:2024,2,55,Luteal,
+mcphases:30:2024,2,56,Luteal,
+mcphases:30:2024,2,57,Luteal,
+mcphases:32:2022,1,1,Menstrual,Not at all
+mcphases:32:2022,1,2,Menstrual,Not at all
+mcphases:32:2022,1,3,Menstrual,
+mcphases:32:2022,1,4,Menstrual,Not at all
+mcphases:32:2022,1,5,Menstrual,Not at all
+mcphases:32:2022,1,6,Menstrual,
+mcphases:32:2022,1,7,Menstrual,Not at all
+mcphases:32:2022,1,8,Menstrual,Not at all
+mcphases:32:2022,1,9,Menstrual,
+mcphases:32:2022,1,10,Follicular,Not at all
+mcphases:32:2022,1,11,Follicular,
+mcphases:32:2022,1,12,Follicular,Not at all
+mcphases:32:2022,1,13,Fertility,Not at all
+mcphases:32:2022,1,14,Fertility,
+mcphases:32:2022,1,15,Fertility,Not at all
+mcphases:32:2022,1,16,Fertility,
+mcphases:32:2022,1,17,Fertility,
+mcphases:32:2022,1,18,Fertility,Not at all
+mcphases:32:2022,1,19,Luteal,
+mcphases:32:2022,1,20,Luteal,Not at all
+mcphases:32:2022,1,21,Luteal,Not at all
+mcphases:32:2022,1,22,Luteal,
+mcphases:32:2022,1,23,Luteal,
+mcphases:32:2022,1,24,Luteal,Not at all
+mcphases:32:2022,1,25,Luteal,
+mcphases:32:2022,1,26,Luteal,Not at all
+mcphases:32:2022,1,27,Luteal,
+mcphases:32:2022,1,28,Luteal,
+mcphases:32:2022,2,1,Menstrual,Not at all
+mcphases:32:2022,2,2,Menstrual,Somewhat Heavy
+mcphases:32:2022,2,3,Menstrual,Heavy
+mcphases:32:2022,2,4,Menstrual,Moderate
+mcphases:32:2022,2,5,Menstrual,
+mcphases:32:2022,2,6,Menstrual,Somewhat Light
+mcphases:32:2022,2,7,Menstrual,
+mcphases:32:2022,2,8,Menstrual,
+mcphases:32:2022,2,9,Follicular,
+mcphases:32:2022,2,10,Follicular,Not at all
+mcphases:32:2022,2,11,Follicular,
+mcphases:32:2022,2,12,Follicular,
+mcphases:32:2022,2,13,Follicular,Not at all
+mcphases:32:2022,2,14,Follicular,
+mcphases:32:2022,2,15,Follicular,Not at all
+mcphases:32:2022,2,16,Fertility,
+mcphases:32:2022,2,17,Fertility,Not at all
+mcphases:32:2022,2,18,Fertility,
+mcphases:32:2022,2,19,Fertility,Not at all
+mcphases:32:2022,2,20,Fertility,
+mcphases:32:2022,2,21,Fertility,
+mcphases:32:2022,2,22,Fertility,Not at all
+mcphases:32:2022,2,23,Luteal,Not at all
+mcphases:32:2022,2,24,Luteal,
+mcphases:32:2022,2,25,Luteal,
+mcphases:32:2022,2,26,Luteal,Not at all
+mcphases:32:2022,2,27,Luteal,
+mcphases:32:2022,2,28,Luteal,
+mcphases:32:2022,2,29,Luteal,
+mcphases:32:2022,2,30,Luteal,Not at all
+mcphases:32:2022,2,31,Luteal,
+mcphases:32:2022,2,32,Luteal,Not at all
+mcphases:32:2022,2,33,Luteal,
+mcphases:32:2022,2,34,Luteal,Not at all
+mcphases:32:2022,2,35,Luteal,
+mcphases:32:2022,2,36,Luteal,Not at all
+mcphases:32:2022,2,37,Luteal,Not at all
+mcphases:32:2024,1,1,Menstrual,
+mcphases:32:2024,1,2,Menstrual,
+mcphases:32:2024,1,3,Menstrual,
+mcphases:32:2024,1,4,Menstrual,
+mcphases:32:2024,1,5,Menstrual,
+mcphases:32:2024,1,6,Menstrual,
+mcphases:32:2024,1,7,Menstrual,
+mcphases:32:2024,1,8,Menstrual,
+mcphases:32:2024,1,9,Follicular,
+mcphases:32:2024,1,10,Follicular,
+mcphases:32:2024,1,11,Follicular,
+mcphases:32:2024,1,12,Follicular,
+mcphases:32:2024,1,13,Follicular,
+mcphases:32:2024,1,14,Follicular,
+mcphases:32:2024,1,15,Follicular,
+mcphases:32:2024,1,16,Follicular,
+mcphases:32:2024,1,17,Follicular,
+mcphases:32:2024,1,18,Follicular,
+mcphases:32:2024,1,19,Follicular,
+mcphases:32:2024,1,20,Follicular,
+mcphases:32:2024,1,21,Follicular,
+mcphases:32:2024,1,22,Follicular,
+mcphases:32:2024,1,23,Follicular,
+mcphases:32:2024,1,24,Follicular,
+mcphases:32:2024,1,25,Follicular,
+mcphases:32:2024,1,26,Follicular,
+mcphases:32:2024,1,27,Follicular,
+mcphases:32:2024,1,28,Follicular,
+mcphases:33:2022,1,1,Menstrual,Spotting / Very Light
+mcphases:33:2022,1,2,Menstrual,Heavy
+mcphases:33:2022,1,3,Menstrual,Very Heavy
+mcphases:33:2022,1,4,Menstrual,Moderate
+mcphases:33:2022,1,5,Follicular,Spotting / Very Light
+mcphases:33:2022,1,6,Follicular,Not at all
+mcphases:33:2022,1,7,Follicular,Not at all
+mcphases:33:2022,1,8,Follicular,Not at all
+mcphases:33:2022,1,9,Follicular,Not at all
+mcphases:33:2022,1,10,Follicular,Not at all
+mcphases:33:2022,1,11,Follicular,Not at all
+mcphases:33:2022,1,12,Follicular,Not at all
+mcphases:33:2022,1,13,Follicular,Not at all
+mcphases:33:2022,1,14,Follicular,Not at all
+mcphases:33:2022,1,15,Follicular,Not at all
+mcphases:33:2022,1,16,Follicular,Not at all
+mcphases:33:2022,1,17,Follicular,Not at all
+mcphases:33:2022,1,18,Follicular,Not at all
+mcphases:33:2022,1,19,Follicular,Not at all
+mcphases:33:2022,1,20,Fertility,Not at all
+mcphases:33:2022,1,21,Fertility,Not at all
+mcphases:33:2022,1,22,Fertility,Not at all
+mcphases:33:2022,1,23,Fertility,Not at all
+mcphases:33:2022,1,24,Fertility,Not at all
+mcphases:33:2022,1,25,Fertility,Not at all
+mcphases:33:2022,1,26,Fertility,Not at all
+mcphases:33:2022,1,27,Luteal,Not at all
+mcphases:33:2022,1,28,Luteal,Not at all
+mcphases:33:2022,1,29,Luteal,Not at all
+mcphases:33:2022,1,30,Luteal,Not at all
+mcphases:33:2022,1,31,Luteal,Not at all
+mcphases:33:2022,1,32,Luteal,Not at all
+mcphases:33:2022,1,33,Luteal,Not at all
+mcphases:33:2022,1,34,Luteal,Not at all
+mcphases:33:2022,1,35,Luteal,Not at all
+mcphases:33:2022,1,36,Luteal,Not at all
+mcphases:33:2022,1,37,Luteal,Not at all
+mcphases:33:2022,2,1,Menstrual,Not at all
+mcphases:33:2022,2,2,Menstrual,Heavy
+mcphases:33:2022,2,3,Menstrual,Moderate
+mcphases:33:2022,2,4,Menstrual,Somewhat Light
+mcphases:33:2022,2,5,Menstrual,Light
+mcphases:33:2022,2,6,Follicular,Spotting / Very Light
+mcphases:33:2022,2,7,Follicular,Not at all
+mcphases:33:2022,2,8,Follicular,Not at all
+mcphases:33:2022,2,9,Follicular,Not at all
+mcphases:33:2022,2,10,Follicular,Not at all
+mcphases:33:2022,2,11,Follicular,
+mcphases:33:2022,2,12,Follicular,Not at all
+mcphases:33:2022,2,13,Follicular,Not at all
+mcphases:33:2022,2,14,Follicular,Not at all
+mcphases:33:2022,2,15,Follicular,Not at all
+mcphases:33:2022,2,16,Fertility,Not at all
+mcphases:33:2022,2,17,Fertility,Not at all
+mcphases:33:2022,2,18,Fertility,Not at all
+mcphases:33:2022,2,19,Fertility,Not at all
+mcphases:33:2022,2,20,Fertility,Not at all
+mcphases:33:2022,2,21,Fertility,Not at all
+mcphases:33:2022,2,22,Fertility,Not at all
+mcphases:33:2022,2,23,Luteal,Not at all
+mcphases:33:2022,2,24,Luteal,Not at all
+mcphases:33:2022,2,25,Luteal,Not at all
+mcphases:33:2022,2,26,Luteal,Not at all
+mcphases:33:2022,2,27,Luteal,Not at all
+mcphases:33:2022,2,28,Luteal,Not at all
+mcphases:33:2022,2,29,Luteal,Not at all
+mcphases:33:2022,2,30,Luteal,Not at all
+mcphases:33:2022,2,31,Luteal,Not at all
+mcphases:33:2022,2,32,Luteal,Not at all
+mcphases:33:2022,2,33,Luteal,Not at all
+mcphases:33:2022,3,1,Menstrual,Not at all
+mcphases:33:2022,3,2,Menstrual,Heavy
+mcphases:33:2022,3,3,Follicular,Somewhat Heavy
+mcphases:33:2022,3,4,Follicular,Not at all
+mcphases:33:2022,3,5,Follicular,Not at all
+mcphases:33:2022,3,6,Follicular,Spotting / Very Light
+mcphases:33:2022,3,7,Follicular,Not at all
+mcphases:33:2022,3,8,Follicular,Not at all
+mcphases:33:2022,3,9,Follicular,Not at all
+mcphases:33:2022,3,10,Follicular,Not at all
+mcphases:33:2022,3,11,Follicular,Not at all
+mcphases:33:2022,3,12,Follicular,Not at all
+mcphases:33:2022,3,13,Follicular,Not at all
+mcphases:33:2022,3,14,Follicular,Not at all
+mcphases:33:2024,1,1,Menstrual,
+mcphases:33:2024,1,2,Menstrual,
+mcphases:33:2024,1,3,Menstrual,
+mcphases:33:2024,1,4,Menstrual,
+mcphases:33:2024,1,5,Follicular,
+mcphases:33:2024,1,6,Follicular,
+mcphases:33:2024,1,7,Follicular,
+mcphases:33:2024,1,8,Follicular,
+mcphases:33:2024,1,9,Follicular,
+mcphases:33:2024,1,10,Follicular,
+mcphases:33:2024,1,11,Follicular,
+mcphases:33:2024,1,12,Follicular,
+mcphases:33:2024,1,13,Follicular,
+mcphases:33:2024,1,14,Follicular,
+mcphases:33:2024,1,15,Fertility,
+mcphases:33:2024,1,16,Fertility,
+mcphases:33:2024,1,17,Fertility,
+mcphases:33:2024,1,18,Fertility,
+mcphases:33:2024,1,19,Fertility,
+mcphases:33:2024,1,20,Fertility,
+mcphases:33:2024,1,21,Fertility,
+mcphases:33:2024,1,22,Fertility,
+mcphases:33:2024,1,23,Luteal,
+mcphases:33:2024,1,24,Luteal,
+mcphases:33:2024,1,25,Luteal,
+mcphases:33:2024,1,26,Luteal,
+mcphases:33:2024,1,27,Luteal,
+mcphases:33:2024,1,28,Luteal,
+mcphases:33:2024,1,29,Luteal,
+mcphases:33:2024,1,30,Luteal,
+mcphases:33:2024,1,31,Luteal,
+mcphases:33:2024,1,32,Luteal,
+mcphases:33:2024,2,1,Menstrual,
+mcphases:33:2024,2,2,Menstrual,
+mcphases:33:2024,2,3,Menstrual,
+mcphases:33:2024,2,4,Menstrual,
+mcphases:33:2024,2,5,Follicular,
+mcphases:33:2024,2,6,Follicular,
+mcphases:33:2024,2,7,Follicular,
+mcphases:33:2024,2,8,Follicular,
+mcphases:33:2024,2,9,Follicular,
+mcphases:33:2024,2,10,Follicular,
+mcphases:33:2024,2,11,Follicular,
+mcphases:33:2024,2,12,Follicular,
+mcphases:33:2024,2,13,Follicular,
+mcphases:33:2024,2,14,Follicular,
+mcphases:33:2024,2,15,Fertility,
+mcphases:33:2024,2,16,Fertility,
+mcphases:33:2024,2,17,Fertility,
+mcphases:33:2024,2,18,Fertility,
+mcphases:33:2024,2,19,Fertility,
+mcphases:33:2024,2,20,Fertility,
+mcphases:33:2024,2,21,Fertility,
+mcphases:33:2024,2,22,Fertility,
+mcphases:33:2024,3,1,Menstrual,
+mcphases:33:2024,3,2,Menstrual,
+mcphases:33:2024,3,3,Menstrual,
+mcphases:33:2024,3,4,Menstrual,
+mcphases:33:2024,3,5,Menstrual,
+mcphases:33:2024,3,6,Menstrual,
+mcphases:33:2024,3,7,Follicular,
+mcphases:33:2024,3,8,Follicular,
+mcphases:33:2024,3,9,Follicular,
+mcphases:33:2024,3,10,Follicular,
+mcphases:33:2024,3,11,Follicular,
+mcphases:33:2024,3,12,Follicular,
+mcphases:33:2024,3,13,Follicular,
+mcphases:33:2024,3,14,Follicular,
+mcphases:33:2024,3,15,Follicular,
+mcphases:33:2024,3,16,Follicular,
+mcphases:33:2024,3,17,Follicular,
+mcphases:33:2024,3,18,Follicular,
+mcphases:33:2024,3,19,Follicular,
+mcphases:33:2024,3,20,Follicular,
+mcphases:33:2024,3,21,Follicular,
+mcphases:33:2024,3,22,Fertility,
+mcphases:33:2024,3,23,Fertility,
+mcphases:33:2024,3,24,Fertility,
+mcphases:33:2024,3,25,Fertility,
+mcphases:34:2022,1,1,Menstrual,Spotting / Very Light
+mcphases:34:2022,1,2,Menstrual,Moderate
+mcphases:34:2022,1,3,Menstrual,Moderate
+mcphases:34:2022,1,4,Menstrual,Somewhat Light
+mcphases:34:2022,1,5,Menstrual,Moderate
+mcphases:34:2022,1,6,Menstrual,Somewhat Light
+mcphases:34:2022,1,7,Follicular,Light
+mcphases:34:2022,1,8,Follicular,Not at all
+mcphases:34:2022,1,9,Follicular,Not at all
+mcphases:34:2022,1,10,Follicular,Not at all
+mcphases:34:2022,1,11,Follicular,Not at all
+mcphases:34:2022,1,12,Follicular,Not at all
+mcphases:34:2022,1,13,Follicular,Not at all
+mcphases:34:2022,1,14,Follicular,Not at all
+mcphases:34:2022,1,15,Follicular,Not at all
+mcphases:34:2022,1,16,Follicular,Not at all
+mcphases:34:2022,1,17,Follicular,Not at all
+mcphases:34:2022,1,18,Follicular,Not at all
+mcphases:34:2022,1,19,Follicular,Not at all
+mcphases:34:2022,1,20,Follicular,Not at all
+mcphases:34:2022,1,21,Follicular,Not at all
+mcphases:34:2022,1,22,Follicular,Not at all
+mcphases:34:2022,1,23,Follicular,Not at all
+mcphases:34:2022,1,24,Follicular,Not at all
+mcphases:34:2022,1,25,Fertility,Not at all
+mcphases:34:2022,1,26,Fertility,Not at all
+mcphases:34:2022,1,27,Fertility,Not at all
+mcphases:34:2022,1,28,Fertility,Not at all
+mcphases:34:2022,1,29,Fertility,Not at all
+mcphases:34:2022,1,30,Fertility,Not at all
+mcphases:34:2022,1,31,Fertility,Not at all
+mcphases:34:2022,1,32,Luteal,
+mcphases:34:2022,1,33,Luteal,Not at all
+mcphases:34:2022,1,34,Luteal,Not at all
+mcphases:34:2022,1,35,Luteal,
+mcphases:34:2022,1,36,Luteal,Not at all
+mcphases:34:2022,1,37,Luteal,Not at all
+mcphases:34:2022,1,38,Luteal,Not at all
+mcphases:34:2022,1,39,Luteal,
+mcphases:34:2022,1,40,Luteal,Not at all
+mcphases:34:2022,1,41,Luteal,Not at all
+mcphases:34:2022,1,42,Luteal,Not at all
+mcphases:34:2022,2,1,Menstrual,Not at all
+mcphases:34:2022,2,2,Menstrual,Somewhat Heavy
+mcphases:34:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:34:2022,2,4,Menstrual,Somewhat Heavy
+mcphases:34:2022,2,5,Menstrual,
+mcphases:34:2022,2,6,Menstrual,Moderate
+mcphases:34:2022,2,7,Menstrual,Not at all
+mcphases:34:2022,2,8,Follicular,Spotting / Very Light
+mcphases:34:2022,2,9,Follicular,Spotting / Very Light
+mcphases:34:2022,2,10,Follicular,Not at all
+mcphases:34:2022,2,11,Fertility,Not at all
+mcphases:34:2022,2,12,Fertility,Not at all
+mcphases:34:2022,2,13,Fertility,Not at all
+mcphases:34:2022,2,14,Fertility,
+mcphases:34:2022,2,15,Fertility,Not at all
+mcphases:34:2022,2,16,Fertility,
+mcphases:34:2022,2,17,Fertility,Not at all
+mcphases:34:2022,2,18,Luteal,Not at all
+mcphases:34:2022,2,19,Luteal,Not at all
+mcphases:34:2022,2,20,Luteal,Not at all
+mcphases:34:2022,2,21,Luteal,
+mcphases:34:2022,2,22,Luteal,
+mcphases:34:2022,2,23,Luteal,Not at all
+mcphases:34:2022,2,24,Luteal,Not at all
+mcphases:34:2022,2,25,Luteal,
+mcphases:34:2022,2,26,Luteal,Spotting / Very Light
+mcphases:34:2022,3,1,Menstrual,
+mcphases:34:2022,3,2,Menstrual,
+mcphases:34:2022,3,3,Menstrual,
+mcphases:34:2022,3,4,Menstrual,Spotting / Very Light
+mcphases:34:2022,3,5,Menstrual,
+mcphases:34:2022,3,6,Follicular,
+mcphases:34:2022,3,7,Follicular,Light
+mcphases:34:2022,3,8,Follicular,
+mcphases:34:2022,3,9,Follicular,
+mcphases:34:2022,3,10,Follicular,
+mcphases:34:2022,3,11,Follicular,
+mcphases:34:2022,3,12,Follicular,Not at all
+mcphases:34:2022,3,13,Follicular,Not at all
+mcphases:34:2022,3,14,Follicular,
+mcphases:34:2022,3,15,Follicular,
+mcphases:34:2022,3,16,Fertility,
+mcphases:34:2022,3,17,Fertility,
+mcphases:34:2022,3,18,Fertility,
+mcphases:34:2022,3,19,Fertility,
+mcphases:34:2022,3,20,Fertility,
+mcphases:37:2022,1,1,Menstrual,Light
+mcphases:37:2022,1,2,Menstrual,Somewhat Heavy
+mcphases:37:2022,1,3,Menstrual,Moderate
+mcphases:37:2022,1,4,Follicular,Light
+mcphases:37:2022,1,5,Follicular,Not at all
+mcphases:37:2022,1,6,Follicular,Not at all
+mcphases:37:2022,1,7,Follicular,
+mcphases:37:2022,1,8,Follicular,Not at all
+mcphases:37:2022,1,9,Follicular,Not at all
+mcphases:37:2022,1,10,Follicular,Not at all
+mcphases:37:2022,1,11,Follicular,Not at all
+mcphases:37:2022,1,12,Follicular,Not at all
+mcphases:37:2022,1,13,Fertility,Not at all
+mcphases:37:2022,1,14,Fertility,Not at all
+mcphases:37:2022,1,15,Fertility,Not at all
+mcphases:37:2022,1,16,Fertility,Not at all
+mcphases:37:2022,1,17,Fertility,Not at all
+mcphases:37:2022,1,18,Fertility,Spotting / Very Light
+mcphases:37:2022,1,19,Luteal,Not at all
+mcphases:37:2022,1,20,Luteal,Not at all
+mcphases:37:2022,1,21,Luteal,Not at all
+mcphases:37:2022,1,22,Luteal,Not at all
+mcphases:37:2022,1,23,Luteal,Not at all
+mcphases:37:2022,1,24,Luteal,Not at all
+mcphases:37:2022,1,25,Luteal,Not at all
+mcphases:37:2022,1,26,Luteal,Not at all
+mcphases:37:2022,1,27,Luteal,Not at all
+mcphases:37:2022,1,28,Luteal,Not at all
+mcphases:37:2022,2,1,Menstrual,Not at all
+mcphases:37:2022,2,2,Menstrual,
+mcphases:37:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:37:2022,2,4,Follicular,Somewhat Light
+mcphases:37:2022,2,5,Follicular,Spotting / Very Light
+mcphases:37:2022,2,6,Follicular,
+mcphases:37:2022,2,7,Follicular,Not at all
+mcphases:37:2022,2,8,Follicular,Not at all
+mcphases:37:2022,2,9,Follicular,Not at all
+mcphases:37:2022,2,10,Follicular,Not at all
+mcphases:37:2022,2,11,Follicular,
+mcphases:37:2022,2,12,Follicular,Not at all
+mcphases:37:2022,2,13,Follicular,Not at all
+mcphases:37:2022,2,14,Follicular,
+mcphases:37:2022,2,15,Follicular,Not at all
+mcphases:37:2022,2,16,Fertility,
+mcphases:37:2022,2,17,Fertility,Not at all
+mcphases:37:2022,2,18,Fertility,Not at all
+mcphases:37:2022,2,19,Fertility,Not at all
+mcphases:37:2022,2,20,Fertility,Not at all
+mcphases:37:2022,2,21,Fertility,
+mcphases:37:2022,2,22,Luteal,Not at all
+mcphases:37:2022,2,23,Luteal,Not at all
+mcphases:37:2022,2,24,Luteal,
+mcphases:37:2022,2,25,Luteal,Not at all
+mcphases:37:2022,2,26,Luteal,
+mcphases:37:2022,2,27,Luteal,Not at all
+mcphases:37:2022,2,28,Luteal,Not at all
+mcphases:37:2022,2,29,Luteal,Not at all
+mcphases:37:2022,2,30,Luteal,
+mcphases:37:2022,2,31,Luteal,Not at all
+mcphases:37:2022,2,32,Luteal,Not at all
+mcphases:37:2022,2,33,Luteal,Not at all
+mcphases:37:2022,3,1,Menstrual,Not at all
+mcphases:37:2022,3,2,Menstrual,Moderate
+mcphases:37:2022,3,3,Menstrual,Somewhat Heavy
+mcphases:37:2022,3,4,Menstrual,Light
+mcphases:37:2022,3,5,Follicular,
+mcphases:37:2022,3,6,Follicular,
+mcphases:37:2022,3,7,Fertility,Not at all
+mcphases:37:2022,3,8,Fertility,Not at all
+mcphases:37:2022,3,9,Fertility,Spotting / Very Light
+mcphases:37:2022,3,10,Luteal,Not at all
+mcphases:37:2022,3,11,Luteal,
+mcphases:37:2022,4,1,Menstrual,Not at all
+mcphases:37:2022,4,2,Menstrual,
+mcphases:37:2022,4,3,Menstrual,Moderate
+mcphases:37:2022,4,4,Follicular,Moderate
+mcphases:37:2022,4,5,Follicular,
+mcphases:37:2022,4,6,Follicular,Not at all
+mcphases:37:2022,4,7,Follicular,Not at all
+mcphases:37:2022,4,8,Follicular,
+mcphases:37:2022,4,9,Follicular,Not at all
+mcphases:37:2022,4,10,Follicular,Not at all
+mcphases:37:2022,4,11,Follicular,Not at all
+mcphases:37:2022,4,12,Follicular,
+mcphases:37:2022,4,13,Fertility,
+mcphases:37:2022,4,14,Fertility,
+mcphases:37:2022,4,15,Fertility,Not at all
+mcphases:37:2022,4,16,Fertility,Not at all
+mcphases:38:2022,1,1,Menstrual,Not at all
+mcphases:38:2022,1,2,Menstrual,Not at all
+mcphases:38:2022,1,3,Menstrual,Not at all
+mcphases:38:2022,1,4,Menstrual,Not at all
+mcphases:38:2022,1,5,Menstrual,
+mcphases:38:2022,1,6,Follicular,
+mcphases:38:2022,1,7,Follicular,Not at all
+mcphases:38:2022,1,8,Follicular,Not at all
+mcphases:38:2022,1,9,Follicular,Not at all
+mcphases:38:2022,1,10,Follicular,Not at all
+mcphases:38:2022,1,11,Follicular,Not at all
+mcphases:38:2022,1,12,Follicular,Not at all
+mcphases:38:2022,1,13,Follicular,Not at all
+mcphases:38:2022,1,14,Fertility,Not at all
+mcphases:38:2022,1,15,Fertility,Not at all
+mcphases:38:2022,1,16,Fertility,Not at all
+mcphases:38:2022,1,17,Fertility,Not at all
+mcphases:38:2022,1,18,Fertility,Not at all
+mcphases:38:2022,1,19,Fertility,Not at all
+mcphases:38:2022,1,20,Luteal,Not at all
+mcphases:38:2022,1,21,Luteal,Not at all
+mcphases:38:2022,1,22,Luteal,Not at all
+mcphases:38:2022,1,23,Luteal,Not at all
+mcphases:38:2022,1,24,Luteal,Not at all
+mcphases:38:2022,1,25,Luteal,Not at all
+mcphases:38:2022,1,26,Luteal,Not at all
+mcphases:38:2022,1,27,Luteal,Not at all
+mcphases:38:2022,1,28,Luteal,Not at all
+mcphases:38:2022,1,29,Luteal,Not at all
+mcphases:38:2022,2,1,Menstrual,Not at all
+mcphases:38:2022,2,2,Menstrual,Not at all
+mcphases:38:2022,2,3,Menstrual,Not at all
+mcphases:38:2022,2,4,Menstrual,Not at all
+mcphases:38:2022,2,5,Menstrual,Not at all
+mcphases:38:2022,2,6,Follicular,Not at all
+mcphases:38:2022,2,7,Follicular,Not at all
+mcphases:38:2022,2,8,Follicular,Not at all
+mcphases:38:2022,2,9,Follicular,Not at all
+mcphases:38:2022,2,10,Follicular,Not at all
+mcphases:38:2022,2,11,Follicular,Not at all
+mcphases:38:2022,2,12,Follicular,Not at all
+mcphases:38:2022,2,13,Follicular,Not at all
+mcphases:38:2022,2,14,Follicular,Not at all
+mcphases:38:2022,2,15,Follicular,Not at all
+mcphases:38:2022,2,16,Follicular,Not at all
+mcphases:38:2022,2,17,Follicular,Not at all
+mcphases:38:2022,2,18,Follicular,Not at all
+mcphases:38:2022,2,19,Follicular,Not at all
+mcphases:38:2022,2,20,Fertility,Not at all
+mcphases:38:2022,2,21,Fertility,Not at all
+mcphases:38:2022,2,22,Fertility,Not at all
+mcphases:38:2022,2,23,Fertility,Not at all
+mcphases:38:2022,2,24,Fertility,
+mcphases:38:2022,2,25,Fertility,Not at all
+mcphases:38:2022,2,26,Luteal,Not at all
+mcphases:38:2022,2,27,Luteal,Not at all
+mcphases:38:2022,2,28,Luteal,Not at all
+mcphases:38:2022,2,29,Luteal,Not at all
+mcphases:38:2022,2,30,Luteal,Not at all
+mcphases:38:2022,2,31,Luteal,Not at all
+mcphases:38:2022,2,32,Luteal,Not at all
+mcphases:38:2022,2,33,Luteal,Not at all
+mcphases:38:2022,2,34,Luteal,Not at all
+mcphases:38:2022,2,35,Luteal,Not at all
+mcphases:38:2022,3,1,Menstrual,Not at all
+mcphases:38:2022,3,2,Menstrual,Moderate
+mcphases:38:2022,3,3,Menstrual,Moderate
+mcphases:38:2022,3,4,Menstrual,Moderate
+mcphases:38:2022,3,5,Menstrual,Light
+mcphases:38:2022,3,6,Menstrual,Light
+mcphases:38:2022,3,7,Menstrual,Spotting / Very Light
+mcphases:38:2022,3,8,Menstrual,Spotting / Very Light
+mcphases:38:2022,3,9,Follicular,Spotting / Very Light
+mcphases:38:2022,3,10,Follicular,Not at all
+mcphases:38:2022,3,11,Follicular,Not at all
+mcphases:38:2022,3,12,Follicular,Not at all
+mcphases:38:2022,3,13,Fertility,Not at all
+mcphases:38:2024,1,1,Menstrual,
+mcphases:38:2024,1,2,Menstrual,
+mcphases:38:2024,1,3,Menstrual,
+mcphases:38:2024,1,4,Menstrual,
+mcphases:38:2024,1,5,Menstrual,
+mcphases:38:2024,1,6,Follicular,
+mcphases:38:2024,1,7,Fertility,
+mcphases:38:2024,1,8,Fertility,
+mcphases:38:2024,1,9,Fertility,
+mcphases:38:2024,1,10,Fertility,
+mcphases:38:2024,1,11,Fertility,
+mcphases:38:2024,1,12,Fertility,
+mcphases:38:2024,1,13,Fertility,
+mcphases:38:2024,1,14,Luteal,
+mcphases:38:2024,1,15,Luteal,
+mcphases:38:2024,1,16,Luteal,
+mcphases:38:2024,1,17,Luteal,
+mcphases:38:2024,1,18,Luteal,
+mcphases:38:2024,1,19,Luteal,
+mcphases:38:2024,1,20,Luteal,
+mcphases:38:2024,1,21,Luteal,
+mcphases:38:2024,1,22,Luteal,
+mcphases:38:2024,1,23,Luteal,
+mcphases:38:2024,1,24,Luteal,
+mcphases:38:2024,1,25,Luteal,
+mcphases:38:2024,1,26,Luteal,
+mcphases:38:2024,2,1,Menstrual,
+mcphases:38:2024,2,2,Menstrual,
+mcphases:38:2024,2,3,Menstrual,
+mcphases:38:2024,2,4,Menstrual,
+mcphases:38:2024,2,5,Menstrual,
+mcphases:38:2024,2,6,Menstrual,
+mcphases:38:2024,2,7,Follicular,
+mcphases:38:2024,2,8,Follicular,
+mcphases:38:2024,2,9,Follicular,
+mcphases:38:2024,2,10,Follicular,
+mcphases:38:2024,2,11,Follicular,
+mcphases:38:2024,2,12,Follicular,
+mcphases:38:2024,2,13,Follicular,
+mcphases:38:2024,2,14,Follicular,
+mcphases:38:2024,2,15,Follicular,
+mcphases:38:2024,2,16,Follicular,
+mcphases:38:2024,2,17,Follicular,
+mcphases:38:2024,2,18,Follicular,
+mcphases:38:2024,2,19,Fertility,
+mcphases:38:2024,2,20,Fertility,
+mcphases:38:2024,2,21,Fertility,
+mcphases:38:2024,2,22,Fertility,
+mcphases:38:2024,2,23,Fertility,
+mcphases:38:2024,2,24,Fertility,
+mcphases:38:2024,2,25,Fertility,
+mcphases:38:2024,2,26,Fertility,
+mcphases:38:2024,2,27,Luteal,
+mcphases:38:2024,2,28,Luteal,
+mcphases:38:2024,2,29,Luteal,
+mcphases:38:2024,2,30,Luteal,
+mcphases:38:2024,2,31,Luteal,
+mcphases:38:2024,2,32,Luteal,
+mcphases:38:2024,2,33,Luteal,
+mcphases:38:2024,2,34,Luteal,
+mcphases:38:2024,3,1,Menstrual,
+mcphases:38:2024,3,2,Menstrual,
+mcphases:38:2024,3,3,Menstrual,
+mcphases:38:2024,3,4,Menstrual,
+mcphases:38:2024,3,5,Menstrual,
+mcphases:38:2024,3,6,Menstrual,
+mcphases:38:2024,3,7,Follicular,
+mcphases:38:2024,3,8,Follicular,
+mcphases:38:2024,3,9,Follicular,
+mcphases:38:2024,3,10,Follicular,
+mcphases:38:2024,3,11,Follicular,
+mcphases:38:2024,3,12,Follicular,
+mcphases:38:2024,3,13,Fertility,
+mcphases:38:2024,3,14,Fertility,
+mcphases:38:2024,3,15,Fertility,
+mcphases:38:2024,3,16,Fertility,
+mcphases:38:2024,3,17,Fertility,
+mcphases:38:2024,3,18,Fertility,
+mcphases:38:2024,3,19,Fertility,
+mcphases:38:2024,3,20,Fertility,
+mcphases:38:2024,3,21,Luteal,
+mcphases:38:2024,3,22,Luteal,
+mcphases:38:2024,3,23,Luteal,
+mcphases:38:2024,3,24,Luteal,
+mcphases:38:2024,3,25,Luteal,
+mcphases:38:2024,3,26,Luteal,
+mcphases:38:2024,4,1,Menstrual,
+mcphases:38:2024,4,2,Menstrual,
+mcphases:38:2024,4,3,Menstrual,
+mcphases:38:2024,4,4,Menstrual,
+mcphases:38:2024,4,5,Menstrual,
+mcphases:39:2022,1,1,Menstrual,Not at all
+mcphases:39:2022,1,2,Menstrual,Somewhat Heavy
+mcphases:39:2022,1,3,Menstrual,Moderate
+mcphases:39:2022,1,4,Menstrual,Somewhat Light
+mcphases:39:2022,1,5,Follicular,Spotting / Very Light
+mcphases:39:2022,1,6,Follicular,Not at all
+mcphases:39:2022,1,7,Follicular,Not at all
+mcphases:39:2022,1,8,Follicular,Not at all
+mcphases:39:2022,1,9,Follicular,Not at all
+mcphases:39:2022,1,10,Follicular,Not at all
+mcphases:39:2022,1,11,Follicular,
+mcphases:39:2022,1,12,Follicular,Not at all
+mcphases:39:2022,1,13,Follicular,Not at all
+mcphases:39:2022,1,14,Follicular,Not at all
+mcphases:39:2022,1,15,Follicular,Not at all
+mcphases:39:2022,1,16,Follicular,Not at all
+mcphases:39:2022,1,17,Follicular,Not at all
+mcphases:39:2022,1,18,Follicular,Not at all
+mcphases:39:2022,1,19,Fertility,Not at all
+mcphases:39:2022,1,20,Fertility,Not at all
+mcphases:39:2022,1,21,Fertility,Not at all
+mcphases:39:2022,1,22,Fertility,Not at all
+mcphases:39:2022,1,23,Fertility,Not at all
+mcphases:39:2022,1,24,Fertility,Not at all
+mcphases:39:2022,1,25,Fertility,Not at all
+mcphases:39:2022,1,26,Luteal,Not at all
+mcphases:39:2022,1,27,Luteal,Not at all
+mcphases:39:2022,1,28,Luteal,Not at all
+mcphases:39:2022,1,29,Luteal,Not at all
+mcphases:39:2022,1,30,Luteal,Not at all
+mcphases:39:2022,1,31,Luteal,Not at all
+mcphases:39:2022,1,32,Luteal,Not at all
+mcphases:39:2022,1,33,Luteal,Not at all
+mcphases:39:2022,1,34,Luteal,Not at all
+mcphases:39:2022,2,1,Menstrual,Not at all
+mcphases:39:2022,2,2,Menstrual,Somewhat Heavy
+mcphases:39:2022,2,3,Menstrual,Somewhat Light
+mcphases:39:2022,2,4,Follicular,Moderate
+mcphases:39:2022,2,5,Follicular,Light
+mcphases:39:2022,2,6,Follicular,Not at all
+mcphases:39:2022,2,7,Follicular,Not at all
+mcphases:39:2022,2,8,Follicular,Not at all
+mcphases:39:2022,2,9,Follicular,Not at all
+mcphases:39:2022,2,10,Follicular,Not at all
+mcphases:39:2022,2,11,Follicular,Not at all
+mcphases:39:2022,2,12,Follicular,Not at all
+mcphases:39:2022,2,13,Follicular,Not at all
+mcphases:39:2022,2,14,Follicular,Not at all
+mcphases:39:2022,2,15,Follicular,Not at all
+mcphases:39:2022,2,16,Follicular,Not at all
+mcphases:39:2022,2,17,Fertility,Not at all
+mcphases:39:2022,2,18,Fertility,Not at all
+mcphases:39:2022,2,19,Fertility,Not at all
+mcphases:39:2022,2,20,Fertility,Not at all
+mcphases:39:2022,2,21,Fertility,Not at all
+mcphases:39:2022,2,22,Fertility,Not at all
+mcphases:39:2022,2,23,Fertility,Not at all
+mcphases:39:2022,2,24,Luteal,Not at all
+mcphases:39:2022,2,25,Luteal,Not at all
+mcphases:39:2022,2,26,Luteal,Not at all
+mcphases:39:2022,3,1,Menstrual,Not at all
+mcphases:39:2022,3,2,Menstrual,Spotting / Very Light
+mcphases:39:2022,3,3,Menstrual,
+mcphases:39:2022,3,4,Menstrual,Somewhat Light
+mcphases:39:2022,3,5,Follicular,Light
+mcphases:39:2022,3,6,Follicular,Spotting / Very Light
+mcphases:39:2022,3,7,Follicular,Not at all
+mcphases:39:2022,3,8,Follicular,Not at all
+mcphases:39:2022,3,9,Fertility,Not at all
+mcphases:39:2022,3,10,Fertility,Not at all
+mcphases:39:2022,3,11,Fertility,Not at all
+mcphases:39:2022,3,12,Fertility,Not at all
+mcphases:39:2022,3,13,Fertility,Not at all
+mcphases:39:2022,3,14,Fertility,Not at all
+mcphases:39:2022,3,15,Fertility,Not at all
+mcphases:39:2022,3,16,Luteal,Not at all
+mcphases:39:2022,3,17,Luteal,Not at all
+mcphases:39:2022,3,18,Luteal,
+mcphases:40:2022,1,1,Menstrual,Light
+mcphases:40:2022,1,2,Menstrual,Light
+mcphases:40:2022,1,3,Menstrual,Moderate
+mcphases:40:2022,1,4,Menstrual,Moderate
+mcphases:40:2022,1,5,Menstrual,Heavy
+mcphases:40:2022,1,6,Menstrual,Moderate
+mcphases:40:2022,1,7,Menstrual,Moderate
+mcphases:40:2022,1,8,Menstrual,Moderate
+mcphases:40:2022,1,9,Menstrual,
+mcphases:40:2022,1,10,Menstrual,
+mcphases:40:2022,1,11,Menstrual,Moderate
+mcphases:40:2022,1,12,Follicular,Somewhat Light
+mcphases:40:2022,1,13,Follicular,Light
+mcphases:40:2022,1,14,Follicular,Light
+mcphases:40:2022,1,15,Follicular,Spotting / Very Light
+mcphases:40:2022,1,16,Follicular,
+mcphases:40:2022,1,17,Follicular,
+mcphases:40:2022,1,18,Follicular,Spotting / Very Light
+mcphases:40:2022,1,19,Follicular,
+mcphases:40:2022,1,20,Fertility,
+mcphases:40:2022,1,21,Fertility,
+mcphases:40:2022,1,22,Fertility,Light
+mcphases:40:2022,1,23,Fertility,
+mcphases:40:2022,1,24,Fertility,Moderate
+mcphases:40:2022,1,25,Fertility,Spotting / Very Light
+mcphases:40:2022,1,26,Fertility,Spotting / Very Light
+mcphases:40:2022,1,27,Luteal,
+mcphases:40:2022,1,28,Luteal,Spotting / Very Light
+mcphases:40:2022,1,29,Luteal,Somewhat Light
+mcphases:40:2022,1,30,Luteal,Moderate
+mcphases:40:2022,1,31,Luteal,Spotting / Very Light
+mcphases:40:2022,1,32,Luteal,Somewhat Light
+mcphases:40:2022,1,33,Luteal,Spotting / Very Light
+mcphases:40:2022,1,34,Luteal,Spotting / Very Light
+mcphases:40:2022,1,35,Luteal,
+mcphases:40:2022,1,36,Luteal,Spotting / Very Light
+mcphases:40:2022,1,37,Luteal,Light
+mcphases:40:2022,1,38,Luteal,Spotting / Very Light
+mcphases:40:2022,1,39,Luteal,Spotting / Very Light
+mcphases:40:2022,1,40,Luteal,Light
+mcphases:40:2022,2,1,Menstrual,
+mcphases:40:2022,2,2,Menstrual,
+mcphases:40:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:40:2022,2,4,Menstrual,
+mcphases:40:2022,2,5,Menstrual,Somewhat Light
+mcphases:40:2022,2,6,Menstrual,Somewhat Light
+mcphases:40:2022,2,7,Menstrual,Light
+mcphases:40:2022,2,8,Follicular,
+mcphases:40:2022,2,9,Follicular,Spotting / Very Light
+mcphases:40:2022,2,10,Follicular,
+mcphases:40:2022,2,11,Follicular,Light
+mcphases:40:2022,2,12,Follicular,Spotting / Very Light
+mcphases:40:2022,2,13,Follicular,Light
+mcphases:40:2022,2,14,Follicular,Spotting / Very Light
+mcphases:40:2022,2,15,Follicular,Spotting / Very Light
+mcphases:40:2022,2,16,Follicular,Somewhat Light
+mcphases:40:2022,2,17,Follicular,Somewhat Light
+mcphases:40:2022,2,18,Follicular,Light
+mcphases:40:2022,2,19,Follicular,Somewhat Heavy
+mcphases:40:2022,2,20,Follicular,Moderate
+mcphases:40:2022,2,21,Follicular,Moderate
+mcphases:40:2022,2,22,Follicular,
+mcphases:40:2022,2,23,Fertility,Light
+mcphases:40:2022,2,24,Fertility,
+mcphases:40:2022,2,25,Fertility,Somewhat Light
+mcphases:40:2022,2,26,Fertility,Light
+mcphases:40:2022,2,27,Fertility,
+mcphases:40:2022,2,28,Fertility,Spotting / Very Light
+mcphases:40:2022,2,29,Fertility,
+mcphases:40:2022,2,30,Luteal,Light
+mcphases:40:2022,2,31,Luteal,Light
+mcphases:40:2022,2,32,Luteal,Somewhat Light
+mcphases:40:2022,2,33,Luteal,
+mcphases:40:2022,2,34,Luteal,Light
+mcphases:40:2022,2,35,Luteal,Somewhat Light
+mcphases:40:2022,2,36,Luteal,
+mcphases:40:2022,2,37,Luteal,
+mcphases:41:2022,1,1,Menstrual,Not at all
+mcphases:41:2022,1,2,Menstrual,Spotting / Very Light
+mcphases:41:2022,1,3,Menstrual,Somewhat Heavy
+mcphases:41:2022,1,4,Menstrual,Moderate
+mcphases:41:2022,1,5,Menstrual,Moderate
+mcphases:41:2022,1,6,Menstrual,Somewhat Light
+mcphases:41:2022,1,7,Follicular,Spotting / Very Light
+mcphases:41:2022,1,8,Follicular,Spotting / Very Light
+mcphases:41:2022,1,9,Follicular,Not at all
+mcphases:41:2022,1,10,Follicular,Not at all
+mcphases:41:2022,1,11,Follicular,Not at all
+mcphases:41:2022,1,12,Follicular,Not at all
+mcphases:41:2022,1,13,Fertility,Not at all
+mcphases:41:2022,1,14,Fertility,Not at all
+mcphases:41:2022,1,15,Fertility,Not at all
+mcphases:41:2022,1,16,Fertility,Not at all
+mcphases:41:2022,1,17,Fertility,Not at all
+mcphases:41:2022,1,18,Fertility,Not at all
+mcphases:41:2022,1,19,Fertility,Not at all
+mcphases:41:2022,1,20,Luteal,Not at all
+mcphases:41:2022,1,21,Luteal,Not at all
+mcphases:41:2022,1,22,Luteal,Not at all
+mcphases:41:2022,1,23,Luteal,Not at all
+mcphases:41:2022,1,24,Luteal,Not at all
+mcphases:41:2022,1,25,Luteal,Not at all
+mcphases:41:2022,1,26,Luteal,Not at all
+mcphases:41:2022,2,1,Menstrual,Not at all
+mcphases:41:2022,2,2,Menstrual,Moderate
+mcphases:41:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:41:2022,2,4,Menstrual,Somewhat Light
+mcphases:41:2022,2,5,Menstrual,Light
+mcphases:41:2022,2,6,Follicular,Spotting / Very Light
+mcphases:41:2022,2,7,Follicular,Not at all
+mcphases:41:2022,2,8,Follicular,Not at all
+mcphases:41:2022,2,9,Follicular,Not at all
+mcphases:41:2022,2,10,Follicular,Not at all
+mcphases:41:2022,2,11,Fertility,Not at all
+mcphases:41:2022,2,12,Fertility,Not at all
+mcphases:41:2022,2,13,Fertility,Not at all
+mcphases:41:2022,2,14,Fertility,Light
+mcphases:41:2022,2,15,Fertility,Moderate
+mcphases:41:2022,2,16,Fertility,Moderate
+mcphases:41:2022,2,17,Fertility,Moderate
+mcphases:41:2022,2,18,Luteal,Not at all
+mcphases:41:2022,2,19,Luteal,Not at all
+mcphases:41:2022,2,20,Luteal,Not at all
+mcphases:41:2022,2,21,Luteal,Not at all
+mcphases:41:2022,2,22,Luteal,Not at all
+mcphases:41:2022,2,23,Luteal,Not at all
+mcphases:41:2022,2,24,Luteal,Not at all
+mcphases:41:2022,2,25,Luteal,Not at all
+mcphases:41:2022,2,26,Luteal,Not at all
+mcphases:41:2022,2,27,Luteal,Not at all
+mcphases:41:2022,3,1,Menstrual,Not at all
+mcphases:41:2022,3,2,Menstrual,Moderate
+mcphases:41:2022,3,3,Menstrual,Moderate
+mcphases:41:2022,3,4,Menstrual,Moderate
+mcphases:41:2022,3,5,Menstrual,Somewhat Light
+mcphases:41:2022,3,6,Follicular,Spotting / Very Light
+mcphases:41:2022,3,7,Follicular,Not at all
+mcphases:41:2022,3,8,Follicular,Not at all
+mcphases:41:2022,3,9,Follicular,Not at all
+mcphases:41:2022,3,10,Follicular,Not at all
+mcphases:41:2022,3,11,Follicular,Not at all
+mcphases:41:2022,3,12,Follicular,Not at all
+mcphases:41:2022,3,13,Fertility,Not at all
+mcphases:41:2022,3,14,Fertility,Not at all
+mcphases:41:2022,3,15,Fertility,Not at all
+mcphases:41:2022,3,16,Fertility,
+mcphases:41:2022,3,17,Fertility,
+mcphases:41:2022,3,18,Fertility,
+mcphases:41:2024,1,1,Menstrual,
+mcphases:41:2024,1,2,Menstrual,
+mcphases:41:2024,1,3,Menstrual,
+mcphases:41:2024,1,4,Menstrual,
+mcphases:41:2024,1,5,Menstrual,
+mcphases:41:2024,1,6,Follicular,
+mcphases:41:2024,1,7,Follicular,
+mcphases:41:2024,1,8,Follicular,
+mcphases:41:2024,1,9,Follicular,
+mcphases:41:2024,1,10,Follicular,
+mcphases:41:2024,1,11,Follicular,
+mcphases:41:2024,1,12,Follicular,
+mcphases:41:2024,1,13,Follicular,
+mcphases:41:2024,1,14,Follicular,
+mcphases:41:2024,1,15,Follicular,
+mcphases:41:2024,1,16,Fertility,
+mcphases:41:2024,1,17,Fertility,
+mcphases:41:2024,1,18,Fertility,
+mcphases:41:2024,1,19,Fertility,
+mcphases:41:2024,1,20,Fertility,
+mcphases:41:2024,1,21,Fertility,
+mcphases:41:2024,1,22,Fertility,
+mcphases:41:2024,1,23,Fertility,
+mcphases:41:2024,1,24,Luteal,
+mcphases:41:2024,1,25,Luteal,
+mcphases:41:2024,1,26,Luteal,
+mcphases:41:2024,1,27,Luteal,
+mcphases:41:2024,1,28,Luteal,
+mcphases:41:2024,1,29,Luteal,
+mcphases:41:2024,1,30,Luteal,
+mcphases:41:2024,2,1,Menstrual,
+mcphases:41:2024,2,2,Menstrual,
+mcphases:41:2024,2,3,Menstrual,
+mcphases:41:2024,2,4,Menstrual,
+mcphases:41:2024,2,5,Menstrual,
+mcphases:41:2024,2,6,Menstrual,
+mcphases:41:2024,2,7,Follicular,
+mcphases:41:2024,2,8,Follicular,
+mcphases:41:2024,2,9,Follicular,
+mcphases:41:2024,2,10,Follicular,
+mcphases:41:2024,2,11,Follicular,
+mcphases:41:2024,2,12,Fertility,
+mcphases:41:2024,2,13,Fertility,
+mcphases:41:2024,2,14,Fertility,
+mcphases:41:2024,2,15,Fertility,
+mcphases:41:2024,2,16,Fertility,
+mcphases:41:2024,2,17,Fertility,
+mcphases:41:2024,2,18,Fertility,
+mcphases:41:2024,2,19,Fertility,
+mcphases:41:2024,2,20,Luteal,
+mcphases:41:2024,2,21,Luteal,
+mcphases:41:2024,2,22,Luteal,
+mcphases:41:2024,2,23,Luteal,
+mcphases:41:2024,2,24,Luteal,
+mcphases:41:2024,2,25,Luteal,
+mcphases:41:2024,2,26,Luteal,
+mcphases:41:2024,2,27,Luteal,
+mcphases:41:2024,3,1,Menstrual,
+mcphases:41:2024,3,2,Menstrual,
+mcphases:41:2024,3,3,Menstrual,
+mcphases:41:2024,3,4,Menstrual,
+mcphases:41:2024,3,5,Menstrual,
+mcphases:41:2024,3,6,Menstrual,
+mcphases:41:2024,3,7,Follicular,
+mcphases:41:2024,3,8,Follicular,
+mcphases:41:2024,3,9,Follicular,
+mcphases:41:2024,3,10,Follicular,
+mcphases:41:2024,3,11,Follicular,
+mcphases:41:2024,3,12,Fertility,
+mcphases:41:2024,3,13,Fertility,
+mcphases:41:2024,3,14,Fertility,
+mcphases:41:2024,3,15,Fertility,
+mcphases:41:2024,3,16,Fertility,
+mcphases:41:2024,3,17,Fertility,
+mcphases:41:2024,3,18,Fertility,
+mcphases:41:2024,3,19,Fertility,
+mcphases:41:2024,3,20,Luteal,
+mcphases:41:2024,3,21,Luteal,
+mcphases:41:2024,3,22,Luteal,
+mcphases:41:2024,3,23,Luteal,
+mcphases:41:2024,3,24,Luteal,
+mcphases:41:2024,3,25,Luteal,
+mcphases:41:2024,4,1,Menstrual,
+mcphases:41:2024,4,2,Menstrual,
+mcphases:41:2024,4,3,Menstrual,
+mcphases:41:2024,4,4,Menstrual,
+mcphases:41:2024,4,5,Menstrual,
+mcphases:42:2022,1,1,Menstrual,Somewhat Heavy
+mcphases:42:2022,1,2,Menstrual,Moderate
+mcphases:42:2022,1,3,Menstrual,Spotting / Very Light
+mcphases:42:2022,1,4,Menstrual,Spotting / Very Light
+mcphases:42:2022,1,5,Follicular,Spotting / Very Light
+mcphases:42:2022,1,6,Follicular,Not at all
+mcphases:42:2022,1,7,Follicular,Not at all
+mcphases:42:2022,1,8,Follicular,Not at all
+mcphases:42:2022,1,9,Follicular,Not at all
+mcphases:42:2022,1,10,Follicular,Not at all
+mcphases:42:2022,1,11,Follicular,Not at all
+mcphases:42:2022,1,12,Follicular,Not at all
+mcphases:42:2022,1,13,Follicular,Not at all
+mcphases:42:2022,1,14,Follicular,Not at all
+mcphases:42:2022,1,15,Follicular,Not at all
+mcphases:42:2022,1,16,Follicular,Not at all
+mcphases:42:2022,1,17,Follicular,Not at all
+mcphases:42:2022,1,18,Follicular,Not at all
+mcphases:42:2022,1,19,Follicular,Not at all
+mcphases:42:2022,1,20,Follicular,
+mcphases:42:2022,1,21,Follicular,Not at all
+mcphases:42:2022,1,22,Fertility,Not at all
+mcphases:42:2022,1,23,Fertility,Not at all
+mcphases:42:2022,1,24,Fertility,Not at all
+mcphases:42:2022,1,25,Fertility,Not at all
+mcphases:42:2022,1,26,Fertility,Not at all
+mcphases:42:2022,1,27,Fertility,Not at all
+mcphases:42:2022,1,28,Fertility,Not at all
+mcphases:42:2022,1,29,Luteal,Not at all
+mcphases:42:2022,2,1,Menstrual,Not at all
+mcphases:42:2022,2,2,Menstrual,Light
+mcphases:42:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:42:2022,2,4,Menstrual,Moderate
+mcphases:42:2022,2,5,Menstrual,Moderate
+mcphases:42:2022,2,6,Menstrual,Moderate
+mcphases:42:2022,2,7,Menstrual,Light
+mcphases:42:2022,2,8,Follicular,Spotting / Very Light
+mcphases:42:2022,2,9,Follicular,Not at all
+mcphases:42:2022,2,10,Fertility,Not at all
+mcphases:42:2022,2,11,Fertility,Not at all
+mcphases:42:2022,2,12,Fertility,Not at all
+mcphases:42:2022,2,13,Fertility,Not at all
+mcphases:42:2022,2,14,Fertility,Not at all
+mcphases:42:2022,2,15,Fertility,Not at all
+mcphases:42:2022,2,16,Fertility,Not at all
+mcphases:42:2022,2,17,Luteal,Not at all
+mcphases:42:2022,2,18,Luteal,Not at all
+mcphases:42:2022,2,19,Luteal,Not at all
+mcphases:42:2022,2,20,Luteal,Not at all
+mcphases:42:2022,2,21,Luteal,Not at all
+mcphases:42:2022,2,22,Luteal,Not at all
+mcphases:42:2022,2,23,Luteal,Not at all
+mcphases:42:2022,2,24,Luteal,Not at all
+mcphases:42:2022,2,25,Luteal,Not at all
+mcphases:42:2022,2,26,Luteal,Not at all
+mcphases:42:2022,3,1,Menstrual,
+mcphases:42:2022,3,2,Menstrual,Light
+mcphases:42:2022,3,3,Menstrual,Moderate
+mcphases:42:2022,3,4,Menstrual,Heavy
+mcphases:42:2022,3,5,Menstrual,Moderate
+mcphases:42:2022,3,6,Menstrual,Light
+mcphases:42:2022,3,7,Follicular,Spotting / Very Light
+mcphases:42:2022,3,8,Follicular,Not at all
+mcphases:42:2022,3,9,Follicular,Not at all
+mcphases:42:2022,3,10,Follicular,Not at all
+mcphases:42:2022,3,11,Follicular,Not at all
+mcphases:42:2022,3,12,Follicular,Not at all
+mcphases:42:2022,3,13,Follicular,Not at all
+mcphases:42:2022,3,14,Follicular,Not at all
+mcphases:42:2022,3,15,Fertility,Not at all
+mcphases:42:2022,3,16,Fertility,Not at all
+mcphases:42:2022,3,17,Fertility,Not at all
+mcphases:42:2022,3,18,Fertility,Not at all
+mcphases:42:2022,3,19,Fertility,Not at all
+mcphases:42:2022,3,20,Fertility,Not at all
+mcphases:42:2022,3,21,Fertility,Not at all
+mcphases:42:2022,3,22,Luteal,Not at all
+mcphases:42:2022,3,23,Luteal,Not at all
+mcphases:42:2022,3,24,Luteal,Not at all
+mcphases:42:2022,3,25,Luteal,Not at all
+mcphases:42:2022,3,26,Luteal,Not at all
+mcphases:42:2022,3,27,Luteal,Not at all
+mcphases:42:2022,3,28,Luteal,Not at all
+mcphases:42:2022,3,29,Luteal,Not at all
+mcphases:42:2022,3,30,Luteal,Not at all
+mcphases:42:2022,4,1,Menstrual,Not at all
+mcphases:42:2022,4,2,Menstrual,Moderate
+mcphases:42:2022,4,3,Menstrual,Heavy
+mcphases:42:2022,4,4,Follicular,Moderate
+mcphases:42:2022,4,5,Follicular,Moderate
+mcphases:42:2024,1,1,Menstrual,
+mcphases:42:2024,1,2,Menstrual,
+mcphases:42:2024,1,3,Menstrual,
+mcphases:42:2024,1,4,Menstrual,
+mcphases:42:2024,1,5,Menstrual,
+mcphases:42:2024,1,6,Menstrual,
+mcphases:42:2024,1,7,Menstrual,
+mcphases:42:2024,1,8,Follicular,
+mcphases:42:2024,1,9,Follicular,
+mcphases:42:2024,1,10,Follicular,
+mcphases:42:2024,1,11,Fertility,
+mcphases:42:2024,1,12,Fertility,
+mcphases:42:2024,1,13,Fertility,
+mcphases:42:2024,1,14,Fertility,
+mcphases:42:2024,1,15,Fertility,
+mcphases:42:2024,1,16,Fertility,
+mcphases:42:2024,1,17,Fertility,
+mcphases:42:2024,1,18,Fertility,
+mcphases:42:2024,1,19,Luteal,
+mcphases:42:2024,1,20,Luteal,
+mcphases:42:2024,1,21,Luteal,
+mcphases:42:2024,1,22,Luteal,
+mcphases:42:2024,1,23,Luteal,
+mcphases:42:2024,1,24,Luteal,
+mcphases:42:2024,1,25,Luteal,
+mcphases:42:2024,1,26,Luteal,
+mcphases:42:2024,1,27,Luteal,
+mcphases:42:2024,2,1,Menstrual,
+mcphases:42:2024,2,2,Menstrual,
+mcphases:42:2024,2,3,Menstrual,
+mcphases:42:2024,2,4,Menstrual,
+mcphases:42:2024,2,5,Menstrual,
+mcphases:42:2024,2,6,Menstrual,
+mcphases:42:2024,2,7,Menstrual,
+mcphases:42:2024,2,8,Follicular,
+mcphases:42:2024,2,9,Follicular,
+mcphases:42:2024,2,10,Follicular,
+mcphases:42:2024,2,11,Follicular,
+mcphases:42:2024,2,12,Fertility,
+mcphases:42:2024,2,13,Fertility,
+mcphases:42:2024,2,14,Fertility,
+mcphases:42:2024,2,15,Fertility,
+mcphases:42:2024,2,16,Fertility,
+mcphases:42:2024,2,17,Fertility,
+mcphases:42:2024,2,18,Fertility,
+mcphases:42:2024,2,19,Fertility,
+mcphases:42:2024,2,20,Luteal,
+mcphases:42:2024,2,21,Luteal,
+mcphases:42:2024,2,22,Luteal,
+mcphases:42:2024,2,23,Luteal,
+mcphases:42:2024,2,24,Luteal,
+mcphases:42:2024,2,25,Luteal,
+mcphases:42:2024,2,26,Luteal,
+mcphases:42:2024,2,27,Luteal,
+mcphases:42:2024,2,28,Luteal,
+mcphases:42:2024,2,29,Luteal,
+mcphases:42:2024,3,1,Menstrual,
+mcphases:42:2024,3,2,Menstrual,
+mcphases:42:2024,3,3,Menstrual,
+mcphases:42:2024,3,4,Menstrual,
+mcphases:42:2024,3,5,Menstrual,
+mcphases:42:2024,3,6,Menstrual,
+mcphases:42:2024,3,7,Menstrual,
+mcphases:42:2024,3,8,Follicular,
+mcphases:42:2024,3,9,Follicular,
+mcphases:42:2024,3,10,Follicular,
+mcphases:42:2024,3,11,Follicular,
+mcphases:42:2024,3,12,Fertility,
+mcphases:42:2024,3,13,Fertility,
+mcphases:42:2024,3,14,Fertility,
+mcphases:42:2024,3,15,Fertility,
+mcphases:42:2024,3,16,Fertility,
+mcphases:42:2024,3,17,Fertility,
+mcphases:42:2024,3,18,Fertility,
+mcphases:42:2024,3,19,Fertility,
+mcphases:42:2024,3,20,Luteal,
+mcphases:42:2024,3,21,Luteal,
+mcphases:42:2024,3,22,Luteal,
+mcphases:42:2024,3,23,Luteal,
+mcphases:42:2024,4,1,Menstrual,
+mcphases:42:2024,4,2,Menstrual,
+mcphases:42:2024,4,3,Menstrual,
+mcphases:42:2024,4,4,Menstrual,
+mcphases:42:2024,4,5,Menstrual,
+mcphases:42:2024,4,6,Menstrual,
+mcphases:42:2024,4,7,Follicular,
+mcphases:42:2024,4,8,Follicular,
+mcphases:42:2024,4,9,Fertility,
+mcphases:42:2024,4,10,Fertility,
+mcphases:42:2024,4,11,Fertility,
+mcphases:42:2024,4,12,Fertility,
+mcphases:42:2024,4,13,Fertility,
+mcphases:42:2024,4,14,Fertility,
+mcphases:43:2022,1,1,Menstrual,Not at all
+mcphases:43:2022,1,2,Menstrual,
+mcphases:43:2022,1,3,Menstrual,Moderate
+mcphases:43:2022,1,4,Menstrual,Heavy
+mcphases:43:2022,1,5,Follicular,Moderate
+mcphases:43:2022,1,6,Follicular,Light
+mcphases:43:2022,1,7,Follicular,Not at all
+mcphases:43:2022,1,8,Follicular,Not at all
+mcphases:43:2022,1,9,Follicular,Not at all
+mcphases:43:2022,1,10,Follicular,Not at all
+mcphases:43:2022,1,11,Follicular,Not at all
+mcphases:43:2022,1,12,Follicular,Not at all
+mcphases:43:2022,1,13,Follicular,Not at all
+mcphases:43:2022,1,14,Follicular,
+mcphases:43:2022,1,15,Follicular,Not at all
+mcphases:43:2022,1,16,Follicular,Not at all
+mcphases:43:2022,1,17,Fertility,Not at all
+mcphases:43:2022,1,18,Fertility,Not at all
+mcphases:43:2022,1,19,Fertility,Not at all
+mcphases:43:2022,1,20,Fertility,Not at all
+mcphases:43:2022,1,21,Fertility,Not at all
+mcphases:43:2022,1,22,Fertility,Not at all
+mcphases:43:2022,1,23,Fertility,Not at all
+mcphases:43:2022,1,24,Luteal,Not at all
+mcphases:43:2022,1,25,Luteal,Not at all
+mcphases:43:2022,1,26,Luteal,Not at all
+mcphases:43:2022,1,27,Luteal,Not at all
+mcphases:43:2022,1,28,Luteal,Not at all
+mcphases:43:2022,1,29,Luteal,Not at all
+mcphases:43:2022,1,30,Luteal,Not at all
+mcphases:43:2022,1,31,Luteal,Not at all
+mcphases:43:2022,1,32,Luteal,Not at all
+mcphases:43:2022,1,33,Luteal,Not at all
+mcphases:43:2022,1,34,Luteal,Not at all
+mcphases:43:2022,2,1,Menstrual,Not at all
+mcphases:43:2022,2,2,Menstrual,Moderate
+mcphases:43:2022,2,3,Menstrual,Moderate
+mcphases:43:2022,2,4,Menstrual,
+mcphases:43:2022,2,5,Follicular,Light
+mcphases:43:2022,2,6,Follicular,
+mcphases:43:2022,2,7,Follicular,
+mcphases:43:2022,2,8,Follicular,Not at all
+mcphases:43:2022,2,9,Follicular,
+mcphases:43:2022,2,10,Follicular,
+mcphases:43:2022,2,11,Follicular,
+mcphases:43:2022,2,12,Follicular,Not at all
+mcphases:43:2022,2,13,Follicular,Not at all
+mcphases:43:2022,2,14,Follicular,Not at all
+mcphases:43:2022,2,15,Follicular,Not at all
+mcphases:43:2022,2,16,Fertility,Not at all
+mcphases:43:2022,2,17,Fertility,Not at all
+mcphases:43:2022,2,18,Fertility,Not at all
+mcphases:43:2022,2,19,Fertility,Not at all
+mcphases:43:2022,2,20,Fertility,Not at all
+mcphases:43:2022,2,21,Fertility,Not at all
+mcphases:43:2022,2,22,Fertility,Not at all
+mcphases:43:2022,2,23,Luteal,Not at all
+mcphases:43:2022,2,24,Luteal,Not at all
+mcphases:43:2022,2,25,Luteal,Not at all
+mcphases:43:2022,2,26,Luteal,Not at all
+mcphases:43:2022,2,27,Luteal,Not at all
+mcphases:43:2022,2,28,Luteal,Not at all
+mcphases:43:2022,2,29,Luteal,Not at all
+mcphases:43:2024,1,1,Menstrual,
+mcphases:43:2024,1,2,Menstrual,
+mcphases:43:2024,1,3,Menstrual,
+mcphases:43:2024,1,4,Menstrual,
+mcphases:43:2024,1,5,Menstrual,
+mcphases:43:2024,1,6,Menstrual,
+mcphases:43:2024,1,7,Menstrual,
+mcphases:43:2024,1,8,Follicular,
+mcphases:43:2024,1,9,Follicular,
+mcphases:43:2024,1,10,Follicular,
+mcphases:43:2024,1,11,Follicular,
+mcphases:43:2024,1,12,Follicular,
+mcphases:43:2024,1,13,Follicular,
+mcphases:43:2024,1,14,Follicular,
+mcphases:43:2024,1,15,Follicular,
+mcphases:43:2024,1,16,Follicular,
+mcphases:43:2024,1,17,Follicular,
+mcphases:43:2024,1,18,Follicular,
+mcphases:43:2024,1,19,Follicular,
+mcphases:43:2024,1,20,Follicular,
+mcphases:43:2024,1,21,Follicular,
+mcphases:43:2024,1,22,Fertility,
+mcphases:43:2024,1,23,Fertility,
+mcphases:43:2024,1,24,Fertility,
+mcphases:43:2024,1,25,Fertility,
+mcphases:43:2024,1,26,Fertility,
+mcphases:43:2024,1,27,Fertility,
+mcphases:43:2024,1,28,Fertility,
+mcphases:43:2024,1,29,Fertility,
+mcphases:43:2024,1,30,Luteal,
+mcphases:43:2024,1,31,Luteal,
+mcphases:43:2024,1,32,Luteal,
+mcphases:43:2024,1,33,Luteal,
+mcphases:43:2024,1,34,Luteal,
+mcphases:43:2024,1,35,Luteal,
+mcphases:43:2024,1,36,Luteal,
+mcphases:43:2024,1,37,Luteal,
+mcphases:43:2024,1,38,Luteal,
+mcphases:43:2024,1,39,Luteal,
+mcphases:43:2024,1,40,Luteal,
+mcphases:43:2024,1,41,Luteal,
+mcphases:43:2024,1,42,Luteal,
+mcphases:43:2024,1,43,Luteal,
+mcphases:43:2024,1,44,Luteal,
+mcphases:43:2024,1,45,Luteal,
+mcphases:43:2024,1,46,Luteal,
+mcphases:43:2024,1,47,Luteal,
+mcphases:43:2024,1,48,Luteal,
+mcphases:43:2024,1,49,Luteal,
+mcphases:43:2024,1,50,Luteal,
+mcphases:43:2024,1,51,Luteal,
+mcphases:43:2024,1,52,Luteal,
+mcphases:43:2024,1,53,Luteal,
+mcphases:43:2024,1,54,Luteal,
+mcphases:43:2024,1,55,Luteal,
+mcphases:43:2024,1,56,Luteal,
+mcphases:43:2024,1,57,Luteal,
+mcphases:43:2024,1,58,Luteal,
+mcphases:43:2024,1,59,Luteal,
+mcphases:43:2024,1,60,Luteal,
+mcphases:43:2024,1,61,Luteal,
+mcphases:43:2024,1,62,Luteal,
+mcphases:43:2024,1,63,Luteal,
+mcphases:43:2024,1,64,Luteal,
+mcphases:43:2024,1,65,Luteal,
+mcphases:43:2024,1,66,Luteal,
+mcphases:43:2024,1,67,Luteal,
+mcphases:43:2024,1,68,Luteal,
+mcphases:43:2024,1,69,Luteal,
+mcphases:43:2024,1,70,Luteal,
+mcphases:43:2024,1,71,Luteal,
+mcphases:43:2024,1,72,Luteal,
+mcphases:43:2024,1,73,Luteal,
+mcphases:43:2024,1,74,Luteal,
+mcphases:43:2024,1,75,Luteal,
+mcphases:43:2024,1,76,Luteal,
+mcphases:43:2024,1,77,Luteal,
+mcphases:43:2024,1,78,Luteal,
+mcphases:43:2024,1,79,Luteal,
+mcphases:43:2024,1,80,Luteal,
+mcphases:43:2024,1,81,Luteal,
+mcphases:43:2024,1,82,Luteal,
+mcphases:44:2022,1,1,Menstrual,Spotting / Very Light
+mcphases:44:2022,1,2,Follicular,Not at all
+mcphases:44:2022,1,3,Follicular,Not at all
+mcphases:44:2022,1,4,Follicular,Not at all
+mcphases:44:2022,1,5,Follicular,Not at all
+mcphases:44:2022,1,6,Follicular,Not at all
+mcphases:44:2022,1,7,Fertility,Not at all
+mcphases:44:2022,1,8,Fertility,Not at all
+mcphases:44:2022,1,9,Fertility,Not at all
+mcphases:44:2022,1,10,Fertility,Not at all
+mcphases:44:2022,1,11,Fertility,Not at all
+mcphases:44:2022,1,12,Fertility,Not at all
+mcphases:44:2022,1,13,Fertility,Not at all
+mcphases:44:2022,1,14,Luteal,Not at all
+mcphases:44:2022,1,15,Luteal,Not at all
+mcphases:44:2022,1,16,Luteal,Not at all
+mcphases:44:2022,1,17,Luteal,Not at all
+mcphases:44:2022,1,18,Luteal,Not at all
+mcphases:44:2022,1,19,Luteal,Not at all
+mcphases:44:2022,1,20,Luteal,Not at all
+mcphases:44:2022,1,21,Luteal,Not at all
+mcphases:44:2022,1,22,Luteal,Not at all
+mcphases:44:2022,1,23,Luteal,Not at all
+mcphases:44:2022,2,1,Menstrual,Not at all
+mcphases:44:2022,2,2,Menstrual,Spotting / Very Light
+mcphases:44:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:44:2022,2,4,Menstrual,Very Heavy
+mcphases:44:2022,2,5,Menstrual,Heavy
+mcphases:44:2022,2,6,Menstrual,Somewhat Light
+mcphases:44:2022,2,7,Menstrual,Spotting / Very Light
+mcphases:44:2022,2,8,Menstrual,Spotting / Very Light
+mcphases:44:2022,2,9,Follicular,Spotting / Very Light
+mcphases:44:2022,2,10,Follicular,Not at all
+mcphases:44:2022,2,11,Follicular,Not at all
+mcphases:44:2022,2,12,Follicular,Not at all
+mcphases:44:2022,2,13,Follicular,Not at all
+mcphases:44:2022,2,14,Fertility,Not at all
+mcphases:44:2022,2,15,Fertility,Not at all
+mcphases:44:2022,2,16,Fertility,Not at all
+mcphases:44:2022,2,17,Fertility,Not at all
+mcphases:44:2022,2,18,Fertility,Not at all
+mcphases:44:2022,2,19,Fertility,Not at all
+mcphases:44:2022,2,20,Fertility,Not at all
+mcphases:44:2022,2,21,Luteal,Not at all
+mcphases:44:2022,2,22,Luteal,Not at all
+mcphases:44:2022,2,23,Luteal,Not at all
+mcphases:44:2022,2,24,Luteal,Not at all
+mcphases:44:2022,2,25,Luteal,Not at all
+mcphases:44:2022,2,26,Luteal,Not at all
+mcphases:44:2022,2,27,Luteal,Not at all
+mcphases:44:2022,2,28,Luteal,Not at all
+mcphases:44:2022,2,29,Luteal,Not at all
+mcphases:44:2022,2,30,Luteal,Not at all
+mcphases:44:2022,2,31,Luteal,Not at all
+mcphases:44:2022,3,1,Menstrual,Not at all
+mcphases:44:2022,3,2,Menstrual,Very Heavy
+mcphases:44:2022,3,3,Menstrual,Heavy
+mcphases:44:2022,3,4,Menstrual,Somewhat Heavy
+mcphases:44:2022,3,5,Menstrual,Somewhat Light
+mcphases:44:2022,3,6,Menstrual,Light
+mcphases:44:2022,3,7,Follicular,Spotting / Very Light
+mcphases:44:2022,3,8,Follicular,Not at all
+mcphases:44:2022,3,9,Follicular,Not at all
+mcphases:44:2022,3,10,Follicular,Not at all
+mcphases:44:2022,3,11,Follicular,Not at all
+mcphases:44:2022,3,12,Follicular,Not at all
+mcphases:44:2022,3,13,Follicular,Not at all
+mcphases:44:2022,3,14,Fertility,Not at all
+mcphases:44:2022,3,15,Fertility,Not at all
+mcphases:44:2022,3,16,Fertility,Not at all
+mcphases:44:2022,3,17,Fertility,Not at all
+mcphases:44:2022,3,18,Fertility,Not at all
+mcphases:44:2022,3,19,Fertility,Not at all
+mcphases:44:2022,3,20,Fertility,Not at all
+mcphases:44:2022,3,21,Luteal,Not at all
+mcphases:44:2022,3,22,Luteal,Not at all
+mcphases:44:2022,3,23,Luteal,Not at all
+mcphases:44:2022,3,24,Luteal,
+mcphases:44:2022,3,25,Luteal,Not at all
+mcphases:44:2022,3,26,Luteal,Not at all
+mcphases:44:2022,3,27,Luteal,Not at all
+mcphases:44:2022,3,28,Luteal,Not at all
+mcphases:44:2022,3,29,Luteal,Not at all
+mcphases:44:2022,4,1,Menstrual,Not at all
+mcphases:44:2022,4,2,Menstrual,Spotting / Very Light
+mcphases:44:2022,4,3,Menstrual,Moderate
+mcphases:44:2022,4,4,Menstrual,Very Heavy
+mcphases:44:2022,4,5,Menstrual,Heavy
+mcphases:44:2022,4,6,Menstrual,Moderate
+mcphases:44:2022,4,7,Menstrual,Moderate
+mcphases:45:2022,1,1,Menstrual,Not at all
+mcphases:45:2022,1,2,Menstrual,Moderate
+mcphases:45:2022,1,3,Menstrual,Somewhat Heavy
+mcphases:45:2022,1,4,Menstrual,Moderate
+mcphases:45:2022,1,5,Menstrual,Somewhat Light
+mcphases:45:2022,1,6,Follicular,Light
+mcphases:45:2022,1,7,Follicular,Spotting / Very Light
+mcphases:45:2022,1,8,Follicular,Spotting / Very Light
+mcphases:45:2022,1,9,Follicular,Not at all
+mcphases:45:2022,1,10,Fertility,Not at all
+mcphases:45:2022,1,11,Fertility,Not at all
+mcphases:45:2022,1,12,Fertility,Not at all
+mcphases:45:2022,1,13,Fertility,Not at all
+mcphases:45:2022,1,14,Fertility,Not at all
+mcphases:45:2022,1,15,Fertility,
+mcphases:45:2022,1,16,Luteal,Not at all
+mcphases:45:2022,1,17,Luteal,Not at all
+mcphases:45:2022,1,18,Luteal,Not at all
+mcphases:45:2022,1,19,Luteal,Not at all
+mcphases:45:2022,1,20,Luteal,Not at all
+mcphases:45:2022,1,21,Luteal,Not at all
+mcphases:45:2022,1,22,Luteal,Not at all
+mcphases:45:2022,1,23,Luteal,Not at all
+mcphases:45:2022,1,24,Luteal,Not at all
+mcphases:45:2022,1,25,Luteal,Not at all
+mcphases:45:2022,1,26,Luteal,Not at all
+mcphases:45:2022,1,27,Luteal,Not at all
+mcphases:45:2022,1,28,Luteal,Not at all
+mcphases:45:2022,2,1,Menstrual,Not at all
+mcphases:45:2022,2,2,Menstrual,Heavy
+mcphases:45:2022,2,3,Menstrual,Not at all
+mcphases:45:2022,2,4,Menstrual,Spotting / Very Light
+mcphases:45:2022,2,5,Menstrual,Spotting / Very Light
+mcphases:45:2022,2,6,Follicular,Spotting / Very Light
+mcphases:45:2022,2,7,Follicular,Spotting / Very Light
+mcphases:45:2022,2,8,Follicular,Not at all
+mcphases:45:2022,2,9,Follicular,Not at all
+mcphases:45:2022,2,10,Follicular,Not at all
+mcphases:45:2022,2,11,Follicular,Not at all
+mcphases:45:2022,2,12,Follicular,Not at all
+mcphases:45:2022,2,13,Follicular,Not at all
+mcphases:45:2022,2,14,Follicular,Not at all
+mcphases:45:2022,2,15,Follicular,Not at all
+mcphases:45:2022,2,16,Follicular,Not at all
+mcphases:45:2022,2,17,Follicular,Not at all
+mcphases:45:2022,2,18,Follicular,Not at all
+mcphases:45:2022,2,19,Fertility,Not at all
+mcphases:45:2022,2,20,Fertility,Not at all
+mcphases:45:2022,2,21,Fertility,Not at all
+mcphases:45:2022,2,22,Fertility,Not at all
+mcphases:45:2022,2,23,Fertility,Not at all
+mcphases:45:2022,2,24,Fertility,Not at all
+mcphases:45:2022,2,25,Luteal,Not at all
+mcphases:45:2022,2,26,Luteal,Not at all
+mcphases:45:2022,2,27,Luteal,Not at all
+mcphases:45:2022,2,28,Luteal,Not at all
+mcphases:45:2022,2,29,Luteal,Not at all
+mcphases:45:2022,2,30,Luteal,Not at all
+mcphases:45:2022,2,31,Luteal,Not at all
+mcphases:45:2022,2,32,Luteal,Not at all
+mcphases:45:2022,2,33,Luteal,Not at all
+mcphases:45:2022,2,34,Luteal,Not at all
+mcphases:45:2022,2,35,Luteal,Spotting / Very Light
+mcphases:45:2022,2,36,Luteal,Spotting / Very Light
+mcphases:45:2022,3,1,Menstrual,Spotting / Very Light
+mcphases:45:2022,3,2,Menstrual,Moderate
+mcphases:46:2022,1,1,Menstrual,Not at all
+mcphases:46:2022,1,2,Menstrual,Heavy
+mcphases:46:2022,1,3,Menstrual,Heavy
+mcphases:46:2022,1,4,Menstrual,Moderate
+mcphases:46:2022,1,5,Menstrual,Somewhat Light
+mcphases:46:2022,1,6,Follicular,Spotting / Very Light
+mcphases:46:2022,1,7,Follicular,Not at all
+mcphases:46:2022,1,8,Follicular,Not at all
+mcphases:46:2022,1,9,Follicular,Not at all
+mcphases:46:2022,1,10,Follicular,Not at all
+mcphases:46:2022,1,11,Follicular,Not at all
+mcphases:46:2022,1,12,Fertility,Not at all
+mcphases:46:2022,1,13,Fertility,Not at all
+mcphases:46:2022,1,14,Fertility,Not at all
+mcphases:46:2022,1,15,Fertility,Not at all
+mcphases:46:2022,1,16,Fertility,Not at all
+mcphases:46:2022,1,17,Fertility,Not at all
+mcphases:46:2022,1,18,Fertility,Not at all
+mcphases:46:2022,1,19,Luteal,Not at all
+mcphases:46:2022,1,20,Luteal,Not at all
+mcphases:46:2022,1,21,Luteal,Not at all
+mcphases:46:2022,1,22,Luteal,Not at all
+mcphases:46:2022,1,23,Luteal,Not at all
+mcphases:46:2022,1,24,Luteal,
+mcphases:46:2022,1,25,Luteal,Not at all
+mcphases:46:2022,1,26,Luteal,Not at all
+mcphases:46:2022,1,27,Luteal,Not at all
+mcphases:46:2022,1,28,Luteal,Not at all
+mcphases:46:2022,1,29,Luteal,Not at all
+mcphases:46:2022,2,1,Menstrual,Not at all
+mcphases:46:2022,2,2,Menstrual,Spotting / Very Light
+mcphases:46:2022,2,3,Menstrual,Moderate
+mcphases:46:2022,2,4,Menstrual,Moderate
+mcphases:46:2022,2,5,Menstrual,Light
+mcphases:46:2022,2,6,Follicular,Spotting / Very Light
+mcphases:46:2022,2,7,Follicular,Not at all
+mcphases:46:2022,2,8,Follicular,Not at all
+mcphases:46:2022,2,9,Follicular,Not at all
+mcphases:46:2022,2,10,Follicular,Not at all
+mcphases:46:2022,2,11,Follicular,Not at all
+mcphases:46:2022,2,12,Follicular,Not at all
+mcphases:46:2022,2,13,Follicular,Not at all
+mcphases:46:2022,2,14,Fertility,Not at all
+mcphases:46:2022,2,15,Fertility,Not at all
+mcphases:46:2022,2,16,Fertility,Not at all
+mcphases:46:2022,2,17,Fertility,Not at all
+mcphases:46:2022,2,18,Fertility,
+mcphases:46:2022,2,19,Fertility,Not at all
+mcphases:46:2022,2,20,Fertility,Not at all
+mcphases:46:2022,2,21,Luteal,Not at all
+mcphases:46:2022,2,22,Luteal,Not at all
+mcphases:46:2022,2,23,Luteal,Not at all
+mcphases:46:2022,2,24,Luteal,Not at all
+mcphases:46:2022,2,25,Luteal,Not at all
+mcphases:46:2022,2,26,Luteal,Not at all
+mcphases:46:2022,2,27,Luteal,Not at all
+mcphases:46:2022,2,28,Luteal,Not at all
+mcphases:46:2022,2,29,Luteal,Not at all
+mcphases:46:2022,2,30,Luteal,Not at all
+mcphases:46:2022,2,31,Luteal,Not at all
+mcphases:46:2022,3,1,Menstrual,Spotting / Very Light
+mcphases:46:2022,3,2,Menstrual,Somewhat Heavy
+mcphases:46:2022,3,3,Menstrual,Moderate
+mcphases:46:2022,3,4,Menstrual,Moderate
+mcphases:46:2022,3,5,Menstrual,Light
+mcphases:46:2022,3,6,Follicular,Spotting / Very Light
+mcphases:46:2022,3,7,Follicular,Not at all
+mcphases:46:2022,3,8,Follicular,Not at all
+mcphases:46:2022,3,9,Follicular,Not at all
+mcphases:46:2022,3,10,Follicular,Not at all
+mcphases:46:2022,3,11,Follicular,Not at all
+mcphases:46:2022,3,12,Fertility,Not at all
+mcphases:46:2022,3,13,Fertility,Not at all
+mcphases:46:2022,3,14,Fertility,Not at all
+mcphases:46:2022,3,15,Fertility,Not at all
+mcphases:46:2022,3,16,Fertility,Not at all
+mcphases:46:2022,3,17,Fertility,Not at all
+mcphases:46:2022,3,18,Fertility,Not at all
+mcphases:46:2022,3,19,Luteal,Not at all
+mcphases:46:2022,3,20,Luteal,Not at all
+mcphases:46:2022,3,21,Luteal,Moderate
+mcphases:46:2022,3,22,Luteal,Not at all
+mcphases:46:2022,3,23,Luteal,Not at all
+mcphases:46:2022,3,24,Luteal,Not at all
+mcphases:46:2022,3,25,Luteal,Not at all
+mcphases:46:2022,3,26,Luteal,
+mcphases:46:2022,3,27,Luteal,
+mcphases:46:2022,3,28,Luteal,
+mcphases:46:2022,3,29,Luteal,
+mcphases:47:2022,1,1,Menstrual,Heavy
+mcphases:47:2022,1,2,Menstrual,Somewhat Heavy
+mcphases:47:2022,1,3,Menstrual,Somewhat Light
+mcphases:47:2022,1,4,Menstrual,Spotting / Very Light
+mcphases:47:2022,1,5,Menstrual,Light
+mcphases:47:2022,1,6,Menstrual,Light
+mcphases:47:2022,1,7,Menstrual,Spotting / Very Light
+mcphases:47:2022,1,8,Follicular,Light
+mcphases:47:2022,1,9,Follicular,Light
+mcphases:47:2022,1,10,Follicular,Light
+mcphases:47:2022,1,11,Follicular,
+mcphases:47:2022,1,12,Follicular,Light
+mcphases:47:2022,1,13,Follicular,
+mcphases:47:2022,1,14,Follicular,Light
+mcphases:47:2022,1,15,Follicular,Spotting / Very Light
+mcphases:47:2022,1,16,Follicular,Spotting / Very Light
+mcphases:47:2022,1,17,Follicular,
+mcphases:47:2022,1,18,Follicular,Somewhat Light
+mcphases:47:2022,1,19,Follicular,Somewhat Light
+mcphases:47:2022,1,20,Fertility,Somewhat Light
+mcphases:47:2022,1,21,Fertility,Light
+mcphases:47:2022,1,22,Fertility,Light
+mcphases:47:2022,1,23,Fertility,Somewhat Light
+mcphases:47:2022,1,24,Fertility,Moderate
+mcphases:47:2022,1,25,Fertility,Moderate
+mcphases:47:2022,1,26,Fertility,Moderate
+mcphases:47:2022,1,27,Luteal,
+mcphases:47:2022,1,28,Luteal,Somewhat Heavy
+mcphases:47:2022,1,29,Luteal,Somewhat Light
+mcphases:47:2022,1,30,Luteal,Moderate
+mcphases:47:2022,1,31,Luteal,
+mcphases:47:2022,2,1,Menstrual,Somewhat Light
+mcphases:47:2022,2,2,Menstrual,Somewhat Light
+mcphases:47:2022,2,3,Menstrual,Light
+mcphases:47:2022,2,4,Menstrual,Somewhat Light
+mcphases:47:2022,2,5,Menstrual,Somewhat Light
+mcphases:47:2022,2,6,Menstrual,Somewhat Light
+mcphases:47:2022,2,7,Menstrual,Moderate
+mcphases:47:2022,2,8,Menstrual,Heavy
+mcphases:47:2022,2,9,Menstrual,Somewhat Heavy
+mcphases:47:2022,2,10,Menstrual,Moderate
+mcphases:47:2022,2,11,Menstrual,
+mcphases:47:2022,2,12,Menstrual,Somewhat Light
+mcphases:47:2022,2,13,Menstrual,
+mcphases:47:2022,2,14,Menstrual,Light
+mcphases:47:2022,2,15,Menstrual,
+mcphases:47:2022,2,16,Follicular,Spotting / Very Light
+mcphases:47:2022,2,17,Follicular,
+mcphases:47:2022,2,18,Follicular,Light
+mcphases:47:2022,2,19,Follicular,
+mcphases:47:2022,2,20,Follicular,
+mcphases:47:2022,2,21,Follicular,
+mcphases:47:2022,2,22,Follicular,Moderate
+mcphases:47:2022,2,23,Fertility,
+mcphases:47:2022,2,24,Fertility,
+mcphases:47:2022,2,25,Fertility,Heavy
+mcphases:47:2022,2,26,Fertility,Somewhat Heavy
+mcphases:47:2022,2,27,Fertility,
+mcphases:47:2022,2,28,Fertility,
+mcphases:47:2022,2,29,Fertility,
+mcphases:47:2022,2,30,Luteal,Very Heavy
+mcphases:47:2022,2,31,Luteal,Moderate
+mcphases:47:2022,2,32,Luteal,
+mcphases:47:2022,2,33,Luteal,Moderate
+mcphases:47:2022,2,34,Luteal,
+mcphases:47:2022,2,35,Luteal,
+mcphases:47:2022,2,36,Luteal,Moderate
+mcphases:47:2022,3,1,Menstrual,Light
+mcphases:47:2022,3,2,Menstrual,
+mcphases:47:2022,3,3,Menstrual,
+mcphases:47:2022,3,4,Menstrual,Light
+mcphases:47:2022,3,5,Menstrual,Somewhat Heavy
+mcphases:47:2022,3,6,Menstrual,
+mcphases:47:2022,3,7,Menstrual,Very Heavy
+mcphases:47:2022,3,8,Menstrual,Moderate
+mcphases:47:2022,3,9,Menstrual,Somewhat Light
+mcphases:47:2022,3,10,Menstrual,
+mcphases:47:2022,3,11,Menstrual,Somewhat Light
+mcphases:47:2022,3,12,Follicular,
+mcphases:47:2022,3,13,Follicular,
+mcphases:47:2022,3,14,Follicular,Moderate
+mcphases:47:2022,3,15,Follicular,
+mcphases:47:2022,3,16,Follicular,
+mcphases:47:2022,3,17,Fertility,
+mcphases:47:2022,3,18,Fertility,
+mcphases:47:2022,3,19,Fertility,
+mcphases:47:2022,3,20,Fertility,
+mcphases:47:2022,3,21,Fertility,
+mcphases:47:2022,3,22,Fertility,
+mcphases:47:2022,3,23,Fertility,
+mcphases:47:2024,1,1,Menstrual,
+mcphases:47:2024,1,2,Menstrual,
+mcphases:47:2024,1,3,Menstrual,
+mcphases:47:2024,1,4,Menstrual,
+mcphases:47:2024,1,5,Menstrual,
+mcphases:47:2024,1,6,Menstrual,
+mcphases:47:2024,1,7,Menstrual,
+mcphases:47:2024,1,8,Menstrual,
+mcphases:47:2024,1,9,Follicular,
+mcphases:47:2024,1,10,Follicular,
+mcphases:47:2024,1,11,Follicular,
+mcphases:47:2024,1,12,Follicular,
+mcphases:47:2024,1,13,Follicular,
+mcphases:47:2024,1,14,Follicular,
+mcphases:47:2024,1,15,Fertility,
+mcphases:47:2024,1,16,Fertility,
+mcphases:47:2024,1,17,Fertility,
+mcphases:47:2024,1,18,Fertility,
+mcphases:47:2024,1,19,Fertility,
+mcphases:47:2024,1,20,Fertility,
+mcphases:47:2024,1,21,Fertility,
+mcphases:47:2024,1,22,Fertility,
+mcphases:47:2024,1,23,Luteal,
+mcphases:47:2024,1,24,Luteal,
+mcphases:47:2024,1,25,Luteal,
+mcphases:47:2024,1,26,Luteal,
+mcphases:47:2024,1,27,Luteal,
+mcphases:47:2024,1,28,Luteal,
+mcphases:47:2024,1,29,Luteal,
+mcphases:47:2024,1,30,Luteal,
+mcphases:47:2024,2,1,Menstrual,
+mcphases:47:2024,2,2,Menstrual,
+mcphases:47:2024,2,3,Menstrual,
+mcphases:47:2024,2,4,Menstrual,
+mcphases:47:2024,2,5,Menstrual,
+mcphases:47:2024,2,6,Menstrual,
+mcphases:47:2024,2,7,Menstrual,
+mcphases:47:2024,2,8,Menstrual,
+mcphases:47:2024,2,9,Follicular,
+mcphases:47:2024,2,10,Follicular,
+mcphases:47:2024,2,11,Follicular,
+mcphases:47:2024,2,12,Follicular,
+mcphases:47:2024,2,13,Follicular,
+mcphases:47:2024,2,14,Follicular,
+mcphases:47:2024,2,15,Follicular,
+mcphases:47:2024,2,16,Follicular,
+mcphases:47:2024,2,17,Fertility,
+mcphases:47:2024,2,18,Fertility,
+mcphases:47:2024,2,19,Fertility,
+mcphases:47:2024,2,20,Fertility,
+mcphases:47:2024,2,21,Fertility,
+mcphases:47:2024,2,22,Fertility,
+mcphases:47:2024,2,23,Fertility,
+mcphases:47:2024,2,24,Fertility,
+mcphases:47:2024,2,25,Luteal,
+mcphases:47:2024,2,26,Luteal,
+mcphases:47:2024,2,27,Luteal,
+mcphases:47:2024,2,28,Luteal,
+mcphases:47:2024,2,29,Luteal,
+mcphases:47:2024,2,30,Luteal,
+mcphases:47:2024,2,31,Luteal,
+mcphases:47:2024,3,1,Menstrual,
+mcphases:47:2024,3,2,Menstrual,
+mcphases:47:2024,3,3,Menstrual,
+mcphases:47:2024,3,4,Menstrual,
+mcphases:47:2024,3,5,Menstrual,
+mcphases:47:2024,3,6,Menstrual,
+mcphases:47:2024,3,7,Menstrual,
+mcphases:47:2024,3,8,Menstrual,
+mcphases:47:2024,3,9,Follicular,
+mcphases:47:2024,3,10,Follicular,
+mcphases:47:2024,3,11,Follicular,
+mcphases:47:2024,3,12,Follicular,
+mcphases:47:2024,3,13,Follicular,
+mcphases:47:2024,3,14,Follicular,
+mcphases:47:2024,3,15,Follicular,
+mcphases:47:2024,3,16,Follicular,
+mcphases:47:2024,3,17,Follicular,
+mcphases:47:2024,3,18,Follicular,
+mcphases:47:2024,3,19,Fertility,
+mcphases:47:2024,3,20,Fertility,
+mcphases:47:2024,3,21,Fertility,
+mcphases:47:2024,3,22,Fertility,
+mcphases:47:2024,3,23,Fertility,
+mcphases:47:2024,3,24,Fertility,
+mcphases:47:2024,3,25,Fertility,
+mcphases:47:2024,3,26,Fertility,
+mcphases:47:2024,3,27,Luteal,
+mcphases:48:2022,1,1,Menstrual,Spotting / Very Light
+mcphases:48:2022,1,2,Menstrual,Spotting / Very Light
+mcphases:48:2022,1,3,Menstrual,Heavy
+mcphases:48:2022,1,4,Menstrual,Very Heavy
+mcphases:48:2022,1,5,Follicular,Somewhat Heavy
+mcphases:48:2022,1,6,Follicular,Not at all
+mcphases:48:2022,1,7,Follicular,
+mcphases:48:2022,1,8,Follicular,Not at all
+mcphases:48:2022,1,9,Follicular,Not at all
+mcphases:48:2022,1,10,Follicular,Not at all
+mcphases:48:2022,1,11,Follicular,Not at all
+mcphases:48:2022,1,12,Follicular,Not at all
+mcphases:48:2022,1,13,Follicular,Not at all
+mcphases:48:2022,1,14,Follicular,Not at all
+mcphases:48:2022,1,15,Follicular,Not at all
+mcphases:48:2022,1,16,Follicular,Not at all
+mcphases:48:2022,1,17,Follicular,Not at all
+mcphases:48:2022,1,18,Follicular,Not at all
+mcphases:48:2022,1,19,Follicular,Not at all
+mcphases:48:2022,1,20,Follicular,Not at all
+mcphases:48:2022,1,21,Follicular,Not at all
+mcphases:48:2022,1,22,Follicular,Not at all
+mcphases:48:2022,1,23,Follicular,Not at all
+mcphases:48:2022,1,24,Follicular,
+mcphases:48:2022,1,25,Follicular,Not at all
+mcphases:48:2022,1,26,Follicular,Not at all
+mcphases:48:2022,1,27,Follicular,Not at all
+mcphases:48:2022,1,28,Fertility,Not at all
+mcphases:48:2022,1,29,Fertility,Not at all
+mcphases:48:2022,1,30,Fertility,Not at all
+mcphases:48:2022,1,31,Fertility,Not at all
+mcphases:48:2022,1,32,Fertility,
+mcphases:48:2022,1,33,Fertility,Not at all
+mcphases:48:2022,1,34,Fertility,Not at all
+mcphases:48:2022,1,35,Luteal,Not at all
+mcphases:48:2022,1,36,Luteal,Not at all
+mcphases:48:2022,1,37,Luteal,
+mcphases:48:2022,1,38,Luteal,Not at all
+mcphases:48:2022,2,1,Menstrual,Not at all
+mcphases:48:2022,2,2,Menstrual,Spotting / Very Light
+mcphases:48:2022,2,3,Menstrual,Heavy
+mcphases:48:2022,2,4,Menstrual,Somewhat Light
+mcphases:48:2022,2,5,Follicular,Light
+mcphases:48:2022,2,6,Follicular,Spotting / Very Light
+mcphases:48:2022,2,7,Follicular,Not at all
+mcphases:48:2022,2,8,Follicular,Not at all
+mcphases:48:2022,2,9,Follicular,Not at all
+mcphases:48:2022,2,10,Follicular,Not at all
+mcphases:48:2022,2,11,Follicular,Not at all
+mcphases:48:2022,2,12,Follicular,Not at all
+mcphases:48:2022,2,13,Follicular,Not at all
+mcphases:48:2022,2,14,Follicular,Not at all
+mcphases:48:2022,2,15,Follicular,
+mcphases:48:2022,2,16,Follicular,Not at all
+mcphases:48:2022,2,17,Follicular,
+mcphases:48:2022,2,18,Follicular,Not at all
+mcphases:48:2022,2,19,Fertility,Not at all
+mcphases:48:2022,2,20,Fertility,Not at all
+mcphases:48:2022,2,21,Fertility,Not at all
+mcphases:48:2022,2,22,Fertility,Not at all
+mcphases:48:2022,2,23,Fertility,
+mcphases:48:2022,2,24,Fertility,Not at all
+mcphases:48:2022,2,25,Fertility,Not at all
+mcphases:48:2022,2,26,Luteal,Not at all
+mcphases:48:2022,2,27,Luteal,
+mcphases:48:2022,3,1,Menstrual,Not at all
+mcphases:48:2022,3,2,Menstrual,Not at all
+mcphases:48:2022,3,3,Follicular,Moderate
+mcphases:48:2022,3,4,Follicular,
+mcphases:48:2022,3,5,Follicular,Not at all
+mcphases:48:2022,3,6,Follicular,
+mcphases:48:2022,3,7,Follicular,Not at all
+mcphases:48:2022,3,8,Follicular,
+mcphases:48:2022,3,9,Follicular,
+mcphases:48:2024,1,1,Menstrual,
+mcphases:48:2024,1,2,Menstrual,
+mcphases:48:2024,1,3,Menstrual,
+mcphases:48:2024,1,4,Menstrual,
+mcphases:48:2024,1,5,Follicular,
+mcphases:48:2024,1,6,Follicular,
+mcphases:48:2024,1,7,Follicular,
+mcphases:48:2024,1,8,Follicular,
+mcphases:48:2024,1,9,Follicular,
+mcphases:48:2024,1,10,Follicular,
+mcphases:48:2024,1,11,Follicular,
+mcphases:48:2024,1,12,Follicular,
+mcphases:48:2024,1,13,Fertility,
+mcphases:48:2024,1,14,Fertility,
+mcphases:48:2024,1,15,Fertility,
+mcphases:48:2024,1,16,Fertility,
+mcphases:48:2024,1,17,Fertility,
+mcphases:48:2024,1,18,Fertility,
+mcphases:48:2024,1,19,Fertility,
+mcphases:48:2024,1,20,Fertility,
+mcphases:48:2024,1,21,Luteal,
+mcphases:48:2024,1,22,Luteal,
+mcphases:48:2024,1,23,Luteal,
+mcphases:48:2024,1,24,Luteal,
+mcphases:48:2024,1,25,Luteal,
+mcphases:48:2024,1,26,Luteal,
+mcphases:48:2024,1,27,Luteal,
+mcphases:48:2024,1,28,Luteal,
+mcphases:48:2024,1,29,Luteal,
+mcphases:48:2024,1,30,Luteal,
+mcphases:48:2024,1,31,Luteal,
+mcphases:48:2024,2,1,Menstrual,
+mcphases:48:2024,2,2,Menstrual,
+mcphases:48:2024,2,3,Menstrual,
+mcphases:48:2024,2,4,Menstrual,
+mcphases:48:2024,2,5,Follicular,
+mcphases:48:2024,2,6,Follicular,
+mcphases:48:2024,2,7,Follicular,
+mcphases:48:2024,2,8,Follicular,
+mcphases:48:2024,2,9,Follicular,
+mcphases:48:2024,2,10,Follicular,
+mcphases:48:2024,2,11,Follicular,
+mcphases:48:2024,2,12,Follicular,
+mcphases:48:2024,2,13,Fertility,
+mcphases:48:2024,2,14,Fertility,
+mcphases:48:2024,2,15,Fertility,
+mcphases:48:2024,2,16,Fertility,
+mcphases:48:2024,2,17,Fertility,
+mcphases:48:2024,2,18,Fertility,
+mcphases:48:2024,2,19,Fertility,
+mcphases:48:2024,2,20,Fertility,
+mcphases:48:2024,2,21,Luteal,
+mcphases:48:2024,2,22,Luteal,
+mcphases:48:2024,2,23,Luteal,
+mcphases:48:2024,2,24,Luteal,
+mcphases:48:2024,2,25,Luteal,
+mcphases:48:2024,2,26,Luteal,
+mcphases:48:2024,2,27,Luteal,
+mcphases:48:2024,2,28,Luteal,
+mcphases:48:2024,2,29,Luteal,
+mcphases:48:2024,2,30,Luteal,
+mcphases:48:2024,2,31,Luteal,
+mcphases:48:2024,2,32,Luteal,
+mcphases:48:2024,2,33,Luteal,
+mcphases:48:2024,2,34,Luteal,
+mcphases:48:2024,2,35,Luteal,
+mcphases:48:2024,2,36,Luteal,
+mcphases:48:2024,2,37,Luteal,
+mcphases:48:2024,2,38,Luteal,
+mcphases:48:2024,2,39,Luteal,
+mcphases:48:2024,2,40,Luteal,
+mcphases:48:2024,2,41,Luteal,
+mcphases:48:2024,2,42,Luteal,
+mcphases:48:2024,2,43,Luteal,
+mcphases:48:2024,2,44,Luteal,
+mcphases:48:2024,2,45,Luteal,
+mcphases:48:2024,2,46,Luteal,
+mcphases:48:2024,2,47,Luteal,
+mcphases:48:2024,2,48,Luteal,
+mcphases:48:2024,2,49,Luteal,
+mcphases:48:2024,2,50,Luteal,
+mcphases:48:2024,2,51,Luteal,
+mcphases:48:2024,2,52,Luteal,
+mcphases:48:2024,2,53,Luteal,
+mcphases:48:2024,2,54,Luteal,
+mcphases:48:2024,2,55,Luteal,
+mcphases:48:2024,2,56,Luteal,
+mcphases:48:2024,2,57,Luteal,
+mcphases:49:2022,1,1,Menstrual,
+mcphases:49:2022,1,2,Menstrual,Moderate
+mcphases:49:2022,1,3,Menstrual,Moderate
+mcphases:49:2022,1,4,Menstrual,Somewhat Light
+mcphases:49:2022,1,5,Follicular,Moderate
+mcphases:49:2022,1,6,Follicular,Not at all
+mcphases:49:2022,1,7,Follicular,Not at all
+mcphases:49:2022,1,8,Follicular,
+mcphases:49:2022,1,9,Follicular,Not at all
+mcphases:49:2022,1,10,Follicular,
+mcphases:49:2022,1,11,Follicular,
+mcphases:49:2022,1,12,Follicular,Not at all
+mcphases:49:2022,1,13,Follicular,Not at all
+mcphases:49:2022,1,14,Follicular,Not at all
+mcphases:49:2022,1,15,Fertility,Not at all
+mcphases:49:2022,1,16,Fertility,
+mcphases:49:2022,1,17,Fertility,Not at all
+mcphases:49:2022,1,18,Fertility,
+mcphases:49:2022,1,19,Fertility,Not at all
+mcphases:49:2022,1,20,Fertility,
+mcphases:49:2022,1,21,Luteal,
+mcphases:49:2022,1,22,Luteal,Not at all
+mcphases:49:2022,1,23,Luteal,
+mcphases:49:2022,1,24,Luteal,
+mcphases:49:2022,1,25,Luteal,
+mcphases:49:2022,1,26,Luteal,
+mcphases:49:2022,1,27,Luteal,
+mcphases:49:2022,1,28,Luteal,
+mcphases:49:2022,1,29,Luteal,
+mcphases:49:2022,1,30,Luteal,
+mcphases:49:2022,1,31,Luteal,
+mcphases:49:2022,2,1,Menstrual,
+mcphases:49:2022,2,2,Menstrual,
+mcphases:49:2022,2,3,Menstrual,
+mcphases:49:2022,2,4,Menstrual,
+mcphases:49:2022,2,5,Menstrual,
+mcphases:49:2022,2,6,Menstrual,
+mcphases:49:2022,2,7,Follicular,
+mcphases:50:2022,1,1,Menstrual,Not at all
+mcphases:50:2022,1,2,Menstrual,Light
+mcphases:50:2022,1,3,Menstrual,Moderate
+mcphases:50:2022,1,4,Menstrual,Somewhat Light
+mcphases:50:2022,1,5,Menstrual,Light
+mcphases:50:2022,1,6,Follicular,Spotting / Very Light
+mcphases:50:2022,1,7,Follicular,Not at all
+mcphases:50:2022,1,8,Follicular,Not at all
+mcphases:50:2022,1,9,Follicular,Not at all
+mcphases:50:2022,1,10,Follicular,Not at all
+mcphases:50:2022,1,11,Follicular,Not at all
+mcphases:50:2022,1,12,Follicular,Not at all
+mcphases:50:2022,1,13,Fertility,Not at all
+mcphases:50:2022,1,14,Fertility,Not at all
+mcphases:50:2022,1,15,Fertility,Not at all
+mcphases:50:2022,1,16,Fertility,Not at all
+mcphases:50:2022,1,17,Fertility,Not at all
+mcphases:50:2022,1,18,Fertility,Not at all
+mcphases:50:2022,1,19,Fertility,Not at all
+mcphases:50:2022,1,20,Luteal,Not at all
+mcphases:50:2022,1,21,Luteal,Not at all
+mcphases:50:2022,2,1,Menstrual,Not at all
+mcphases:50:2022,2,2,Menstrual,Light
+mcphases:50:2022,2,3,Menstrual,Somewhat Heavy
+mcphases:50:2022,2,4,Menstrual,Somewhat Light
+mcphases:50:2022,2,5,Follicular,Spotting / Very Light
+mcphases:50:2022,2,6,Follicular,Spotting / Very Light
+mcphases:50:2022,2,7,Follicular,Not at all
+mcphases:50:2022,2,8,Follicular,Not at all
+mcphases:50:2022,2,9,Follicular,Not at all
+mcphases:50:2022,2,10,Follicular,Not at all
+mcphases:50:2022,2,11,Follicular,Not at all
+mcphases:50:2022,2,12,Follicular,Not at all
+mcphases:50:2022,2,13,Follicular,Not at all
+mcphases:50:2022,2,14,Fertility,Not at all
+mcphases:50:2022,2,15,Fertility,Not at all
+mcphases:50:2022,2,16,Fertility,Not at all
+mcphases:50:2022,2,17,Fertility,Not at all
+mcphases:50:2022,2,18,Fertility,Not at all
+mcphases:50:2022,2,19,Fertility,Not at all
+mcphases:50:2022,2,20,Fertility,Not at all
+mcphases:50:2022,2,21,Luteal,Not at all
+mcphases:50:2022,2,22,Luteal,Not at all
+mcphases:50:2022,2,23,Luteal,Not at all
+mcphases:50:2022,3,1,Menstrual,Moderate
+mcphases:50:2022,3,2,Menstrual,Heavy
+mcphases:50:2022,3,3,Menstrual,Moderate
+mcphases:50:2022,3,4,Menstrual,Light
+mcphases:50:2022,3,5,Follicular,Spotting / Very Light
+mcphases:50:2022,3,6,Follicular,Spotting / Very Light
+mcphases:50:2022,3,7,Fertility,Not at all
+mcphases:50:2022,3,8,Fertility,Not at all
+mcphases:50:2022,3,9,Fertility,Not at all
+mcphases:50:2022,3,10,Fertility,Not at all
+mcphases:50:2022,3,11,Fertility,Not at all
+mcphases:50:2022,3,12,Fertility,Not at all
+mcphases:50:2022,3,13,Luteal,Not at all
+mcphases:50:2022,4,1,Menstrual,Not at all
+mcphases:50:2022,4,2,Menstrual,Moderate
+mcphases:50:2022,4,3,Menstrual,Light
+mcphases:50:2022,4,4,Menstrual,Light
+mcphases:50:2022,4,5,Follicular,Spotting / Very Light
+mcphases:50:2022,4,6,Follicular,Not at all
+mcphases:50:2022,4,7,Follicular,Not at all
+mcphases:50:2022,4,8,Follicular,Not at all
+mcphases:50:2022,4,9,Follicular,Not at all
+mcphases:50:2022,4,10,Follicular,Not at all
+mcphases:50:2022,4,11,Follicular,Not at all
+mcphases:50:2022,4,12,Follicular,Not at all
+mcphases:50:2022,4,13,Fertility,Not at all
+mcphases:50:2022,4,14,Fertility,Not at all
+mcphases:50:2022,4,15,Fertility,Not at all
+mcphases:50:2022,4,16,Fertility,Not at all
+mcphases:50:2022,4,17,Fertility,Not at all
+mcphases:50:2022,4,18,Fertility,Not at all
+mcphases:50:2022,4,19,Fertility,Not at all
+mcphases:50:2022,4,20,Luteal,Not at all
+mcphases:50:2022,4,21,Luteal,Not at all
+mcphases:50:2022,4,22,Luteal,Not at all
+mcphases:50:2022,4,23,Luteal,Not at all
+mcphases:50:2022,4,24,Luteal,Not at all
+mcphases:50:2022,4,25,Luteal,Not at all
+mcphases:50:2022,5,1,Menstrual,Not at all
+mcphases:50:2022,5,2,Follicular,Light
+mcphases:50:2022,5,3,Follicular,Moderate
+mcphases:50:2024,1,1,Menstrual,
+mcphases:50:2024,1,2,Menstrual,
+mcphases:50:2024,1,3,Menstrual,
+mcphases:50:2024,1,4,Menstrual,
+mcphases:50:2024,1,5,Menstrual,
+mcphases:50:2024,1,6,Menstrual,
+mcphases:50:2024,1,7,Menstrual,
+mcphases:50:2024,1,8,Menstrual,
+mcphases:50:2024,1,9,Follicular,
+mcphases:50:2024,1,10,Follicular,
+mcphases:50:2024,1,11,Follicular,
+mcphases:50:2024,1,12,Follicular,
+mcphases:50:2024,1,13,Follicular,
+mcphases:50:2024,1,14,Follicular,
+mcphases:50:2024,1,15,Follicular,
+mcphases:50:2024,1,16,Follicular,
+mcphases:50:2024,1,17,Fertility,
+mcphases:50:2024,1,18,Fertility,
+mcphases:50:2024,1,19,Fertility,
+mcphases:50:2024,1,20,Fertility,
+mcphases:50:2024,1,21,Fertility,
+mcphases:50:2024,1,22,Fertility,
+mcphases:50:2024,1,23,Fertility,
+mcphases:50:2024,1,24,Fertility,
+mcphases:50:2024,1,25,Luteal,
+mcphases:50:2024,1,26,Luteal,
+mcphases:50:2024,1,27,Luteal,
+mcphases:50:2024,1,28,Luteal,
+mcphases:50:2024,1,29,Luteal,
+mcphases:50:2024,1,30,Luteal,
+mcphases:50:2024,1,31,Luteal,
+mcphases:50:2024,1,32,Luteal,
+mcphases:50:2024,1,33,Luteal,
+mcphases:50:2024,1,34,Luteal,
+mcphases:50:2024,1,35,Luteal,
+mcphases:50:2024,1,36,Luteal,
+mcphases:50:2024,2,1,Menstrual,
+mcphases:50:2024,2,2,Menstrual,
+mcphases:50:2024,2,3,Menstrual,
+mcphases:50:2024,2,4,Menstrual,
+mcphases:50:2024,2,5,Menstrual,
+mcphases:50:2024,2,6,Menstrual,
+mcphases:50:2024,2,7,Menstrual,
+mcphases:50:2024,2,8,Menstrual,
+mcphases:50:2024,2,9,Follicular,
+mcphases:50:2024,2,10,Follicular,
+mcphases:50:2024,2,11,Fertility,
+mcphases:50:2024,2,12,Fertility,
+mcphases:50:2024,2,13,Fertility,
+mcphases:50:2024,2,14,Fertility,
+mcphases:50:2024,2,15,Fertility,
+mcphases:50:2024,2,16,Fertility,
+mcphases:50:2024,2,17,Fertility,
+mcphases:50:2024,2,18,Fertility,
+mcphases:50:2024,2,19,Luteal,
+mcphases:50:2024,2,20,Luteal,
+mcphases:50:2024,2,21,Luteal,
+mcphases:50:2024,2,22,Luteal,
+mcphases:50:2024,2,23,Luteal,
+mcphases:50:2024,2,24,Luteal,
+mcphases:50:2024,2,25,Luteal,
+mcphases:50:2024,2,26,Luteal,
+mcphases:50:2024,2,27,Luteal,
+mcphases:50:2024,2,28,Luteal,
+mcphases:50:2024,2,29,Luteal,
+mcphases:50:2024,2,30,Luteal,
+mcphases:50:2024,3,1,Menstrual,
+mcphases:50:2024,3,2,Menstrual,
+mcphases:50:2024,3,3,Menstrual,
+mcphases:50:2024,3,4,Menstrual,
+mcphases:50:2024,3,5,Menstrual,
+mcphases:50:2024,3,6,Menstrual,
+mcphases:50:2024,3,7,Menstrual,
+mcphases:50:2024,3,8,Menstrual,
+mcphases:50:2024,3,9,Follicular,
+mcphases:50:2024,3,10,Follicular,
+mcphases:50:2024,3,11,Follicular,
+mcphases:50:2024,3,12,Follicular,
+mcphases:50:2024,3,13,Follicular,
+mcphases:50:2024,3,14,Follicular,
+mcphases:50:2024,3,15,Fertility,
+mcphases:50:2024,3,16,Fertility,
+mcphases:50:2024,3,17,Fertility,
+mcphases:50:2024,3,18,Fertility,
+mcphases:50:2024,3,19,Fertility,
+mcphases:50:2024,3,20,Fertility,
+mcphases:50:2024,3,21,Fertility,
+mcphases:50:2024,3,22,Fertility,
+mcphases:50:2024,3,23,Luteal,
+mcphases:50:2024,3,24,Luteal,
+mcphases:50:2024,3,25,Luteal,
+mcphases:50:2024,3,26,Luteal,
+mcphases:50:2024,3,27,Luteal,
+mcphases:50:2024,3,28,Luteal,
+mcphases:50:2024,3,29,Luteal,
+mcphases:50:2024,3,30,Luteal,
+mcphases:50:2024,3,31,Luteal,
+mcphases:50:2024,3,32,Luteal,
+mcphases:50:2024,3,33,Luteal,
+mcphases:50:2024,3,34,Luteal,
+mcphases:50:2024,4,1,Menstrual,
+mcphases:50:2024,4,2,Menstrual,

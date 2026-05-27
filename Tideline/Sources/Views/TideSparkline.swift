@@ -11,21 +11,56 @@ struct TideSparkline: View {
     let onCycleTap: (CycleSummary) -> Void
 
     @Environment(\.colorScheme) private var colorScheme
+    @State private var activeDetailCycle: CycleSummary? = nil
 
     private let height: CGFloat = 80
     private let maxCyclesShown = 6
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Gezeitentabelle")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+        VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Gezeitentabelle")
+                    .font(.system(size: 15, weight: .bold))
+                Text("Letzte 6 Zyklen")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
 
             if displayed.isEmpty {
                 emptyState
             } else {
                 sparklineCanvas
             }
+        }
+        .popover(item: $activeDetailCycle) { cycle in
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Zyklus-Details")
+                    .font(.system(size: 14, weight: .bold, design: .serif).italic())
+                    .foregroundStyle(curveColor)
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    detailRow(label: "Beginn:", value: cycle.startDate.formatted(.dateTime.day().month(.wide).year()))
+                    detailRow(label: "Dauer:", value: "\(cycle.lengthDays) Tage")
+                }
+                .font(.system(size: 12.5))
+                
+                Divider().padding(.vertical, 2)
+                
+                Button {
+                    activeDetailCycle = nil
+                    // Execute original callback to open "Mein Zyklus" details sheet
+                    onCycleTap(cycle)
+                } label: {
+                    Text("Alle Details anzeigen →")
+                        .font(.system(size: 11.5, weight: .semibold))
+                        .foregroundStyle(curveColor)
+                }
+                .buttonStyle(.plain)
+            }
+            .padding(14)
+            .frame(width: 220)
+            .background(.ultraThinMaterial)
+            .presentationCompactAdaptation(.popover)
         }
     }
 
@@ -37,7 +72,9 @@ struct TideSparkline: View {
     private var emptyState: some View {
         Text("Noch keine vergangenen Zyklen.")
             .font(.caption)
-            .foregroundStyle(.tertiary)
+            // Task #133 — was .tertiary; bumped to .secondary so the
+            // empty-state guidance meets WCAG AA contrast.
+            .foregroundStyle(.secondary)
             .frame(height: height)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -45,16 +82,32 @@ struct TideSparkline: View {
     @ViewBuilder
     private var sparklineCanvas: some View {
         GeometryReader { proxy in
+            let h = max(proxy.size.height, height)
             ZStack(alignment: .topLeading) {
+                // Gradient-filled background under the curve.
+                ClosedTideCurve(cycles: displayed)
+                    .fill(
+                        LinearGradient(
+                            colors: [curveColor.opacity(0.18), curveColor.opacity(0.0)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .frame(width: proxy.size.width, height: h)
+                
                 // Background sinusoidal curve through cycle peaks.
                 TideCurve(cycles: displayed)
-                    .stroke(curveColor, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
+                    .stroke(curveColor, style: StrokeStyle(lineWidth: 1.8, lineCap: .round, lineJoin: .round))
 
                 // Tappable peak markers + length labels.
                 ForEach(Array(displayed.enumerated()), id: \.offset) { idx, cycle in
                     peakMarker(index: idx, cycle: cycle, in: proxy.size)
                 }
             }
+            // Guard: GeometryReader inside a ScrollView receives zero height on
+            // the first layout pass. Clamp to the declared height so the Path
+            // is never drawn in a zero-height rect.
+            .frame(width: proxy.size.width, height: h)
         }
         .frame(height: height)
     }
@@ -69,14 +122,18 @@ struct TideSparkline: View {
     private func peakMarker(index: Int, cycle: CycleSummary, in size: CGSize) -> some View {
         let pos = position(forIndex: index, length: cycle.lengthDays, in: size)
         Button {
-            onCycleTap(cycle)
+            activeDetailCycle = cycle
         } label: {
-            VStack(spacing: 2) {
+            VStack(spacing: 3) {
                 Circle()
                     .fill(curveColor)
-                    .frame(width: 8, height: 8)
+                    .frame(width: 9, height: 9)
+                    .overlay(
+                        Circle().stroke(Color.white, lineWidth: 1.5)
+                    )
+                    .shadow(color: curveColor.opacity(0.6), radius: 4, x: 0, y: 1.5)
                 Text("\(cycle.lengthDays)d")
-                    .font(.system(size: 9))
+                    .font(.system(size: 9, weight: .bold))
                     .foregroundStyle(.secondary)
             }
         }
@@ -98,6 +155,16 @@ struct TideSparkline: View {
         let centerY = size.height * 0.45
         let y = centerY - CGFloat(deviation * scale).clamped(to: -28...28)
         return CGPoint(x: x, y: y)
+    }
+
+    private func detailRow(label: String, value: String) -> some View {
+        HStack {
+            Text(label)
+                .foregroundStyle(.secondary)
+            Spacer()
+            Text(value)
+                .fontWeight(.medium)
+        }
     }
 }
 
@@ -138,6 +205,49 @@ private struct TideCurve: Shape {
             )
         }
         path.addLine(to: CGPoint(x: rect.width, y: points.last!.y))
+        return path
+    }
+}
+
+/// A closed version of TideCurve for rendering a beautiful under-curve gradient.
+private struct ClosedTideCurve: Shape {
+    let cycles: [CycleSummary]
+ 
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        guard !cycles.isEmpty else { return path }
+ 
+        let n = cycles.count
+        let mean = cycles.map(\.lengthDays).reduce(0, +) / max(1, n)
+        let centerY = rect.midY
+        let scale = 8.0
+ 
+        func yFor(_ length: Int) -> CGFloat {
+            let dev = Double(length - mean)
+            return centerY - CGFloat(dev * scale).clamped(to: -28...28)
+        }
+ 
+        var points: [CGPoint] = []
+        for (idx, cycle) in cycles.enumerated() {
+            let xFrac = (Double(idx) + 0.5) / Double(n)
+            points.append(CGPoint(x: rect.width * CGFloat(xFrac), y: yFor(cycle.lengthDays)))
+        }
+ 
+        path.move(to: CGPoint(x: 0, y: rect.height))
+        path.addLine(to: CGPoint(x: 0, y: points.first!.y))
+        for i in 0..<(points.count - 1) {
+            let p0 = points[i]
+            let p1 = points[i + 1]
+            let midX = (p0.x + p1.x) / 2
+            path.addCurve(
+                to: p1,
+                control1: CGPoint(x: midX, y: p0.y),
+                control2: CGPoint(x: midX, y: p1.y)
+            )
+        }
+        path.addLine(to: CGPoint(x: rect.width, y: points.last!.y))
+        path.addLine(to: CGPoint(x: rect.width, y: rect.height))
+        path.closeSubpath()
         return path
     }
 }

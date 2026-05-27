@@ -19,19 +19,24 @@ public struct CyclePredictor: Sendable, Equatable {
     //   alpha_0:  prior shape for sigma^2
     //   beta_0:   prior scale for sigma^2
     //
-    // Defaults are calibrated from primary-source population data:
+    // Defaults are calibrated to the verified primary source:
     //   Mahalingaiah et al. 2023 (Apple Women's Health Study,
     //   npj Digital Medicine, PMC10226714, n=165,668 cycles):
     //     population mean 28.7 days, population SD 6.1
     //     within-person SD: 5.33 (under 20), 3.79 (ages 35-39, lowest),
     //                       5.42 (45-49), 11.19 (50+)
-    //   Bull et al. 2019 (Natural Cycles, npj Digital Medicine,
-    //   ~600K cycles): mean 29.3 days.
     //
-    // The default prior here uses μ=29 (intermediate between the two)
-    // and β tuned for ~3.7-day SD as a default. v2 of the predictor
-    // (see docs/design/mixture-predictor.md) replaces this with an
-    // age-stratified prior + two-component mixture.
+    // We use μ₀ = 28.7 as the canonical population mean — this matches
+    // CLAUDE.md ("Population prior: μ=28.7 verified from AWHS 2023") and
+    // the verified research note. AWHS is preferred over Bull et al. 2019
+    // (~29.3) because AWHS includes anovulatory cycles and is closer to
+    // the European general-population estimate (~28 days, Scandinavian
+    // cohorts). The 0.6-day spread between the two studies washes out
+    // after ~3 logged cycles with our κ₀=2 weak prior — see task #94.
+    //
+    // v2 of the predictor (docs/design/mixture-predictor.md) replaces
+    // this point prior with an age-stratified prior + two-component
+    // mixture.
     //
     // We start with a weak prior so observations dominate quickly while
     // still preventing pathological estimates from 1-2 cycles of data.
@@ -41,27 +46,88 @@ public struct CyclePredictor: Sendable, Equatable {
     public var alpha: Double      // posterior shape
     public var beta: Double       // posterior scale
     public var observedCount: Int // number of observed cycles
+    public var isOngoingIrregularity: Bool // Category E (PCOS etc.) flag
+    /// Number of post-soft-reset observations still inside the "recovery"
+    /// window. Set to `Self.recoveryWindowLength` in `softReset(...)` and
+    /// decremented per `observe(...)`. Distinguishes "low data because
+    /// the user just started" (observedCount < 3, recoveryRemaining = 0)
+    /// from "low data because we just reset after a Category C/F event"
+    /// (observedCount < 3, recoveryRemaining > 0) — the latter is the
+    /// user-visible "the estimate will sharpen with new cycles" suffix
+    /// in `HeroStateBuilder`. Audit fix #101.
+    public var recoveryRemaining: Int
+
+    /// Canonical population prior, age-agnostic. Calibrated to AWHS 2023
+    /// lowest-variability within-person SD (35–39 band, σ = 3.79 days).
+    ///
+    /// Task #158 — math correctness pass: previously used β = α·σ² = 41.07
+    /// (= 3 · 3.7²) with a doc-comment claiming "beta/alpha ≈ sigma²" as
+    /// if that represented the prior mean of σ². That's wrong for
+    /// standard NIG, which has E[σ²] = β/(α−1), not β/α. The corrected
+    /// formula is β = (α−1)·σ² so the prior mean of σ² exactly matches
+    /// the target σ. With α=3, σ=3.79: β = 2 · 14.36 = 28.72.
+    ///
+    /// Effect: the prior's predictive 90% CI at N=0 narrows from ~17.6 d
+    /// to ~14.4 d. Closer to within-person variability than to total
+    /// population-marginal variability — appropriate, since each user is
+    /// one person, not a mixture of all users.
+    /// Number of post-soft-reset observations during which the predictor is
+    /// in the user-visible "recovery window". After this many fresh
+    /// observations the posterior is again data-dominated and the
+    /// recovery-suffix disappears from the home view. 5 chosen to match
+    /// the "first 3–5 logged cycles dominate the posterior post-reset"
+    /// language in `docs/design/disrupted-cycles.md`.
+    public static let recoveryWindowLength: Int = 5
 
     public static let populationPrior = CyclePredictor(
-        mu: 29.0,
+        mu: 28.7,
         kappa: 2.0,
         alpha: 3.0,
-        beta: 3.0 * 13.69, // beta/alpha ≈ sigma^2 ≈ 3.7^2
-        observedCount: 0
+        // β = (α−1) · σ² with σ = 3.79 (AWHS 35–39 within-person SD).
+        // Gives E[σ²] = β/(α−1) = 3.79² = 14.36. Standard NIG conjugate
+        // prior derivation per Murphy 2007.
+        beta: 2.0 * 3.79 * 3.79,  // = 28.7282
+        observedCount: 0,
+        recoveryRemaining: 0
     )
+
+    /// Age-stratified population prior (task #97). Same μ across all
+    /// bands (AWHS shows population mean is age-invariant) — only β
+    /// changes, scaling with the band's within-person SD per the AWHS
+    /// table. See `AgeBand.withinPersonSDDays` for sources.
+    ///
+    /// Formula: β = (α−1) · σ² so that E[σ²] = σ_band². Standard NIG
+    /// prior-mean convention (Murphy 2007). Task #158 corrected this
+    /// from the previously-wrong β = α · σ² (which had implied E[σ²]
+    /// 50% larger than the documented σ).
+    public static func populationPrior(for band: AgeBand) -> CyclePredictor {
+        let sigma = band.withinPersonSDDays
+        return CyclePredictor(
+            mu: 28.7,
+            kappa: 2.0,
+            alpha: 3.0,
+            beta: 2.0 * sigma * sigma,
+            observedCount: 0,
+            recoveryRemaining: 0
+        )
+    }
 
     public init(
         mu: Double,
         kappa: Double,
         alpha: Double,
         beta: Double,
-        observedCount: Int = 0
+        observedCount: Int = 0,
+        isOngoingIrregularity: Bool = false,
+        recoveryRemaining: Int = 0
     ) {
         self.mu = mu
         self.kappa = kappa
         self.alpha = alpha
         self.beta = beta
         self.observedCount = observedCount
+        self.isOngoingIrregularity = isOngoingIrregularity
+        self.recoveryRemaining = recoveryRemaining
     }
 
     // MARK: - Updates
@@ -84,6 +150,11 @@ public struct CyclePredictor: Sendable, Equatable {
         self.alpha = alphaNew
         self.beta = betaNew
         self.observedCount += 1
+        // Recovery counter — decrement per observation so the
+        // "estimate will sharpen with new cycles" suffix disappears
+        // automatically once data dominates the prior again. Saturates
+        // at zero. Audit fix #101.
+        if recoveryRemaining > 0 { recoveryRemaining -= 1 }
     }
 
     /// Apply a sequence of observed cycle lengths in order.
@@ -118,8 +189,14 @@ public struct CyclePredictor: Sendable, Equatable {
     }
 
     /// Predict the next period start date, given the last known period start.
+    ///
+    /// Uses `Date.addingDays(_:)` (calendar arithmetic for the integer-day
+    /// component) so a DST transition inside the prediction horizon does
+    /// not silently shift the predicted calendar day by an hour — which,
+    /// at moments near midnight, would surface as a wrong wall-clock date
+    /// in the UI. Audit task #99.
     public func nextPeriodDate(after lastPeriodStart: Date) -> Date {
-        lastPeriodStart.addingTimeInterval(nextCycleLengthEstimate * 86_400)
+        lastPeriodStart.addingDays(nextCycleLengthEstimate)
     }
 
     /// Predict the next period start as a confidence band of dates.
@@ -128,8 +205,8 @@ public struct CyclePredictor: Sendable, Equatable {
         confidence: Double = 0.90
     ) -> ClosedRange<Date> {
         let range = nextCycleLengthInterval(confidence: confidence)
-        let low = lastPeriodStart.addingTimeInterval(range.lowerBound * 86_400)
-        let high = lastPeriodStart.addingTimeInterval(range.upperBound * 86_400)
+        let low = lastPeriodStart.addingDays(range.lowerBound)
+        let high = lastPeriodStart.addingDays(range.upperBound)
         return low...high
     }
 
@@ -150,7 +227,12 @@ public struct CyclePredictor: Sendable, Equatable {
     /// the growing uncertainty.
     public func conditionalCDF(cycleLength x: Double, currentDay D: Double) -> Double {
         let FD = predictiveCDF(cycleLength: D)
-        guard FD < 0.9999 else { return 1.0 }
+        // Guard aligned with `inverseConditionalCDF`'s degeneracy threshold
+        // (audit task #108). Before, this returned 1.0 at FD > 0.9999 while
+        // the inverse function only bailed out at FD > 0.99999 — that
+        // 0.9999 < FD < 0.99999 band caused bisection to collapse to a
+        // zero-width interval at moderate-late D (e.g. D=45 with μ=29).
+        guard FD < 0.99999 else { return 1.0 }
         let Fx = predictiveCDF(cycleLength: x)
         return max(0, min(1, (Fx - FD) / (1 - FD)))
     }
@@ -171,15 +253,52 @@ public struct CyclePredictor: Sendable, Equatable {
     }
 
     /// Binary-search inverse of `conditionalCDF`. Tolerance: 0.01 days.
+    ///
+    /// Bug fix (audit task #108): the old loop guarded on
+    /// `predictiveCDF(hi) < 0.999`, which is the WRONG criterion — it's
+    /// about the unconditional marginal CDF, not the conditional one we
+    /// actually need to cross. At very late `D` (say D ≥ μ+30), the
+    /// marginal `predictiveCDF(hi)` is already saturated near 1.0 for
+    /// any `hi ≥ D`, so the expansion loop exited immediately and `hi`
+    /// stayed pinned at `max(D+1, μ+30)`. Bisection then produced a
+    /// laughably narrow interval (often [D, D+1]). The correct stopping
+    /// criterion is `conditionalCDF(hi, D) >= target` — we expand `hi`
+    /// until the conditional density we care about has crossed it.
+    ///
+    /// We also add an explicit degeneracy guard for the case where
+    /// `predictiveCDF(D)` is so close to 1.0 that the conditional CDF
+    /// loses numerical resolution — return a safe ~30-day fallback.
     private func inverseConditionalCDF(target: Double, currentDay D: Double) -> Double {
-        var lo = D                          // can't be earlier than today
-        var hi = max(D + 1, mu + 30)        // generous upper bound
-        // Expand hi until the conditional CDF reaches the target
-        while predictiveCDF(cycleLength: hi) < 0.999 && conditionalCDF(cycleLength: hi, currentDay: D) < target {
-            hi += 30
-            if hi > D + 365 { return hi }   // hard ceiling: 1 year out
+        // Degeneracy guard: if (1 - F(D)) underflows float resolution,
+        // the conditional distribution is no longer expressible. Return
+        // a meaningful fallback that still produces a non-zero interval:
+        // low-target (lower bound of CI) → D, high-target (upper bound) →
+        // D+30. This degenerate case shouldn't normally surface — the
+        // late-mode UI is expected to suppress the date display at that
+        // point — but if it does, a 30-day fallback range is honest
+        // ("we genuinely don't know").
+        let FD = predictiveCDF(cycleLength: D)
+        guard FD < 0.99999 else {
+            return target < 0.5 ? D : D + 30.0
         }
-        for _ in 0..<60 {                   // ~10^-18 precision in 60 bisections; plenty
+
+        var lo = D                          // can't be earlier than today
+        var hi = max(D + 1, mu + 30)        // generous initial upper bound
+
+        // Expand hi until the CONDITIONAL CDF (not the marginal) reaches
+        // the target. 15-day steps with a 180-day safety cap — plenty of
+        // room for the upper percentile of any plausible cycle, and we
+        // never return something pretending to predict more than 6 months
+        // out (at which point we'd be in late-period "no clear estimate"
+        // territory anyway).
+        while conditionalCDF(cycleLength: hi, currentDay: D) < target {
+            hi += 15.0
+            if hi > D + 180.0 { return hi }
+        }
+
+        // Bisection. 30 iterations give ~1e-9 day precision — overkill,
+        // but cheap.
+        for _ in 0..<30 {
             let mid = 0.5 * (lo + hi)
             if hi - lo < 0.01 { return mid }
             if conditionalCDF(cycleLength: mid, currentDay: D) < target {
@@ -194,9 +313,19 @@ public struct CyclePredictor: Sendable, Equatable {
     // MARK: - State resets
 
     /// True while the predictor is still in the high-uncertainty window after
-    /// a soft reset (κ=2 prior means data only starts to dominate after ~3 obs).
-    /// Callers can use this to show "predictions are still settling" UI.
-    public var isInRecoveryWindow: Bool { observedCount < 3 }
+    /// a soft reset (Category C or F event). The window is set to
+    /// `Self.recoveryWindowLength` (= 5) observations on softReset and
+    /// decrements per `observe(...)`. Callers (`HeroStateBuilder`) use this
+    /// to show the "estimate will sharpen with new cycles" suffix.
+    ///
+    /// **Distinct from low-data fallback**: a brand-new predictor has
+    /// `observedCount == 0` AND `recoveryRemaining == 0`. The hero shows
+    /// the "Wir lernen deinen Rhythmus kennen" message. A post-soft-reset
+    /// predictor has `observedCount == 0` AND `recoveryRemaining > 0` —
+    /// the hero shows the calibrated interval PLUS the recovery suffix
+    /// because the user previously had history; we're just rebuilding
+    /// confidence from a known μ. Audit fix #101.
+    public var isInRecoveryWindow: Bool { recoveryRemaining > 0 }
 
     /// Soft reset after a recoverable disruption event (Category C in
     /// docs/design/disrupted-cycles.md).
@@ -206,11 +335,40 @@ public struct CyclePredictor: Sendable, Equatable {
     /// variance estimate (α, β → prior values) so the first 3-5 cycles
     /// post-event dominate the posterior quickly.
     public mutating func softReset() {
+        softReset(forBand: .unspecified)
+    }
+
+    /// Age-band-aware soft reset (task #162). Routes through the band's
+    /// AWHS σ so a Category C event for a menopausal user (σ=11.19)
+    /// resets to that band's prior (β≈250) instead of collapsing to the
+    /// reproductive band's β=28.7282.
+    ///
+    /// Default-arg `softReset()` resolves to `.unspecified` band (σ=5.0,
+    /// β=50.0) — backward-compatible widened-fallback.
+    public mutating func softReset(forBand band: AgeBand) {
         // mu: keep — pre-event mean is still our best location hint
         self.kappa = 2.0
         self.alpha = 3.0
-        self.beta = 41.07            // matches within-person SD ~3.7 days
+        // β = (α−1) · σ² with σ from the user's declared age band.
+        // Standard NIG conjugate-prior derivation per Murphy 2007 (task
+        // #158 math correction).
+        //
+        // Pillar-3 tension (explicitly accepted, task #158): a tighter
+        // band-appropriate β still makes the first 1–3 cycles post-event
+        // publish a narrower CI than a maximally-diffuse prior would.
+        // For users in vulnerable states (post-miscarriage) this trades
+        // "Pillar 3 honesty about uncertainty" for "math + clinical
+        // honesty about the user's actual within-person variability."
+        // The clinical case dominates: a menopausal user's high σ
+        // should NOT be reset to reproductive-band σ just because she
+        // logged a Category C event.
+        let sigma = band.withinPersonSDDays
+        self.beta = 2.0 * sigma * sigma
         self.observedCount = 0
+        // Audit fix #101 — enter the recovery window so the UI can
+        // surface the "estimate will sharpen with new cycles" suffix.
+        // Distinct from cold-start low-data (observedCount=0 + recovery=0).
+        self.recoveryRemaining = Self.recoveryWindowLength
     }
 
     /// Widen the variance prior for users who have declared ongoing irregularity
@@ -218,6 +376,7 @@ public struct CyclePredictor: Sendable, Equatable {
     /// which corresponds to ~1.58x wider posterior SD.
     public mutating func declareOngoingIrregularity() {
         self.beta *= 2.5
+        self.isOngoingIrregularity = true
     }
 }
 

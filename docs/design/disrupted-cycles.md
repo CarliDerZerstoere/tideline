@@ -92,22 +92,42 @@ How the five categories map onto the NIG conjugate predictor (`CyclePredictor.sw
 
 ### Soft reset (Categories B-resume and C)
 
-Soft reset keeps `μ` as a hint, but resets confidence in everything else.
+Soft reset keeps `μ` as a hint, but resets confidence in everything else. The
+β value is age-band-aware (task #162) so a menopausal user's variance prior
+isn't actively collapsed to the reproductive-band default after a Category C
+or Category F event.
 
 ```swift
 extension CyclePredictor {
     /// Soft reset after a recoverable disruption.
     /// Keeps the location estimate (the user's body probably still has roughly
     /// their old average), but discards confidence so the next few cycles dominate.
-    mutating func softReset() {
+    ///
+    /// Task #162 (2026-05-24) — band-aware variant. The no-arg `softReset()`
+    /// resolves to `.unspecified` (σ=5.0, β=50.0) as a safe wider fallback,
+    /// but the service layer (`PredictorService`) plumbs the user's declared
+    /// AgeBand through `softReset(forBand:)` so the post-event prior matches
+    /// the user's true within-person variability.
+    mutating func softReset(forBand band: AgeBand = .unspecified) {
         // mu: keep — pre-event mean is still our best location hint
         self.kappa = 2.0
         self.alpha = 3.0
-        self.beta = 41.07         // matches population SD ~3.7 days
+        // Standard NIG β = (α−1)·σ² so E[σ²] = σ_band². Task #158 fix; task
+        // #162 routes σ through the AgeBand (reproductive=3.79 → β=28.7282;
+        // adolescent=5.33 → β=56.84; perimenopausal=5.42 → β=58.78;
+        // menopausal=11.19 → β=250.43; unspecified=5.0 → β=50.0).
+        let sigma = band.withinPersonSDDays
+        self.beta = 2.0 * sigma * sigma
         self.observedCount = 0
     }
 }
 ```
+
+`PredictorService` calls `softReset(forBand: ageBand)` for Category C
+(recoverable disruption) AND Category F (resumeAfterPause) so both reset
+paths honour the same band-aware prior. The default-arg `.unspecified`
+fallback exists for cold-starts where the user hasn't completed the age-band
+onboarding step yet.
 
 After soft reset, the first 3–5 logged cycles will dominate the posterior. By cycle 5 post-event, the model is effectively fully personalized to post-event physiology. Pre-event history has contributed a soft starting point but no longer constrains predictions.
 
@@ -261,7 +281,7 @@ The model **never sees the user's personal data** for this — it only sees the 
 
 ### Resumption flow
 
-When the user logs anything after a long gap (>60 days, configurable):
+When the user logs anything after a long gap (≥60 days, configurable — code uses inclusive `>=` boundary, see `ResumeSheetGate.minPauseDuration`):
 
 ```
 It's been a while. How would you like to continue?

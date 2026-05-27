@@ -5,8 +5,7 @@ struct RootView: View {
     var body: some View {
         NavigationStack {
             TidelineHomeView()
-                .navigationTitle("Tideline")
-                .navigationBarTitleDisplayMode(.inline)
+                .toolbar(.hidden, for: .navigationBar)
         }
     }
 }

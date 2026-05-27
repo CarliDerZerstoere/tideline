@@ -45,8 +45,9 @@ public struct ConformalCalibrator: Sendable {
     public static let shared = ConformalCalibrator()
 
     /// Population residuals derived from leave-one-out validation against the
-    /// Fehring NFP dataset (1223 predictions, MAE 2.115 days, median 1.500,
-    /// 90th-percentile residual 4.571 days). See `ConformalResiduals.swift`
+    /// Fehring NFP dataset (1223 predictions, MAE 2.109 days, median 1.471,
+    /// 90th-percentile residual 4.543 days — post-task-#163 re-extraction
+    /// against the corrected NIG prior). See `ConformalResiduals.swift`
     /// for the full sorted array and regeneration command.
     public static let defaultPopulationResiduals: [Double] = ConformalResiduals.fehringPopulation
 }

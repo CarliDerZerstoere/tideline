@@ -1,0 +1,16 @@
+/*
+ * Tideline — German permission-prompt strings (audit fix).
+ *
+ * iOS resolves these AT PROMPT TIME against the user's current locale,
+ * overriding the INFOPLIST_KEY_NS*UsageDescription values declared in
+ * project.yml. Without per-locale InfoPlist.strings, a DE-locale user
+ * saw an English HealthKit prompt because the project.yml hardcodes
+ * are English. (And vice versa for Face ID, which was DE-only.)
+ *
+ * Each key here matches the bare iOS usage-description key (no INFOPLIST_KEY_
+ * prefix — that prefix is for project.yml / xcconfig consumption only).
+ */
+
+"NSHealthShareUsageDescription" = "Tideline liest deine Zyklusdaten und Handgelenkstemperatur aus Apple Health, um dir private, lokal berechnete Auswertungen zu zeigen. Deine Daten verlassen dein Gerät nicht.";
+"NSHealthUpdateUsageDescription" = "Tideline schreibt die von dir geloggten Periodentage zurück in Apple Health, damit deine Daten in deinem eigenen Ökosystem bleiben.";
+"NSFaceIDUsageDescription" = "Tideline kann mit Face ID gesperrt werden, damit deine Zyklusdaten privat bleiben.";

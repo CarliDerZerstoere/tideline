@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+		Privacy manifest for Tideline (audit fix).
+		Required by Apple for App Store submission since spring 2024.
+
+		Pillar 1 alignment:
+		  - NSPrivacyTracking: false — no tracking, no third-party SDKs.
+		  - NSPrivacyTrackingDomains: empty — no domains contacted.
+		  - NSPrivacyCollectedDataTypes: empty — Tideline does not collect
+		    or transmit user data. All cycle data lives on-device only.
+		  - NSPrivacyAccessedAPITypes: declares the two required-reason
+		    APIs we use (UserDefaults + FileTimestamp via SwiftData) with
+		    Apple's documented justification codes.
+	-->
+	<key>NSPrivacyTracking</key>
+	<false/>
+
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<!--
+			UserDefaults access — used for app-state flags (onboarding
+			completion, app-lock enable, notifications master toggle,
+			age band, phase-naming preference, etc.). Apple's
+			"CA92.1: Access info from same app, per documentation"
+			justification covers this case.
+		-->
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+
+		<!--
+			File timestamp access — SwiftData uses file-system mtime on
+			the on-device SQLite store. Apple's "C617.1: Access info
+			about the file or directory within the app's container"
+			justification covers this case.
+		-->
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>C617.1</string>
+			</array>
+		</dict>
+
+		<!--
+			System boot time — not actually used by Tideline today, but
+			declared with "35F9.1: Calculate elapsed time between two
+			events that both occurred within the app" because
+			`Date.now`/`Date()` reads can indirectly surface a delta
+			against system boot in some Foundation paths. Conservative
+			declaration; can be removed if a privacy-scanner audit
+			confirms no Foundation API in our reachability set actually
+			consults it.
+		-->
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategorySystemBootTime</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>35F9.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

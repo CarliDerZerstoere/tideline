@@ -8,6 +8,35 @@
 
 ---
 
+## ⚠️ Empirical reality check (added 2026-05-26 after V9-lite biology test)
+
+**The components in this design are LENGTH-based, not biology-based.** Throughout this doc you'll see "Component 1 (ovulatory)" and "Component 2 (anovulatory)" — those were the design *intent* when the literature framing (Harlow & Zeger 1991, Guo 2006) was first applied. The empirical test (V9-lite on MCPhases, see `research/2026-05-26-v2-mcphases-validation.md`) showed that v2's per-cycle component assignment **does not** independently identify biologically ovulatory vs anovulatory cycles. It identifies **short vs long** cycles, which is exactly what cycle-length data permits.
+
+What this means concretely:
+
+- The **math** is correct (hand-verified, synthetic-truth-recovered, bit-exact Python↔Swift). The Gibbs sampler converges to a posterior over the parameters of a Normal + shifted-log-normal mixture, as designed.
+- The **population-level claim** is fine: at the cohort level, users with many long cycles have more anovulatory cycles (clinical literature backs this). The badge UI labels (`mostlyOvulatory` / `occasionallyAnovulatory` / `oftenAnovulatory`) are descriptive of cycle-length pattern, which correlates with anovulation prevalence at population scale.
+- The **per-cycle biological claim** doesn't hold: v2 cannot tell you *which* of your past cycles were actually anovulatory. The mixture's component-2 assignment correlates positively (not negatively) with LH peak on MCPhases, because long cycles often have higher LH max (delayed surge from prolonged follicular phase, a known confound).
+- The **prediction claim** — that v2 outperforms v1 on cycle-length forecasting — also doesn't hold for regular users on either Fehring or MCPhases (see V6/V8/V10 in `research/2026-05-26-v2-empirical-validation.md` and follow-ups).
+
+**Where v2 still pays its way:**
+- Late-mode conditional interval (widens correctly for users with right-tail cycle history)
+- Per-event recovery profiles (per-Category-C event-specific priors are useful regardless of mixture interpretation)
+- Pattern badge (descriptive of length distribution; correct at population level)
+
+**Where v2 was originally designed to help but doesn't:**
+- Main-cycle prediction (v1 + ConformalCalibrator wins)
+- Per-cycle biological classification (cycle-length data alone cannot disambiguate)
+- "PCOS-mode wins" claim (PCOS-representative data unavailable)
+
+**Read the rest of this doc with the "components = length classes" lens, not "components = biological states."** Where you see "ovulatory" in this design, mentally translate to "short-cycle Normal component"; where you see "anovulatory," translate to "long-cycle shifted-log-normal component." The biology was an aspirational interpretation, not an empirical guarantee.
+
+The reframing is documented in `research/2026-05-26-v2-mcphases-validation.md` (V9-lite finding) and `memory/edge-cases.md` § 7.
+
+---
+
+---
+
 ## Context
 
 The current `CyclePredictor` is a Normal-Inverse-Gamma conjugate model with a single Gaussian likelihood over cycle length. Clinical fact-check identified four structural problems:
@@ -15,7 +44,7 @@ The current `CyclePredictor` is a Normal-Inverse-Gamma conjugate model with a si
 1. **Right tail.** Cycle length has a long right tail (Apple WHS 2023, Bull 2019); a Gaussian assigns essentially zero probability to cycles >42 days, which catastrophically misses anovulatory cycles.
 2. **PCOS misfit.** PCOS users have cycles spanning 35–90+ days with markedly elevated within-user variance (specific SD ranges in the PCOS literature were not verified in our primary-source extraction pass — earlier "SD 10–30 days" figures from un-fact-checked synthesis should not be cited authoritatively); the current `declareOngoingIrregularity()` patch (β × 2.5) gives SD ~5.8 days, which is narrower than even conservative PCOS estimates and is the wrong distributional family besides.
 3. **Postpartum misfit.** Postpartum non-breastfeeding cycle 1 is systematically +8 days vs. baseline with SD ~12 days (Jackson & Glasier 2011); current uniform soft reset assumes baseline immediately.
-4. **Mixture structure.** The cycle-length distribution is a mixture of qualitatively distinct components (Harlow & Zeger 1991, Guo et al. 2006). A single-component model conflates ovulatory and anovulatory cycles.
+4. **Mixture structure.** The cycle-length distribution is a mixture of qualitatively distinct length-classes (Harlow & Zeger 1991, Guo et al. 2006). A single-component Normal model misses the right-tail mass present in real cycle-length data. Whether those length-classes correspond *individually* to ovulatory vs anovulatory cycles is an empirical question — see the reality-check callout at the top of this doc; on Fehring + MCPhases, individual per-cycle classification does not match LH/PDG evidence. The right-tail-mass argument for the mixture is independent of that biological-classification claim and remains valid.
 
 Option D replaces the single-component model with a two-component Bayesian mixture, properly handling all of the above.
 
@@ -38,13 +67,16 @@ This design must respect:
 Cycle length L (in days) is modeled as:
 
 ```
-L ~ π · Component₁(ovulatory) + (1−π) · Component₂(anovulatory)
+L ~ π · Component₁(short — design intent: ovulatory) +
+    (1−π) · Component₂(long — design intent: anovulatory)
 ```
+
+⚠️ **The biological labels are design INTENT, not empirically-validated mapping.** See the "Empirical reality check" callout at the top of this doc. The math classifies into a short-cycle Normal component and a long-cycle shifted-log-normal component; the per-cycle ovulatory/anovulatory labels don't track LH/PDG evidence on Fehring or MCPhases. Population-level correlation between "many long cycles" and "more anovulation" still holds (so badge UI labels are descriptive), but individual-cycle classification by component does not.
 
 with components:
 
-- **Component 1 (ovulatory):** L | S=1 ~ Normal(μ₁, σ₁²) restricted to L ≥ 15 days. With μ₁ ≈ 28–30 and σ₁ ≈ 3–5, the truncation at 15 is computationally negligible (probability mass below is essentially zero).
-- **Component 2 (anovulatory):** log(L − δ) | S=2 ~ Normal(μ₂, σ₂²) with **shift δ = 14 days fixed**. This is a shifted log-normal in original-day space, supported on (14, ∞), naturally right-skewed. (The shift is set to 14 rather than 15 so that legitimate 15-day spotting-to-bleed intervals don't produce log(0) = −∞ if accidentally routed to component 2. Component 1's effective floor stays at 15.)
+- **Component 1 (short, design intent: ovulatory):** L | S=1 ~ Normal(μ₁, σ₁²) restricted to L ≥ 15 days. With μ₁ ≈ 28–30 and σ₁ ≈ 3–5, the truncation at 15 is computationally negligible (probability mass below is essentially zero).
+- **Component 2 (long, design intent: anovulatory):** log(L − δ) | S=2 ~ Normal(μ₂, σ₂²) with **shift δ = 14 days fixed**. This is a shifted log-normal in original-day space, supported on (14, ∞), naturally right-skewed. (The shift is set to 14 rather than 15 so that legitimate 15-day spotting-to-bleed intervals don't produce log(0) = −∞ if accidentally routed to component 2. Component 1's effective floor stays at 15.)
 
 The original-scale probability density of component 2 includes the Jacobian of the log transform:
 ```
@@ -62,10 +94,10 @@ The cost: marginally worse fit to the extreme tail compared to Weibull. Acceptab
 
 ### Mixing weight and transition structure
 
-The mixing weight π = P(next cycle is ovulatory) is modeled as a learnable per-user parameter with Beta prior:
+The mixing weight π = P(next cycle is drawn from component 1) is modeled as a learnable per-user parameter with Beta prior. (Design intent was "P(ovulatory)" — see empirical reality check at the top of this doc; population-level the two correlate, individually they don't.)
 
-- **Baseline user (no condition declared):** π ~ Beta(8, 2) → prior mean 0.80 (80% of cycles ovulatory)
-- **PCOS-declared user:** π ~ Beta(3, 5) → prior mean 0.375 (37.5% of cycles ovulatory)
+- **Baseline user (no condition declared):** π ~ Beta(8, 2) → prior mean 0.80 (80% of cycles routed to the short-cycle component)
+- **PCOS-declared user:** π ~ Beta(3, 5) → prior mean 0.375 (37.5% routed to short-cycle component; the rest get the wider long-cycle component)
 - **Post-disruption recovery (Category C):** π temporarily lowered for first 3 cycles, then graduates back
 
 **Cycle-to-cycle persistence (HMM extension, deferred to v1.5):** The HMM literature on cycle data (Guo et al. 2006, Harlow & Zeger 1991) suggests positive lag-1 autocorrelation — anovulatory cycles cluster — but specific transition probability ranges (e.g., P(anov | prev anov)) were not verified in our primary-source extraction pass. v1 uses an i.i.d. mixture for simplicity; v1.5 adds the hidden Markov transition layer with a 2×2 transition matrix and Dirichlet priors. Concrete transition probability priors will be re-derived from primary sources when v1.5 is scoped.
@@ -487,3 +519,164 @@ Inference algorithm references (verified by fact-check, real):
 ## Status
 
 **Awaiting review.** Once approved, this becomes the source of truth for the mixture-model implementation work. Any deviation in implementation requires updating this doc first.
+
+---
+
+## Implementation deviations (2026-05-25, Phase 2 ship)
+
+Recorded per CLAUDE.md: "Design docs are the source of truth. If implementation diverges, update the doc first." The first MixturePredictor.swift ship (#83 Phase 2) deviates from this design in three small ways. All are documented in the file's doc-comments and verified by fact-checker + code-reviewer:
+
+1. **Harlow-Zeger hard threshold replaces per-iteration identifiability swap.** The design (§ "Gibbs sampler structure") specifies an identifiability constraint enforced every iteration by swapping (μ₁, σ₁²) with the log-space parameters of component 2 whenever μ₁ > exp(μ₂ + σ₂²/2) + δ. The implementation instead enforces the constraint upstream: cycles with L ≥ 43 days are deterministically routed to component 2 in the assignment step (per Harlow & Zeger 1991's nonstandard threshold). This is principled — the threshold is the literature-defined boundary — and prevents the label-switched bad fixed point that the per-iteration swap was designed to escape. **Trade-off:** a small downward bias on posterior π proportional to the fraction of cycles near the 43-day boundary; in practice negligible for the typical user (essentially zero cycles ≥ 43). Per-iteration swap remains available for future implementation if empirical Fehring validation suggests bias is non-negligible.
+
+2. **Component 1's L ≥ 15 truncation omitted as numerically irrelevant.** The design (§ "Two-component mixture, in log-space") defines component 1 as `Normal(μ₁, σ₁²)` restricted to L ≥ 15. The implementation evaluates the unrestricted Normal log-pdf. Numerical impact: at the population prior `Normal(28.7, 3.79²)`, the truncation mass below L=15 is `Φ((15 − 28.7)/3.79) ≈ 1.2 × 10⁻⁴` — well within the test tolerances. Component 2's δ=14 floor handles the lower-bound edge case in practice. Reinstate if empirical Fehring validation flags low-L cycles being misassigned.
+
+3. **Initial chain state derived from heuristic-assigned data, not raw priors.** The design implicitly suggests initialising (μ₁, σ₁², μ₂, σ₂², π) from prior samples and then doing the assignment step. The implementation initialises assignments via the heuristic (L ≥ 43 → 2 else 1) and then samples the parameters *conditional on those assignments* before entering the main loop. This prevents pathological prior-sample tails (e.g., σ²₁ Gamma right-tail) from giving component 1 a spuriously-wide initial Normal that absorbs anovulatory cycles in iter 0. Standard mixture-Gibbs initialisation pattern; no statistical implication on the equilibrium distribution.
+
+None of the three deviations affect the equilibrium posterior; they only change initialisation + post-hoc identifiability handling.
+
+---
+
+## User-visible surface (2026-05-26, #193 Session 1)
+
+The mixture predictor's first user-visible appearance is the **cycle-pattern badge** on the Mein Zyklus tab (Layer 2). This is a sidecar surface — the mixture is computed alongside the v1 single-component CyclePredictor; predictions still route through v1. Only the mixture's posterior mixing weight `π = E[P(cycle is ovulatory)]` is consumed for the badge.
+
+### Threshold and bucketing (single source of truth: `CyclePattern.swift`)
+
+| Constant | Value | Rationale |
+|---|---|---|
+| `CyclePattern.graduationThreshold` | 12 cycles | Below this, the 2-component mixture is unidentifiable in practice. Beta(8,2) prior weight ≈ data weight at N≈10–12; using N=12 leaves headroom. Matches design § "Cold-start and graduation". |
+| `mostlyOvulatoryThreshold` | π ≥ 0.85 | Comfortable margin above the Beta(8,2) prior mean (0.80) so chain noise doesn't flicker users between buckets. |
+| `occasionallyAnovulatoryThreshold` | π ≥ 0.50 | Symmetric split — below 0.50 the majority of cycles read as anovulatory. |
+
+### German copy (user-approved 2026-05-26)
+
+| Bucket | Label |
+|---|---|
+| `mostlyOvulatory` | "Meist ovulatorisch" |
+| `occasionallyAnovulatory` | "Gelegentlich anovulatorisch" |
+| `oftenAnovulatory` | "Häufig anovulatorisch" |
+
+All labels are **descriptive of logged cycle length distribution**, never diagnostic. The CLAUDE.md hard rule "Never display diagnostic interpretations" is enforced at the `CyclePattern.germanLabel` boundary.
+
+### Disruption-event semantics (reviewer-flagged decision — keep in mind)
+
+The mixture sidecar reacts to the five disruption-event categories from `disrupted-cycles.md` as follows:
+
+| Category | CyclePredictor effect | Mixture effect | Why |
+|---|---|---|---|
+| A (Complete — hysterectomy etc.) | `.retired` | **Clear** all observations | Cycle-tracking regime terminated. Pattern is meaningless. |
+| B (Pause — breastfeeding, OCP, HA) | `.paused(archived:)` | **Clear** all observations | Post-pause regime is qualitatively different (lactational suppression, post-OCP irregularity). Pre-pause pattern isn't the right summary. |
+| C (Recoverable — miscarriage, illness, post-OCP first cycle) | `softReset(forBand:)`: keep μ, widen β, recovery window | **Keep all observations** | Single disruption doesn't change long-run ovulatory pattern. Mirrors CyclePredictor's "μ is a stable trait" semantic. |
+| D (Anomaly — single bad cycle) | Outlier-reject only | Outlier-reject only (next observe() suppressed by the same flag) | Single-cycle reject; mixture pool sees N-1 instead of N. |
+| E (Ongoing — PCOS, FHA) | `declareOngoingIrregularity` (β × 2.5) | (not yet handled) | Phase 4 work — should re-prime mixture with PCOS Beta(3, 5) mixing weight prior (#193 follow-up). |
+
+The Category C choice (keep observations) was reviewer-flagged: an earlier draft cleared the mixture on softReset, but that punished users with a single miscarriage by requiring 12 more cycles to see the badge again. The decision is documented to make sure future contributors don't "tidy" it back to symmetric clearing without revisiting the clinical reasoning.
+
+### Late-period routing (2026-05-26, #193 Session 2)
+
+The first numeric prediction routed through v2 mixture: the **conditional credible interval** shown when the user has reached the late-mode trigger (today ≥ predicted cycle end − 5 days). Wiring in `CycleStore.homeSnapshot()`:
+
+```
+if user has graduated (N ≥ 12) AND mixture has posterior samples:
+    use MixturePredictor.conditionalInterval (analytical CDF + bisection inverse)
+else:
+    fall back to CyclePredictor.conditionalInterval (Student-t closed-form)
+```
+
+The mixture path produces wider intervals for irregular users — exactly the population v2 was built for. Mostly-ovulatory users see intervals that agree on the lower bound but may extend further into the right tail (by design — small posterior probability of anovulatory cycles even for mostly-regular users).
+
+**Calibration trade-off (recorded explicitly):** the mixture path is *not* wrapped by `ConformalCalibrator` (#114). The calibrator wraps the single-component predictive and hasn't been extended to wrap the mixture yet — that's #124 (NEW-E), blocked on Fehring licensing #155. At the graduation point we choose mixture honesty (right-tail correctness) over conformal calibration (residual-based width adjustment). Magnitude of calibration loss is unmeasured — empirical comparison blocked on #124.
+
+**False-precision invariant.** The mixture interval is *never* narrower than the single-component interval in the regime where both fire. Guarded by the `conditionalLowerBoundParity` test in `MixturePredictorTests.swift` — if that test ever flakes, the route is the canary.
+
+### Phase 4 graduation (still pending)
+
+The full `PredictorVariant` routing — where v2 mixture replaces v1 single-component on the **non-late-mode** prediction paths (point estimate, interval shown throughout the cycle, calibrator wrap) — remains future work (Session 4+). Until then:
+- v2 produces the badge (Session 1) + late-mode conditional interval (Session 2) + per-event recovery prior shaping (Session 3)
+- v1 produces non-late-mode prediction + interval + ConformalCalibrator-wrapped CI
+- The two co-exist: discontinuity only manifests when crossing into late mode, and is correct behaviour (conditional posterior should widen).
+
+### MCPhases independent validation + biology-correlation finding (2026-05-26, Session 6)
+
+Full report: `docs/research/2026-05-26-v2-mcphases-validation.md`. Three new tests on independent data:
+
+**V8** — independent replication of V6 on MCPhases (n=10 predictions): same pattern as Fehring. v2 ~equivalent MAE, 80% wider intervals, over-coverage.
+
+**V9-lite — biology-correlation surprise** (n=28 cycle observations):
+
+| Test | Expected | Observed |
+|---|---|---|
+| Spearman ρ(P(comp 2), max LH) | strongly negative | **+0.266** (wrong sign) |
+| Spearman ρ(P(comp 2), max PDG) | strongly negative | +0.025 (~zero) |
+| Mean P(comp 2): LH-surge vs no-surge | surge lower | 0.080 vs 0.063 (wrong direction) |
+| Cycle length stratification (sanity check) | longer = higher P(comp 2) | confirmed (0.049 vs 0.256) |
+
+**v2's mixture mechanism does NOT independently capture biological anovulation.** It classifies by cycle length (which it does correctly per sanity check). The wrong-sign LH correlation reflects a known confound: longer cycles often have higher max LH (delayed surge from prolonged follicular phase). The biology argument for v2's mixture mechanism is empirically unsupported on this dataset.
+
+**V10** — pooled Fehring + MCPhases with bootstrap CI: pooled MAE difference (v2 − v1) = +0.486 d, 95% CI [+0.396, +0.576]. **Statistically significant** that baseline v2 is worse than v1 on combined data.
+
+### Decision: pause Session 7 selective-routing implementation
+
+The Session 5 plan (selective routing) had a load-bearing premise: v2's mixture captures biology better than v1's single Gaussian. V9-lite refutes this empirically on MCPhases. Without that premise, the case for shipping selective routing weakens substantially. **Recommended path**: keep v2 sidecar uses (badge + late-mode + recovery profiles) shipped; do NOT expand v2 to the main prediction path. Re-open v2 design only with biology-grade data (wrist temperature, OPK, or PCOS-representative cohort).
+
+### Prior tuning sweep results (2026-05-26, Session 5)
+
+V7 sweep in `data/validate_phase_predictor.py` over 7 (π prior, σ₂²) combinations. Full report: `docs/research/2026-05-26-v2-prior-tuning-results.md`. Headline:
+
+| Tuning | π prior | σ₂² | regular MAE | regular w₉₀ | pcos cov₈₀ |
+|---|---|---|---|---|---|
+| v1 baseline | — | — | 1.82 | 9.4 | 71.4% |
+| v2 baseline (Session 3 ship) | Beta(8, 2) | 0.45² | 2.33 | 15.1 | 92.9% |
+| **tighter-pi (recommended)** | **Beta(15, 2)** | **0.45²** | **2.14** | **12.4** | **78.6%** |
+| much-tighter | Beta(20, 1) | 0.45² | 1.92 | 10.1 | 71.4% |
+
+**Decision:** v2 *is* fixable on regular users with prior tuning. The Session 4 framing "v2 is structurally bad" was too strong. `tighter-pi` (Beta(15, 2)) closes half the regular-user MAE gap to v1 while retaining 85% of the PCOS-subset coverage benefit.
+
+**Recommended Session 6 implementation**: selective routing —
+- `.mostlyOvulatory` users: v1 + ConformalCalibrator (unchanged)
+- `.occasionallyAnovulatory` / `.oftenAnovulatory` users: v2 with `Beta(15, 2)` tuned priors
+- PCOS-declared (`declareOngoingIrregularity`): v2 with `Beta(3, 5)` per original design doc
+
+Tracked: #216.
+
+### Empirical validation against Fehring n=1,508 (2026-05-26, Session 4)
+
+Per-user leave-last-out calibration head-to-head between v1 (single-component NIG) and v2 (mixture) on Fehring NFP data. Full report: `docs/research/2026-05-26-v2-empirical-validation.md`. Headline:
+
+| Subset | v1 80% cov | v2 80% cov | v1 MAE | v2 MAE | v1 width₉₀ | v2 width₉₀ |
+|---|---|---|---|---|---|---|
+| All (n=624 preds) | 87.8% | 92.0% | **1.90 d** | 2.39 d | **9.6 d** | 15.3 d |
+| Regular (n=590) | 88.2% | 92.0% | **1.82 d** | 2.33 d | **9.4 d** | 15.1 d |
+| PCOS-like (n=14) | 71.4% | 92.9% | 5.42 d | 5.11 d | 17.9 d | 22.5 d |
+
+Both models over-cover the 80% target; v2 is more over-conservative. v2's regular-subset MAE is 28% worse, width₉₀ 61% wider.
+
+**Decision (recorded):** **do not blanket-route v2** across non-late-mode prediction paths (Session 5 original plan). 96% of Fehring users would see worse predictions to help a possibly-tiny subset (4 women) we can't measure confidently.
+
+**Revised Session 5 plan**: (a) tune Beta(8,2) prior and σ₂² downward to reduce over-conservatism on regular data; (b) selective routing — `.mostlyOvulatory` users stay v1+conformal, `.occasionallyAnovulatory`/`.oftenAnovulatory` route through v2; (c) re-validate after each prior change.
+
+**Caveat:** Fehring is self-selected for regularity (clinical filter [21, 45] d, NFP-study cohort). The dataset structurally under-represents the PCOS-like tail v2 was designed for. The validation refutes "v2 beats v1 on Fehring" but doesn't refute "v2 beats v1 on PCOS." A wider validation dataset is the prerequisite for confidently shipping v2 routing.
+
+### Per-event recovery profiles (implementation, 2026-05-26, #194 Session 3)
+
+Phase 3 of this doc's plan is shipped. Implementation notes complementing the per-event recovery profile table above:
+
+**Code location.** `Tideline/Sources/Models/RecoveryProfile.swift` defines the value type + 12 event-specific profile constants + lookup. `MixturePredictor.applyRecoveryProfile(_:)` applies the profile to the mixture's priors. `PredictorService` tracks recovery state via a nested `ActiveRecovery` struct and exposes `recoveryState()` / `clearAshermanRecovery()` async API.
+
+**Evidence anchoring (honest accounting).** Each profile carries an `evidenceAnchor` enum: `.literature(citation: String)` or `.analystElicited(rationale: String)`. The reviewer caught one originally-mislabelled anchor: `medicalAbortion`'s σ=7 was tagged `.literature(Schreiber)`, but Schreiber 2011 reports first-ovulation timing SD (5.1d), not cycle-length SD. Anchor downgraded to `.analystElicited` with the convolution arithmetic + reset-uncertainty padding documented in the rationale string. **Lesson**: when a literature anchor doesn't directly measure the quantity being parameterised, the anchor is `.analystElicited` with citation in the rationale — not `.literature`.
+
+**σ₁ cycle-2 tapering deferred.** `RecoveryProfile.sigma1Cycle2` is stored but **not yet applied** during the recovery window. The design doc's intent is per-cycle tapering (cycle 1 wide → cycle 2 narrower → cycle 3+ approaching baseline). v1 keeps σ₁ at `sigma1Cycle1` throughout the window; the field is preserved for the Phase 3.1 follow-up that re-applies a tapered profile on each observe(). Trade-off: data dominates the prior after cycle 1 for high-N users anyway, so the deferred tapering's impact is bounded. Documented in `MixturePredictor.applyRecoveryProfile` doc-comment.
+
+**κ₁_prior is not inflated.** The recovery profile shifts μ₁ and β₁ but leaves κ₁=2 (Session 1 default). For users with 24+ observations this means the prior shift is heavily swamped by data — the profile is most impactful for users in the 12–18 cycle range, which is also where the prior numbers themselves are most uncertain. Deliberate trade-off, deferred to telemetry-informed tuning.
+
+**Asherman flag is binary v1.** `ashermanRisk: Bool` is set true for `surgicalAbortion` + `miscarriageLate` (D&C-bearing events). When true, `PredictorService.observe()` does NOT auto-graduate the recovery window at `cyclesToBaseline`. User must clear manually via `clearAshermanRecovery()`. Probability gradation (e.g., medical abortion ~1% IUA vs surgical ~17% per HRU 2024) would require UI gradation copy without research-backed defaults; defer to v2.
+
+**State-machine semantics.**
+- New Category C event REPLACES any active recovery window (newer event dominates)
+- Category A (retire) / B (pause) CLEARS active recovery (regime terminated)
+- Category D (anomaly) / E (ongoing-declared) does NOT touch active recovery (the recovery process continues)
+- All four rules locked in tests at `RecoveryProfileTests.swift`.
+
+**Generic event conflations (v1 simplification).** `prolongedIllnessOrSurgery` covers both `.acuteIllnessSevere` and `.majorSurgery`. `weightOrStressShift` covers both `.significantWeightChange` and `.extremeStress`. Split when telemetry justifies separate priors for the underlying etiologies (acute vs prolonged HPO-axis disruption have different recovery trajectories).
+
+**UI surfacing.** When `recoveryState` is non-nil, `MyCycleSheet` replaces the `CyclePattern` badge with a recovery-mode badge: "Tideline begleitet dich \<germanRecoveryPhrase\> (Zyklus N von M)" — or "Zyklus N — wir bleiben aufmerksam" for Asherman-flagged windows. The pattern is still computed at the service level; the UI just gives recovery state precedence (Session 1 H1 logic: long-run pattern survives, but the badge displays the more immediately-actionable recovery state).

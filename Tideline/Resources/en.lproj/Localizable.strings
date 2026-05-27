@@ -1,0 +1,272 @@
+/*
+ * Tideline — English translations (task #129).
+ *
+ * Keys mirror `de.lproj/Localizable.strings` verbatim (German source
+ * is the key). When the German source changes, this file MUST update
+ * in the same commit or iOS will fall back to the German literal for
+ * EN-locale users.
+ *
+ * Translation principles:
+ *   - Recognition framing over instruction ("you're in your luteal
+ *     phase", not "you should...")
+ *   - Plain language, no marketing-speak
+ *   - DACH terminology when no clean EN equivalent exists (e.g.
+ *     "Apple Health" stays "Apple Health" in both)
+ *   - du-form in German maps to "you" — informal register preserved
+ */
+
+// MARK: - OnboardingFlow
+
+"Willkommen bei Tideline." = "Welcome to Tideline.";
+"Deine Zyklusdaten bleiben auf diesem Gerät." = "Your cycle data stays on this device.";
+"Alle Eintragungen werden lokal auf deinem iPhone gespeichert." = "Every entry is stored locally on your iPhone.";
+"Kein Konto, kein Login, keine Cloud-Synchronisation." = "No account, no login, no cloud sync.";
+"Keine Analytics-Tools, keine Drittanbieter-SDKs." = "No analytics tools, no third-party SDKs.";
+"Tideline hat keinen Server, an den deine Daten gehen — sie verlassen dein Gerät nicht." = "Tideline has no server for your data to go to — it doesn't leave your device.";
+"Was bedeutet das konkret?" = "What does that mean in practice?";
+"Beim Deinstallieren werden alle Tideline-Daten zusammen mit der App gelöscht." = "Uninstalling the app deletes all Tideline data with it.";
+"Apple Health ist eine separate, von Apple verwaltete Datenbank. Wenn du Tideline mit Apple Health verbunden hast, fließen Periodendaten in beide Richtungen — die in Apple Health gespeicherten Daten verwaltest du dort eigenständig." = "Apple Health is a separate database managed by Apple. If you've connected Tideline to Apple Health, period data flows both ways — the data stored in Apple Health is managed by you over there.";
+"Tideline synchronisiert nichts in die Cloud. Falls du iOS-Backups in iCloud aktiviert hast, sichert iOS allerdings auch Tidelines lokale Datenbank dorthin — verschlüsselt, aber auf Apple-Servern." = "Tideline doesn't sync anything to the cloud. If you have iCloud Backup enabled on iOS, however, iOS also backs up Tideline's local database there — encrypted, but on Apple's servers.";
+"Lokal" = "Local";
+"Keine Cloud" = "No cloud";
+"Kein Konto" = "No account";
+"Weiter" = "Continue";
+"Später" = "Later";
+"Ja, importieren" = "Yes, import";
+"Welcher Altersbereich passt zu dir?" = "Which age range fits you?";
+"Tideline nutzt diese Angabe nur, um deine anfängliche Schätzung realistischer zu machen. Sie wird ausschließlich lokal gespeichert." = "Tideline uses this only to make your initial estimate more realistic. It's stored locally and nowhere else.";
+"Bisherige Daten aus Apple Health?" = "Existing data from Apple Health?";
+"Wenn du schon Apple Health benutzt, können wir deine Zyklusdaten von dort übernehmen — alles bleibt auf deinem Gerät." = "If you already use Apple Health, we can import your cycle data from there — everything stays on your device.";
+"Was möchtest du tracken?" = "What would you like to track?";
+"Du kannst das jederzeit ändern." = "You can change this any time.";
+"Periode & Tage" = "Period & days";
+"Immer aktiviert" = "Always on";
+"Stimmung" = "Mood";
+"Symptome" = "Symptoms";
+"Notizen" = "Notes";
+
+// MARK: - PrivacyDisclosureSection
+
+"Privatsphäre" = "Privacy";
+"Was Tideline nicht macht" = "What Tideline doesn't do";
+"Tideline stellt keine medizinische Diagnose." = "Tideline doesn't make medical diagnoses.";
+"Tideline empfiehlt keine Behandlungen oder Medikamente." = "Tideline doesn't recommend treatments or medications.";
+"Vorhersagen sind statistische Schätzungen mit Unsicherheitsbereich — keine Aussage darüber, ob du schwanger bist." = "Predictions are statistical estimates with an uncertainty range — they don't tell you whether you're pregnant.";
+"Bei medizinischen Fragen wende dich bitte an deine Ärztin oder deinen Arzt." = "For medical questions, please speak to your doctor.";
+"Tideline ist eine Wellness- und Lifestyle-App und kein Medizinprodukt im Sinne der EU-Verordnung 2017/745 (Artikel 2 Nummer 1)." = "Tideline is a wellness and lifestyle app, not a medical device within the meaning of EU Regulation 2017/745 (Article 2 Section 1).";
+
+// MARK: - TidelineHomeView (tab labels + sheets)
+
+"Mein Zyklus" = "My Cycle";
+"Kalender" = "Calendar";
+"Loggen" = "Log";
+"Mehr" = "More";
+"Fertig" = "Done";
+
+// MARK: - AgeBand display labels
+
+"Lieber nicht angeben" = "Prefer not to say";
+"Unter 20" = "Under 20";
+"20 – 39" = "20 – 39";
+"40 – 44" = "40 – 44";
+"45 – 49" = "45 – 49";
+"50 oder älter" = "50 or older";
+
+// MARK: - EventUserGroup labels
+
+"Schwangerschaft & Geburt" = "Pregnancy & birth";
+"Verhütung" = "Contraception";
+"Operation" = "Surgery";
+"Gesundheit" = "Health";
+"Zyklus-Besonderheiten" = "Cycle particulars";
+"Sonstiges" = "Other";
+
+// MARK: - EventKind labels
+
+// Category A — Complete disruption
+"Hysterektomie" = "Hysterectomy";
+"Oophorektomie" = "Oophorectomy";
+// Category B — Extended pause
+"Geburt, mit Stillzeit" = "Birth, with breastfeeding";
+"Hormonelle Verhütung gestartet" = "Started hormonal contraception";
+"Gestagen-Verhütung gestartet" = "Started progestin-only contraception";
+"Hormonspirale gestartet" = "Hormonal IUD inserted";
+"Verhütungsspritze gestartet" = "Contraceptive injection started";
+"Hypothalamische Amenorrhoe" = "Hypothalamic amenorrhea";
+// Category C — Recoverable disruption
+"Medikamentöser Abbruch" = "Medical abortion";
+"Chirurgischer Abbruch" = "Surgical abortion";
+"Fehlgeburt (früh)" = "Miscarriage (early)";
+"Fehlgeburt (spät)" = "Miscarriage (late)";
+"Schwangerschaftsverlust" = "Pregnancy loss";
+"Geburt, ohne Stillzeit" = "Birth, without breastfeeding";
+"Hormonelle Verhütung beendet" = "Stopped hormonal contraception";
+"Hormonspirale entfernt" = "Hormonal IUD removed";
+"Schwere Erkrankung" = "Severe illness";
+"Größere Operation" = "Major surgery";
+"Deutliche Gewichtsveränderung" = "Significant weight change";
+"Starker Stress" = "Major stress";
+// Category D — Single anomaly
+"Einmalige Abweichung" = "One-off variation";
+"Notfallverhütung (Follikelphase)" = "Emergency contraception (follicular)";
+"Notfallverhütung (peri/luteal)" = "Emergency contraception (peri/luteal)";
+"Leichte Krankheit (z. B. Erkältung)" = "Mild illness (e.g. cold)";
+"Impfung" = "Vaccination";
+// Category E — Ongoing irregularity
+"Unregelmäßige Zyklen (deklariert)" = "Irregular cycles (declared)";
+"Perimenopause (deklariert)" = "Perimenopause (declared)";
+"Andere Zyklus-Besonderheit" = "Other cycle particular";
+// Category F — Resume after pause
+"Zyklus wieder aufgenommen" = "Cycle resumed";
+
+// MARK: - Settings sections
+
+"Einstellungen" = "Settings";
+"App-Sperre" = "App Lock";
+"Meine Zyklen sind unregelmäßig" = "My cycles are irregular";
+"Tideline weitet die Vorhersage und zeigt einen Hinweis, dass deine Zyklen natürlich variabel sind." = "Tideline widens the prediction and shows a note that your cycles are naturally variable.";
+"Persönliche Daten" = "Personal data";
+"Altersbereich" = "Age range";
+"Diese Anpassung kann deine Schätzung leicht verändern, vor allem in den ersten Zyklen." = "This adjustment may slightly change your estimate, especially in your first few cycles.";
+"Übernehmen" = "Apply";
+"Phasennamen" = "Phase names";
+"Klinische Namen" = "Clinical names";
+"Gezeiten-Namen" = "Tide names";
+"Menstruation · Follikelphase · Ovulation · Lutealphase" = "Menstruation · Follicular · Ovulation · Luteal";
+"Stille · Aufgang · Hochwasser · Rückzug" = "Stillness · Rising · High tide · Retreat";
+"Mitteilungen" = "Notifications";
+"Mitteilungen aktivieren" = "Enable notifications";
+"Erinnerungen für Zyklusphasen und Zyklusereignisse — lokal generiert, ohne Cloud." = "Reminders for cycle phases and cycle events — locally generated, no cloud.";
+"Du hast Mitteilungen für Tideline in den iPhone-Einstellungen deaktiviert." = "You've disabled notifications for Tideline in iPhone Settings.";
+"In iPhone-Einstellungen öffnen" = "Open iPhone Settings";
+
+// MARK: - LogDaySheet + LogEventSheet
+
+"Datum" = "Date";
+"Blutung" = "Bleeding";
+"Weitere Details" = "More details";
+"Notiz" = "Note";
+"Optional hinzufügen..." = "Add optionally...";
+"Speichern" = "Save";
+"Abbrechen" = "Cancel";
+"Löschen" = "Delete";
+"Heute" = "Today";
+"Ereignis loggen" = "Log event";
+"Notiert." = "Noted.";
+"Es tut uns leid." = "We're sorry.";
+
+// MARK: - CalendarSheet
+
+"Zyklusphasen & Bedeutung" = "Cycle phases & meaning";
+"Menstruation" = "Menstruation";
+"Follikelphase" = "Follicular phase";
+"Ovulation" = "Ovulation";
+"Lutealphase" = "Luteal phase";
+"Zeit der Erneuerung & inneren Ruhe" = "A time of renewal & inner calm";
+"Zeit des Aufbaus & kreativen Tatendrangs" = "A time of building & creative drive";
+"Zeit der Fülle, Ausstrahlung & Energie" = "A time of fullness, presence & energy";
+"Zeit der Einkehr & emotionalen Harmonie" = "A time of inward focus & emotional balance";
+"Mehrere Tage" = "Multiple days";
+"Fertig wählen" = "Done selecting";
+"Anwenden" = "Apply";
+"max. 31 Tage gleichzeitig" = "max. 31 days at once";
+
+// MARK: - MyCycleSheet
+
+"Vergangene Zyklen" = "Past cycles";
+"Ereignisse" = "Events";
+"Noch keine Beobachtungen — log ein paar Zyklen, damit Muster sichtbar werden." = "No observations yet — log a few cycles for patterns to become visible.";
+
+
+// MARK: - Audit-fix supplement (2026-05-24) — missing keys closed across HK/AppLock/Doctor/Hero/Settings/Logging surfaces.
+"In Apple Health speichern" = "Save to Apple Health";
+"Tideline kann deine geloggten Periodendaten in Apple Health schreiben — damit andere Health-Apps deinen Zyklus sehen können. Es bleibt alles auf deinem Gerät." = "Tideline can write your logged period data to Apple Health — so other Health apps can see your cycle. Everything stays on your device.";
+"Apple Health ist auf diesem Gerät nicht verfügbar." = "Apple Health isn't available on this device.";
+"Daten werden geprüft …" = "Checking data…";
+"Keine Zyklen ausgewählt." = "No cycles selected.";
+"Apple Health ist bereits auf dem aktuellsten Stand." = "Apple Health is already up to date.";
+"Nichts zu exportieren." = "Nothing to export.";
+"Logge deine erste Periode in Tideline — dann kannst du sie hierher zurück synchronisieren." = "Log your first period in Tideline — then you can sync it back here.";
+"Aktueller Zyklus" = "Current cycle";
+"Bereits synchron" = "Already in sync";
+"Übertrage nach Apple Health …" = "Transferring to Apple Health…";
+"Übertragung abgeschlossen" = "Transfer complete";
+"Übertragung nicht möglich" = "Transfer not possible";
+"Einstellungen öffnen" = "Open Settings";
+"Entsperren" = "Unlock";
+"Aus Apple Health importieren" = "Import from Apple Health";
+"Tideline kann deine bisherigen Periodendaten aus Apple Health übernehmen — damit deine Vorhersagen vom ersten Tag an aussagekräftig sind." = "Tideline can import your existing period data from Apple Health — so your predictions are meaningful from day one.";
+"Lese Apple Health …" = "Reading Apple Health…";
+"Du kannst Tideline trotzdem nutzen — logge deine erste Periode, sobald sie beginnt, und der Rest wird automatisch." = "You can still use Tideline — log your first period when it starts and the rest happens automatically.";
+"Importiere …" = "Importing…";
+"Import abgeschlossen" = "Import complete";
+"Import nicht möglich" = "Import not possible";
+"Bericht für meinen Frauenarzt-Termin" = "Report for my gynecologist appointment";
+"Tideline erstellt einen privaten PDF-Bericht auf deinem Gerät — kein Upload, kein Cloud." = "Tideline creates a private PDF report on your device — no upload, no cloud.";
+"Anzahl Zyklen" = "Number of cycles";
+"Name (optional)" = "Name (optional)";
+"Der Bericht enthält einen kryptografischen Beleg (SHA-256) als Manipulationsnachweis." = "The report includes a cryptographic receipt (SHA-256) as a tamper-evidence proof.";
+"Bericht wird erstellt …" = "Generating report…";
+"Bericht bereit" = "Report ready";
+"Beleg" = "Receipt";
+"Teilen" = "Share";
+"Bericht konnte nicht erstellt werden" = "Report could not be generated";
+"Willkommen" = "Welcome";
+"Logge deine erste Periode,\num deinen Rhythmus zu lernen." = "Log your first period\nto learn your rhythm.";
+"Pausiert" = "Paused";
+"Beendet" = "Ended";
+"Willkommen zurück" = "Welcome back";
+"Es sieht so aus, als wäre dein Zyklus wieder da. Möchtest du die Vorhersage neu starten?" = "It looks like your cycle is back. Would you like to restart predictions?";
+"Ja, neu lernen" = "Yes, start learning";
+"Logge deine erste Periode, um Tideline kennen zu lernen." = "Log your first period to get to know Tideline.";
+"Noch zu wenig Daten — Tideline sieht Muster ab dem 3. Zyklus." = "Not enough data yet — Tideline starts seeing patterns from cycle 3 onward.";
+"Daten" = "Data";
+"Welches Ereignis?" = "Which event?";
+"Wann?" = "When?";
+"Notiz (optional)" = "Note (optional)";
+"Schließen" = "Close";
+"Bearbeiten →" = "Edit →";
+"Wann hat deine letzte Periode begonnen?" = "When did your last period start?";
+"Noch keine Ereignisse" = "No events yet";
+"Tippe auf + oben rechts, um ein Ereignis hinzuzufügen." = "Tap + at the top right to add an event.";
+"Stelle in den iOS-Einstellungen einen Code oder Face ID ein, um die App-Sperre zu aktivieren." = "Set a device passcode or Face ID in iOS Settings to enable App Lock.";
+"Sperren" = "Lock";
+"Sofort" = "Immediately";
+"Nach 1 Minute" = "After 1 minute";
+"Nach 5 Minuten" = "After 5 minutes";
+"Nach 15 Minuten" = "After 15 minutes";
+"Dein erster Eintrag" = "Your first entry";
+"Tideline lernt deinen Rhythmus mit jedem geloggten Zyklus dazu — die ersten Schätzungen sind noch grob." = "Tideline learns your rhythm with every logged cycle — early estimates are still rough.";
+"Zukünftige Tage werden nicht in die Vorhersage einbezogen." = "Future days aren't included in predictions.";
+"Eintrag löschen" = "Delete entry";
+"Tag erfassen" = "Log day";
+"Gezeitentabelle" = "Tide table";
+"Letzte 6 Zyklen" = "Last 6 cycles";
+"Noch keine vergangenen Zyklen." = "No past cycles yet.";
+
+// Wave-A additions (2026-05-25)
+"Der Eintrag wird trotzdem gespeichert." = "The entry is still saved.";
+
+// Wave-A additions — phase-strip + calendar + events + Doctor PDF
+"Kein Eintrag heute? Tideline schließt auf Ende der Blutung." = "No entry today? Tideline infers your period has ended.";
+"Vorheriger Monat" = "Previous month";
+"Nächster Monat" = "Next month";
+"Zurück zum aktuellen Monat" = "Back to current month";
+"Springt im Kalender zurück auf den heutigen Monat." = "Jumps the calendar back to the current month.";
+"Aktiviert den Bearbeitungsmodus, um Ereignisse zu löschen." = "Enters edit mode to delete events.";
+"Tideline fügt dem Bericht einen Echtheitsstempel hinzu, damit du nachweisen kannst, dass er seit der Erstellung nicht verändert wurde." = "Tideline adds an authenticity stamp to the report so you can prove it hasn't been altered since creation.";
+"Echtheitsstempel" = "Authenticity stamp";
+"Dieser Code beweist, dass der Bericht seit der Erstellung nicht verändert wurde." = "This code proves that the report has not been altered since it was created.";
+
+// Wave-B additions — FAB long-press, calendar hint, symptoms label, onboarding, HK retry.
+"Periode heute begonnen" = "Period started today";
+"Tag bearbeiten…" = "Edit day…";
+"Hast du früher deinen Zyklus getrackt?" = "Have you tracked your cycle before?";
+"Tippe auf „Mehrere Tage“ oben rechts, um vergangene Tage schnell als Periode einzutragen." = "Tap \"Multiple days\" at the top right to quickly add past period days.";
+"Hinweis ausblenden" = "Hide hint";
+"Doppeltippen aktiviert die Mehrfachauswahl." = "Double-tap activates multi-selection.";
+"Symptome & Stimmung" = "Symptoms & mood";
+"Hinweis zu iCloud-Backup" = "Note on iCloud Backup";
+"Erneut versuchen" = "Try again";
+"Versucht den Apple-Health-Import erneut. Nutze diesen Knopf, nachdem du die Berechtigung in den iPhone-Einstellungen erlaubt hast." = "Re-attempts the Apple Health import. Use this after granting permission in iPhone Settings.";
+"Versucht die Übertragung erneut. Nutze diesen Knopf, nachdem du die Berechtigung in den iPhone-Einstellungen erlaubt hast." = "Re-attempts the transfer. Use this after granting permission in iPhone Settings.";

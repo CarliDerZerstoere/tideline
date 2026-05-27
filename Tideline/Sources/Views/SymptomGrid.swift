@@ -47,37 +47,63 @@ public enum SymptomCategory: String, CaseIterable, Sendable {
 /// Stored as `[String]` (rawValues) so it lines up with `DayEntry.symptoms`.
 struct SymptomGrid: View {
     @Binding var selected: Set<String>
+    @Environment(\.colorScheme) private var colorScheme
 
     private let columns = [
-        GridItem(.adaptive(minimum: 160, maximum: 220), spacing: 8)
+        GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 8)
     ]
+    
+    private let coral = Color(hex: 0xE87070)
 
     var body: some View {
         LazyVGrid(columns: columns, spacing: 8) {
             ForEach(SymptomCategory.allCases, id: \.self) { symptom in
                 let isSelected = selected.contains(symptom.rawValue)
                 Button {
-                    if isSelected {
-                        selected.remove(symptom.rawValue)
-                    } else {
-                        selected.insert(symptom.rawValue)
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                        if isSelected {
+                            selected.remove(symptom.rawValue)
+                        } else {
+                            selected.insert(symptom.rawValue)
+                        }
                     }
                 } label: {
-                    HStack(spacing: 8) {
+                    HStack(spacing: 10) {
                         Image(systemName: symptom.systemImage)
-                            .font(.body)
-                            .foregroundStyle(isSelected ? .white : .secondary)
+                            .font(.system(size: 15, weight: .medium))
+                            .foregroundStyle(isSelected ? .white : coral.opacity(0.9))
                         Text(symptom.label)
-                            .font(.subheadline)
-                            .foregroundStyle(isSelected ? .white : .primary)
+                            .font(.system(size: 14, weight: isSelected ? .bold : .medium))
+                            .foregroundStyle(isSelected ? .white : Color.primary.opacity(0.9))
                             .lineLimit(1)
                         Spacer(minLength: 0)
                     }
-                    .padding(.vertical, 10)
-                    .padding(.horizontal, 12)
+                    .padding(.vertical, 12)
+                    .padding(.horizontal, 14)
                     .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(isSelected ? Color.accentColor : Color(.secondarySystemBackground))
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .fill(
+                                isSelected 
+                                ? AnyShapeStyle(LinearGradient(
+                                    colors: [coral, Color(hex: 0xF28E8E)],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                  ))
+                                : AnyShapeStyle(colorScheme == .dark ? Color.white.opacity(0.04) : Color.black.opacity(0.03))
+                            )
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .strokeBorder(
+                                isSelected 
+                                ? Color.white.opacity(0.15) 
+                                : Color.primary.opacity(colorScheme == .dark ? 0.08 : 0.05),
+                                lineWidth: 1.0
+                            )
+                    )
+                    .shadow(
+                        color: isSelected ? coral.opacity(0.25) : Color.clear,
+                        radius: 8, x: 0, y: 3
                     )
                 }
                 .buttonStyle(.plain)
@@ -85,6 +111,7 @@ struct SymptomGrid: View {
                 .accessibilityAddTraits(isSelected ? .isSelected : [])
             }
         }
+        .sensoryFeedback(.selection, trigger: selected)
     }
 }
 

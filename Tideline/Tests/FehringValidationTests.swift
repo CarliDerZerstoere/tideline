@@ -49,6 +49,11 @@ struct FehringValidationTests {
             }
         }
 
+        guard !rows.isEmpty else {
+            Issue.record("No predictions possible — Fehring CSV was empty or failed to load")
+            return
+        }
+
         let n = rows.count
         let mae = rows.map(\.absError).reduce(0, +) / Double(n)
         let medianAbs = rows.map(\.absError).sorted()[n / 2]
@@ -73,6 +78,14 @@ struct FehringValidationTests {
                 return p.nextCycleLengthInterval(confidence: 0.90).contains(seq[idx].lengthDays)
             }
             return Double(subjectRows.filter { $0 }.count) / Double(subjectRows.count)
+        }
+        // Audit task #115: a CSV that has rows but no subject with ≥4
+        // cycles leaves `coveragePerSubject` empty — division by zero (NaN)
+        // and a same-index subscript trap. The outer `rows.isEmpty` guard
+        // doesn't catch this because the per-subject filter is independent.
+        guard !coveragePerSubject.isEmpty else {
+            Issue.record("No subject had ≥4 cycles — Fehring CSV malformed or filtered to nothing")
+            return
         }
         let clusteredMean = coveragePerSubject.reduce(0, +) / Double(coveragePerSubject.count)
         let clusteredSorted = coveragePerSubject.sorted()

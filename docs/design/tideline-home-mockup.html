@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=390, initial-scale=1.0" />
+  <title>Tideline — Home View Mockup</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Dämmerung (late-luteal, day 18) palette */
+      --sky-top:        #1a0a2e;
+      --sky-mid:        #3d1c5a;
+      --sky-horizon:    #8b3a62;
+      --sky-glow:       #c4614a;
+      --sky-sea-top:    #5c2d4e;
+      --sky-sea-bottom: #2a1435;
+
+      /* Phase band colors */
+      --phase-menses:     #c4614a;
+      --phase-follicular: #7ec8c8;
+      --phase-ovulation:  #f0c040;
+      --phase-luteal:     #d4845a;
+      --phase-late:       #8b5a9e;
+
+      --text-primary:   #f5ede8;
+      --text-secondary: rgba(245,237,232,0.65);
+      --text-dim:       rgba(245,237,232,0.40);
+
+      --font: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    }
+
+    html, body {
+      width: 390px;
+      margin: 0 auto;
+      background: #0e0718;
+      font-family: var(--font);
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ════════════════════════════════════════
+       LAYER 1 — HERO  (~40% / ~336px)
+    ════════════════════════════════════════ */
+    .hero {
+      position: relative;
+      width: 390px;
+      height: 336px;
+      overflow: hidden;
+    }
+
+    /* Sky gradient — Dämmerung: deep purple bleeding into warm sunset coral */
+    .hero__sky {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        var(--sky-top)    0%,
+        var(--sky-mid)    28%,
+        var(--sky-horizon) 52%,
+        var(--sky-glow)   66%,
+        var(--sky-sea-top) 72%,
+        var(--sky-sea-bottom) 100%
+      );
+    }
+
+    /* ── Stars (Dämmerung = evening, stars emerging) ── */
+    .hero__stars {
+      position: absolute;
+      inset: 0 0 45% 0;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    /* ── Sun / moon body ──
+       Day 18 of ~28: sun at 18/28 ≈ 64% from left, lowering toward horizon */
+    .hero__sun {
+      position: absolute;
+      /* horizontal: day/cycle_length proportion, minus half the orb width */
+      left: calc(64% - 20px);
+      /* vertical: late-luteal = sun descending, just above horizon glow */
+      top: calc(52% - 22px);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      /* Dämmerung sun: warm amber-coral */
+      background: radial-gradient(circle at 42% 42%, #ffd580, #e8724a 60%, #c4614a);
+      box-shadow:
+        0 0 0   6px rgba(240,180,80,0.18),
+        0 0 0  16px rgba(240,140,60,0.12),
+        0 0 0  32px rgba(200,90,50,0.08),
+        0 0 60px 20px rgba(220,120,60,0.25);
+    }
+
+    /* ── Conformal mist — approaching wave / predicted period ──
+       The uncertainty band: a soft blurred gradient on the right horizon.
+       Width represents ±2 days either side of the predicted period boundary.
+       Mathematically tied to conformal interval: ~4.6-day residual → ~64px at this scale. */
+    .hero__conformal-mist {
+      position: absolute;
+      /* Sits on right horizon: period in 9 days ≈ day 27 of 28 ≈ ~96% from left */
+      right: 0;
+      top: 46%;
+      width: 90px;   /* width = uncertainty band visual encoding, ~4.5 days at scale */
+      height: 60px;
+      transform: translateY(-50%);
+      /* Gradient: transparent → warm mist haze → transparent
+         This is the conformal interval rendered as atmospheric fog, not a line */
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255,220,180,0.04) 20%,
+        rgba(255,210,160,0.18) 45%,
+        rgba(255,200,140,0.28) 60%,
+        rgba(255,195,130,0.22) 75%,
+        rgba(255,190,120,0.10) 90%,
+        transparent 100%
+      );
+      filter: blur(8px);
+    }
+
+    /* Mist vertical extension — the haze fans slightly above and below horizon */
+    .hero__conformal-mist::after {
+      content: '';
+      position: absolute;
+      inset: -30px 10px -30px 0;
+      background: inherit;
+      filter: blur(14px);
+      opacity: 0.5;
+    }
+
+    /* ── Horizon line (subtle) ── */
+    .hero__horizon {
+      position: absolute;
+      top: 56%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,210,160,0.20) 15%,
+        rgba(255,210,160,0.40) 50%,
+        rgba(255,220,180,0.50) 82%,
+        rgba(255,225,190,0.60) 90%,
+        /* mist zone glows brighter near prediction horizon */
+        rgba(255,230,195,0.70) 100%
+      );
+    }
+
+    /* ── Waves — CSS animated, breath-paced ── */
+    .hero__waves {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      overflow: hidden;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: -100%;
+      width: 300%;
+      height: 100%;
+      background: transparent;
+      border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+    }
+
+    .wave--1 {
+      background: rgba(139,58,98,0.35);
+      animation: waveMove 4s ease-in-out infinite;
+      height: 44px;
+    }
+    .wave--2 {
+      background: rgba(90,30,70,0.45);
+      animation: waveMove 4s ease-in-out infinite 0.8s;
+      height: 34px;
+    }
+    .wave--3 {
+      background: rgba(42,20,53,0.70);
+      animation: waveMove 4s ease-in-out infinite 1.6s;
+      height: 24px;
+    }
+
+    @keyframes waveMove {
+      0%   { transform: translateX(0)   scaleY(1.0); }
+      25%  { transform: translateX(6%)  scaleY(1.08); }
+      50%  { transform: translateX(12%) scaleY(0.95); }
+      75%  { transform: translateX(6%)  scaleY(1.04); }
+      100% { transform: translateX(0)   scaleY(1.0); }
+    }
+
+    /* ── Hero center text ── */
+    .hero__text {
+      position: absolute;
+      left: 50%;
+      top: 38%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 260px;
+    }
+
+    .hero__day {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .hero__phase {
+      font-size: 28px;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      line-height: 1.1;
+      margin-bottom: 8px;
+      /* soft glow to lift text off atmospheric background */
+      text-shadow: 0 0 24px rgba(196,97,74,0.50), 0 1px 3px rgba(0,0,0,0.60);
+    }
+
+    .hero__prediction {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text-secondary);
+      letter-spacing: 0.01em;
+      line-height: 1.4;
+      /* subtle background pill to ensure legibility against gradient sky */
+      background: rgba(0,0,0,0.22);
+      border-radius: 12px;
+      padding: 4px 10px;
+      display: inline-block;
+    }
+
+    /* ── Status bar placeholder ── */
+    .hero__statusbar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px 0;
+    }
+
+    .hero__time {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .hero__indicators {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .hero__indicators svg {
+      opacity: 0.85;
+    }
+
+    /* ════════════════════════════════════════
+       LAYER 2 — PHASE-SKALA  (~30% / ~252px)
+    ════════════════════════════════════════ */
+    .phase-skala {
+      width: 390px;
+      background: #110820;
+      padding: 24px 20px 20px;
+    }
+
+    .skala__label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+    }
+
+    /* ── Day number row ── */
+    .skala__days {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      padding: 0 2px;
+    }
+
+    .skala__day-tick {
+      font-size: 9px;
+      font-weight: 500;
+      color: var(--text-dim);
+      letter-spacing: 0;
+      width: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .skala__day-tick.is-today {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* ── Phase band strip ── */
+    .skala__strip-wrapper {
+      position: relative;
+      height: 48px;
+      margin-bottom: 10px;
+    }
+
+    .skala__strip {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      height: 28px;
+      border-radius: 14px;
+      overflow: visible;
+      /* Phase gradient for a 28-day cycle, day 18:
+         Menses 1-5 | Follicular 6-12 | Ovulation 13-15 | Luteal 16-22 | Dämmerung 23-28
+         Each boundary is a gradient fade (~24h = 1/28 ≈ 3.6%)
+         conformal uncertainty on period boundary → extra-wide fade at right end */
+      background: linear-gradient(
+        90deg,
+        /* Menses: days 1-5 = 0%-17.9% */
+        var(--phase-menses)       0%,
+        var(--phase-menses)       12%,
+        /* Transition menses→follicular: soft 2-day fade */
+        var(--phase-follicular)   22%,
+        var(--phase-follicular)   38%,
+        /* Transition follicular→ovulation: soft 1-day fade */
+        var(--phase-ovulation)    44%,
+        var(--phase-ovulation)    50%,
+        /* Transition ovulation→luteal: soft 1-day fade */
+        var(--phase-luteal)       56%,
+        var(--phase-luteal)       74%,
+        /* Transition luteal→Dämmerung: soft 1-day fade */
+        var(--phase-late)         80%,
+        /* Right edge: conformal mist — wider fade represents ±2-day prediction uncertainty
+           This is the same uncertainty as the hero mist, rendered as data not atmosphere */
+        rgba(139,90,158,0.70)     88%,
+        rgba(139,90,158,0.35)     94%,
+        rgba(139,90,158,0.10)     100%
+      );
+      opacity: 0.85;
+    }
+
+    /* ── Bleeding day droplets overlay ── */
+    .skala__droplets {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    .droplet {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .droplet svg {
+      width: 10px;
+      height: 12px;
+      fill: rgba(255,255,255,0.95);
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4));
+    }
+
+    /* ── Today pin (static reference for "real" today) ── */
+    .skala__today-pin {
+      position: absolute;
+      left: calc(62.5% - 1px);
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      pointer-events: none;
+      opacity: 0.55;
+    }
+
+    .skala__today-pin__line {
+      width: 2px;
+      flex: 1;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(255,255,255,0.60) 15%,
+        rgba(255,255,255,0.75) 50%,
+        rgba(255,255,255,0.60) 85%,
+        transparent 100%
+      );
+      border-radius: 1px;
+    }
+
+    .skala__today-pin__arrow {
+      font-size: 9px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 2px;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* ── Selection scrubber (interactive, with live day badge) ── */
+    .skala__scrubber {
+      position: absolute;
+      left: calc(62.5% - 14px);   /* center 28px badge on day position */
+      top: -8px;
+      bottom: -8px;
+      width: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: grab;
+      transition: left 0.12s cubic-bezier(0.2, 0.8, 0.2, 1);
+      will-change: left;
+      z-index: 3;
+    }
+    .skala__scrubber.is-dragging {
+      cursor: grabbing;
+      transition: none;
+    }
+    .skala__scrubber.is-dragging .skala__scrubber__badge {
+      transform: scale(1.12);
+      box-shadow:
+        0 0 0 4px rgba(255,255,255,0.10),
+        0 6px 16px rgba(0,0,0,0.55),
+        0 1px 3px rgba(0,0,0,0.40);
+    }
+
+    .skala__scrubber__badge {
+      min-width: 28px;
+      height: 22px;
+      padding: 0 7px;
+      border-radius: 11px;
+      background: rgba(245,237,232,0.96);
+      color: #1a0a2e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow:
+        0 2px 6px rgba(0,0,0,0.40),
+        0 1px 2px rgba(0,0,0,0.30);
+      transition: transform 0.12s ease;
+      position: relative;
+    }
+    /* Little caret tip pointing down to the scrubber line */
+    .skala__scrubber__badge::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 6px;
+      height: 6px;
+      background: rgba(245,237,232,0.96);
+      border-radius: 1px;
+    }
+
+    .skala__scrubber__line {
+      width: 2px;
+      flex: 1;
+      margin-top: 4px;
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.98) 50%,
+        rgba(255,255,255,0.85) 100%
+      );
+      border-radius: 1px;
+      box-shadow: 0 0 8px rgba(255,255,255,0.35);
+    }
+
+    /* Hit area = entire strip wrapper */
+    .skala__strip-wrapper {
+      cursor: pointer;
+      touch-action: pan-y;
+    }
+
+    /* ── Phase labels on strip (hover-style, always visible in mockup) ── */
+    .skala__phase-labels {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    .phase-label {
+      position: absolute;
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.50);
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    /* ── Three sentences ── */
+    .skala__sentences {
+      margin-top: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .skala__sentence--primary {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .skala__sentence--secondary {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    /* ── Divider ── */
+    .layer-divider {
+      width: 390px;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.06) 20%,
+        rgba(255,255,255,0.08) 50%,
+        rgba(255,255,255,0.06) 80%,
+        transparent
+      );
+    }
+
+    /* ════════════════════════════════════════
+       LAYER 3 — GEZEITENTABELLE  (~20% / ~168px)
+    ════════════════════════════════════════ */
+    .gezeitentabelle {
+      width: 390px;
+      background: #0e0718;
+      padding: 20px 20px 16px;
+    }
+
+    .gezeiten__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .gezeiten__title {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .gezeiten__expand {
+      font-size: 10px;
+      color: var(--text-dim);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Sparkline SVG ── */
+    .gezeiten__sparkline {
+      width: 100%;
+      height: 72px;
+      display: block;
+    }
+
+    /* Cycle length labels below sparkline */
+    .gezeiten__cycle-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6px;
+      padding: 0 4px;
+    }
+
+    .gezeiten__cycle-label {
+      font-size: 9px;
+      color: var(--text-dim);
+      text-align: center;
+      flex: 1;
+    }
+
+    .gezeiten__cycle-label.is-current {
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* ════════════════════════════════════════
+       LAYER 4 — AKTIONEN  (~10% / ~84px)
+    ════════════════════════════════════════ */
+    .aktionen {
+      width: 390px;
+      background: #0e0718;
+      padding: 16px 20px 40px; /* 40px = home indicator clearance */
+    }
+
+    .aktionen__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* FAB */
+    .fab {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8b5a9e, #c4614a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow:
+        0 4px 12px rgba(139,58,98,0.45),
+        0 1px 3px rgba(0,0,0,0.40);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .fab__icon {
+      font-size: 26px;
+      font-weight: 200;
+      color: #fff;
+      line-height: 1;
+      margin-top: -1px;
+    }
+
+    /* Mood emojis */
+    .aktionen__moods {
+      display: flex;
+      gap: 2px;
+      align-items: center;
+    }
+
+    .mood-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      cursor: pointer;
+      background: transparent;
+      transition: background 0.15s;
+    }
+
+    .mood-btn:hover {
+      background: rgba(255,255,255,0.07);
+    }
+
+    /* Lebensereignis */
+    .lebensereignis-btn {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-dim);
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ── Safe area / home indicator ── */
+    .home-indicator {
+      width: 390px;
+      height: 4px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 8px;
+      background: #0e0718;
+    }
+
+    .home-indicator__bar {
+      width: 134px;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(255,255,255,0.20);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     LAYER 1 — HERO
+════════════════════════════════════════ -->
+<section class="hero" aria-label="Atmosphärische Phasenansicht: Tag 18, Dämmerung">
+
+  <!-- Sky -->
+  <div class="hero__sky"></div>
+
+  <!-- Stars (evening emerging) -->
+  <div class="hero__stars">
+    <!-- Manually placed to look natural, not grid-aligned -->
+    <div class="star" style="width:1.5px;height:1.5px;left:8%;top:12%;opacity:0.55;"></div>
+    <div class="star" style="width:1px;height:1px;left:15%;top:6%;opacity:0.40;"></div>
+    <div class="star" style="width:2px;height:2px;left:22%;top:18%;opacity:0.65;"></div>
+    <div class="star" style="width:1px;height:1px;left:31%;top:9%;opacity:0.35;"></div>
+    <div class="star" style="width:1.5px;height:1.5px;left:38%;top:14%;opacity:0.50;"></div>
+    <div class="star" style="width:1px;height:1px;left:44%;top:5%;opacity:0.45;"></div>
+    <div class="star" style="width:2px;height:2px;left:52%;top:21%;opacity:0.55;"></div>
+    <div class="star" style="width:1px;height:1px;left:61%;top:8%;opacity:0.30;"></div>
+    <div class="star" style="width:1.5px;height:1.5px;left:74%;top:16%;opacity:0.48;"></div>
+    <div class="star" style="width:1px;height:1px;left:82%;top:4%;opacity:0.38;"></div>
+    <div class="star" style="width:2px;height:2px;left:88%;top:24%;opacity:0.42;"></div>
+    <div class="star" style="width:1px;height:1px;left:6%;top:28%;opacity:0.28;"></div>
+    <div class="star" style="width:1.5px;height:1.5px;left:27%;top:32%;opacity:0.22;"></div>
+    <div class="star" style="width:1px;height:1px;left:67%;top:30%;opacity:0.25;"></div>
+  </div>
+
+  <!-- Conformal mist — uncertainty band for predicted period
+       Soft blurred gradient: width encodes the ±2-day conformal interval.
+       Wider = less history / wider prediction band. -->
+  <div class="hero__conformal-mist" aria-hidden="true"></div>
+
+  <!-- Horizon line -->
+  <div class="hero__horizon" aria-hidden="true"></div>
+
+  <!-- Sun (day 18/28 = ~64% from left, descending toward horizon = Dämmerung) -->
+  <div class="hero__sun" aria-hidden="true"></div>
+
+  <!-- Status bar -->
+  <div class="hero__statusbar" aria-hidden="true">
+    <span class="hero__time">20:14</span>
+    <div class="hero__indicators">
+      <!-- Signal bars (simplified SVG) -->
+      <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+        <rect x="0" y="7" width="3" height="5" fill="white" rx="0.5"/>
+        <rect x="4.5" y="4.5" width="3" height="7.5" fill="white" rx="0.5"/>
+        <rect x="9" y="2" width="3" height="10" fill="white" rx="0.5"/>
+        <rect x="13.5" y="0" width="2.5" height="12" fill="white" opacity="0.3" rx="0.5"/>
+      </svg>
+      <!-- Wifi -->
+      <svg width="15" height="11" viewBox="0 0 15 11" fill="none">
+        <path d="M7.5 8.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"/>
+        <path d="M4.2 6.2a4.7 4.7 0 0 1 6.6 0" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        <path d="M1.5 3.5a8.5 8.5 0 0 1 12 0" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.55"/>
+      </svg>
+      <!-- Battery -->
+      <svg width="24" height="12" viewBox="0 0 24 12" fill="none">
+        <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="white" stroke-opacity="0.4"/>
+        <rect x="2" y="2" width="14" height="8" rx="1.5" fill="white"/>
+        <path d="M21.5 4v4" stroke="white" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Center text -->
+  <div class="hero__text">
+    <div class="hero__day">Tag 18</div>
+    <div class="hero__phase">Dämmerung</div>
+    <div class="hero__prediction">Periode erwartet: 28.–31. Mai</div>
+  </div>
+
+  <!-- Waves (breath-paced, ~4s per cycle) -->
+  <div class="hero__waves" aria-hidden="true">
+    <div class="wave wave--1"></div>
+    <div class="wave wave--2"></div>
+    <div class="wave wave--3"></div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════════
+     LAYER 2 — PHASE-SKALA
+════════════════════════════════════════ -->
+<section class="phase-skala" aria-label="Phasenverlauf des aktuellen Zyklus">
+
+  <div class="skala__label">Zyklus · Tag 18 von 28</div>
+
+  <!-- Day number row -->
+  <div class="skala__days" aria-hidden="true">
+    <!-- Days 1, 4, 7, 10, 13, 16, 19, 22, 25, 28 -->
+    <span class="skala__day-tick">1</span>
+    <span class="skala__day-tick">4</span>
+    <span class="skala__day-tick">7</span>
+    <span class="skala__day-tick">10</span>
+    <span class="skala__day-tick">13</span>
+    <span class="skala__day-tick">16</span>
+    <span class="skala__day-tick is-today">18</span>
+    <span class="skala__day-tick">22</span>
+    <span class="skala__day-tick">25</span>
+    <span class="skala__day-tick">28</span>
+  </div>
+
+  <!-- Phase band + overlays -->
+  <div class="skala__strip-wrapper" aria-hidden="true">
+
+    <!-- Phase band — gradient with soft boundaries and conformal fade at right end -->
+    <div class="skala__strip"></div>
+
+    <!-- Phase labels sitting on the band -->
+    <div class="skala__phase-labels">
+      <!-- Menses: center at ~8.5% -->
+      <span class="phase-label" style="left:8.5%">Periode</span>
+      <!-- Follicular: center at ~30% -->
+      <span class="phase-label" style="left:30%">Aufst. Flut</span>
+      <!-- Ovulation: center at ~47% -->
+      <span class="phase-label" style="left:47%">Hoch&shy;wasser</span>
+      <!-- Luteal: center at ~65% -->
+      <span class="phase-label" style="left:65%">Fall. Flut</span>
+      <!-- Late luteal: center at ~88% -->
+      <span class="phase-label" style="left:88%">Dämm&shy;erung</span>
+    </div>
+
+    <!-- Bleeding day droplets: days 1-5 (logged) -->
+    <!-- Positions: day n of 28 → left: (n - 0.5) / 28 * 100% -->
+    <div class="skala__droplets">
+      <!-- Day 1: 1.8% -->
+      <div class="droplet" style="left:1.8%">
+        <svg viewBox="0 0 10 12"><path d="M5 0 C5 0 0 6 0 8.5a5 5 0 1 0 10 0C10 6 5 0 5 0Z"/></svg>
+      </div>
+      <!-- Day 2: 5.4% -->
+      <div class="droplet" style="left:5.4%">
+        <svg viewBox="0 0 10 12"><path d="M5 0 C5 0 0 6 0 8.5a5 5 0 1 0 10 0C10 6 5 0 5 0Z"/></svg>
+      </div>
+      <!-- Day 3: 8.9% -->
+      <div class="droplet" style="left:8.9%">
+        <svg viewBox="0 0 10 12"><path d="M5 0 C5 0 0 6 0 8.5a5 5 0 1 0 10 0C10 6 5 0 5 0Z"/></svg>
+      </div>
+      <!-- Day 4: 12.5% -->
+      <div class="droplet" style="left:12.5%">
+        <svg viewBox="0 0 10 12"><path d="M5 0 C5 0 0 6 0 8.5a5 5 0 1 0 10 0C10 6 5 0 5 0Z"/></svg>
+      </div>
+      <!-- Day 5: 16.1% (lighter day, so slightly smaller — same icon, opacity differs) -->
+      <div class="droplet" style="left:16.1%;opacity:0.55">
+        <svg viewBox="0 0 10 12"><path d="M5 0 C5 0 0 6 0 8.5a5 5 0 1 0 10 0C10 6 5 0 5 0Z"/></svg>
+      </div>
+    </div>
+
+    <!-- Today reference pin — static, marks the real "today" (day 18) -->
+    <div class="skala__today-pin" aria-hidden="true" style="left:62.5%">
+      <div class="skala__today-pin__arrow">Heute</div>
+      <div class="skala__today-pin__line"></div>
+    </div>
+
+    <!-- Interactive scrubber — shows live day-selection feedback.
+         Drag horizontally or tap a position on the strip to scrub. -->
+    <div class="skala__scrubber" id="scrubber"
+         role="slider"
+         aria-label="Zyklustag auswählen"
+         aria-valuemin="1" aria-valuemax="28" aria-valuenow="18"
+         tabindex="0">
+      <div class="skala__scrubber__badge" id="scrubberBadge">18</div>
+      <div class="skala__scrubber__line"></div>
+    </div>
+
+  </div>
+
+  <!-- Three sentences (live-updated when scrubbing) -->
+  <div class="skala__sentences">
+    <p class="skala__sentence--primary" id="sentencePrimary">Heute: Tag 18 — Dämmerung</p>
+    <p class="skala__sentence--secondary" id="sentenceSecondary">Periode voraussichtlich in 9–11 Tagen (28.–31. Mai).</p>
+    <p class="skala__sentence--secondary">Letzte Blutungstage: 1.–5. Mai.</p>
+  </div>
+
+</section>
+
+<div class="layer-divider"></div>
+
+<!-- ════════════════════════════════════════
+     LAYER 3 — GEZEITENTABELLE
+════════════════════════════════════════ -->
+<section class="gezeitentabelle" aria-label="Letzte 6 Zyklen als Gezeitenkurve">
+
+  <div class="gezeiten__header">
+    <span class="gezeiten__title">Letzte 6 Zyklen</span>
+    <span class="gezeiten__expand">Erweitern ›</span>
+  </div>
+
+  <!--
+    Sparkline: sinusoidal tide-curve over 6 cycles.
+    Cycle lengths: 27, 29, 26, 28, 30, 18(current/ongoing).
+    Each cycle is one full sine period.
+    Peaks = mid-cycle (ovulation zone), troughs = period boundary.
+    Forward portion of cycle 6 has a dashed/faded style = prediction.
+  -->
+  <svg class="gezeiten__sparkline" viewBox="0 0 350 72" preserveAspectRatio="none"
+       aria-hidden="true">
+    <defs>
+      <!-- Gradient for the sparkline fill -->
+      <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#8b5a9e" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#8b5a9e" stop-opacity="0.02"/>
+      </linearGradient>
+      <!-- Gradient for completed cycles vs current (predicted) -->
+      <linearGradient id="sparkLine" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#c4614a" stop-opacity="0.70"/>
+        <stop offset="40%"  stop-color="#d4845a" stop-opacity="0.80"/>
+        <stop offset="68%"  stop-color="#8b5a9e" stop-opacity="0.90"/>
+        <!-- Current cycle starts ~68% in; future portion fades -->
+        <stop offset="82%"  stop-color="#8b5a9e" stop-opacity="0.60"/>
+        <stop offset="100%" stop-color="#8b5a9e" stop-opacity="0.20"/>
+      </linearGradient>
+      <!-- Clip for fill area (bottom of chart) -->
+      <clipPath id="sparkClip">
+        <rect x="0" y="0" width="350" height="72"/>
+      </clipPath>
+    </defs>
+
+    <!--
+      Sine path: 6 cycles across 350px width.
+      Each cycle ≈ 58.3px wide. Amplitude = 22px. Center y = 40.
+      The path oscillates between y=18 (peak/ovulation) and y=62 (trough/period boundary).
+      Cycle 6 (current): x from ~292 to 350; day 18 of ~28 = 64% through that segment.
+    -->
+
+    <!-- Fill area under sparkline -->
+    <path
+      d="M0,40
+         C7,40 10,18 29,18 C48,18 50,62 58,62
+         C66,62 68,18 87,18 C106,18 107,62 116,62
+         C125,62 127,18 146,18 C164,18 166,62 175,62
+         C183,62 185,18 204,18 C222,18 224,62 233,62
+         C241,62 243,18 262,18 C281,18 282,62 292,62
+         C296,62 300,50 310,44 L310,72 L0,72 Z"
+      fill="url(#sparkFill)"
+      clip-path="url(#sparkClip)"
+    />
+
+    <!-- Completed cycles (solid line) -->
+    <path
+      d="M0,40
+         C7,40 10,18 29,18 C48,18 50,62 58,62
+         C66,62 68,18 87,18 C106,18 107,62 116,62
+         C125,62 127,18 146,18 C164,18 166,62 175,62
+         C183,62 185,18 204,18 C222,18 224,62 233,62
+         C241,62 243,18 262,18 C281,18 282,62 292,62"
+      fill="none"
+      stroke="url(#sparkLine)"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Current cycle (day 1–18, solid) -->
+    <path
+      d="M292,62 C296,62 300,50 310,44"
+      fill="none"
+      stroke="#8b5a9e"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+
+    <!-- Predicted remainder of current cycle (dashed, fading) -->
+    <path
+      d="M310,44 C318,40 322,18 340,18 C345,18 347,28 350,34"
+      fill="none"
+      stroke="#8b5a9e"
+      stroke-width="1.5"
+      stroke-dasharray="4 3"
+      stroke-linecap="round"
+      opacity="0.45"
+    />
+
+    <!-- Conformal uncertainty shading around predicted portion -->
+    <path
+      d="M310,44 C318,40 322,18 340,18 C345,18 347,28 350,34
+         L350,44 C347,38 345,28 340,28 C322,28 318,50 310,54 Z"
+      fill="#8b5a9e"
+      opacity="0.08"
+    />
+
+    <!-- Today dot at day 18 position (x≈310, y≈44) -->
+    <circle cx="310" cy="44" r="4" fill="#8b5a9e" opacity="0.9"/>
+    <circle cx="310" cy="44" r="7" fill="#8b5a9e" opacity="0.18"/>
+
+    <!-- Period boundary dots (troughs) — subtle -->
+    <circle cx="58"  cy="62" r="2.5" fill="#c4614a" opacity="0.55"/>
+    <circle cx="116" cy="62" r="2.5" fill="#c4614a" opacity="0.55"/>
+    <circle cx="175" cy="62" r="2.5" fill="#c4614a" opacity="0.55"/>
+    <circle cx="233" cy="62" r="2.5" fill="#c4614a" opacity="0.55"/>
+    <circle cx="292" cy="62" r="2.5" fill="#c4614a" opacity="0.55"/>
+  </svg>
+
+  <!-- Cycle length labels -->
+  <div class="gezeiten__cycle-labels" aria-hidden="true">
+    <span class="gezeiten__cycle-label">27T</span>
+    <span class="gezeiten__cycle-label">29T</span>
+    <span class="gezeiten__cycle-label">26T</span>
+    <span class="gezeiten__cycle-label">28T</span>
+    <span class="gezeiten__cycle-label">30T</span>
+    <span class="gezeiten__cycle-label is-current">18T+</span>
+  </div>
+
+</section>
+
+<div class="layer-divider"></div>
+
+<!-- ════════════════════════════════════════
+     LAYER 4 — AKTIONEN
+════════════════════════════════════════ -->
+<section class="aktionen" aria-label="Aktionen">
+
+  <div class="aktionen__row">
+
+    <!-- FAB -->
+    <button class="fab" aria-label="Tag erfassen" title="Tag erfassen">
+      <span class="fab__icon">+</span>
+    </button>
+
+    <!-- Five mood emojis, no labels, tap saves silently -->
+    <div class="aktionen__moods" role="group" aria-label="Stimmung">
+      <button class="mood-btn" aria-label="Erschöpft">😔</button>
+      <button class="mood-btn" aria-label="Neutral">😐</button>
+      <button class="mood-btn" aria-label="Gut">🙂</button>
+      <button class="mood-btn" aria-label="Energetisch">😊</button>
+      <button class="mood-btn" aria-label="Strahlend">✨</button>
+    </div>
+
+    <!-- Lebensereignis -->
+    <button class="lebensereignis-btn" aria-label="Lebensereignis erfassen">
+      Lebensereignis
+    </button>
+
+  </div>
+
+</section>
+
+<script>
+  // ── Phase-Skala scrubber: drag/tap with live day-selection feedback ──
+  (function () {
+    const CYCLE_LEN = 28;
+    const TODAY = 18;
+
+    const wrapper  = document.querySelector('.skala__strip-wrapper');
+    const scrubber = document.getElementById('scrubber');
+    const badge    = document.getElementById('scrubberBadge');
+    const sentP    = document.getElementById('sentencePrimary');
+    const sentS    = document.getElementById('sentenceSecondary');
+
+    function phaseForDay(d) {
+      if (d <= 5)  return 'Periode';
+      if (d <= 12) return 'Aufsteigende Flut';
+      if (d <= 15) return 'Hochwasser';
+      if (d <= 22) return 'Fallende Flut';
+      return 'Dämmerung';
+    }
+
+    function setDay(day) {
+      day = Math.max(1, Math.min(CYCLE_LEN, Math.round(day)));
+      // Position: (day - 0.5) / CYCLE_LEN, scrubber is 28px → offset -14px
+      const pct = ((day - 0.5) / CYCLE_LEN) * 100;
+      scrubber.style.left = `calc(${pct}% - 14px)`;
+      badge.textContent = day;
+      scrubber.setAttribute('aria-valuenow', day);
+
+      const phase = phaseForDay(day);
+      if (day === TODAY) {
+        sentP.textContent = `Heute: Tag ${day} — ${phase}`;
+        sentS.textContent = 'Periode voraussichtlich in 9–11 Tagen (28.–31. Mai).';
+      } else if (day < TODAY) {
+        sentP.textContent = `Tag ${day} · ${phase} (vor ${TODAY - day} Tag${TODAY - day === 1 ? '' : 'en'})`;
+        sentS.textContent = `Heute ist Tag ${TODAY}.`;
+      } else {
+        const daysAhead = day - TODAY;
+        sentP.textContent = `Tag ${day} · ${phase} (in ${daysAhead} Tag${daysAhead === 1 ? '' : 'en'})`;
+        sentS.textContent = `Heute ist Tag ${TODAY}.`;
+      }
+    }
+
+    function dayFromClientX(clientX) {
+      const rect = wrapper.getBoundingClientRect();
+      const x = clientX - rect.left;
+      const frac = Math.max(0, Math.min(1, x / rect.width));
+      return frac * CYCLE_LEN + 0.5;
+    }
+
+    let dragging = false;
+    function startDrag(e) {
+      dragging = true;
+      scrubber.classList.add('is-dragging');
+      const x = e.touches ? e.touches[0].clientX : e.clientX;
+      setDay(dayFromClientX(x));
+      e.preventDefault();
+    }
+    function moveDrag(e) {
+      if (!dragging) return;
+      const x = e.touches ? e.touches[0].clientX : e.clientX;
+      setDay(dayFromClientX(x));
+      e.preventDefault();
+    }
+    function endDrag() {
+      if (!dragging) return;
+      dragging = false;
+      scrubber.classList.remove('is-dragging');
+    }
+
+    // Pointer on the whole strip = jump-to-tap
+    wrapper.addEventListener('mousedown',  startDrag);
+    wrapper.addEventListener('touchstart', startDrag, { passive: false });
+    window.addEventListener('mousemove',   moveDrag);
+    window.addEventListener('touchmove',   moveDrag, { passive: false });
+    window.addEventListener('mouseup',     endDrag);
+    window.addEventListener('touchend',    endDrag);
+
+    // Keyboard accessibility
+    scrubber.addEventListener('keydown', (e) => {
+      const current = parseInt(scrubber.getAttribute('aria-valuenow'), 10);
+      if (e.key === 'ArrowRight' || e.key === 'ArrowUp')   { setDay(current + 1); e.preventDefault(); }
+      if (e.key === 'ArrowLeft'  || e.key === 'ArrowDown') { setDay(current - 1); e.preventDefault(); }
+      if (e.key === 'Home') { setDay(1); e.preventDefault(); }
+      if (e.key === 'End')  { setDay(CYCLE_LEN); e.preventDefault(); }
+    });
+  })();
+</script>
+
+<!-- Home indicator -->
+<div class="home-indicator" aria-hidden="true">
+  <div class="home-indicator__bar"></div>
+</div>
+
+</body>
+</html>
